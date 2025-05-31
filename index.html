@@ -4,16 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All COD Executions</title>
-  <link rel="stylesheet" href="resources/sheet.css">
-  <style>
-    body { font-family: 'Segoe UI', Arial, sans-serif; background: #181a1b; color: #f3f3f3; margin: 0; }
-    header { padding: 2rem 0 1rem 0; text-align: center; background: #23272a; }
-    h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
-    .game-select { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin: 2rem 0; }
-    .game-card { background: #23272a; border-radius: 1rem; padding: 2rem 2.5rem; cursor: pointer; box-shadow: 0 2px 12px #0003; transition: transform 0.15s; font-size: 1.3rem; }
-    .game-card:hover { background: #2c3136; transform: translateY(-4px) scale(1.04); }
-    .footer { text-align: center; color: #aaa; margin: 3rem 0 1rem 0; font-size: 0.95rem; }
-  </style>
+  <link rel="stylesheet" href="sheet.css">
 </head>
 <body>
   <header>
@@ -24,20 +15,16 @@
     <section>
       <h2 style="text-align:center;">Choose a Game</h2>
       <div class="game-select">
-        <div class="game-card" onclick="goToGame('MW')">Modern Warfare (MW)</div>
-        <div class="game-card" onclick="goToGame('CW')">Cold War (CW)</div>
-        <div class="game-card" onclick="goToGame('VG')">Vanguard (VG)</div>
-        <div class="game-card" onclick="goToGame('MWII')">Modern Warfare II (MWII)</div>
-        <div class="game-card" onclick="goToGame('MWIII')">Modern Warfare III (MWIII)</div>
-        <div class="game-card" onclick="goToGame('BO6')">Black Ops 6 (BO6)</div>
+        <div class="game-card mw" onclick="goToGame('MW')">Modern Warfare (MW)</div>
+        <div class="game-card cw" onclick="goToGame('CW')">Cold War (CW)</div>
+        <div class="game-card vg" onclick="goToGame('VG')">Vanguard (VG)</div>
+        <div class="game-card mwii" onclick="goToGame('MWII')">Modern Warfare II (MWII)</div>
+        <div class="game-card mwiii" onclick="goToGame('MWIII')">Modern Warfare III (MWIII)</div>
+        <div class="game-card bo6" onclick="goToGame('BO6')">Black Ops 6 (BO6)</div>
       </div>
     </section>
   </main>
   <div class="footer">&copy; 2025 All COD Executions. Not affiliated with Activision or Call of Duty.</div>
-  <script>
-    function goToGame(game) {
-      window.location.href = `game.html?game=${game}`;
-    }
-  </script>
+  <script src="index.js"></script>
 </body>
 </html>

@@ -4,27 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>COD Executions - Game View</title>
-  <link rel="stylesheet" href="resources/sheet.css">
-  <style>
-    body { font-family: 'Segoe UI', Arial, sans-serif; background: #181a1b; color: #f3f3f3; margin: 0; }
-    header { padding: 1.5rem 0 1rem 0; text-align: center; background: #23272a; }
-    h1 { margin: 0; font-size: 2rem; }
-    .layout-toggle { display: flex; justify-content: center; gap: 1rem; margin: 2rem 0 1rem 0; }
-    .toggle-btn { background: #23272a; color: #f3f3f3; border: none; border-radius: 0.5rem; padding: 0.7rem 1.5rem; font-size: 1rem; cursor: pointer; transition: background 0.15s; }
-    .toggle-btn.active, .toggle-btn:hover { background: #2c3136; }
-    .moves-list { max-width: 900px; margin: 0 auto; }
-    .list-view { width: 100%; border-collapse: collapse; }
-    .list-view th, .list-view td { padding: 0.7rem 1rem; border-bottom: 1px solid #333; text-align: left; }
-    .list-view th { background: #23272a; }
-    .icon-img { width: 48px; height: 48px; object-fit: contain; }
-    .grid-view { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 2rem; margin-top: 2rem; }
-    .grid-card { background: #23272a; border-radius: 1rem; padding: 1.2rem 0.5rem 1rem 0.5rem; text-align: center; box-shadow: 0 2px 8px #0002; }
-    .grid-card img { width: 64px; height: 64px; margin-bottom: 0.7rem; }
-    .back-btn { margin: 2rem auto 0 auto; display: block; background: #23272a; color: #f3f3f3; border: none; border-radius: 0.5rem; padding: 0.6rem 1.2rem; font-size: 1rem; cursor: pointer; }
-    .back-btn:hover { background: #2c3136; }
-  </style>
+  <link rel="stylesheet" href="sheet.css">
+  <link rel="stylesheet" href="game.css">
 </head>
-<body>
+<body id="gameBody">
   <header>
     <h1 id="game-title">COD Executions</h1>
   </header>
@@ -32,62 +15,10 @@
     <button class="toggle-btn active" id="listBtn">List View</button>
     <button class="toggle-btn" id="gridBtn">Grid View</button>
   </div>
-  <div class="moves-list" id="movesContainer"></div>
+  <main class="main-content">
+    <div class="moves-list" id="movesContainer"></div>
+  </main>
   <button class="back-btn" onclick="window.location.href='index.html'">&larr; Back to Game Select</button>
-  <script>
-    // Get game from query param
-    const params = new URLSearchParams(window.location.search);
-    const game = params.get('game') || 'MWII';
-    document.getElementById('game-title').textContent = `${game} Executions`;
-
-    let data = {};
-    let currentLayout = 'list';
-
-    fetch('data.json')
-      .then(res => res.json())
-      .then(json => {
-        data = json[game] || [];
-        renderList();
-      });
-
-    function renderList() {
-      currentLayout = 'list';
-      document.getElementById('listBtn').classList.add('active');
-      document.getElementById('gridBtn').classList.remove('active');
-      const container = document.getElementById('movesContainer');
-      container.innerHTML = `<table class="list-view">
-        <thead><tr><th>Icon</th><th>Name</th><th>Anim Time</th><th>TTK</th><th>Price</th></tr></thead>
-        <tbody>
-          ${data.map(move => `
-            <tr>
-              <td><img class="icon-img" src="${move.icon}" alt="${move.name}"></td>
-              <td>${move.name}</td>
-              <td>${move.time || '-'}s</td>
-              <td>${move.ttk || '-'}s</td>
-              <td>${move.price}</td>
-            </tr>
-          `).join('')}
-        </tbody>
-      </table>`;
-    }
-
-    function renderGrid() {
-      currentLayout = 'grid';
-      document.getElementById('listBtn').classList.remove('active');
-      document.getElementById('gridBtn').classList.add('active');
-      const container = document.getElementById('movesContainer');
-      container.innerHTML = `<div class="grid-view">
-        ${data.map(move => `
-          <div class="grid-card">
-            <img src="${move.icon}" alt="${move.name}">
-            <div>${move.name}</div>
-          </div>
-        `).join('')}
-      </div>`;
-    }
-
-    document.getElementById('listBtn').onclick = renderList;
-    document.getElementById('gridBtn').onclick = renderGrid;
-  </script>
+  <script src="game.js"></script>
 </body>
 </html>
