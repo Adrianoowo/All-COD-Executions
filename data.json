@@ -1,0 +1,49 @@
+{
+  "MWII": [
+    {
+      "name": "A Bit Stabby",
+      "icon": "img/mwii/a_bit_stabby.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": "2,400CP"
+    },
+    {
+      "name": "A Friendly Hello",
+      "icon": "img/mwii/a_friendly_hello.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": "0CP"
+    },
+    {
+      "name": "All Kicks",
+      "icon": "img/mwii/all_kicks.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": "2,400CP"
+    },
+    {
+      "name": "Bark And Bite",
+      "icon": "img/mwii/bark_and_bite.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": "0CP"
+    }
+  ],
+  "MW": [],
+  "CW": [],
+  "VG": [],
+  "MWIII": [],
+  "BO6": []
+}
