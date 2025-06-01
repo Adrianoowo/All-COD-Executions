@@ -125,8 +125,35 @@ main {
   .game-card { font-size: 1.05rem; padding: 1.2rem 1.2rem; }
 }
 
+@media (max-width: 600px) {
+  main {
+    padding: 0 4vw 2vw 4vw; /* Add horizontal padding to main for overall spacing */
+  }
+  .game-select {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7rem; /* Moderate vertical gap */
+    width: 100%;
+  }
+  .game-card {
+    width: 90vw;
+    max-width: 420px;
+    padding: 2.1rem 0.7rem;
+    font-size: 1.45rem;
+    text-align: center;
+    box-sizing: border-box;
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 480px) {
-  main { padding: 0 0.2vw 2vw 0.2vw; }
-  .game-select { gap: 0.7rem; }
-  .game-card { font-size: 0.95rem; padding: 0.8rem 0.7rem; }
+  main { padding: 0 1vw 2vw 1vw; }
+  .game-select { gap: 1.2rem; }
+  .game-card {
+    width: 94vw;
+    max-width: 99vw;
+    font-size: 1.18rem;
+    padding: 1.3rem 0.3rem;
+    margin-left: 0;
+  }
 }
