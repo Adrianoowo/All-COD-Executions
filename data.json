@@ -47,17 +47,17 @@
   {
     "name": "Batter Up",
     "icon": "assets/BO6/BatterUp.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
+    "standing": "https://drive.google.com/file/d/1E7T2TiFRXjl70av65p-Vjfw7z7xVjNTe/view?usp=drive_link",
+    "prone": "https://drive.google.com/file/d/1E6Wd06xVesq1veVIjxwXbh0cCmOH02mo/view?usp=drive_link",
+    "downed": "https://drive.google.com/file/d/1E6X2sQFeN9V0sxJIQwjNOOHsdLmhb2ug/view?usp=drive_link",
     "anim_time": 0.0,
     "ttk": 0.0,
     "price": 0
   },
   {
     "name": "Hook & Slash",
-    "icon": "assets/BO6/HookSlash.png",
-    "standing": "Standing",
+    "icon": "assets/BO6/Hook&Slash.png",
+    "standing": "",
     "prone": "Prone",
     "downed": "Downed",
     "anim_time": 0.0,
@@ -66,7 +66,7 @@
   },
   {
     "name": "Hook, Line, and Sinker",
-    "icon": "assets/BO6/HookLineandSinker.png",
+    "icon": "assets/BO6/HookLineAndSinker.png",
     "standing": "Standing",
     "prone": "Prone",
     "downed": "Downed",

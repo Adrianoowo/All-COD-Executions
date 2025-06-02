@@ -191,9 +191,9 @@ header {
   align-items: center;
   margin-top: 1em;
   width: 100%;
-  max-width: 100vw;
+  max-width: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: auto; /* Changed to allow horizontal scrolling if needed */
   overflow-y: auto; /* Added for vertical scrolling */
   max-height: 400px; /* Added to enable scrolling for videos section */
 }
@@ -210,6 +210,7 @@ header {
   box-shadow: 0 1px 6px rgba(0,0,0,0.10);
   background: #181a1b;
   display: block;
+  box-sizing: border-box;
 }
 .move-popup .popup-videos span {
   color: #aaa;
@@ -319,19 +320,22 @@ header {
     text-align: center;
   }
   .move-videos video, .move-videos iframe {
-    max-width: 100vw;
-    width: 100%;
+    max-width: 100%;
+    width: 90%;
     height: 120px;
-    margin: 10px 0;
+    margin: 10px auto;
+    box-sizing: border-box;
   }
-  .move-videos {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    overflow-x: auto;
-    max-height: 400px;
-    padding-bottom: 1em;
-  }
+.move-videos {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  overflow-x: hidden;
+  max-height: 400px;
+  padding-bottom: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
 }
 @media (max-width: 400px) {
   .move-popup {
@@ -444,11 +448,15 @@ body.bo6 .toggle-btn.active, body.bo6 .toggle-btn:hover, body.bo6 .back-btn:hove
 .move-entry.expanded {
   background: #666;
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  padding: 24px 28px;
+  transform: scale(1.02);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 0);
 }
 
 .move-entry.expanded,
 .move-entry.expanded:hover {
   background: #777;
+  transform: scale(1.02);
 }
 
 .move-title {
@@ -461,32 +469,56 @@ body.bo6 .toggle-btn.active, body.bo6 .toggle-btn:hover, body.bo6 .back-btn:hove
 
 .move-videos {
   max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s;
+  overflow: auto;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   margin-top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0;
 }
 
 .move-entry.expanded .move-videos {
-  max-height: 1000px; /* Increased for more content */
+  max-height: none;
   opacity: 1;
-  margin-top: 16px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 0 16px;
 }
 
 .move-videos video, .move-videos iframe {
   display: block;
   width: 100%;
-  max-width: 420px; /* Adjusted for a more reasonable size */
+  max-width: 640px;
+  aspect-ratio: 16/9;
   margin: 12px auto;
   border-radius: 10px;
   box-shadow: 0 1px 6px rgba(0,0,0,0.10);
+  box-sizing: border-box;
 }
 
 @media (max-width: 600px) {
   .move-entry {
     padding: 14px 8px;
+    box-sizing: border-box;
   }
   .move-videos video, .move-videos iframe {
     max-width: 100%;
+    width: 95%;
+    aspect-ratio: 16/9;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+  .move-videos > div {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 }
