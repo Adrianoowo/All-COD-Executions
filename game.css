@@ -64,19 +64,19 @@ header {
 .grid-view {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem; /* Increased gap for breathing room */
   width: 100%;
 }
 
 .grid-card {
   background: #444;
   border-radius: 16px;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/1; /* Reverted to original */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 18px 10px 12px 10px;
+  justify-content: center; /* Reverted to original */
+  padding: 18px 10px 12px 10px; /* Reverted to original */
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   cursor: pointer;
   position: relative;
@@ -89,11 +89,9 @@ header {
   box-shadow: 0 6px 24px #0005;
 }
 .grid-card img {
-  width: 64px;
-  height: 48px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 1px 4px #0003;
+  width: 64px; /* Reverted to original */
+  height: 48px; /* Reverted to original */
+  object-fit: contain; /* Reverted to original state shown after first failed edit */
   margin-bottom: 0.7em;
 }
 .grid-card .move-title {
@@ -117,11 +115,11 @@ header {
   background: #23272a;
   color: #fff;
   border-radius: 22px;
-  box-shadow: 0 8px 40px #000b, 0 1.5px 8px #3a8dde44;
+  box-shadow: 0 8px 40px #000b, 0 1.5px 8px #665a436e;
   z-index: 1002;
   min-width: 0;
   width: fit-content;
-  max-width: min(95vw, 480px);
+  max-width: min(90vw, 640px); /* Increased max-width for larger screens */
   min-height: 0;
   max-height: 90vh;
   padding: 2.2em 2.2em 1.5em 2.2em;
@@ -132,7 +130,7 @@ header {
   animation: fadeInUp 0.3s cubic-bezier(.23,1.01,.32,1) both;
   overflow-y: auto;
   box-sizing: border-box;
-  border: 1.5px solid #3a8dde55;
+  border: 1.5px solid #3a8dde33;
   gap: 0.5em;
   height: fit-content;
 }
@@ -141,7 +139,7 @@ header {
   top: 0.7em;
   right: 0.7em;
   font-size: 1.7em;
-  color: #3a8dde;
+  color: #ffffff;
   background: #181a1b;
   border: none;
   border-radius: 50%;
@@ -160,8 +158,9 @@ header {
 .move-popup .popup-close:hover {
   color: #fff;
   background: #3a8dde;
-  box-shadow: 0 4px 16px #3a8dde55;
+  box-shadow: 0 4px 16px #ff000055;
   transform: scale(1.12);
+  text-emphasis-color: #fff;
 }
 .move-popup .popup-title {
   font-size: 1.3em;
@@ -172,9 +171,7 @@ header {
 .move-popup .popup-img {
   width: 80px;
   height: 60px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 1px 4px #0003;
+  object-fit: contain;
   margin-bottom: 1em;
   flex-shrink: 0;
 }
@@ -191,11 +188,12 @@ header {
   align-items: center;
   margin-top: 1em;
   width: 100%;
-  max-width: 100%;
+  max-width: 120%;
   box-sizing: border-box;
   overflow-x: auto; /* Changed to allow horizontal scrolling if needed */
   overflow-y: auto; /* Added for vertical scrolling */
-  max-height: 400px; /* Added to enable scrolling for videos section */
+  max-height: 500px; /* Added to enable scrolling for videos section */
+  aspect-ratio: 16/9;
 }
 .move-popup .popup-videos > div {
   text-align: center;
@@ -203,8 +201,9 @@ header {
 }
 .move-popup .popup-videos iframe {
   width: 100%;
-  max-width: 420px;
-  height: 160px;
+  max-width: 100%; /* Allow video to use more space in wider popup */
+  aspect-ratio: 16/9;
+  /* height: 160px; Removed, aspect-ratio will handle height */
   border-radius: 8px;
   margin-top: 0.3em;
   box-shadow: 0 1px 6px rgba(0,0,0,0.10);
@@ -521,4 +520,89 @@ body.bo6 .toggle-btn.active, body.bo6 .toggle-btn:hover, body.bo6 .back-btn:hove
     box-sizing: border-box;
     overflow-x: hidden;
   }
+}
+
+/* Game-specific popup border colors */
+body.mw .move-popup {
+  border-color: rgba(58, 141, 222, 0.4);
+}
+
+body.cw .move-popup {
+  border-color: rgba(215, 38, 61, 0.4);
+}
+
+body.vg .move-popup {
+  border-color: rgba(26, 77, 26, 0.4);
+}
+
+body.mwii .move-popup {
+  border-color: rgba(0, 255, 127, 0.4);
+}
+
+body.mwiii .move-popup {
+  border-color: rgba(179, 0, 27, 0.4);
+}
+
+body.bo6 .move-popup {
+  border-color: rgba(255, 153, 0, 0.4);
+}
+
+/* Close button game-specific colors */
+body.mw .move-popup .popup-close {
+  color: #3a8dde;
+  border-color: rgba(58, 141, 222, 0.2);
+}
+body.mw .move-popup .popup-close:hover {
+  background: #3a8ddeaf;
+  box-shadow: 0 4px 16px rgba(58, 141, 222, 0.2);
+}
+
+body.cw .move-popup .popup-close {
+  color: #d7263d;
+  border-color: rgba(215, 38, 61, 0.2);
+}
+body.cw .move-popup .popup-close:hover {
+  background: #d7263daf;
+  box-shadow: 0 4px 16px rgba(215, 38, 61, 0.2);
+}
+
+body.vg .move-popup .popup-close {
+  color: #1a4d1a;
+  border-color: rgba(26, 77, 26, 0.2);
+}
+body.vg .move-popup .popup-close:hover {
+  background: #1a4d1aaf;
+  box-shadow: 0 4px 16px rgba(26, 77, 26, 0.2);
+}
+
+body.mwii .move-popup .popup-close {
+  color: #00ff7f;
+  border-color: rgba(0, 255, 127, 0.2);
+}
+body.mwii .move-popup .popup-close:hover {
+  background: #00ff7faf;
+  box-shadow: 0 4px 16px rgba(0, 255, 127, 0.2);
+}
+
+body.mwiii .move-popup .popup-close {
+  color: #b3001b;
+  border-color: rgba(179, 0, 27, 0.2);
+}
+body.mwiii .move-popup .popup-close:hover {
+  background: #b3001baf;
+  box-shadow: 0 4px 16px rgba(179, 0, 27, 0.2);
+}
+
+body.bo6 .move-popup .popup-close {
+  color: #ff9900;
+  border-color: rgba(255, 153, 0, 0.2);
+}
+body.bo6 .move-popup .popup-close:hover {
+  background: #ff9900af;
+  box-shadow: 0 4px 16px rgba(255, 153, 0, 0.2);
+}
+
+/* Prevent body scroll when popup is active */
+body.popup-active {
+  overflow: hidden;
 }

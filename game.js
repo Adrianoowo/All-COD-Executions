@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return `
         <div class="move-entry" data-idx="${idx}">
           <div class="move-title" style="display:flex;align-items:center;gap:1.2rem;">
-            <img class="icon-img" src="${iconSrc}" alt="${move.name}" onerror="this.onerror=null;this.src='assets/missing_preview.jpg';" style="width:34px;height:34px;border-radius:8px;box-shadow:0 1px 4px #0003;">
+            <img class="icon-img" src="${iconSrc}" alt="${move.name}" onerror="this.onerror=null;this.src='assets/missing_preview.jpg';" style="width:34px;height:34px;">
             <span>${move.name}</span>
             <span style="margin-left:2.2em;font-size:0.98em;color:#bbb;"><b>Anim Time:</b> ${animTime}</span>
             <span style="margin-left:1.2em;font-size:0.98em;color:#bbb;"><b>TTK:</b> ${ttk}</span>
@@ -131,8 +131,10 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.onclick = () => {
           popup.remove();
           overlay.remove();
+          document.body.classList.remove('popup-active'); // Remove class on close
         };
         document.body.appendChild(overlay);
+        document.body.classList.add('popup-active'); // Add class on open
 
         // Popup
         const popup = document.createElement('div');
@@ -150,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ${bundle ? `<span class="popup-bundle"><b>Bundle:</b> ${bundle}</span>` : ''}
           </div>
           <div class="popup-videos">
-            <div><div style='font-weight:bold;margin-bottom:0.3em;'>Standing</div>${isVideo(move.standing) ? `<iframe src="${move.standing.replace('view?usp=drive_link','preview')}" allow="autoplay"></iframe>` : '<span>No video</span>'}</div>
+            <div><div style='font-weight:bold;margin-bottom:0.3em;'>Standing</div>${isVideo(move.standing) ? `<iframe src="${move.standing.replace('view?usp=drive_link','preview')}" allow="autoplay; allowfullscreen"></iframe>` : '<span>No video</span>'}</div>
             <div><div style='font-weight:bold;margin-bottom:0.3em;'>Prone</div>${isVideo(move.prone) ? `<iframe src="${move.prone.replace('view?usp=drive_link','preview')}" allow="autoplay"></iframe>` : '<span>No video</span>'}</div>
             <div><div style='font-weight:bold;margin-bottom:0.3em;'>Downed</div>${isVideo(move.downed) ? `<iframe src="${move.downed.replace('view?usp=drive_link','preview')}" allow="autoplay"></iframe>` : '<span>No video</span>'}</div>
           </div>
@@ -158,6 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
         popup.querySelector('.popup-close').onclick = () => {
           popup.remove();
           overlay.remove();
+          document.body.classList.remove('popup-active'); // Remove class on close
         };
         document.body.appendChild(popup);
       };

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <filter id="drop-shadow-filter-0" bx:preset="drop-shadow 1 3 5 2 0.5 #00000092" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="3" dy="5"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#00000092"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path style="fill: rgb(255, 255, 255); filter: url(&quot;#drop-shadow-filter-0&quot;);" d="M 101.727 27.591 L 101.727 472.409 L 398.273 274.712 L 398.273 27.591 L 101.727 27.591 Z"/>
+  <path d="M 313.789 280.554 L 322.646 301.926 L 341.651 288.735 L 337.547 311.503 L 360.667 310.681 L 344.905 327.615 L 364.799 339.423 L 342.385 345.148 L 352.737 365.837 L 330.785 358.535 L 328.308 381.536 L 313.789 363.525 L 299.27 381.536 L 296.793 358.535 L 274.841 365.837 L 285.193 345.148 L 262.779 339.423 L 282.673 327.615 L 266.911 310.681 L 290.031 311.503 L 285.927 288.735 L 304.932 301.926 Z" bx:shape="star 313.789 332.089 51.535 51.535 0.61 11 1@a7a28412" style="stroke: rgb(0, 0, 0); stroke-miterlimit: 7.85; fill: rgb(255, 255, 255); stroke-width: 4px;"/>
+</svg>
