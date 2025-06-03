@@ -42,7 +42,558 @@
   "MW": [],
   "CW": [],
   "VG": [],
-  "MWIII": [],
+  "MWIII": [
+    {
+      "name": "Stick N' Move",
+      "icon": "assets/MWIII/StickNMove.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Mag Out",
+      "icon": "assets/MWIII/MagOut.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Neck Trauma",
+      "icon": "assets/MWIII/NeckTrauma.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Blicked Up",
+      "icon": "assets/MWIII/BlickedUp.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hostile Precision",
+      "icon": "assets/MWIII/HostilePrecision.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Get Wrecked",
+      "icon": "assets/MWIII/GetWrecked.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 1100
+    },
+    {
+      "name": "Point Blank",
+      "icon": "assets/MWIII/PointBlank.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Flexed Upon",
+      "icon": "assets/MWIII/FlexedUpon.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hands Off The Merchandise",
+      "icon": "assets/MWIII/HandsOffTheMerchandise.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Muay Bueno",
+      "icon": "assets/MWIII/MuayBueno.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bend And Snap",
+      "icon": "assets/MWIII/BendAndSnap.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Revenge Redeemed",
+      "icon": "assets/MWIII/RevengeRedeemed.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Chip And Shatter",
+      "icon": "assets/MWIII/ChipAndShatter.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Feyd's Frenzy",
+      "icon": "assets/MWIII/FeydsFrenzy.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Santa's Right Hand",
+      "icon": "assets/MWIII/SantasRightHand.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Fastest Man In The World",
+      "icon": "assets/MWIII/FastestManInTheWorld.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Freedom Of Speech",
+      "icon": "assets/MWIII/FreedomOfSpeech.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Flesh Stripped And Gold Dipped",
+      "icon": "assets/MWIII/FleshStrippedAndGoldDipped.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 3500
+    },
+    {
+      "name": "Send In The Good Boy",
+      "icon": "assets/MWIII/SendInTheGoodBoy.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Ninjauity",
+      "icon": "assets/MWIII/Ninjauity.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "LMG Go Brrrrrrrrrrrr",
+      "icon": "assets/MWIII/LMGGoBrrrrrrrrrrrr.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Play Dead",
+      "icon": "assets/MWIII/PlayDead.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Leave The Dead",
+      "icon": "assets/MWIII/LeaveTheDead.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Dead Cuts",
+      "icon": "assets/MWIII/DeadCuts.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Evisceration",
+      "icon": "assets/MWIII/Evisceration.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 3000
+    },
+    {
+      "name": "Tactical Pet: Servo Skull",
+      "icon": "assets/MWIII/TacticalPetServoSkull.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Kong's Knuckle Slamwich",
+      "icon": "assets/MWIII/KongsKnuckleSlamwich.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Tactical Pet D-O-Double-G",
+      "icon": "assets/MWIII/TacticalPetDODoubleG.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 3500
+    },
+    {
+      "name": "Double Barrel Disrespect",
+      "icon": "assets/MWIII/DoubleBarrelDisrespect.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sidearm Swap",
+      "icon": "assets/MWIII/SidearmSwap.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Frostbite Finish",
+      "icon": "assets/MWIII/FrostbiteFinish.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Whiplashed Unleashed",
+      "icon": "assets/MWIII/WhiplashedUnleashed.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Playing Catch",
+      "icon": "assets/MWIII/PlayingCatch.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Feel The Heat Ray",
+      "icon": "assets/MWIII/FeelTheHeatRay.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Secondhand Smoke",
+      "icon": "assets/MWIII/SecondhandSmoke.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 3000
+    },
+    {
+      "name": "Akimbo Assault",
+      "icon": "assets/MWIII/AkimboAssault.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sick 'Em Haven",
+      "icon": "assets/MWIII/SickEmHaven.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Identity Theft",
+      "icon": "assets/MWIII/IdentityTheft.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 3500
+    },
+    {
+      "name": "Bone Snapper",
+      "icon": "assets/MWIII/BoneSnapper.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Give 'Em Shell",
+      "icon": "assets/MWIII/GiveEmShell.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Searing Slash",
+      "icon": "assets/MWIII/SearingSlash.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Newtype Finisher",
+      "icon": "assets/MWIII/NewtypeFinisher.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "You Can't Kill Me",
+      "icon": "assets/MWIII/YouCantKillMe.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Elegant Riposte",
+      "icon": "assets/MWIII/ElegantRiposte.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bullet Boogey",
+      "icon": "assets/MWIII/BulletBoogey.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Tactical Gasoline",
+      "icon": "assets/MWIII/TacticalGasoline.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 1800
+    },
+    {
+      "name": "Judge, Jury and Finisher",
+      "icon": "assets/MWIII/JudgeJuryandFinisher.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 3500
+    },
+    {
+      "name": "Riptide",
+      "icon": "assets/MWIII/Riptide.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 275
+    },
+    {
+      "name": "The Chair! ",
+      "icon": "assets/MWIII/TheChair.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 275
+    },
+    {
+      "name": "Free Kick",
+      "icon": "assets/MWIII/FreeKick.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 275
+    },
+    {
+      "name": "Powerbomb",
+      "icon": "assets/MWIII/Powerbomb.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 275
+    },
+    {
+      "name": "Cross Rhodes",
+      "icon": "assets/MWIII/CrossRhodes.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Divine Touch",
+      "icon": "assets/MWIII/DivineTouch.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Mysterio Bulldog",
+      "icon": "assets/MWIII/MysterioBulldog.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    },
+    {
+      "name": "Wrong Made Right",
+      "icon": "assets/MWIII/WrongMadeRight.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 2400
+    }
+  ],
   "BO6": [
   {
     "name": "Batter Up",
