@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ${bundle ? `<span class="popup-bundle"><b>Bundle:</b> ${bundle}</span>` : ''}
           </div>
           <div class="popup-videos">
-            <div><div style='font-weight:bold;margin-bottom:0.3em;'>Standing</div>${isVideo(move.standing) ? `<iframe src="${move.standing.replace('view?usp=drive_link','preview')}" allow="autoplay; allowfullscreen"></iframe>` : '<span>No video</span>'}</div>
+              <div><div style='font-weight:bold;margin-bottom:0.3em;'>Standing</div>${isVideo(move.standing) ? `<iframe src="${move.standing.replace('view?usp=drive_link','preview')}" allow="autoplay" allowfullscreen></iframe>` : '<span>No video</span>'}</div>
             <div><div style='font-weight:bold;margin-bottom:0.3em;'>Prone</div>${isVideo(move.prone) ? `<iframe src="${move.prone.replace('view?usp=drive_link','preview')}" allow="autoplay"></iframe>` : '<span>No video</span>'}</div>
             <div><div style='font-weight:bold;margin-bottom:0.3em;'>Downed</div>${isVideo(move.downed) ? `<iframe src="${move.downed.replace('view?usp=drive_link','preview')}" allow="autoplay"></iframe>` : '<span>No video</span>'}</div>
           </div>
