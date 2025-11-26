@@ -1595,5 +1595,47 @@
     "ttk": 0.0,
     "price": 0
   }
+],
+"BO7": [
+  {
+    "name": "Ripped Through",
+    "icon": "assets/BO7/RippedThrough.webp",
+    "standing": "Standing",
+    "prone": "Prone",
+    "downed": "Downed",
+    "anim_time": 0.0,
+    "ttk": 0.0,
+    "price": 0
+  },
+  {
+    "name": "Streamline",
+    "icon": "assets/BO7/Streamline.webp",
+    "standing": "Standing",
+    "prone": "Prone",
+    "downed": "Downed",
+    "anim_time": 0.0,
+    "ttk": 0.0,
+    "price": 0
+  },
+  {
+    "name": "Pistol Kata",
+    "icon": "assets/BO7/PistolKata.webp",
+    "standing": "Standing",
+    "prone": "Prone",
+    "downed": "Downed",
+    "anim_time": 0.0,
+    "ttk": 0.0,
+    "price": 0
+  },
+  {
+    "name": "It's A Clap!",
+    "icon": "assets/BO7/ItsAClap.webp",
+    "standing": "Standing",
+    "prone": "Prone",
+    "downed": "Downed",
+    "anim_time": 0.0,
+    "ttk": 0.0,
+    "price": 0
+  }
 ]
 }

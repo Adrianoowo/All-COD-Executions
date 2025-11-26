@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set body class for game color
   const body = document.getElementById('gameBody');
   if (body) {
-    body.classList.remove('mw', 'cw', 'vg', 'mwii', 'mwiii', 'bo6');
+    body.classList.remove('mw', 'cw', 'vg', 'mwii', 'mwiii', 'bo6', 'bo7');
     body.classList.add(game.toLowerCase());
   }
   document.getElementById('game-title').textContent = `${game} Executions`;

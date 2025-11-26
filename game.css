@@ -416,6 +416,12 @@ body.bo6 .toggle-btn, body.bo6 .back-btn {
 body.bo6 .toggle-btn.active, body.bo6 .toggle-btn:hover, body.bo6 .back-btn:hover {
   background: #ff9900;
 }
+body.bo7 .toggle-btn, body.bo7 .back-btn {
+  background: #d49012;
+}
+body.bo7 .toggle-btn.active, body.bo7 .toggle-btn:hover, body.bo7 .back-btn:hover {
+  background: #ee8b09;
+}
 @media (max-width: 700px) {
   header { padding: 1.2rem 0 1rem 0; }
   #game-title { font-size: 2rem; }
@@ -547,6 +553,10 @@ body.bo6 .move-popup {
   border-color: rgba(255, 153, 0, 0.4);
 }
 
+body.bo7 .move-popup {
+  border-color: rgba(238, 139, 9, 0.4);
+}
+
 /* Close button game-specific colors */
 body.mw .move-popup .popup-close {
   color: #3a8dde;
@@ -600,6 +610,15 @@ body.bo6 .move-popup .popup-close {
 body.bo6 .move-popup .popup-close:hover {
   background: #ff9900af;
   box-shadow: 0 4px 16px rgba(255, 153, 0, 0.2);
+}
+
+body.bo7 .move-popup .popup-close {
+  color: #ee8b09;
+  border-color: rgba(238, 139, 9, 0.2);
+}
+body.bo7 .move-popup .popup-close:hover {
+  background: #ee8b09af;
+  box-shadow: 0 4px 16px rgba(238, 139, 9, 0.2);
 }
 
 /* Prevent body scroll when popup is active */
