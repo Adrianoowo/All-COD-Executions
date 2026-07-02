@@ -37,11 +37,3724 @@
       "anim_time": 0.3,
       "ttk": 0.0,
       "price": 0
+    },
+    {
+      "name": "Making Holes",
+      "icon": "assets/MWII/MakingHoles.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Punctual Puncture",
+      "icon": "assets/MWII/PunctualPuncture.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sidearm Hustle",
+      "icon": "assets/MWII/SidearmHustle.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Kneecaps And Brainpans",
+      "icon": "assets/MWII/KneecapsAndBrainpans.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Slice And Easy",
+      "icon": "assets/MWII/SliceAndEasy.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Main Man",
+      "icon": "assets/MWII/MainMan.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Lights Out",
+      "icon": "assets/MWII/LightsOut.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Blowout",
+      "icon": "assets/MWII/Blowout.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Racked And Wrecked",
+      "icon": "assets/MWII/RackedAndWrecked.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "LMG KIA",
+      "icon": "assets/MWII/LMGKIA.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Up Close And High Caliber",
+      "icon": "assets/MWII/UpCloseAndHighCaliber.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sighted In",
+      "icon": "assets/MWII/SightedIn.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Point And Shoot",
+      "icon": "assets/MWII/PointAndShoot.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hammer Meet Skull",
+      "icon": "assets/MWII/HammerMeetSkull.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Breach And Fear",
+      "icon": "assets/MWII/BreachAndFear.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Resident Drummer",
+      "icon": "assets/MWII/ResidentDrummer.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bloody Percussionist",
+      "icon": "assets/MWII/BloodyPercussionist.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Lumber Smack",
+      "icon": "assets/MWII/LumberSmack.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Chopping Block",
+      "icon": "assets/MWII/ChoppingBlock.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Don't Struggle",
+      "icon": "assets/MWII/DontStruggle.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Slingblade",
+      "icon": "assets/MWII/Slingblade.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Planting Steel",
+      "icon": "assets/MWII/PlantingSteel.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Knuckle Up",
+      "icon": "assets/MWII/KnuckleUp.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Cage Match",
+      "icon": "assets/MWII/CageMatch.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Gravity Assist",
+      "icon": "assets/MWII/GravityAssist.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sweet Dreams",
+      "icon": "assets/MWII/SweetDreams.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "No Firearms Needed",
+      "icon": "assets/MWII/NoFirearmsNeeded.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Jaw Buster",
+      "icon": "assets/MWII/JawBuster.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Suplex Deluxe",
+      "icon": "assets/MWII/SuplexDeluxe.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Killer Kodachis",
+      "icon": "assets/MWII/KillerKodachis.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sticky Situation",
+      "icon": "assets/MWII/StickySituation.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Smooth Cuts",
+      "icon": "assets/MWII/SmoothCuts.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Smack Attack",
+      "icon": "assets/MWII/SmackAttack.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Foul Fate",
+      "icon": "assets/MWII/FoulFate.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Rapid Incision",
+      "icon": "assets/MWII/RapidIncision.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Shred 'Em Up",
+      "icon": "assets/MWII/ShredEmUp.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Shotgun Slayed",
+      "icon": "assets/MWII/ShotgunSlayed.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Close Encounter",
+      "icon": "assets/MWII/CloseEncounter.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Timber!",
+      "icon": "assets/MWII/Timber.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "BlackCell SOP",
+      "icon": "assets/MWII/BlackCellSOP.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bong Rip",
+      "icon": "assets/MWII/BongRip.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "OMG LMG",
+      "icon": "assets/MWII/OMGLMG.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Deadly From Downtown",
+      "icon": "assets/MWII/DeadlyFromDowntown.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Tatman Tactics",
+      "icon": "assets/MWII/TatmanTactics.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Kickin' It",
+      "icon": "assets/MWII/KickinIt.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Electrifying",
+      "icon": "assets/MWII/Electrifying.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Let's Go Clubbing",
+      "icon": "assets/MWII/LetsGoClubbing.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Shell Of A Day",
+      "icon": "assets/MWII/ShellOfADay.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Heavy Handed",
+      "icon": "assets/MWII/HeavyHanded.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "BlackCell Moves",
+      "icon": "assets/MWII/BlackCellMoves.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Spinal Adjustment",
+      "icon": "assets/MWII/SpinalAdjustment.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bruised And Battered",
+      "icon": "assets/MWII/BruisedAndBattered.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Necessary Evil",
+      "icon": "assets/MWII/NecessaryEvil.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Laser Everyone",
+      "icon": "assets/MWII/LaserEveryone.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Shhh",
+      "icon": "assets/MWII/Shhh.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bootlicker",
+      "icon": "assets/MWII/Bootlicker.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Tactical Pet: Merlin",
+      "icon": "assets/MWII/BarkAndBite.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Cranial Crack",
+      "icon": "assets/MWII/CranialCrack.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "No Scope Needed",
+      "icon": "assets/MWII/NoScopeNeeded.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sidepiece Deceased",
+      "icon": "assets/MWII/SidepieceDeceased.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Crowbar 101",
+      "icon": "assets/MWII/Crowbar101.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Snoop Hustle",
+      "icon": "assets/MWII/SnoopHustle.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Get Bodied",
+      "icon": "assets/MWII/GetBodied.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Stabbed... A Lot",
+      "icon": "assets/MWII/StabbedALot.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Tactical Pet: Syd",
+      "icon": "assets/MWII/TacticalPetSyd.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Beat Drop",
+      "icon": "assets/MWII/BeatDrop.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hip Hop Hurt",
+      "icon": "assets/MWII/HipHopHurt.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Play for Sport",
+      "icon": "assets/MWII/PlayForSport.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "No Escape",
+      "icon": "assets/MWII/NoEscape.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Tactical Pet: Megabyte",
+      "icon": "assets/MWII/TacticalPetMegabyte.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hammer It Out",
+      "icon": "assets/MWII/HammerItOut.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Death Summons",
+      "icon": "assets/MWII/DeathSummons.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Fate and Consequence",
+      "icon": "assets/MWII/FateAndConsequence.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "More Where That Came From",
+      "icon": "assets/MWII/MoreWhereThatCameFrom.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Daughter of Hatred",
+      "icon": "assets/MWII/DaughterOfHatred.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Skeletor's Malice",
+      "icon": "assets/MWII/SkeletorsMalice.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Trick and Treat",
+      "icon": "assets/MWII/TrickAndTreat.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Boomstick Boogie",
+      "icon": "assets/MWII/BoomstickBoogie.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Inarius Impaling",
+      "icon": "assets/MWII/InariusImpaling.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Reaping Souls",
+      "icon": "assets/MWII/ReapingSouls.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sardaukar Wrath",
+      "icon": "assets/MWII/SardaukarWrath.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
     }
   ],
-  "MW": [],
-  "CW": [],
-  "VG": [],
+  "MW": [
+    {
+      "name": "Achilles Heel",
+      "icon": "assets/MW/AchillesHeel.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Axe You Nicely",
+      "icon": "assets/MW/AxeYouNicely.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Axe and Receive",
+      "icon": "assets/MW/AxeAndReceive.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Baton Dispatch",
+      "icon": "assets/MW/BatonDispatch.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Cranial Carnage",
+      "icon": "assets/MW/CranialCarnage.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Death Pirouette",
+      "icon": "assets/MW/DeathPirouette.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Disable and Decimate",
+      "icon": "assets/MW/DisableAndDecimate.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Disable and Kill",
+      "icon": "assets/MW/DisableAndKill.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Disdainful Destruction",
+      "icon": "assets/MW/DisdainfulDestruction.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Face the End",
+      "icon": "assets/MW/FaceTheEnd.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Foul Play",
+      "icon": "assets/MW/FoulPlay.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hatchet Hitman",
+      "icon": "assets/MW/HatchetHitman.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Head to Head",
+      "icon": "assets/MW/HeadToHead.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hobble and Slay",
+      "icon": "assets/MW/HobbleAndSlay.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Infiltration",
+      "icon": "assets/MW/Infiltration.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Knee Deep",
+      "icon": "assets/MW/KneeDeep.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Pierce the Jug",
+      "icon": "assets/MW/PierceTheJug.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Riot Control",
+      "icon": "assets/MW/RiotControl.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Shanks A Lot",
+      "icon": "assets/MW/ShanksALot.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Slideshot",
+      "icon": "assets/MW/Slideshot.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Take Down",
+      "icon": "assets/MW/TakeDown.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "1, 2, 3",
+      "icon": "assets/MW/123.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Axing For Trouble",
+      "icon": "assets/MW/AxingForTrouble.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Belly Flop",
+      "icon": "assets/MW/BellyFlop.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Between The Ribs",
+      "icon": "assets/MW/BetweenTheRibs.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Brass Boxer",
+      "icon": "assets/MW/BrassBoxer.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Brass Tactics",
+      "icon": "assets/MW/BrassTactics.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Brassed Off",
+      "icon": "assets/MW/BrassedOff.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Brick by Brick",
+      "icon": "assets/MW/BrickByBrick.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Carver",
+      "icon": "assets/MW/Carver.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Chest Pains",
+      "icon": "assets/MW/ChestPains.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Close and Personal",
+      "icon": "assets/MW/CloseAndPersonal.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Clubbed",
+      "icon": "assets/MW/Clubbed.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Cold Blooded",
+      "icon": "assets/MW/ColdBlooded.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Counterplay",
+      "icon": "assets/MW/Counterplay.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Deft Dispatch",
+      "icon": "assets/MW/DeftDispatch.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Do The Spadework",
+      "icon": "assets/MW/DoTheSpadework.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Down to Size",
+      "icon": "assets/MW/DownToSize.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Electrifying End",
+      "icon": "assets/MW/ElectrifyingEnd.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Face the Adze",
+      "icon": "assets/MW/FaceTheAdze.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "First Degree",
+      "icon": "assets/MW/FirstDegree.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Go Clubbing",
+      "icon": "assets/MW/GoClubbing.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Grave Digger",
+      "icon": "assets/MW/GraveDigger.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Herding",
+      "icon": "assets/MW/Herding.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hold This",
+      "icon": "assets/MW/HoldThis.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Ice Breaker",
+      "icon": "assets/MW/IceBreaker.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Ice To Meet You",
+      "icon": "assets/MW/IceToMeetYou.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Icy Veins",
+      "icon": "assets/MW/IcyVeins.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Join the Club",
+      "icon": "assets/MW/JoinTheClub.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Knife To Meet You",
+      "icon": "assets/MW/KnifeToMeetYou.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Laid To Rest",
+      "icon": "assets/MW/LaidToRest.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Leg Sweep",
+      "icon": "assets/MW/LegSweep.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Lined Up",
+      "icon": "assets/MW/LinedUp.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Lose By A Neck",
+      "icon": "assets/MW/LoseByANeck.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Mace to the Face",
+      "icon": "assets/MW/MaceToTheFace.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Martial Law",
+      "icon": "assets/MW/MartialLaw.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Misdirection",
+      "icon": "assets/MW/Misdirection.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Payback",
+      "icon": "assets/MW/Payback.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Pew Pew Pew",
+      "icon": "assets/MW/PewPewPew.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Pinned",
+      "icon": "assets/MW/Pinned.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Point Taken",
+      "icon": "assets/MW/PointTaken.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Precision Point",
+      "icon": "assets/MW/PrecisionPoint.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Queen of Spades",
+      "icon": "assets/MW/QueenOfSpades.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Run Through",
+      "icon": "assets/MW/RunThrough.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Say Watt",
+      "icon": "assets/MW/SayWatt.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sick 'Em",
+      "icon": "assets/MW/SickEm.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Slice and Dice",
+      "icon": "assets/MW/SliceAndDice.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Spine Snapper",
+      "icon": "assets/MW/SpineSnapper.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Staying Frosty",
+      "icon": "assets/MW/StayingFrosty.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Step Aside",
+      "icon": "assets/MW/StepAside.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Stick 'n' Knife",
+      "icon": "assets/MW/StickNKnife.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Take a Bow",
+      "icon": "assets/MW/TakeABow.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "The Fix",
+      "icon": "assets/MW/TheFix.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Trick Shot",
+      "icon": "assets/MW/TrickShot.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Turnover",
+      "icon": "assets/MW/Turnover.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Walk Into It",
+      "icon": "assets/MW/WalkIntoIt.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Wall Breaker",
+      "icon": "assets/MW/WallBreaker.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bush League",
+      "icon": "assets/MW/BushLeague.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Chip Shot",
+      "icon": "assets/MW/ChipShot.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Crick In The Neck",
+      "icon": "assets/MW/CrickInTheNeck.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Edward",
+      "icon": "assets/MW/Edward.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Fangs Out",
+      "icon": "assets/MW/FangsOut.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Gutted",
+      "icon": "assets/MW/Gutted.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hellhound",
+      "icon": "assets/MW/Hellhound.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hello Stranger",
+      "icon": "assets/MW/HelloStranger.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Low Rise",
+      "icon": "assets/MW/LowRise.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Nevermore",
+      "icon": "assets/MW/Nevermore.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Perforate",
+      "icon": "assets/MW/Perforate.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Riley",
+      "icon": "assets/MW/Riley.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sasquatch",
+      "icon": "assets/MW/Sasquatch.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Snafu",
+      "icon": "assets/MW/Snafu.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Spin Cycle",
+      "icon": "assets/MW/SpinCycle.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sputnik",
+      "icon": "assets/MW/Sputnik.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Three Strikes",
+      "icon": "assets/MW/ThreeStrikes.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Toto",
+      "icon": "assets/MW/Toto.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Tuco",
+      "icon": "assets/MW/Tuco.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Watch This",
+      "icon": "assets/MW/WatchThis.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    }
+  ],
+  "CW": [
+    {
+      "name": "Sneak Attack",
+      "icon": "assets/CW/Sneak_Attack.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Axe Nicely",
+      "icon": "assets/CW/Axe_Nicely.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Back Up Plan",
+      "icon": "assets/CW/Back_Up_Plan.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Body Slam",
+      "icon": "assets/CW/Body_Slam.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Body Snatcher",
+      "icon": "assets/CW/Body_Snatcher.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Boom Surprise",
+      "icon": "assets/CW/Boom_Surprise.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bow Breaker",
+      "icon": "assets/CW/Bow_Breaker.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bow Strike",
+      "icon": "assets/CW/Bow_Strike.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Caught Staring",
+      "icon": "assets/CW/Caught_Staring.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Cheap Shot",
+      "icon": "assets/CW/Cheap_Shot.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Compromised Recovery",
+      "icon": "assets/CW/Compromised_Recovery.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Deep Cuts",
+      "icon": "assets/CW/Deep_Cuts.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Defective Joints",
+      "icon": "assets/CW/Defective_Joints.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Double Tap",
+      "icon": "assets/CW/Double_Tap.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Devastating Blow",
+      "icon": "assets/CW/Devastating_Blow.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Disarmament",
+      "icon": "assets/CW/Disarmament.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Disarmed",
+      "icon": "assets/CW/Disarmed.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Disconnect",
+      "icon": "assets/CW/Disconnect.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Down & Dirty",
+      "icon": "assets/CW/Down_&_Dirty.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Drop Shot",
+      "icon": "assets/CW/Drop_Shot.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Fall of Achilles",
+      "icon": "assets/CW/Fall_of_Achilles.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Full Barrage",
+      "icon": "assets/CW/Full_Barrage.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Guillotine Roll",
+      "icon": "assets/CW/Guillotine_Roll.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hack Job",
+      "icon": "assets/CW/Hack_Job.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Had Enough",
+      "icon": "assets/CW/Had_Enough.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Half Guard",
+      "icon": "assets/CW/Half_Guard.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Heart Ache",
+      "icon": "assets/CW/Heart_Ache.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Helping Hand",
+      "icon": "assets/CW/Helping_Hand.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hook & Sinker",
+      "icon": "assets/CW/Hook_&_Sinker.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hot Shot Slide",
+      "icon": "assets/CW/Hot_Shot_Slide.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Internal Damage",
+      "icon": "assets/CW/Internal_Damage.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Killer Moves",
+      "icon": "assets/CW/Killer_Moves.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Lost & Found",
+      "icon": "assets/CW/Lost_&_Found.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Low Praise",
+      "icon": "assets/CW/Low_Praise.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "No Mercy",
+      "icon": "assets/CW/No_Mercy.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Nailed It",
+      "icon": "assets/CW/Nailed_It.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Optical Illusion",
+      "icon": "assets/CW/Optical_Illusion.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Pointed End",
+      "icon": "assets/CW/Pointed_End.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Pound for Pound",
+      "icon": "assets/CW/Pound_for_Pound.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Rear Mount",
+      "icon": "assets/CW/Rear_Mount.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Rock-a-bye-bye",
+      "icon": "assets/CW/Rock-A-Bye-Bye.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Roll Up",
+      "icon": "assets/CW/RollUp.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Scorpion Slam",
+      "icon": "assets/CW/Scorpion_Slam.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Shot Down",
+      "icon": "assets/CW/Shot_Down.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Shot Up",
+      "icon": "assets/CW/Shot_Up.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sidearm Dispatch",
+      "icon": "assets/CW/Sidearm_Dispatch.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Stick Up",
+      "icon": "assets/CW/Stick_Up.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Stomping Ground",
+      "icon": "assets/CW/Stomping_Ground.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Struggle Bust",
+      "icon": "assets/CW/Struggle_Bust.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Swift Kick",
+      "icon": "assets/CW/Swift_Kick.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Throat Chop",
+      "icon": "assets/CW/Throat_Chop.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Throat Cut",
+      "icon": "assets/CW/Throat_Cut.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Tight Squeeze",
+      "icon": "assets/CW/Tight_Squeeze.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Ultimate Takedown",
+      "icon": "assets/CW/Ultimate_Takedown.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Unlikely Volunteer",
+      "icon": "assets/CW/Unlikely_Volunteer.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Victim Inflicted",
+      "icon": "assets/CW/Victim_Inflicted.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Wacked",
+      "icon": "assets/CW/Wacked.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Above the Neck",
+      "icon": "assets/CW/Above_The_Neck.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Absolute Blast",
+      "icon": "assets/CW/Absolute_Blast.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Between the Legs",
+      "icon": "assets/CW/Between_the_Legs.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Big Stick",
+      "icon": "assets/CW/Big_Stick.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bird of Prey",
+      "icon": "assets/CW/Bird_of_Prey.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Cap & Tap",
+      "icon": "assets/CW/Cap_&_Tap.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Club Thumper",
+      "icon": "assets/CW/Club_Thumper.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Dangerous Approach",
+      "icon": "assets/CW/Dangerous_Approach.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Dog of War",
+      "icon": "assets/CW/Dog_of_War.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Frontier Finisher",
+      "icon": "assets/CW/Frontier_Finisher.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hammer Uppercut",
+      "icon": "assets/CW/Hammer_Uppercut.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Jump Shot",
+      "icon": "assets/CW/Jump_Shot.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Maim & Tame",
+      "icon": "assets/CW/Maim_&_Tame.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Nail Driver",
+      "icon": "assets/CW/Nail_Driver.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Overpower",
+      "icon": "assets/CW/Overpower.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Pain In The Neck",
+      "icon": "assets/CW/Pain_in_the_Neck.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Plague Hound",
+      "icon": "assets/CW/Plague_Hound.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Rearranged Thoughts",
+      "icon": "assets/CW/Rearranged_Thoughts.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Shortcut",
+      "icon": "assets/CW/Shortcut.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Splitting Hairs",
+      "icon": "assets/CW/Splitting_Hairs.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Tactical Roll",
+      "icon": "assets/CW/Tactical_Roll.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Tight Rope",
+      "icon": "assets/CW/Tight_Rope.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Wrap Around",
+      "icon": "assets/CW/Wrap_Around.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Assassination",
+      "icon": "assets/CW/Assassination.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Axe Murder",
+      "icon": "assets/CW/Axe_Murder.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Ballistic Blast",
+      "icon": "assets/CW/Ballistic_Blast.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Big Bang",
+      "icon": "assets/CW/Big_Bang.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Brutalize",
+      "icon": "assets/CW/Brutalize.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Casual Surprise",
+      "icon": "assets/CW/Casual_Surprise.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Caved In",
+      "icon": "assets/CW/Caved_In.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Chin-Up",
+      "icon": "assets/CW/Chin-Up.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Cold Beatdown",
+      "icon": "assets/CW/Cold_Beatdown.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Combat Kill",
+      "icon": "assets/CW/Combat_Kill.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Cracked Open",
+      "icon": "assets/CW/Cracked_Open.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Crash Course",
+      "icon": "assets/CW/Crash_Course.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Crawling Zombie",
+      "icon": "assets/CW/Crawling_Zombie.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Crispy",
+      "icon": "assets/CW/Cripsy.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Dispatch Agent",
+      "icon": "assets/CW/Dispatch_Agent.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Drop Dead",
+      "icon": "assets/CW/Drop_Dead.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Executioner",
+      "icon": "assets/CW/Executioner.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Ferocious Hare",
+      "icon": "assets/CW/Ferocious_Hare.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Force of Will",
+      "icon": "assets/CW/Force_of_Will.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Garrote",
+      "icon": "assets/CW/Garrote.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Gravedigger",
+      "icon": "assets/CW/Gravedigger.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hammer Head",
+      "icon": "assets/CW/Hammer_Head.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Head Harvester",
+      "icon": "assets/CW/Head_Harvester.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Heartfelt Goodbye",
+      "icon": "assets/CW/Heartfelt_Goodbye.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hidden Gun",
+      "icon": "assets/CW/Hidden_Gun.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hook & Hinder",
+      "icon": "assets/CW/Hook_&_Hinder.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Incendiary",
+      "icon": "assets/CW/Incendiary.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Knee Capped",
+      "icon": "assets/CW/Knee_Capped.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Komodo Dragon",
+      "icon": "assets/CW/Komodo_Dragon.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Leap Shot",
+      "icon": "assets/CW/Leap_Shot.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Loose Ends",
+      "icon": "assets/CW/Loose_Ends.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Mind Games",
+      "icon": "assets/CW/Mind_Games.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Nailed Down",
+      "icon": "assets/CW/Nailed_Down.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Outmatched",
+      "icon": "assets/CW/Outmatched.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Penalty Kick",
+      "icon": "assets/CW/Penalty_Kick.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Repairs With Klaus",
+      "icon": "assets/CW/Repairs_With_Klaus.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Road Rash",
+      "icon": "assets/CW/Road_Rash.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Settle Down",
+      "icon": "assets/CW/Settle_Down.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sky is Falling",
+      "icon": "assets/CW/Sky_is_Falling.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Slash & Stab",
+      "icon": "assets/CW/Slash_&_Stab.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Slithering Jab",
+      "icon": "assets/CW/Slithering_Jab.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Snow Leopard",
+      "icon": "assets/CW/Snow_Leopard.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Soul Torn",
+      "icon": "assets/CW/Soul_Torn.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Spare a Light",
+      "icon": "assets/CW/Spare_a_Light.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Spin Move",
+      "icon": "assets/CW/Spin_Move.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Spring Attack",
+      "icon": "assets/CW/Spring_Attack.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Stay Put",
+      "icon": "assets/CW/Stay_Put.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Suplex",
+      "icon": "assets/CW/Suplex.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Swinging Heat",
+      "icon": "assets/CW/Swinging_Heat.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Switcheroo",
+      "icon": "assets/CW/Switcheroo.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Tapped Out",
+      "icon": "assets/CW/Tapped_Out.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Timber",
+      "icon": "assets/CW/Timber.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Tortured",
+      "icon": "assets/CW/Tortured.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Twisted Reverse",
+      "icon": "assets/CW/Twisted_Reverse.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Undercarriage",
+      "icon": "assets/CW/Undercarriage.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Vertical Slice",
+      "icon": "assets/CW/Vertical_Slice.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Violent End",
+      "icon": "assets/CW/Violent_End.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Zombie Decay",
+      "icon": "assets/CW/Zombie_Decay.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    }
+  ],
+  "VG": [
+    {
+      "name": "Rack It",
+      "icon": "assets/VG/RackIt.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Angler's Hook",
+      "icon": "assets/VG/AnglersHook.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Arnis Assault",
+      "icon": "assets/VG/ArnisAssault.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Barrel It Up",
+      "icon": "assets/VG/BarrelItUp.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Butcher's Cut",
+      "icon": "assets/VG/ButchersCut.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Big Time Operator",
+      "icon": "assets/VG/BigTimeOperator.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Capoeira Carnage",
+      "icon": "assets/VG/CapoeiraCarnage.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Dig Deep",
+      "icon": "assets/VG/DigDeep.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Few Screws Loose",
+      "icon": "assets/VG/FewScrewsLoose.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hammered",
+      "icon": "assets/VG/Hammered.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hamstrung",
+      "icon": "assets/VG/Hamstrung.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hapkido",
+      "icon": "assets/VG/Hapkido.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Highlander Hello",
+      "icon": "assets/VG/HighlanderHello.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Iaijutsu",
+      "icon": "assets/VG/Iaijutsu.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Kidney Cutter",
+      "icon": "assets/VG/KidneyCutter.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Maced",
+      "icon": "assets/VG/Maced.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Machete Magic",
+      "icon": "assets/VG/MacheteMagic.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Neck Adjustment",
+      "icon": "assets/VG/NeckAdjustment.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "No Escape",
+      "icon": "assets/VG/NoEscape.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Picked Off",
+      "icon": "assets/VG/PickedOff.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Pressure Points",
+      "icon": "assets/VG/PressurePoints.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Silent Ambush",
+      "icon": "assets/VG/SilentAmbush.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Suplex",
+      "icon": "assets/VG/Suplex.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Takedown",
+      "icon": "assets/VG/Takedown.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Vicious",
+      "icon": "assets/VG/Vicious.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hanging The Lights",
+      "icon": "assets/VG/HangingTheLights.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Pop Bottles",
+      "icon": "assets/VG/PopBottles.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Straight To The Point",
+      "icon": "assets/VG/StraightToThePoint.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Ba-Da-Boom!",
+      "icon": "assets/VG/BaDaBoom.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Blocker Remover",
+      "icon": "assets/VG/BlockerRemover.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Blowin' Smoke",
+      "icon": "assets/VG/BlowinSmoke.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Caught By Surprise",
+      "icon": "assets/VG/CaughtBySurprise.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Cut The Crap",
+      "icon": "assets/VG/CutTheCrap.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Don't Look At Explosions!",
+      "icon": "assets/VG/DontLookAtExplosions.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Dragged To Hell",
+      "icon": "assets/VG/DraggedToHell.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Elegant Precision",
+      "icon": "assets/VG/ElegantPrecision.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Elfsecution",
+      "icon": "assets/VG/Elfsecution.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Eternal Hunger",
+      "icon": "assets/VG/EternalHunger.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Extinction Event",
+      "icon": "assets/VG/ExtinctionEvent.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Fenrir Unchained",
+      "icon": "assets/VG/FenrirUnchained.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Finishizzle Movizzle",
+      "icon": "assets/VG/FinishizzleMovizzle.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Gojira Stomp",
+      "icon": "assets/VG/GojiraStomp.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Gravity Inversion",
+      "icon": "assets/VG/GravityInversion.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Laying On The Lumber",
+      "icon": "assets/VG/LayingOnTheLumber.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Main Squeeze",
+      "icon": "assets/VG/MainSqueeze.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Radioactive Shower",
+      "icon": "assets/VG/RadioactiveShower.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Raptor Rage",
+      "icon": "assets/VG/RaptorRage.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Reindog Rampage",
+      "icon": "assets/VG/ReindogRampage.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Shocking Revelation",
+      "icon": "assets/VG/ShockingRevelation.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Spine Shatterer",
+      "icon": "assets/VG/SpineShatterer.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Steel Cut",
+      "icon": "assets/VG/SteelCut.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Terminal Halitosis",
+      "icon": "assets/VG/TerminalHalitosis.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Terminated",
+      "icon": "assets/VG/Terminated.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Threshing Strike",
+      "icon": "assets/VG/ThreshingStrike.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Violent Declaration",
+      "icon": "assets/VG/ViolentDeclaration.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    }
+  ],
   "MWIII": [
     {
       "name": "Stick N' Move",
@@ -305,7 +4018,7 @@
     },
     {
       "name": "Kong's Knuckle Slamwich",
-      "icon": "assets/MWIII/KongsKnuckleSlamwich.png",
+      "icon": "assets/MWIII/KongsKnucleSlamwich.png",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
@@ -505,7 +4218,7 @@
     },
     {
       "name": "Judge, Jury and Finisher",
-      "icon": "assets/MWIII/JudgeJuryandFinisher.png",
+      "icon": "assets/MWIII/JudgeJuryAndFinisher.png",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
@@ -592,1970 +4305,2720 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 2400
+    },
+    {
+      "name": "Bend and Snap",
+      "icon": "assets/MWIII/BendAndSnap.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Chip and Shatter",
+      "icon": "assets/MWIII/ChipAndShatter.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Fastest Man In the World",
+      "icon": "assets/MWIII/FastestManInTheWorld.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Freedom of Speech",
+      "icon": "assets/MWIII/FreedomOfSpeech.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Flesh Stripped and Gold Dipped",
+      "icon": "assets/MWIII/FleshStrippedAndGoldDipped.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Send in The Good Boy",
+      "icon": "assets/MWIII/SendInTheGoodBoy.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Ninjanuity",
+      "icon": "assets/MWIII/Ninjanuity.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Leave the Dead",
+      "icon": "assets/MWIII/LeaveTheDead.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Tactical Pet: Servo-Skull",
+      "icon": "assets/MWIII/TacticalPetServoSkull.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Tactical Pet: D-O-Double-G",
+      "icon": "assets/MWIII/TacticalPetDODoubleG.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Whipslashed Unleashed",
+      "icon": "assets/MWIII/WhiplashedUnleashed.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Feel the Heat Ray",
+      "icon": "assets/MWIII/FeelTheHeatRay.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "The Chair!",
+      "icon": "assets/MWIII/TheChair.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Throat Rip",
+      "icon": "assets/MWIII/ThroatRip.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Haddonfield Takedown",
+      "icon": "assets/MWIII/HaddonfieldTakedown.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Gun Fu",
+      "icon": "assets/MWIII/GunFu.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Dixon's Retribution",
+      "icon": "assets/MWIII/DixonsRetribution.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Lollipopped",
+      "icon": "assets/MWIII/Lollipopped.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
     }
   ],
   "BO6": [
-  {
-    "name": "Batter Up",
-    "icon": "assets/BO6/BatterUp.png",
-    "standing": "https://drive.google.com/file/d/1E7T2TiFRXjl70av65p-Vjfw7z7xVjNTe/view?usp=drive_link",
-    "prone": "https://drive.google.com/file/d/1E6Wd06xVesq1veVIjxwXbh0cCmOH02mo/view?usp=drive_link",
-    "downed": "https://drive.google.com/file/d/1E6X2sQFeN9V0sxJIQwjNOOHsdLmhb2ug/view?usp=drive_link",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Hook & Slash",
-    "icon": "assets/BO6/Hook&Slash.png",
-    "standing": "",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Hook, Line, and Sinker",
-    "icon": "assets/BO6/HookLineAndSinker.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Look Sharp",
-    "icon": "assets/BO6/LookSharp.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Who's Laughing Now",
-    "icon": "assets/BO6/WhosLaughingNow.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Headache",
-    "icon": "assets/BO6/Headache.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Home Run Hitman",
-    "icon": "assets/BO6/HomeRunHitman.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Good Point",
-    "icon": "assets/BO6/GoodPoint.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Ash and Bone",
-    "icon": "assets/BO6/AshAndBone.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "The Art of Death",
-    "icon": "assets/BO6/TheArtOfDeath.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Parasite Feast",
-    "icon": "assets/BO6/ParasiteFeast.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Axe You A Question",
-    "icon": "assets/BO6/AxeYouAQuestion.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Stakeout",
-    "icon": "assets/BO6/Stakeout.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Two In The Chest",
-    "icon": "assets/BO6/TwoInTheChest.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Marks The Spot",
-    "icon": "assets/BO6/MarksTheSpot.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Replacement Killer",
-    "icon": "assets/BO6/ReplacementKiller.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Disarmed",
-    "icon": "assets/BO6/Disarmed.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Ice Breaker",
-    "icon": "assets/BO6/IceBreaker.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Akimbo Assassin",
-    "icon": "assets/BO6/AkimboAssassin.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Acro-Badass",
-    "icon": "assets/BO6/AcroBadass.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Gentleman's Handshake",
-    "icon": "assets/BO6/GentlemansHandshake.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Smoke 'Em",
-    "icon": "assets/BO6/SmokeEm.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Hands Off",
-    "icon": "assets/BO6/HandsOff.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Slash 'Em Up",
-    "icon": "assets/BO6/SlashEmUp.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Toke-a-Bloke",
-    "icon": "assets/BO6/TokeABloke.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Cool Off",
-    "icon": "assets/BO6/CoolOff.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Refraction Action",
-    "icon": "assets/BO6/RefractionAction.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Positivity!",
-    "icon": "assets/BO6/Positivity.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Be Gone",
-    "icon": "assets/BO6/BeGone.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Chopping Action!",
-    "icon": "assets/BO6/ChoppingAction.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Roped In",
-    "icon": "assets/BO6/RopedIn.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Winner",
-    "icon": "assets/BO6/Winner.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Pinky Up",
-    "icon": "assets/BO6/PinkyUp.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Hit Pause",
-    "icon": "assets/BO6/HitPause.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Thug Zapper",
-    "icon": "assets/BO6/ThugZapper.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Hound's Tooth",
-    "icon": "assets/BO6/HoundsTooth.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Swift Moves",
-    "icon": "assets/BO6/SwiftMoves.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "360",
-    "icon": "assets/BO6/360.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Rocket Powered",
-    "icon": "assets/BO6/RocketPowered.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Blade Bonanza",
-    "icon": "assets/BO6/BladeBonanza.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Skewered",
-    "icon": "assets/BO6/Skewered.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Wildfire",
-    "icon": "assets/BO6/Wildfire.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Parry and Strike",
-    "icon": "assets/BO6/ParryAndStrike.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Poleharm",
-    "icon": "assets/BO6/Poleharm.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Trick Deck",
-    "icon": "assets/BO6/TrickDeck.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Buzz Breaker",
-    "icon": "assets/BO6/BuzzBreaker.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "T-800 Style",
-    "icon": "assets/BO6/T800Style.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Instrumental",
-    "icon": "assets/BO6/Instrumental.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Hands: Thrown",
-    "icon": "assets/BO6/HandsThrown.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Launch Sequence",
-    "icon": "assets/BO6/LaunchSequence.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "See No Evil",
-    "icon": "assets/BO6/SeeNoEvil.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Get Winged",
-    "icon": "assets/BO6/GetWinged.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Blade Dance",
-    "icon": "assets/BO6/BladeDance.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Bo-Staff Boogie",
-    "icon": "assets/BO6/BoStaffBoogie.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Nunchuck Chop",
-    "icon": "assets/BO6/NunchuckChop.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Quick Skills",
-    "icon": "assets/BO6/QuickSkills.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Samba",
-    "icon": "assets/BO6/Samba.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Sensei's Support",
-    "icon": "assets/BO6/SenseisSupport.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Strikethrough",
-    "icon": "assets/BO6/Strikethrough.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Iceburst",
-    "icon": "assets/BO6/Iceburst.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Goodest Boy",
-    "icon": "assets/BO6/GoodestBoy.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Package Received",
-    "icon": "assets/BO6/PackageReceived.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Full Body Swing",
-    "icon": "assets/BO6/FullBodySwing.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Coin Toss",
-    "icon": "assets/BO6/CoinToss.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Planted",
-    "icon": "assets/BO6/Planted.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Slide N' Toss",
-    "icon": "assets/BO6/SlideNToss.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "K.O.",
-    "icon": "assets/BO6/KO.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "The Back Adjustment",
-    "icon": "assets/BO6/TheBackAdjustment.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Goal!",
-    "icon": "assets/BO6/Goal.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Gimme a Light",
-    "icon": "assets/BO6/GimmeALight.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "One. Two.",
-    "icon": "assets/BO6/OneTwo.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Smoke You Out",
-    "icon": "assets/BO6/SmokeYouOut.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Pan Fried",
-    "icon": "assets/BO6/PanFried.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Joke's On You",
-    "icon": "assets/BO6/JokesOnYou.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Unrelenting Attack",
-    "icon": "assets/BO6/UnrelentingAttack.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Missed 'Em",
-    "icon": "assets/BO6/MissedEm.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Charmer",
-    "icon": "assets/BO6/Charmer.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Enemy Deleted",
-    "icon": "assets/BO6/EnemyDeleted.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Chew This!",
-    "icon": "assets/BO6/ChewThis.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Levitation Vacation",
-    "icon": "assets/BO6/LevitationVacation.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Power Steering",
-    "icon": "assets/BO6/PowerSteering.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Archie's Oopsie",
-    "icon": "assets/BO6/ArchiesOopsie.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Nasty Knife",
-    "icon": "assets/BO6/NastyKnife.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Precious Gems",
-    "icon": "assets/BO6/PreciousGems.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Spill Thrill",
-    "icon": "assets/BO6/SpillThrill.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Sleep Light",
-    "icon": "assets/BO6/SleepLight.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Harpoon Doom",
-    "icon": "assets/BO6/HarpoonDoom.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Kama Wrath",
-    "icon": "assets/BO6/KamaWrath.png",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Guard Dog",
-    "icon": null,
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Neck Massage",
-    "icon": null,
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Be Trayed",
-    "icon": null,
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "On The Ground!",
-    "icon": null,
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Stun Locked",
-    "icon": null,
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Shocking Obliteration",
-    "icon": "https://static.wikia.nocookie.net/callofduty/images/a/ae/ShockingObliteration_FinishingMove_Icon_BO6.png/revision/latest/scale-to-width-down/100?cb=20250530171748",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Combo Finish",
-    "icon": null,
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Dance With Death",
-    "icon": null,
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Rammed",
-    "icon": null,
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Data Overload",
-    "icon": null,
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Wire Cut",
-    "icon": null,
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Wrestle Moves",
-    "icon": null,
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  }
-],
-"BO7": [
-  {
-    "name": "Ripped Through",
-    "icon": "assets/BO7/RippedThrough.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Streamline",
-    "icon": "assets/BO7/Streamline.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Pistol Kata",
-    "icon": "assets/BO7/PistolKata.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "It's A Clap!",
-    "icon": "assets/BO7/ItsAClap.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Heavy Fire",
-    "icon": "assets/BO7/HeavyFire.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Fast Work",
-    "icon": "assets/BO7/FastWork.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Wanna See a Magic Trick?",
-    "icon": "assets/BO7/WannaSeeAMagicTrick.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Electro-Pop",
-    "icon": "assets/BO7/ElectroPop.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Busted Beaker",
-    "icon": "assets/BO7/BustedBeaker.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Don't Inhale",
-    "icon": "assets/BO7/DontInhale.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Flip & Snap",
-    "icon": "assets/BO7/FlipAndSnap.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Gravity Assist",
-    "icon": "assets/BO7/GravityAssist.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Drone Dropped",
-    "icon": "assets/BO7/DroneDropped.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Thruster Buster",
-    "icon": "assets/BO7/ThrusterBuster.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Vicious Intent",
-    "icon": "assets/BO7/ViciousIntent.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Heel Hell",
-    "icon": "assets/BO7/HeelHell.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Blades In",
-    "icon": "assets/BO7/BladesIn.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Got the Moves",
-    "icon": "assets/BO7/GotTheMoves.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Power Down",
-    "icon": "assets/BO7/PowerDown.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Get Festive!",
-    "icon": "assets/BO7/GetFestive.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Particle Destruction",
-    "icon": "assets/BO7/ParticleDestruction.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Setting Traps",
-    "icon": "assets/BO7/SettingTraps.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Bear Hug",
-    "icon": "assets/BO7/BearHug.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Muzzle Control",
-    "icon": "assets/BO7/MuzzleControl.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Minigun Teardown",
-    "icon": "assets/BO7/MinigunTeardown.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Gamma Zap",
-    "icon": "assets/BO7/GammaZap.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "That Was Handy",
-    "icon": "assets/BO7/ThatWasHandy.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Chain Slain",
-    "icon": "assets/BO7/ChainSlain.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Hydraulic Hop",
-    "icon": "assets/BO7/HydraulicHop.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Always One More",
-    "icon": "assets/BO7/AlwaysOneMore.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Stinging Feeling",
-    "icon": "assets/BO7/StingingFeeling.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Spinblade",
-    "icon": "assets/BO7/Spinblade.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Speedbag Slugger",
-    "icon": "assets/BO7/SpeedbagSlugger.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Sic' Em",
-    "icon": "assets/BO7/SicEm.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Guess Who",
-    "icon": "assets/BO7/GuessWho.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Take Control",
-    "icon": "assets/BO7/TakeControl.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Mind Breaker",
-    "icon": "assets/BO7/MindBreaker.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Centrifugal",
-    "icon": "assets/BO7/Centrifugal.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Cut and Fold",
-    "icon": "assets/BO7/CutAndFold.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Death Directive",
-    "icon": "assets/BO7/DeathDirective.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Elemental Rupture",
-    "icon": "assets/BO7/ElementalRupture.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Severe Sever",
-    "icon": "assets/BO7/SevereSever.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Internal Struggle",
-    "icon": "assets/BO7/InternalStruggle.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Relentless Avalanche",
-    "icon": "assets/BO7/RelentlessAvalanche.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Detonated",
-    "icon": "assets/BO7/Detonated.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Horn Pierced",
-    "icon": "assets/BO7/HornPierced.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Flame Catch",
-    "icon": "assets/BO7/FlameCatch.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "On A Roll",
-    "icon": "assets/BO7/OnARoll.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Apologies, Citizen",
-    "icon": "assets/BO7/ApologiesCitizen.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Tele-Nope",
-    "icon": "assets/BO7/TeleNope.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Loot Grab",
-    "icon": "assets/BO7/LootGrab.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Remorseless",
-    "icon": "assets/BO7/Remorseless.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Nice Try",
-    "icon": "assets/BO7/NiceTry.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Merc It Out",
-    "icon": "assets/BO7/MercItOut.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Distraction Tactics",
-    "icon": "assets/BO7/DistractionTactics.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Shell No",
-    "icon": "assets/BO7/ShellNo.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Gentleman",
-    "icon": "assets/BO7/Gentleman.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Island Fighter",
-    "icon": "assets/BO7/IslandFighter.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Say 'Hello'",
-    "icon": "assets/BO7/SayHello.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Blades and Bullets",
-    "icon": "assets/BO7/BladesAndBullets.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Good Luck",
-    "icon": "assets/BO7/GoodLuck.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Fileted",
-    "icon": "assets/BO7/Fileted.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Helping Hands",
-    "icon": "assets/BO7/HelpingHands.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Fast Hands",
-    "icon": "assets/BO7/FastHands.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Slide N' Rip",
-    "icon": "assets/BO7/SlideNRip.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Intrusive Thoughts",
-    "icon": "assets/BO7/IntrusiveThoughts.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Ravaged",
-    "icon": "assets/BO7/Ravaged.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Spinal Thrash",
-    "icon": "assets/BO7/SpinalThrash.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Paint Remover",
-    "icon": "assets/BO7/PaintRemover.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Good Monkey",
-    "icon": "assets/BO7/GoodMonkey.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "No Witness",
-    "icon": "assets/BO7/NoWitness.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Brain Override",
-    "icon": "assets/BO7/BrainOverride.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Zap Happens",
-    "icon": "assets/BO7/ZapHappens.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Fish Food",
-    "icon": "assets/BO7/FishFood.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Imperial Verdict",
-    "icon": "assets/BO7/ImperialVerdict.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Dream Team",
-    "icon": "assets/BO7/DreamTeam.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Data Spiked",
-    "icon": "assets/BO7/DataSpiked.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Side Step Bustle",
-    "icon": "assets/BO7/SideStepBustle.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Flow State",
-    "icon": "assets/BO7/FlowState.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Triple Tap",
-    "icon": "assets/BO7/TripleTap.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Hot, Then Cold",
-    "icon": "assets/BO7/HotThenCold.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "No Talk Back",
-    "icon": "assets/BO7/NoTalkBack.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Back Sawed",
-    "icon": "assets/BO7/BackSawed.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Banged Up",
-    "icon": "assets/BO7/BangedUp.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Out of Hand",
-    "icon": "assets/BO7/OutOfHand.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Flippin' Out",
-    "icon": "assets/BO7/FlippinOut.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Log Off",
-    "icon": "assets/BO7/LogOff.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Rewind Retry",
-    "icon": "assets/BO7/RewindRetry.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Shove Off",
-    "icon": "assets/BO7/ShoveOff.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Bend, Don't Break",
-    "icon": "assets/BO7/BendDontBreak.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Break It Down",
-    "icon": "assets/BO7/BreakItDown.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Decked",
-    "icon": "assets/BO7/Decked.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Bear Knuckle",
-    "icon": "assets/BO7/BearKnuckle.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Flesh Wound",
-    "icon": "assets/BO7/FleshWound.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Spike Burst",
-    "icon": "assets/BO7/SpikeBurst.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  },
-  {
-    "name": "Chop Shop",
-    "icon": "assets/BO7/ChopShop.webp",
-    "standing": "Standing",
-    "prone": "Prone",
-    "downed": "Downed",
-    "anim_time": 0.0,
-    "ttk": 0.0,
-    "price": 0
-  }
-]
+    {
+      "name": "Batter Up",
+      "icon": "assets/BO6/BatterUp.png",
+      "standing": "https://drive.google.com/file/d/1E7T2TiFRXjl70av65p-Vjfw7z7xVjNTe/view?usp=drive_link",
+      "prone": "https://drive.google.com/file/d/1E6Wd06xVesq1veVIjxwXbh0cCmOH02mo/view?usp=drive_link",
+      "downed": "https://drive.google.com/file/d/1E6X2sQFeN9V0sxJIQwjNOOHsdLmhb2ug/view?usp=drive_link",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hook & Slash",
+      "icon": "assets/BO6/Hook&Slash.png",
+      "standing": "",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hook, Line, and Sinker",
+      "icon": "assets/BO6/HookLineAndSinker.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Look Sharp",
+      "icon": "assets/BO6/LookSharp.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Who's Laughing Now",
+      "icon": "assets/BO6/WhosLaughingNow.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Headache",
+      "icon": "assets/BO6/Headache.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Home Run Hitman",
+      "icon": "assets/BO6/HomeRunHitman.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Good Point",
+      "icon": "assets/BO6/GoodPoint.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Ash and Bone",
+      "icon": "assets/BO6/AshAndBone.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "The Art of Death",
+      "icon": "assets/BO6/TheArtOfDeath.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Parasite Feast",
+      "icon": "assets/BO6/ParasiteFeast.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Axe You A Question",
+      "icon": "assets/BO6/AxeYouAQuestion.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Stakeout",
+      "icon": "assets/BO6/Stakeout.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Two In The Chest",
+      "icon": "assets/BO6/TwoInTheChest.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Marks The Spot",
+      "icon": "assets/BO6/MarksTheSpot.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Replacement Killer",
+      "icon": "assets/BO6/ReplacementKiller.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Disarmed",
+      "icon": "assets/BO6/Disarmed.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Ice Breaker",
+      "icon": "assets/BO6/IceBreaker.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Akimbo Assassin",
+      "icon": "assets/BO6/AkimboAssassin.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Acro-Badass",
+      "icon": "assets/BO6/AcroBadass.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Gentleman's Handshake",
+      "icon": "assets/BO6/GentlemansHandshake.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Smoke 'Em",
+      "icon": "assets/BO6/SmokeEm.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hands Off",
+      "icon": "assets/BO6/HandsOff.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Slash 'Em Up",
+      "icon": "assets/BO6/SlashEmUp.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Toke-a-Bloke",
+      "icon": "assets/BO6/TokeABloke.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Cool Off",
+      "icon": "assets/BO6/CoolOff.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Refraction Action",
+      "icon": "assets/BO6/RefractionAction.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Positivity!",
+      "icon": "assets/BO6/Positivity.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Be Gone",
+      "icon": "assets/BO6/BeGone.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Chopping Action!",
+      "icon": "assets/BO6/ChoppingAction.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Roped In",
+      "icon": "assets/BO6/RopedIn.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Winner",
+      "icon": "assets/BO6/Winner.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Pinky Up",
+      "icon": "assets/BO6/PinkyUp.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hit Pause",
+      "icon": "assets/BO6/HitPause.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Thug Zapper",
+      "icon": "assets/BO6/ThugZapper.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hound's Tooth",
+      "icon": "assets/BO6/HoundsTooth.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Swift Moves",
+      "icon": "assets/BO6/SwiftMoves.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "360",
+      "icon": "assets/BO6/360.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Rocket Powered",
+      "icon": "assets/BO6/RocketPowered.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Blade Bonanza",
+      "icon": "assets/BO6/BladeBonanza.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Skewered",
+      "icon": "assets/BO6/Skewered.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Wildfire",
+      "icon": "assets/BO6/Wildfire.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Parry and Strike",
+      "icon": "assets/BO6/ParryAndStrike.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Poleharm",
+      "icon": "assets/BO6/Poleharm.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Trick Deck",
+      "icon": "assets/BO6/TrickDeck.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Buzz Breaker",
+      "icon": "assets/BO6/BuzzBreaker.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "T-800 Style",
+      "icon": "assets/BO6/T800Style.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Instrumental",
+      "icon": "assets/BO6/Instrumental.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hands: Thrown",
+      "icon": "assets/BO6/HandsThrown.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Launch Sequence",
+      "icon": "assets/BO6/LaunchSequence.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "See No Evil",
+      "icon": "assets/BO6/SeeNoEvil.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Get Winged",
+      "icon": "assets/BO6/GetWinged.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Blade Dance",
+      "icon": "assets/BO6/BladeDance.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bo-Staff Boogie",
+      "icon": "assets/BO6/BoStaffBoogie.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Nunchuck Chop",
+      "icon": "assets/BO6/NunchuckChop.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Quick Skills",
+      "icon": "assets/BO6/QuickSkills.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Samba",
+      "icon": "assets/BO6/Samba.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sensei's Support",
+      "icon": "assets/BO6/SenseisSupport.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Strikethrough",
+      "icon": "assets/BO6/Strikethrough.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Iceburst",
+      "icon": "assets/BO6/Iceburst.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Goodest Boy",
+      "icon": "assets/BO6/GoodestBoy.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Package Received",
+      "icon": "assets/BO6/PackageReceived.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Full Body Swing",
+      "icon": "assets/BO6/FullBodySwing.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Coin Toss",
+      "icon": "assets/BO6/CoinToss.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Planted",
+      "icon": "assets/BO6/Planted.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Slide N' Toss",
+      "icon": "assets/BO6/SlideNToss.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "K.O.",
+      "icon": "assets/BO6/KO.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "The Back Adjustment",
+      "icon": "assets/BO6/TheBackAdjustment.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Goal!",
+      "icon": "assets/BO6/Goal.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Gimme a Light",
+      "icon": "assets/BO6/GimmeALight.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "One. Two.",
+      "icon": "assets/BO6/OneTwo.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Smoke You Out",
+      "icon": "assets/BO6/SmokeYouOut.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Pan Fried",
+      "icon": "assets/BO6/PanFried.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Joke's On You",
+      "icon": "assets/BO6/JokesOnYou.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Unrelenting Attack",
+      "icon": "assets/BO6/UnrelentingAttack.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Missed 'Em",
+      "icon": "assets/BO6/MissedEm.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Charmer",
+      "icon": "assets/BO6/Charmer.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Enemy Deleted",
+      "icon": "assets/BO6/EnemyDeleted.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Chew This!",
+      "icon": "assets/BO6/ChewThis.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Levitation Vacation",
+      "icon": "assets/BO6/LevitationVacation.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Power Steering",
+      "icon": "assets/BO6/PowerSteering.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Archie's Oopsie",
+      "icon": "assets/BO6/ArchiesOopsie.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Nasty Knife",
+      "icon": "assets/BO6/NastyKnife.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Precious Gems",
+      "icon": "assets/BO6/PreciousGems.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Spill Thrill",
+      "icon": "assets/BO6/SpillThrill.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sleep Light",
+      "icon": "assets/BO6/SleepLight.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Harpoon Doom",
+      "icon": "assets/BO6/HarpoonDoom.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Kama Wrath",
+      "icon": "assets/BO6/KamaWrath.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Guard Dog",
+      "icon": "assets/BO6/GuardDog.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Neck Massage",
+      "icon": "assets/BO6/NeckMassage.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Be Trayed",
+      "icon": "assets/BO6/BeTrayed.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "On The Ground!",
+      "icon": "assets/BO6/OnTheGround.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Stun Locked",
+      "icon": "assets/BO6/StunLocked.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Shocking Obliteration",
+      "icon": "assets/BO6/ShockingObliteration.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Combo Finish",
+      "icon": "assets/BO6/ComboFinish.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Dance With Death",
+      "icon": "assets/BO6/DanceWithDeath.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Rammed",
+      "icon": "assets/BO6/Rammed.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Data Overload",
+      "icon": "assets/BO6/DataOverload.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Wire Cut",
+      "icon": "assets/BO6/WireCut.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Wrestle Moves",
+      "icon": "assets/BO6/WrestleMoves.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bonus Balling",
+      "icon": "assets/BO6/BonusBalling.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Twist It",
+      "icon": "assets/BO6/TwistIt.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Throw Down",
+      "icon": "assets/BO6/ThrowDown.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Axe Wrath",
+      "icon": "assets/BO6/AxeWrath.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Dumbass",
+      "icon": "assets/BO6/Dumbass.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Kick 'em in the Nads!",
+      "icon": "assets/BO6/KickEmInTheNads.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Skeletal Interference",
+      "icon": "assets/BO6/SkeletalInterference.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Queen's Way",
+      "icon": "assets/BO6/QueensWay.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Last Stan",
+      "icon": "assets/BO6/LastStan.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Lucky Hit",
+      "icon": "assets/BO6/LuckyHit.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sleight of Hand",
+      "icon": "assets/BO6/SleightOfHand.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Griffin Nabbed",
+      "icon": "assets/BO6/GriffinNabbed.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "High Stakes",
+      "icon": "assets/BO6/HighStakes.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Quick Tumble",
+      "icon": "assets/BO6/QuickTumble.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Melee Masher",
+      "icon": "assets/BO6/MeleeMasher.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Excruciate",
+      "icon": "assets/BO6/Excruciate.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Skippin' Time",
+      "icon": "assets/BO6/SkippinTime.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Got a Live One",
+      "icon": "assets/BO6/GotALiveOne.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Take Your Cut",
+      "icon": "assets/BO6/TakeYourCut.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Kawaii Knockout",
+      "icon": "assets/BO6/KawaiiKnockout.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Petri Melt",
+      "icon": "assets/BO6/PetriMelt.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Broken Down",
+      "icon": "assets/BO6/BrokenDown.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Elbow Room",
+      "icon": "assets/BO6/ElbowRoom.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Deadly Ride",
+      "icon": "assets/BO6/DeadlyRide.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Dud-ly",
+      "icon": "assets/BO6/Dudly.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Decrown",
+      "icon": "assets/BO6/Decrown.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Unseen Slash",
+      "icon": "assets/BO6/UnseenSlash.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Get Flung",
+      "icon": "assets/BO6/GetFlung.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Fast Swipe",
+      "icon": "assets/BO6/FastSwipe.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Cannon Toss",
+      "icon": "assets/BO6/CannonToss.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Deep-Sixed",
+      "icon": "assets/BO6/DeepSixed.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Idol Hands",
+      "icon": "assets/BO6/IdolHands.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Scorpio",
+      "icon": "assets/BO6/Scorpio.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "For You",
+      "icon": "assets/BO6/ForYou.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Back Down",
+      "icon": "assets/BO6/BackDown.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Rising Crash",
+      "icon": "assets/BO6/RisingCrash.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Plasma Casted",
+      "icon": "assets/BO6/PlasmaCasted.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Absorption",
+      "icon": "assets/BO6/Absorption.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Head Break",
+      "icon": "assets/BO6/HeadBreak.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Reel Them In",
+      "icon": "assets/BO6/ReelThemIn.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Package Delivery",
+      "icon": "assets/BO6/PackageDelivery.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Axe Swipe",
+      "icon": "assets/BO6/AxeSwipe.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Down to Size",
+      "icon": "assets/BO6/DownToSize.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Mind Power",
+      "icon": "assets/BO6/MindPower.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Final Shot",
+      "icon": "assets/BO6/FinalShot.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Jason's Revenge",
+      "icon": "assets/BO6/JasonsRevenge.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Appetite Suppressant",
+      "icon": "assets/BO6/AppetiteSuppressant.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bombardment",
+      "icon": "assets/BO6/Bombardment.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Arty Incineration",
+      "icon": "assets/BO6/ArtyIncineration.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Elegant Slay",
+      "icon": "assets/BO6/ElegantSlay.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Prey to None",
+      "icon": "assets/BO6/PreyToNone.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Moods of Chucky",
+      "icon": "assets/BO6/MoodsOfChucky.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Elaborate End",
+      "icon": "assets/BO6/ElaborateEnd.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Smile for the Camera",
+      "icon": "assets/BO6/SmileForTheCamera.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Lightning Bolt! Lightning Bolt!",
+      "icon": "assets/BO6/LightningBoltLightningBolt.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Jump Kill",
+      "icon": "assets/BO6/JumpKill.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Stabtacular",
+      "icon": "assets/BO6/Stabtacular.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    }
+  ],
+  "BO7": [
+    {
+      "name": "Ripped Through",
+      "icon": "assets/BO7/RippedThrough.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Streamline",
+      "icon": "assets/BO7/Streamline.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Pistol Kata",
+      "icon": "assets/BO7/PistolKata.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "It's A Clap!",
+      "icon": "assets/BO7/ItsAClap.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Heavy Fire",
+      "icon": "assets/BO7/HeavyFire.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Fast Work",
+      "icon": "assets/BO7/FastWork.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Wanna See a Magic Trick?",
+      "icon": "assets/BO7/WannaSeeAMagicTrick.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Electro-Pop",
+      "icon": "assets/BO7/ElectroPop.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Busted Beaker",
+      "icon": "assets/BO7/BustedBeaker.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Don't Inhale",
+      "icon": "assets/BO7/DontInhale.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Flip & Snap",
+      "icon": "assets/BO7/FlipAndSnap.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Gravity Assist",
+      "icon": "assets/BO7/GravityAssist.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Drone Dropped",
+      "icon": "assets/BO7/DroneDropped.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Thruster Buster",
+      "icon": "assets/BO7/ThrusterBuster.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Vicious Intent",
+      "icon": "assets/BO7/ViciousIntent.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Heel Hell",
+      "icon": "assets/BO7/HeelHell.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Blades In",
+      "icon": "assets/BO7/BladesIn.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Got the Moves",
+      "icon": "assets/BO7/GotTheMoves.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Power Down",
+      "icon": "assets/BO7/PowerDown.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Get Festive!",
+      "icon": "assets/BO7/GetFestive.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Particle Destruction",
+      "icon": "assets/BO7/ParticleDestruction.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Setting Traps",
+      "icon": "assets/BO7/SettingTraps.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bear Hug",
+      "icon": "assets/BO7/BearHug.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Muzzle Control",
+      "icon": "assets/BO7/MuzzleControl.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Minigun Teardown",
+      "icon": "assets/BO7/MinigunTeardown.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Gamma Zap",
+      "icon": "assets/BO7/GammaZap.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "That Was Handy",
+      "icon": "assets/BO7/ThatWasHandy.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Chain Slain",
+      "icon": "assets/BO7/ChainSlain.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hydraulic Hop",
+      "icon": "assets/BO7/HydraulicHop.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Always One More",
+      "icon": "assets/BO7/AlwaysOneMore.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Stinging Feeling",
+      "icon": "assets/BO7/StingingFeeling.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Spinblade",
+      "icon": "assets/BO7/Spinblade.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Speedbag Slugger",
+      "icon": "assets/BO7/SpeedbagSlugger.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Sic' Em",
+      "icon": "assets/BO7/SicEm.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Guess Who",
+      "icon": "assets/BO7/GuessWho.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Take Control",
+      "icon": "assets/BO7/TakeControl.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Mind Breaker",
+      "icon": "assets/BO7/MindBreaker.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Centrifugal",
+      "icon": "assets/BO7/Centrifugal.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Cut and Fold",
+      "icon": "assets/BO7/CutAndFold.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Death Directive",
+      "icon": "assets/BO7/DeathDirective.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Elemental Rupture",
+      "icon": "assets/BO7/ElementalRupture.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Severe Sever",
+      "icon": "assets/BO7/SevereSever.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Internal Struggle",
+      "icon": "assets/BO7/InternalStruggle.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Relentless Avalanche",
+      "icon": "assets/BO7/RelentlessAvalanche.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Detonated",
+      "icon": "assets/BO7/Detonated.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Horn Pierced",
+      "icon": "assets/BO7/HornPierced.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Flame Catch",
+      "icon": "assets/BO7/FlameCatch.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "On A Roll",
+      "icon": "assets/BO7/OnARoll.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Apologies, Citizen",
+      "icon": "assets/BO7/ApologiesCitizen.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Tele-Nope",
+      "icon": "assets/BO7/TeleNope.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Loot Grab",
+      "icon": "assets/BO7/LootGrab.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Remorseless",
+      "icon": "assets/BO7/Remorseless.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Nice Try",
+      "icon": "assets/BO7/NiceTry.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Merc It Out",
+      "icon": "assets/BO7/MercItOut.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Distraction Tactics",
+      "icon": "assets/BO7/DistractionTactics.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Shell No",
+      "icon": "assets/BO7/ShellNo.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Gentleman",
+      "icon": "assets/BO7/Gentleman.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Island Fighter",
+      "icon": "assets/BO7/IslandFighter.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Say 'Hello'",
+      "icon": "assets/BO7/SayHello.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Blades and Bullets",
+      "icon": "assets/BO7/BladesAndBullets.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Good Luck",
+      "icon": "assets/BO7/GoodLuck.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Fileted",
+      "icon": "assets/BO7/Fileted.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Helping Hands",
+      "icon": "assets/BO7/HelpingHands.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Fast Hands",
+      "icon": "assets/BO7/FastHands.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Slide N' Rip",
+      "icon": "assets/BO7/SlideNRip.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Intrusive Thoughts",
+      "icon": "assets/BO7/IntrusiveThoughts.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Ravaged",
+      "icon": "assets/BO7/Ravaged.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Spinal Thrash",
+      "icon": "assets/BO7/SpinalThrash.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Paint Remover",
+      "icon": "assets/BO7/PaintRemover.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Good Monkey",
+      "icon": "assets/BO7/GoodMonkey.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "No Witness",
+      "icon": "assets/BO7/NoWitness.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Brain Override",
+      "icon": "assets/BO7/BrainOverride.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Zap Happens",
+      "icon": "assets/BO7/ZapHappens.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Fish Food",
+      "icon": "assets/BO7/FishFood.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Imperial Verdict",
+      "icon": "assets/BO7/ImperialVerdict.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Dream Team",
+      "icon": "assets/BO7/DreamTeam.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Data Spiked",
+      "icon": "assets/BO7/DataSpiked.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Side Step Bustle",
+      "icon": "assets/BO7/SideStepBustle.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Flow State",
+      "icon": "assets/BO7/FlowState.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Triple Tap",
+      "icon": "assets/BO7/TripleTap.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Hot, Then Cold",
+      "icon": "assets/BO7/HotThenCold.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "No Talk Back",
+      "icon": "assets/BO7/NoTalkBack.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Back Sawed",
+      "icon": "assets/BO7/BackSawed.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Banged Up",
+      "icon": "assets/BO7/BangedUp.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Out of Hand",
+      "icon": "assets/BO7/OutOfHand.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Flippin' Out",
+      "icon": "assets/BO7/FlippinOut.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Log Off",
+      "icon": "assets/BO7/LogOff.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Rewind Retry",
+      "icon": "assets/BO7/RewindRetry.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Shove Off",
+      "icon": "assets/BO7/ShoveOff.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bend, Don't Break",
+      "icon": "assets/BO7/BendDontBreak.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Break It Down",
+      "icon": "assets/BO7/BreakItDown.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Decked",
+      "icon": "assets/BO7/Decked.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Bear Knuckle",
+      "icon": "assets/BO7/BearKnuckle.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Flesh Wound",
+      "icon": "assets/BO7/FleshWound.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Spike Burst",
+      "icon": "assets/BO7/SpikeBurst.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Chop Shop",
+      "icon": "assets/BO7/ChopShop.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    }
+  ]
 }

@@ -109,14 +109,28 @@ def stem_from_image_key(key: str) -> str | None:
     return re.sub(r"\.[a-z]+$", "", key, flags=re.IGNORECASE)
 
 
-def make_icon_path(game_key: str, stem: str) -> str:
-    return f"assets/{game_key}/{stem}.png"
+def ext_from_image_key(key: str, url: str | None) -> str:
+    """Extract file extension (including dot) from data-image-key or URL."""
+    if key:
+        match = re.search(r"\.([a-zA-Z0-9]+)$", key)
+        if match:
+            return f".{match.group(1).lower()}"
+    if url:
+        path_part = url.split("?")[0].split("/revision")[0]
+        match = re.search(r"\.([a-zA-Z0-9]+)$", path_part)
+        if match:
+            return f".{match.group(1).lower()}"
+    return ".png"
 
 
-def build_new_entry(name: str, game_key: str, stem: str) -> dict:
-    return {
+def make_icon_path(game_key: str, stem: str, ext: str = ".png") -> str:
+    return f"assets/{game_key}/{stem}{ext}"
+
+
+def build_new_entry(name: str, game_key: str, stem: str, ext: str = ".png", url: str | None = None) -> dict:
+    entry = {
         "name": name,
-        "icon": make_icon_path(game_key, stem),
+        "icon": make_icon_path(game_key, stem, ext),
         "standing": "Standing",
         "prone": "Prone",
         "downed": "Downed",
@@ -124,6 +138,22 @@ def build_new_entry(name: str, game_key: str, stem: str) -> dict:
         "ttk": 0.0,
         "price": 0,
     }
+    if url:
+        entry["_image_url"] = url
+    return entry
+
+
+def download_image(url: str, dest_path: Path) -> bool:
+    """Download image from url and save to dest_path."""
+    try:
+        dest_path.parent.mkdir(parents=True, exist_ok=True)
+        resp = SESSION.get(url, timeout=30)
+        resp.raise_for_status()
+        dest_path.write_bytes(resp.content)
+        return True
+    except Exception as exc:
+        print(f"      [DOWNLOAD ERROR] Failed to download {url} to {dest_path}: {exc}")
+        return False
 
 
 # ---------------------------------------------------------------------------
@@ -216,9 +246,11 @@ def parse_finishing_moves(
                 continue
 
             # ----------------------------------------------------------------
-            # Extract icon stem
+            # Extract icon stem, extension, and URL
             # ----------------------------------------------------------------
             stem = None
+            ext = ".png"
+            img_url = None
 
             if len(cells) > icon_cell_idx:
                 icon_cell = cells[icon_cell_idx]
@@ -237,6 +269,17 @@ def parse_finishing_moves(
                         candidate = stem_from_image_key(data_key)
                         if candidate and len(candidate) > 1:
                             stem = candidate
+                            
+                            # Extract extension
+                            raw_url = img.get("data-src") or img.get("src")
+                            ext = ext_from_image_key(data_key, raw_url)
+                            
+                            # Extract URL
+                            if raw_url and not raw_url.startswith("data:"):
+                                if "/revision/latest" in raw_url:
+                                    img_url = raw_url.split("/revision/latest")[0] + "/revision/latest"
+                                else:
+                                    img_url = raw_url
                             break
 
             if not stem:
@@ -246,7 +289,7 @@ def parse_finishing_moves(
             if not stem:
                 continue
 
-            entries.append(build_new_entry(name, game_key, stem))
+            entries.append(build_new_entry(name, game_key, stem, ext, img_url))
 
     return entries
 
@@ -286,18 +329,42 @@ def main():
         )
         print(f"  Parsed {len(parsed)} entries from page")
 
+        # Map of name -> existing entry
+        existing_entries_map = {entry["name"]: entry for entry in data[game_key]}
+
         added = 0
         seen_in_this_run: set[str] = set()
         for entry in parsed:
-            if entry["name"] in existing_names:
+            name = entry["name"]
+            if name in seen_in_this_run:
                 continue
-            if entry["name"] in seen_in_this_run:
-                continue  # de-duplicate
-            data[game_key].append(entry)
-            existing_names.add(entry["name"])
-            seen_in_this_run.add(entry["name"])
-            added += 1
-            print(f"    + {entry['name']!r}  ->  {entry['icon']}")
+            seen_in_this_run.add(name)
+
+            url = entry.pop("_image_url", None)
+            is_new = name not in existing_entries_map
+
+            if is_new:
+                data[game_key].append(entry)
+                existing_entries_map[name] = entry
+                added += 1
+                print(f"    + {name!r}  ->  {entry['icon']}")
+                target_entry = entry
+            else:
+                target_entry = existing_entries_map[name]
+
+            if url:
+                parsed_icon = entry["icon"]
+                dest_path = DATA_JSON_PATH.parent / parsed_icon
+
+                current_icon = target_entry.get("icon")
+                if current_icon != parsed_icon:
+                    print(f"    Updating icon path for {name!r}: {current_icon} -> {parsed_icon}")
+                    target_entry["icon"] = parsed_icon
+
+                if not dest_path.exists():
+                    print(f"    Downloading {parsed_icon} ...")
+                    if download_image(url, dest_path):
+                        time.sleep(0.5)
 
         summary[game_key] = added
         print(f"  Added {added} new entries for {game_key}")
