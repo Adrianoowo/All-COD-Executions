@@ -51,6 +51,9 @@ PAGES = [
     ("BO6",
      "Finishing_Move/Call_of_Duty:_Black_Ops_6",
      0, 1, True),
+    ("BO7",
+     "Finishing_Move/Call_of_Duty:_Black_Ops_7",
+     0, 1, True),
 ]
 
 # Simple API-friendly session (NO browser-specific Sec-Fetch headers)
@@ -314,6 +317,9 @@ def main():
         if game_key not in data:
             data[game_key] = []
 
+        def normalize_name(s: str) -> str:
+            return re.sub(r'[^a-z0-9]', '', s.lower())
+
         existing_names: set[str] = {entry["name"] for entry in data[game_key]}
         print(f"  Existing entries: {len(existing_names)}")
 
@@ -329,28 +335,29 @@ def main():
         )
         print(f"  Parsed {len(parsed)} entries from page")
 
-        # Map of name -> existing entry
-        existing_entries_map = {entry["name"]: entry for entry in data[game_key]}
+        # Map of normalized name -> existing entry
+        existing_entries_map = {normalize_name(entry["name"]): entry for entry in data[game_key]}
 
         added = 0
         seen_in_this_run: set[str] = set()
         for entry in parsed:
             name = entry["name"]
-            if name in seen_in_this_run:
+            norm_name = normalize_name(name)
+            if norm_name in seen_in_this_run:
                 continue
-            seen_in_this_run.add(name)
+            seen_in_this_run.add(norm_name)
 
             url = entry.pop("_image_url", None)
-            is_new = name not in existing_entries_map
+            is_new = norm_name not in existing_entries_map
 
             if is_new:
                 data[game_key].append(entry)
-                existing_entries_map[name] = entry
+                existing_entries_map[norm_name] = entry
                 added += 1
                 print(f"    + {name!r}  ->  {entry['icon']}")
                 target_entry = entry
             else:
-                target_entry = existing_entries_map[name]
+                target_entry = existing_entries_map[norm_name]
 
             if url:
                 parsed_icon = entry["icon"]

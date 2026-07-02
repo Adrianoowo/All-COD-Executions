@@ -4307,66 +4307,6 @@
       "price": 2400
     },
     {
-      "name": "Bend and Snap",
-      "icon": "assets/MWIII/BendAndSnap.png",
-      "standing": "Standing",
-      "prone": "Prone",
-      "downed": "Downed",
-      "anim_time": 0.0,
-      "ttk": 0.0,
-      "price": 0
-    },
-    {
-      "name": "Chip and Shatter",
-      "icon": "assets/MWIII/ChipAndShatter.png",
-      "standing": "Standing",
-      "prone": "Prone",
-      "downed": "Downed",
-      "anim_time": 0.0,
-      "ttk": 0.0,
-      "price": 0
-    },
-    {
-      "name": "Fastest Man In the World",
-      "icon": "assets/MWIII/FastestManInTheWorld.png",
-      "standing": "Standing",
-      "prone": "Prone",
-      "downed": "Downed",
-      "anim_time": 0.0,
-      "ttk": 0.0,
-      "price": 0
-    },
-    {
-      "name": "Freedom of Speech",
-      "icon": "assets/MWIII/FreedomOfSpeech.png",
-      "standing": "Standing",
-      "prone": "Prone",
-      "downed": "Downed",
-      "anim_time": 0.0,
-      "ttk": 0.0,
-      "price": 0
-    },
-    {
-      "name": "Flesh Stripped and Gold Dipped",
-      "icon": "assets/MWIII/FleshStrippedAndGoldDipped.png",
-      "standing": "Standing",
-      "prone": "Prone",
-      "downed": "Downed",
-      "anim_time": 0.0,
-      "ttk": 0.0,
-      "price": 0
-    },
-    {
-      "name": "Send in The Good Boy",
-      "icon": "assets/MWIII/SendInTheGoodBoy.png",
-      "standing": "Standing",
-      "prone": "Prone",
-      "downed": "Downed",
-      "anim_time": 0.0,
-      "ttk": 0.0,
-      "price": 0
-    },
-    {
       "name": "Ninjanuity",
       "icon": "assets/MWIII/Ninjanuity.png",
       "standing": "Standing",
@@ -4377,58 +4317,8 @@
       "price": 0
     },
     {
-      "name": "Leave the Dead",
-      "icon": "assets/MWIII/LeaveTheDead.png",
-      "standing": "Standing",
-      "prone": "Prone",
-      "downed": "Downed",
-      "anim_time": 0.0,
-      "ttk": 0.0,
-      "price": 0
-    },
-    {
-      "name": "Tactical Pet: Servo-Skull",
-      "icon": "assets/MWIII/TacticalPetServoSkull.png",
-      "standing": "Standing",
-      "prone": "Prone",
-      "downed": "Downed",
-      "anim_time": 0.0,
-      "ttk": 0.0,
-      "price": 0
-    },
-    {
-      "name": "Tactical Pet: D-O-Double-G",
-      "icon": "assets/MWIII/TacticalPetDODoubleG.png",
-      "standing": "Standing",
-      "prone": "Prone",
-      "downed": "Downed",
-      "anim_time": 0.0,
-      "ttk": 0.0,
-      "price": 0
-    },
-    {
       "name": "Whipslashed Unleashed",
       "icon": "assets/MWIII/WhiplashedUnleashed.png",
-      "standing": "Standing",
-      "prone": "Prone",
-      "downed": "Downed",
-      "anim_time": 0.0,
-      "ttk": 0.0,
-      "price": 0
-    },
-    {
-      "name": "Feel the Heat Ray",
-      "icon": "assets/MWIII/FeelTheHeatRay.png",
-      "standing": "Standing",
-      "prone": "Prone",
-      "downed": "Downed",
-      "anim_time": 0.0,
-      "ttk": 0.0,
-      "price": 0
-    },
-    {
-      "name": "The Chair!",
-      "icon": "assets/MWIII/TheChair.png",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
@@ -6162,7 +6052,7 @@
     },
     {
       "name": "Flip & Snap",
-      "icon": "assets/BO7/FlipAndSnap.png",
+      "icon": "assets/BO7/Flip&Snap.png",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
@@ -7013,6 +6903,86 @@
     {
       "name": "Chop Shop",
       "icon": "assets/BO7/ChopShop.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Calmly Ended",
+      "icon": "assets/BO7/CalmlyEnded.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Trash Day",
+      "icon": "assets/BO7/TrashDay.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Critical Mess",
+      "icon": "assets/BO7/CriticalMess.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Multi-Use Tool",
+      "icon": "assets/BO7/MultiUseTool.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Instinct and Training",
+      "icon": "assets/BO7/InstinctAndTraining.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Decommission",
+      "icon": "assets/BO7/Decommission.gif",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Dead Rain",
+      "icon": "assets/BO7/DeadRain.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0
+    },
+    {
+      "name": "Flying Fang",
+      "icon": "assets/BO7/FlyingFang.png",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
