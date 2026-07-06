@@ -30,30 +30,30 @@ DATA_JSON_PATH = Path(__file__).parent / "data.json"
 
 FANDOM_API_BASE = "https://callofduty.fandom.com/api.php"
 
-# Mapping: (game_key, wiki_page_title, name_cell_idx, icon_cell_idx, name_has_rarity)
+# Mapping: (game_key, wiki_page_title, name_cell_idx, icon_cell_idx, preview_cell_idx, name_has_rarity)
 # name_has_rarity: True if the name cell contains "Name|Rarity" and we take split[0]
 PAGES = [
     ("MW",
      "Finishing_Move/Call_of_Duty:_Modern_Warfare_(2019)",
-     0, 1, True),
+     0, 1, None, True),
     ("CW",
      "Finishing_Move/Call_of_Duty:_Black_Ops_Cold_War",
-     0, 2, False),
+     0, 2, None, False),
     ("VG",
      "Finishing_Move/Call_of_Duty:_Vanguard",
-     0, 2, False),
+     0, None, 2, False),
     ("MWII",
      "Finishing_Move/Call_of_Duty:_Modern_Warfare_II",
-     0, 1, False),
+     0, 1, None, False),
     ("MWIII",
      "Finishing_Move/Call_of_Duty:_Modern_Warfare_III",
-     0, 1, False),
+     0, 1, None, False),
     ("BO6",
      "Finishing_Move/Call_of_Duty:_Black_Ops_6",
-     0, 1, True),
+     0, 1, 2, True),
     ("BO7",
      "Finishing_Move/Call_of_Duty:_Black_Ops_7",
-     0, 1, True),
+     0, 1, 2, True),
 ]
 
 # Simple API-friendly session (NO browser-specific Sec-Fetch headers)
@@ -130,19 +130,35 @@ def make_icon_path(game_key: str, stem: str, ext: str = ".png") -> str:
     return f"assets/{game_key}/{stem}{ext}"
 
 
-def build_new_entry(name: str, game_key: str, stem: str, ext: str = ".png", url: str | None = None) -> dict:
+def make_preview_path(game_key: str, stem: str, ext: str = ".gif") -> str:
+    return f"assets/previews/{game_key}/{stem}{ext}"
+
+
+def build_new_entry(
+    name: str, 
+    game_key: str, 
+    stem: str, 
+    ext: str = ".png", 
+    url: str | None = None,
+    preview_url: str | None = None,
+    preview_ext: str = ".gif",
+    has_icon_col: bool = True
+) -> dict:
     entry = {
         "name": name,
-        "icon": make_icon_path(game_key, stem, ext),
+        "icon": make_icon_path(game_key, stem, ext) if has_icon_col else "Icon",
         "standing": "Standing",
         "prone": "Prone",
         "downed": "Downed",
         "anim_time": 0.0,
         "ttk": 0.0,
         "price": 0,
+        "preview": make_preview_path(game_key, stem, preview_ext) if preview_url else "Preview"
     }
-    if url:
+    if url and has_icon_col:
         entry["_image_url"] = url
+    if preview_url:
+        entry["_preview_url"] = preview_url
     return entry
 
 
@@ -201,7 +217,8 @@ def parse_finishing_moves(
     soup: BeautifulSoup,
     game_key: str,
     name_cell_idx: int,
-    icon_cell_idx: int,
+    icon_cell_idx: int | None,
+    preview_cell_idx: int | None,
     name_has_rarity: bool,
 ) -> list[dict]:
     """
@@ -235,15 +252,7 @@ def parse_finishing_moves(
             if not name_raw:
                 continue
 
-            if name_has_rarity:
-                # e.g. "Achilles Heel|Base" or "Look Sharp|Epic"
-                name = name_raw.split("|")[0].strip()
-            else:
-                # Take first segment (in case of "Name|extra")
-                name = name_raw.split("|")[0].strip()
-
-            # Strip trailing/leading punctuation artifacts
-            name = name.strip().strip('"').strip("'").strip()
+            name = name_raw.split("|")[0].strip().strip('"').strip("'").strip()
 
             if not name or len(name) < 2:
                 continue
@@ -255,12 +264,15 @@ def parse_finishing_moves(
             ext = ".png"
             img_url = None
 
-            if len(cells) > icon_cell_idx:
+            if icon_cell_idx is not None and len(cells) > icon_cell_idx:
                 icon_cell = cells[icon_cell_idx]
                 imgs = icon_cell.find_all("img")
                 if not imgs:
-                    # Try looking in the whole row for the icon
-                    imgs = row.find_all("img")
+                    # Try looking in the whole row for the icon (avoiding the preview cell)
+                    imgs = []
+                    for idx, cell in enumerate(cells):
+                        if idx != preview_cell_idx and cell.name == "td":
+                            imgs.extend(cell.find_all("img"))
 
                 for img in imgs:
                     data_key = (
@@ -272,12 +284,8 @@ def parse_finishing_moves(
                         candidate = stem_from_image_key(data_key)
                         if candidate and len(candidate) > 1:
                             stem = candidate
-                            
-                            # Extract extension
                             raw_url = img.get("data-src") or img.get("src")
                             ext = ext_from_image_key(data_key, raw_url)
-                            
-                            # Extract URL
                             if raw_url and not raw_url.startswith("data:"):
                                 if "/revision/latest" in raw_url:
                                     img_url = raw_url.split("/revision/latest")[0] + "/revision/latest"
@@ -285,14 +293,51 @@ def parse_finishing_moves(
                                     img_url = raw_url
                             break
 
+            # ----------------------------------------------------------------
+            # Extract preview stem, extension, and URL
+            # ----------------------------------------------------------------
+            preview_url = None
+            preview_ext = ".gif"
+
+            if preview_cell_idx is not None and len(cells) > preview_cell_idx:
+                preview_cell = cells[preview_cell_idx]
+                p_imgs = preview_cell.find_all("img")
+                for img in p_imgs:
+                    data_key = (
+                        img.get("data-image-key", "")
+                        or img.get("data-image-name", "")
+                        or img.get("alt", "")
+                    )
+                    if data_key:
+                        p_candidate = stem_from_image_key(data_key)
+                        if p_candidate and len(p_candidate) > 1:
+                            if not stem:
+                                stem = p_candidate
+                            raw_url = img.get("data-src") or img.get("src")
+                            preview_ext = ext_from_image_key(data_key, raw_url)
+                            if raw_url and not raw_url.startswith("data:"):
+                                if "/revision/latest" in raw_url:
+                                    preview_url = raw_url.split("/revision/latest")[0] + "/revision/latest"
+                                else:
+                                    preview_url = raw_url
+                            break
+
             if not stem:
-                # Fall back to deriving stem from the name
                 stem = to_camel_case(name)
 
             if not stem:
                 continue
 
-            entries.append(build_new_entry(name, game_key, stem, ext, img_url))
+            entries.append(build_new_entry(
+                name=name, 
+                game_key=game_key, 
+                stem=stem, 
+                ext=ext, 
+                url=img_url, 
+                preview_url=preview_url, 
+                preview_ext=preview_ext,
+                has_icon_col=(icon_cell_idx is not None)
+            ))
 
     return entries
 
@@ -309,7 +354,7 @@ def main():
 
     summary: dict[str, int] = {}
 
-    for game_key, page_title, name_idx, icon_idx, name_has_rarity in PAGES:
+    for game_key, page_title, name_idx, icon_idx, preview_idx, name_has_rarity in PAGES:
         print(f"\n{'=' * 60}")
         print(f"Processing {game_key}: {page_title}")
         print(f"{'=' * 60}")
@@ -331,7 +376,7 @@ def main():
             continue
 
         parsed = parse_finishing_moves(
-            soup, game_key, name_idx, icon_idx, name_has_rarity
+            soup, game_key, name_idx, icon_idx, preview_idx, name_has_rarity
         )
         print(f"  Parsed {len(parsed)} entries from page")
 
@@ -348,13 +393,16 @@ def main():
             seen_in_this_run.add(norm_name)
 
             url = entry.pop("_image_url", None)
+            preview_url = entry.pop("_preview_url", None)
             is_new = norm_name not in existing_entries_map
 
             if is_new:
                 data[game_key].append(entry)
                 existing_entries_map[norm_name] = entry
                 added += 1
-                print(f"    + {name!r}  ->  {entry['icon']}")
+                icon_path = entry.get("icon")
+                preview_path = entry.get("preview")
+                print(f"    + {name!r}  ->  icon: {icon_path}, preview: {preview_path}")
                 target_entry = entry
             else:
                 target_entry = existing_entries_map[norm_name]
@@ -371,6 +419,22 @@ def main():
                 if not dest_path.exists():
                     print(f"    Downloading {parsed_icon} ...")
                     if download_image(url, dest_path):
+                        time.sleep(0.5)
+
+            if preview_url:
+                parsed_preview = entry["preview"]
+                dest_preview_path = DATA_JSON_PATH.parent / parsed_preview
+
+                current_preview = target_entry.get("preview", "Preview")
+                if current_preview != parsed_preview:
+                    print(f"    Updating preview path for {name!r}: {current_preview} -> {parsed_preview}")
+                    target_entry["preview"] = parsed_preview
+
+                if not dest_preview_path.exists():
+                    print(f"    Downloading preview {parsed_preview} ...")
+                    # Ensure directory exists
+                    dest_preview_path.parent.mkdir(parents=True, exist_ok=True)
+                    if download_image(preview_url, dest_preview_path):
                         time.sleep(0.5)
 
         summary[game_key] = added

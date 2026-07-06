@@ -9,7 +9,8 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 2400,
-      "bundle": "Gaz Operator Bundle"
+      "bundle": "Gaz Operator Bundle",
+      "preview": "Preview"
     },
     {
       "name": "A Friendly Hello",
@@ -18,7 +19,8 @@
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
-      "ttk": 0.0
+      "ttk": 0.0,
+      "preview": "Preview"
     },
     {
       "name": "All Kicks",
@@ -26,7 +28,8 @@
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Bark And Bite",
@@ -36,7 +39,8 @@
       "downed": "Downed",
       "anim_time": 0.3,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Making Holes",
@@ -46,7 +50,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Punctual Puncture",
@@ -56,7 +61,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Sidearm Hustle",
@@ -66,7 +72,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Kneecaps And Brainpans",
@@ -76,7 +83,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Slice And Easy",
@@ -86,7 +94,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Main Man",
@@ -96,7 +105,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Lights Out",
@@ -106,7 +116,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Blowout",
@@ -116,7 +127,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Racked And Wrecked",
@@ -126,7 +138,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "LMG KIA",
@@ -136,7 +149,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Up Close And High Caliber",
@@ -146,7 +160,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Sighted In",
@@ -156,7 +171,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Point And Shoot",
@@ -166,7 +182,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hammer Meet Skull",
@@ -176,7 +193,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Breach And Fear",
@@ -186,7 +204,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Resident Drummer",
@@ -196,7 +215,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Bloody Percussionist",
@@ -206,7 +226,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Lumber Smack",
@@ -216,7 +237,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Chopping Block",
@@ -226,7 +248,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Don't Struggle",
@@ -236,7 +259,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Slingblade",
@@ -246,7 +270,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Planting Steel",
@@ -256,7 +281,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Knuckle Up",
@@ -266,7 +292,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Cage Match",
@@ -276,7 +303,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Gravity Assist",
@@ -286,7 +314,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Sweet Dreams",
@@ -296,7 +325,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "No Firearms Needed",
@@ -306,7 +336,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Jaw Buster",
@@ -316,7 +347,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Suplex Deluxe",
@@ -326,7 +358,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Killer Kodachis",
@@ -336,7 +369,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Sticky Situation",
@@ -346,7 +380,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Smooth Cuts",
@@ -356,7 +391,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Smack Attack",
@@ -366,7 +402,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Foul Fate",
@@ -376,7 +413,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Rapid Incision",
@@ -386,7 +424,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Shred 'Em Up",
@@ -396,7 +435,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Shotgun Slayed",
@@ -406,7 +446,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Close Encounter",
@@ -416,7 +457,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Timber!",
@@ -426,7 +468,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "BlackCell SOP",
@@ -436,7 +479,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Bong Rip",
@@ -446,7 +490,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "OMG LMG",
@@ -456,7 +501,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Deadly From Downtown",
@@ -466,7 +512,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Tatman Tactics",
@@ -476,7 +523,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Kickin' It",
@@ -486,7 +534,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Electrifying",
@@ -496,7 +545,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Let's Go Clubbing",
@@ -506,7 +556,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Shell Of A Day",
@@ -516,7 +567,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Heavy Handed",
@@ -526,7 +578,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "BlackCell Moves",
@@ -536,7 +589,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Spinal Adjustment",
@@ -546,7 +600,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Bruised And Battered",
@@ -556,7 +611,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Necessary Evil",
@@ -566,7 +622,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Laser Everyone",
@@ -576,7 +633,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Shhh",
@@ -586,7 +644,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Bootlicker",
@@ -596,7 +655,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Tactical Pet: Merlin",
@@ -606,7 +666,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Cranial Crack",
@@ -616,7 +677,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "No Scope Needed",
@@ -626,7 +688,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Sidepiece Deceased",
@@ -636,7 +699,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Crowbar 101",
@@ -646,7 +710,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Snoop Hustle",
@@ -656,7 +721,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Get Bodied",
@@ -666,7 +732,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Stabbed... A Lot",
@@ -676,7 +743,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Tactical Pet: Syd",
@@ -686,7 +754,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Beat Drop",
@@ -696,7 +765,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hip Hop Hurt",
@@ -706,7 +776,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Play for Sport",
@@ -716,7 +787,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "No Escape",
@@ -726,7 +798,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Tactical Pet: Megabyte",
@@ -736,7 +809,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hammer It Out",
@@ -746,7 +820,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Death Summons",
@@ -756,7 +831,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Fate and Consequence",
@@ -766,7 +842,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "More Where That Came From",
@@ -776,7 +853,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Daughter of Hatred",
@@ -786,7 +864,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Skeletor's Malice",
@@ -796,7 +875,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Trick and Treat",
@@ -806,7 +886,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Boomstick Boogie",
@@ -816,7 +897,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Inarius Impaling",
@@ -826,7 +908,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Reaping Souls",
@@ -836,7 +919,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Sardaukar Wrath",
@@ -846,7 +930,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     }
   ],
   "MW": [
@@ -858,7 +943,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Axe You Nicely",
@@ -868,7 +954,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Axe and Receive",
@@ -878,7 +965,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Baton Dispatch",
@@ -888,7 +976,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Cranial Carnage",
@@ -898,7 +987,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Death Pirouette",
@@ -908,7 +998,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Disable and Decimate",
@@ -918,7 +1009,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Disable and Kill",
@@ -928,7 +1020,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Disdainful Destruction",
@@ -938,7 +1031,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Face the End",
@@ -948,7 +1042,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Foul Play",
@@ -958,7 +1053,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hatchet Hitman",
@@ -968,7 +1064,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Head to Head",
@@ -978,7 +1075,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hobble and Slay",
@@ -988,7 +1086,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Infiltration",
@@ -998,7 +1097,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Knee Deep",
@@ -1008,7 +1108,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Pierce the Jug",
@@ -1018,7 +1119,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Riot Control",
@@ -1028,7 +1130,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Shanks A Lot",
@@ -1038,7 +1141,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Slideshot",
@@ -1048,7 +1152,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Take Down",
@@ -1058,7 +1163,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "1, 2, 3",
@@ -1068,7 +1174,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Axing For Trouble",
@@ -1078,7 +1185,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Belly Flop",
@@ -1088,7 +1196,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Between The Ribs",
@@ -1098,7 +1207,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Brass Boxer",
@@ -1108,7 +1218,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Brass Tactics",
@@ -1118,7 +1229,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Brassed Off",
@@ -1128,7 +1240,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Brick by Brick",
@@ -1138,7 +1251,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Carver",
@@ -1148,7 +1262,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Chest Pains",
@@ -1158,7 +1273,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Close and Personal",
@@ -1168,7 +1284,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Clubbed",
@@ -1178,7 +1295,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Cold Blooded",
@@ -1188,7 +1306,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Counterplay",
@@ -1198,7 +1317,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Deft Dispatch",
@@ -1208,7 +1328,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Do The Spadework",
@@ -1218,7 +1339,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Down to Size",
@@ -1228,7 +1350,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Electrifying End",
@@ -1238,7 +1361,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Face the Adze",
@@ -1248,7 +1372,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "First Degree",
@@ -1258,7 +1383,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Go Clubbing",
@@ -1268,7 +1394,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Grave Digger",
@@ -1278,7 +1405,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Herding",
@@ -1288,7 +1416,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hold This",
@@ -1298,7 +1427,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Ice Breaker",
@@ -1308,7 +1438,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Ice To Meet You",
@@ -1318,7 +1449,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Icy Veins",
@@ -1328,7 +1460,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Join the Club",
@@ -1338,7 +1471,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Knife To Meet You",
@@ -1348,7 +1482,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Laid To Rest",
@@ -1358,7 +1493,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Leg Sweep",
@@ -1368,7 +1504,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Lined Up",
@@ -1378,7 +1515,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Lose By A Neck",
@@ -1388,7 +1526,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Mace to the Face",
@@ -1398,7 +1537,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Martial Law",
@@ -1408,7 +1548,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Misdirection",
@@ -1418,7 +1559,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Payback",
@@ -1428,7 +1570,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Pew Pew Pew",
@@ -1438,7 +1581,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Pinned",
@@ -1448,7 +1592,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Point Taken",
@@ -1458,7 +1603,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Precision Point",
@@ -1468,7 +1614,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Queen of Spades",
@@ -1478,7 +1625,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Run Through",
@@ -1488,7 +1636,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Say Watt",
@@ -1498,7 +1647,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Sick 'Em",
@@ -1508,7 +1658,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Slice and Dice",
@@ -1518,7 +1669,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Spine Snapper",
@@ -1528,7 +1680,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Staying Frosty",
@@ -1538,7 +1691,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Step Aside",
@@ -1548,7 +1702,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Stick 'n' Knife",
@@ -1558,7 +1713,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Take a Bow",
@@ -1568,7 +1724,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "The Fix",
@@ -1578,7 +1735,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Trick Shot",
@@ -1588,7 +1746,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Turnover",
@@ -1598,7 +1757,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Walk Into It",
@@ -1608,7 +1768,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Wall Breaker",
@@ -1618,7 +1779,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Bush League",
@@ -1628,7 +1790,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Chip Shot",
@@ -1638,7 +1801,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Crick In The Neck",
@@ -1648,7 +1812,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Edward",
@@ -1658,7 +1823,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Fangs Out",
@@ -1668,7 +1834,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Gutted",
@@ -1678,7 +1845,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hellhound",
@@ -1688,7 +1856,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hello Stranger",
@@ -1698,7 +1867,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Low Rise",
@@ -1708,7 +1878,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Nevermore",
@@ -1718,7 +1889,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Perforate",
@@ -1728,7 +1900,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Riley",
@@ -1738,7 +1911,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Sasquatch",
@@ -1748,7 +1922,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Snafu",
@@ -1758,7 +1933,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Spin Cycle",
@@ -1768,7 +1944,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Sputnik",
@@ -1778,7 +1955,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Three Strikes",
@@ -1788,7 +1966,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Toto",
@@ -1798,7 +1977,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Tuco",
@@ -1808,7 +1988,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Watch This",
@@ -1818,7 +1999,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     }
   ],
   "CW": [
@@ -1830,7 +2012,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Axe Nicely",
@@ -1840,7 +2023,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Back Up Plan",
@@ -1850,7 +2034,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Body Slam",
@@ -1860,7 +2045,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Body Snatcher",
@@ -1870,7 +2056,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Boom Surprise",
@@ -1880,7 +2067,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Bow Breaker",
@@ -1890,7 +2078,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Bow Strike",
@@ -1900,7 +2089,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Caught Staring",
@@ -1910,7 +2100,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Cheap Shot",
@@ -1920,7 +2111,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Compromised Recovery",
@@ -1930,7 +2122,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Deep Cuts",
@@ -1940,7 +2133,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Defective Joints",
@@ -1950,7 +2144,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Double Tap",
@@ -1960,7 +2155,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Devastating Blow",
@@ -1970,7 +2166,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Disarmament",
@@ -1980,7 +2177,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Disarmed",
@@ -1990,7 +2188,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Disconnect",
@@ -2000,7 +2199,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Down & Dirty",
@@ -2010,7 +2210,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Drop Shot",
@@ -2020,7 +2221,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Fall of Achilles",
@@ -2030,7 +2232,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Full Barrage",
@@ -2040,7 +2243,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Guillotine Roll",
@@ -2050,7 +2254,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hack Job",
@@ -2060,7 +2265,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Had Enough",
@@ -2070,7 +2276,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Half Guard",
@@ -2080,7 +2287,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Heart Ache",
@@ -2090,7 +2298,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Helping Hand",
@@ -2100,7 +2309,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hook & Sinker",
@@ -2110,7 +2320,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hot Shot Slide",
@@ -2120,7 +2331,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Internal Damage",
@@ -2130,7 +2342,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Killer Moves",
@@ -2140,7 +2353,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Lost & Found",
@@ -2150,7 +2364,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Low Praise",
@@ -2160,7 +2375,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "No Mercy",
@@ -2170,7 +2386,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Nailed It",
@@ -2180,7 +2397,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Optical Illusion",
@@ -2190,7 +2408,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Pointed End",
@@ -2200,7 +2419,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Pound for Pound",
@@ -2210,7 +2430,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Rear Mount",
@@ -2220,7 +2441,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Rock-a-bye-bye",
@@ -2230,7 +2452,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Roll Up",
@@ -2240,7 +2463,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Scorpion Slam",
@@ -2250,7 +2474,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Shot Down",
@@ -2260,7 +2485,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Shot Up",
@@ -2270,7 +2496,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Sidearm Dispatch",
@@ -2280,7 +2507,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Stick Up",
@@ -2290,7 +2518,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Stomping Ground",
@@ -2300,7 +2529,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Struggle Bust",
@@ -2310,7 +2540,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Swift Kick",
@@ -2320,7 +2551,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Throat Chop",
@@ -2330,7 +2562,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Throat Cut",
@@ -2340,7 +2573,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Tight Squeeze",
@@ -2350,7 +2584,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Ultimate Takedown",
@@ -2360,7 +2595,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Unlikely Volunteer",
@@ -2370,7 +2606,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Victim Inflicted",
@@ -2380,7 +2617,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Wacked",
@@ -2390,7 +2628,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Above the Neck",
@@ -2400,7 +2639,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Absolute Blast",
@@ -2410,7 +2650,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Between the Legs",
@@ -2420,7 +2661,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Big Stick",
@@ -2430,7 +2672,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Bird of Prey",
@@ -2440,7 +2683,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Cap & Tap",
@@ -2450,7 +2694,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Club Thumper",
@@ -2460,7 +2705,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Dangerous Approach",
@@ -2470,7 +2716,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Dog of War",
@@ -2480,7 +2727,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Frontier Finisher",
@@ -2490,7 +2738,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hammer Uppercut",
@@ -2500,7 +2749,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Jump Shot",
@@ -2510,7 +2760,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Maim & Tame",
@@ -2520,7 +2771,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Nail Driver",
@@ -2530,7 +2782,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Overpower",
@@ -2540,7 +2793,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Pain In The Neck",
@@ -2550,7 +2804,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Plague Hound",
@@ -2560,7 +2815,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Rearranged Thoughts",
@@ -2570,7 +2826,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Shortcut",
@@ -2580,7 +2837,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Splitting Hairs",
@@ -2590,7 +2848,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Tactical Roll",
@@ -2600,7 +2859,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Tight Rope",
@@ -2610,7 +2870,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Wrap Around",
@@ -2620,7 +2881,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Assassination",
@@ -2630,7 +2892,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Axe Murder",
@@ -2640,7 +2903,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Ballistic Blast",
@@ -2650,7 +2914,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Big Bang",
@@ -2660,7 +2925,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Brutalize",
@@ -2670,7 +2936,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Casual Surprise",
@@ -2680,7 +2947,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Caved In",
@@ -2690,7 +2958,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Chin-Up",
@@ -2700,7 +2969,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Cold Beatdown",
@@ -2710,7 +2980,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Combat Kill",
@@ -2720,7 +2991,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Cracked Open",
@@ -2730,7 +3002,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Crash Course",
@@ -2740,7 +3013,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Crawling Zombie",
@@ -2750,7 +3024,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Crispy",
@@ -2760,7 +3035,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Dispatch Agent",
@@ -2770,7 +3046,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Drop Dead",
@@ -2780,7 +3057,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Executioner",
@@ -2790,7 +3068,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Ferocious Hare",
@@ -2800,7 +3079,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Force of Will",
@@ -2810,7 +3090,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Garrote",
@@ -2820,7 +3101,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Gravedigger",
@@ -2830,7 +3112,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hammer Head",
@@ -2840,7 +3123,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Head Harvester",
@@ -2850,7 +3134,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Heartfelt Goodbye",
@@ -2860,7 +3145,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hidden Gun",
@@ -2870,7 +3156,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hook & Hinder",
@@ -2880,7 +3167,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Incendiary",
@@ -2890,7 +3178,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Knee Capped",
@@ -2900,7 +3189,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Komodo Dragon",
@@ -2910,7 +3200,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Leap Shot",
@@ -2920,7 +3211,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Loose Ends",
@@ -2930,7 +3222,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Mind Games",
@@ -2940,7 +3233,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Nailed Down",
@@ -2950,7 +3244,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Outmatched",
@@ -2960,7 +3255,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Penalty Kick",
@@ -2970,7 +3266,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Repairs With Klaus",
@@ -2980,7 +3277,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Road Rash",
@@ -2990,7 +3288,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Settle Down",
@@ -3000,7 +3299,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Sky is Falling",
@@ -3010,7 +3310,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Slash & Stab",
@@ -3020,7 +3321,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Slithering Jab",
@@ -3030,7 +3332,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Snow Leopard",
@@ -3040,7 +3343,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Soul Torn",
@@ -3050,7 +3354,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Spare a Light",
@@ -3060,7 +3365,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Spin Move",
@@ -3070,7 +3376,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Spring Attack",
@@ -3080,7 +3387,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Stay Put",
@@ -3090,7 +3398,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Suplex",
@@ -3100,7 +3409,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Swinging Heat",
@@ -3110,7 +3420,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Switcheroo",
@@ -3120,7 +3431,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Tapped Out",
@@ -3130,7 +3442,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Timber",
@@ -3140,7 +3453,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Tortured",
@@ -3150,7 +3464,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Twisted Reverse",
@@ -3160,7 +3475,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Undercarriage",
@@ -3170,7 +3486,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Vertical Slice",
@@ -3180,7 +3497,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Violent End",
@@ -3190,7 +3508,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Zombie Decay",
@@ -3200,559 +3519,615 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     }
   ],
   "VG": [
     {
       "name": "Rack It",
-      "icon": "assets/VG/RackIt.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/RackIt.gif"
     },
     {
       "name": "Angler's Hook",
-      "icon": "assets/VG/AnglersHook.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/AnglersHook.gif"
     },
     {
       "name": "Arnis Assault",
-      "icon": "assets/VG/ArnisAssault.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/ArnisAssault.gif"
     },
     {
       "name": "Barrel It Up",
-      "icon": "assets/VG/BarrelItUp.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/BarrelItUp.gif"
     },
     {
       "name": "Butcher's Cut",
-      "icon": "assets/VG/ButchersCut.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/ButchersCut.gif"
     },
     {
       "name": "Big Time Operator",
-      "icon": "assets/VG/BigTimeOperator.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/BigTimeOperator.gif"
     },
     {
       "name": "Capoeira Carnage",
-      "icon": "assets/VG/CapoeiraCarnage.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/CapoeiraCarnage.gif"
     },
     {
       "name": "Dig Deep",
-      "icon": "assets/VG/DigDeep.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/DigDeep.gif"
     },
     {
       "name": "Few Screws Loose",
-      "icon": "assets/VG/FewScrewsLoose.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/FewScrewsLoose.gif"
     },
     {
       "name": "Hammered",
-      "icon": "assets/VG/Hammered.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/Hammered.gif"
     },
     {
       "name": "Hamstrung",
-      "icon": "assets/VG/Hamstrung.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/Hamstrung.gif"
     },
     {
       "name": "Hapkido",
-      "icon": "assets/VG/Hapkido.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/Hapkido.gif"
     },
     {
       "name": "Highlander Hello",
-      "icon": "assets/VG/HighlanderHello.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/HighlanderHello.gif"
     },
     {
       "name": "Iaijutsu",
-      "icon": "assets/VG/Iaijutsu.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/Iaijutsu.gif"
     },
     {
       "name": "Kidney Cutter",
-      "icon": "assets/VG/KidneyCutter.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/KidneyCutter.gif"
     },
     {
       "name": "Maced",
-      "icon": "assets/VG/Maced.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/Maced.gif"
     },
     {
       "name": "Machete Magic",
-      "icon": "assets/VG/MacheteMagic.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/MacheteMagic.gif"
     },
     {
       "name": "Neck Adjustment",
-      "icon": "assets/VG/NeckAdjustment.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/NeckAdjustment.gif"
     },
     {
       "name": "No Escape",
-      "icon": "assets/VG/NoEscape.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/NoEscape.gif"
     },
     {
       "name": "Picked Off",
-      "icon": "assets/VG/PickedOff.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/PickedOff.gif"
     },
     {
       "name": "Pressure Points",
-      "icon": "assets/VG/PressurePoints.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/PressurePoints.gif"
     },
     {
       "name": "Silent Ambush",
-      "icon": "assets/VG/SilentAmbush.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/SilentAmbush.gif"
     },
     {
       "name": "Suplex",
-      "icon": "assets/VG/Suplex.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/Suplex.gif"
     },
     {
       "name": "Takedown",
-      "icon": "assets/VG/Takedown.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/Takedown.gif"
     },
     {
       "name": "Vicious",
-      "icon": "assets/VG/Vicious.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/Vicious.gif"
     },
     {
       "name": "Hanging The Lights",
-      "icon": "assets/VG/HangingTheLights.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/HangingTheLights.gif"
     },
     {
       "name": "Pop Bottles",
-      "icon": "assets/VG/PopBottles.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/PopBottles.gif"
     },
     {
       "name": "Straight To The Point",
-      "icon": "assets/VG/StraightToThePoint.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/StraightToThePoint.gif"
     },
     {
       "name": "Ba-Da-Boom!",
-      "icon": "assets/VG/BaDaBoom.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/BaDaBoom.gif"
     },
     {
       "name": "Blocker Remover",
-      "icon": "assets/VG/BlockerRemover.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/BlockerRemover.gif"
     },
     {
       "name": "Blowin' Smoke",
-      "icon": "assets/VG/BlowinSmoke.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/BlowinSmoke.gif"
     },
     {
       "name": "Caught By Surprise",
-      "icon": "assets/VG/CaughtBySurprise.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/CaughtBySurprise.gif"
     },
     {
       "name": "Cut The Crap",
-      "icon": "assets/VG/CutTheCrap.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/CutTheCrap.gif"
     },
     {
       "name": "Don't Look At Explosions!",
-      "icon": "assets/VG/DontLookAtExplosions.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/DontLookAtExplosions.gif"
     },
     {
       "name": "Dragged To Hell",
-      "icon": "assets/VG/DraggedToHell.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/DraggedToHell.gif"
     },
     {
       "name": "Elegant Precision",
-      "icon": "assets/VG/ElegantPrecision.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/ElegantPrecision.gif"
     },
     {
       "name": "Elfsecution",
-      "icon": "assets/VG/Elfsecution.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/Elfsecution.gif"
     },
     {
       "name": "Eternal Hunger",
-      "icon": "assets/VG/EternalHunger.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/EternalHunger.gif"
     },
     {
       "name": "Extinction Event",
-      "icon": "assets/VG/ExtinctionEvent.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/ExtinctionEvent.gif"
     },
     {
       "name": "Fenrir Unchained",
-      "icon": "assets/VG/FenrirUnchained.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/FenrirUnchained.gif"
     },
     {
       "name": "Finishizzle Movizzle",
-      "icon": "assets/VG/FinishizzleMovizzle.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/FinishizzleMovizzle.gif"
     },
     {
       "name": "Gojira Stomp",
-      "icon": "assets/VG/GojiraStomp.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/GojiraStomp.gif"
     },
     {
       "name": "Gravity Inversion",
-      "icon": "assets/VG/GravityInversion.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/GravityInversion.gif"
     },
     {
       "name": "Laying On The Lumber",
-      "icon": "assets/VG/LayingOnTheLumber.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/LayingOnTheLumber.gif"
     },
     {
       "name": "Main Squeeze",
-      "icon": "assets/VG/MainSqueeze.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/MainSqueeze.gif"
     },
     {
       "name": "Radioactive Shower",
-      "icon": "assets/VG/RadioactiveShower.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/RadioactiveShower.gif"
     },
     {
       "name": "Raptor Rage",
-      "icon": "assets/VG/RaptorRage.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/RaptorRage.gif"
     },
     {
       "name": "Reindog Rampage",
-      "icon": "assets/VG/ReindogRampage.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/ReindogRampage.gif"
     },
     {
       "name": "Shocking Revelation",
-      "icon": "assets/VG/ShockingRevelation.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/ShockingRevelation.gif"
     },
     {
       "name": "Spine Shatterer",
-      "icon": "assets/VG/SpineShatterer.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/SpineShatterer.gif"
     },
     {
       "name": "Steel Cut",
-      "icon": "assets/VG/SteelCut.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/SteelCut.gif"
     },
     {
       "name": "Terminal Halitosis",
-      "icon": "assets/VG/TerminalHalitosis.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/TerminalHalitosis.gif"
     },
     {
       "name": "Terminated",
-      "icon": "assets/VG/Terminated.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/Terminated.gif"
     },
     {
       "name": "Threshing Strike",
-      "icon": "assets/VG/ThreshingStrike.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/ThreshingStrike.gif"
     },
     {
       "name": "Violent Declaration",
-      "icon": "assets/VG/ViolentDeclaration.gif",
+      "icon": "Icon",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/VG/ViolentDeclaration.gif"
     }
   ],
   "MWIII": [
@@ -3764,7 +4139,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Mag Out",
@@ -3774,7 +4150,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Neck Trauma",
@@ -3784,7 +4161,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Blicked Up",
@@ -3794,7 +4172,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hostile Precision",
@@ -3804,7 +4183,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Get Wrecked",
@@ -3814,7 +4194,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 1100
+      "price": 1100,
+      "preview": "Preview"
     },
     {
       "name": "Point Blank",
@@ -3824,7 +4205,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Flexed Upon",
@@ -3834,7 +4216,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Hands Off The Merchandise",
@@ -3844,7 +4227,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Muay Bueno",
@@ -3854,7 +4238,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Bend And Snap",
@@ -3864,7 +4249,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Revenge Redeemed",
@@ -3874,7 +4260,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Chip And Shatter",
@@ -3884,7 +4271,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Feyd's Frenzy",
@@ -3894,7 +4282,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Santa's Right Hand",
@@ -3904,7 +4293,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Fastest Man In The World",
@@ -3914,7 +4304,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Freedom Of Speech",
@@ -3924,7 +4315,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Flesh Stripped And Gold Dipped",
@@ -3934,7 +4326,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 3500
+      "price": 3500,
+      "preview": "Preview"
     },
     {
       "name": "Send In The Good Boy",
@@ -3944,7 +4337,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Ninjauity",
@@ -3954,7 +4348,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "LMG Go Brrrrrrrrrrrr",
@@ -3964,7 +4359,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Play Dead",
@@ -3974,7 +4370,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Leave The Dead",
@@ -3984,7 +4381,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Dead Cuts",
@@ -3994,7 +4392,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Evisceration",
@@ -4004,7 +4403,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 3000
+      "price": 3000,
+      "preview": "Preview"
     },
     {
       "name": "Tactical Pet: Servo Skull",
@@ -4014,7 +4414,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Kong's Knuckle Slamwich",
@@ -4024,7 +4425,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Tactical Pet D-O-Double-G",
@@ -4034,7 +4436,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 3500
+      "price": 3500,
+      "preview": "Preview"
     },
     {
       "name": "Double Barrel Disrespect",
@@ -4044,7 +4447,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Sidearm Swap",
@@ -4054,7 +4458,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Frostbite Finish",
@@ -4064,7 +4469,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Whiplashed Unleashed",
@@ -4074,7 +4480,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Playing Catch",
@@ -4084,7 +4491,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Feel The Heat Ray",
@@ -4094,7 +4502,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Secondhand Smoke",
@@ -4104,7 +4513,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 3000
+      "price": 3000,
+      "preview": "Preview"
     },
     {
       "name": "Akimbo Assault",
@@ -4114,7 +4524,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Sick 'Em Haven",
@@ -4124,7 +4535,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Identity Theft",
@@ -4134,7 +4546,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 3500
+      "price": 3500,
+      "preview": "Preview"
     },
     {
       "name": "Bone Snapper",
@@ -4144,7 +4557,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Give 'Em Shell",
@@ -4154,7 +4568,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Searing Slash",
@@ -4164,7 +4579,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Newtype Finisher",
@@ -4174,7 +4590,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "You Can't Kill Me",
@@ -4184,7 +4601,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Elegant Riposte",
@@ -4194,7 +4612,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Bullet Boogey",
@@ -4204,7 +4623,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Tactical Gasoline",
@@ -4214,7 +4634,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 1800
+      "price": 1800,
+      "preview": "Preview"
     },
     {
       "name": "Judge, Jury and Finisher",
@@ -4224,7 +4645,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 3500
+      "price": 3500,
+      "preview": "Preview"
     },
     {
       "name": "Riptide",
@@ -4234,7 +4656,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 275
+      "price": 275,
+      "preview": "Preview"
     },
     {
       "name": "The Chair! ",
@@ -4244,7 +4667,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 275
+      "price": 275,
+      "preview": "Preview"
     },
     {
       "name": "Free Kick",
@@ -4254,7 +4678,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 275
+      "price": 275,
+      "preview": "Preview"
     },
     {
       "name": "Powerbomb",
@@ -4264,7 +4689,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 275
+      "price": 275,
+      "preview": "Preview"
     },
     {
       "name": "Cross Rhodes",
@@ -4274,7 +4700,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Divine Touch",
@@ -4284,7 +4711,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Mysterio Bulldog",
@@ -4294,7 +4722,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Wrong Made Right",
@@ -4304,7 +4733,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 2400
+      "price": 2400,
+      "preview": "Preview"
     },
     {
       "name": "Ninjanuity",
@@ -4314,7 +4744,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Whipslashed Unleashed",
@@ -4324,7 +4755,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Throat Rip",
@@ -4334,7 +4766,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Haddonfield Takedown",
@@ -4344,7 +4777,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Gun Fu",
@@ -4354,7 +4788,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Dixon's Retribution",
@@ -4364,7 +4799,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Lollipopped",
@@ -4374,7 +4810,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     }
   ],
   "BO6": [
@@ -4386,7 +4823,8 @@
       "downed": "https://drive.google.com/file/d/1E6X2sQFeN9V0sxJIQwjNOOHsdLmhb2ug/view?usp=drive_link",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/BatterUp.gif"
     },
     {
       "name": "Hook & Slash",
@@ -4396,7 +4834,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Hook&Slash.gif"
     },
     {
       "name": "Hook, Line, and Sinker",
@@ -4406,7 +4845,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/HookLineAndSinker.gif"
     },
     {
       "name": "Look Sharp",
@@ -4416,7 +4856,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/LookSharp.gif"
     },
     {
       "name": "Who's Laughing Now",
@@ -4426,7 +4867,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/WhosLaughingNow.gif"
     },
     {
       "name": "Headache",
@@ -4436,7 +4878,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Headache.gif"
     },
     {
       "name": "Home Run Hitman",
@@ -4446,7 +4889,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/HomeRunHitman.gif"
     },
     {
       "name": "Good Point",
@@ -4456,7 +4900,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/GoodPoint.gif"
     },
     {
       "name": "Ash and Bone",
@@ -4466,7 +4911,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/AshAndBone.gif"
     },
     {
       "name": "The Art of Death",
@@ -4476,7 +4922,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/TheArtOfDeath.gif"
     },
     {
       "name": "Parasite Feast",
@@ -4486,7 +4933,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ParasiteFeast.gif"
     },
     {
       "name": "Axe You A Question",
@@ -4496,7 +4944,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/AxeYouAQuestion.gif"
     },
     {
       "name": "Stakeout",
@@ -4506,7 +4955,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Stakeout.gif"
     },
     {
       "name": "Two In The Chest",
@@ -4516,7 +4966,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/TwoInTheChest.gif"
     },
     {
       "name": "Marks The Spot",
@@ -4526,7 +4977,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/MarksTheSpot.gif"
     },
     {
       "name": "Replacement Killer",
@@ -4536,7 +4988,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ReplacementKiller.gif"
     },
     {
       "name": "Disarmed",
@@ -4546,7 +4999,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Disarmed.gif"
     },
     {
       "name": "Ice Breaker",
@@ -4556,7 +5010,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/IceBreaker.gif"
     },
     {
       "name": "Akimbo Assassin",
@@ -4566,7 +5021,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/AkimboAssassin.gif"
     },
     {
       "name": "Acro-Badass",
@@ -4576,7 +5032,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/AcroBadass.gif"
     },
     {
       "name": "Gentleman's Handshake",
@@ -4586,7 +5043,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/GentlemansHandshake.gif"
     },
     {
       "name": "Smoke 'Em",
@@ -4596,7 +5054,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/SmokeEm.gif"
     },
     {
       "name": "Hands Off",
@@ -4606,7 +5065,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/HandsOff.gif"
     },
     {
       "name": "Slash 'Em Up",
@@ -4616,7 +5076,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/SlashEmUp.gif"
     },
     {
       "name": "Toke-a-Bloke",
@@ -4626,7 +5087,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/TokeABloke.gif"
     },
     {
       "name": "Cool Off",
@@ -4636,7 +5098,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/CoolOff.gif"
     },
     {
       "name": "Refraction Action",
@@ -4646,7 +5109,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/RefractionAction.gif"
     },
     {
       "name": "Positivity!",
@@ -4656,7 +5120,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Positivity.gif"
     },
     {
       "name": "Be Gone",
@@ -4666,7 +5131,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/BeGone.gif"
     },
     {
       "name": "Chopping Action!",
@@ -4676,7 +5142,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ChoppingAction.gif"
     },
     {
       "name": "Roped In",
@@ -4686,7 +5153,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/RopedIn.gif"
     },
     {
       "name": "Winner",
@@ -4696,7 +5164,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Winner.gif"
     },
     {
       "name": "Pinky Up",
@@ -4706,7 +5175,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/PinkyUp.gif"
     },
     {
       "name": "Hit Pause",
@@ -4716,7 +5186,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/HitPause.gif"
     },
     {
       "name": "Thug Zapper",
@@ -4726,7 +5197,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ThugZapper.gif"
     },
     {
       "name": "Hound's Tooth",
@@ -4736,7 +5208,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/HoundsTooth.gif"
     },
     {
       "name": "Swift Moves",
@@ -4746,7 +5219,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/SwiftMoves.gif"
     },
     {
       "name": "360",
@@ -4756,7 +5230,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/360.gif"
     },
     {
       "name": "Rocket Powered",
@@ -4766,7 +5241,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/RocketPowered.gif"
     },
     {
       "name": "Blade Bonanza",
@@ -4776,7 +5252,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/BladeBonanza.gif"
     },
     {
       "name": "Skewered",
@@ -4786,7 +5263,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Skewered.gif"
     },
     {
       "name": "Wildfire",
@@ -4796,7 +5274,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Wildfire.gif"
     },
     {
       "name": "Parry and Strike",
@@ -4806,7 +5285,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ParryAndStrike.gif"
     },
     {
       "name": "Poleharm",
@@ -4816,7 +5296,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Poleharm.gif"
     },
     {
       "name": "Trick Deck",
@@ -4826,7 +5307,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/TrickDeck.gif"
     },
     {
       "name": "Buzz Breaker",
@@ -4836,7 +5318,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/BuzzBreaker.gif"
     },
     {
       "name": "T-800 Style",
@@ -4846,7 +5329,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/T800Style.gif"
     },
     {
       "name": "Instrumental",
@@ -4856,7 +5340,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Instrumental.gif"
     },
     {
       "name": "Hands: Thrown",
@@ -4866,7 +5351,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/HandsThrown.gif"
     },
     {
       "name": "Launch Sequence",
@@ -4876,7 +5362,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/LaunchSequence.gif"
     },
     {
       "name": "See No Evil",
@@ -4886,7 +5373,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/SeeNoEvil.gif"
     },
     {
       "name": "Get Winged",
@@ -4896,7 +5384,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/GetWinged.gif"
     },
     {
       "name": "Blade Dance",
@@ -4906,7 +5395,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/BladeDance.gif"
     },
     {
       "name": "Bo-Staff Boogie",
@@ -4916,7 +5406,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/BoStaffBoogie.gif"
     },
     {
       "name": "Nunchuck Chop",
@@ -4926,7 +5417,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/NunchuckChop.gif"
     },
     {
       "name": "Quick Skills",
@@ -4936,7 +5428,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/QuickSkills.gif"
     },
     {
       "name": "Samba",
@@ -4946,7 +5439,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Samba.gif"
     },
     {
       "name": "Sensei's Support",
@@ -4956,7 +5450,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/SenseisSupport.gif"
     },
     {
       "name": "Strikethrough",
@@ -4966,7 +5461,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Strikethrough.gif"
     },
     {
       "name": "Iceburst",
@@ -4976,7 +5472,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Iceburst.gif"
     },
     {
       "name": "Goodest Boy",
@@ -4986,7 +5483,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/GoodestBoy.gif"
     },
     {
       "name": "Package Received",
@@ -4996,7 +5494,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/PackageReceived.gif"
     },
     {
       "name": "Full Body Swing",
@@ -5006,7 +5505,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/FullBodySwing.gif"
     },
     {
       "name": "Coin Toss",
@@ -5016,7 +5516,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/CoinToss.gif"
     },
     {
       "name": "Planted",
@@ -5026,7 +5527,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Planted.gif"
     },
     {
       "name": "Slide N' Toss",
@@ -5036,7 +5538,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/SlideNToss.gif"
     },
     {
       "name": "K.O.",
@@ -5046,7 +5549,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/KO.gif"
     },
     {
       "name": "The Back Adjustment",
@@ -5056,7 +5560,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/TheBackAdjustment.gif"
     },
     {
       "name": "Goal!",
@@ -5066,7 +5571,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Goal.gif"
     },
     {
       "name": "Gimme a Light",
@@ -5076,7 +5582,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/GimmeALight.gif"
     },
     {
       "name": "One. Two.",
@@ -5086,7 +5593,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/OneTwo.gif"
     },
     {
       "name": "Smoke You Out",
@@ -5096,7 +5604,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/SmokeYouOut.gif"
     },
     {
       "name": "Pan Fried",
@@ -5106,7 +5615,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/PanFried.gif"
     },
     {
       "name": "Joke's On You",
@@ -5116,7 +5626,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/JokesOnYou.gif"
     },
     {
       "name": "Unrelenting Attack",
@@ -5126,7 +5637,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/UnrelentingAttack.gif"
     },
     {
       "name": "Missed 'Em",
@@ -5136,7 +5648,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/MissedEm.gif"
     },
     {
       "name": "Charmer",
@@ -5146,7 +5659,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Charmer.gif"
     },
     {
       "name": "Enemy Deleted",
@@ -5156,7 +5670,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/EnemyDeleted.gif"
     },
     {
       "name": "Chew This!",
@@ -5166,7 +5681,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ChewThis.gif"
     },
     {
       "name": "Levitation Vacation",
@@ -5176,7 +5692,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/LevitationVacation.gif"
     },
     {
       "name": "Power Steering",
@@ -5186,7 +5703,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/PowerSteering.gif"
     },
     {
       "name": "Archie's Oopsie",
@@ -5196,7 +5714,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ArchiesOopsie.gif"
     },
     {
       "name": "Nasty Knife",
@@ -5206,7 +5725,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/NastyKnife.gif"
     },
     {
       "name": "Precious Gems",
@@ -5216,7 +5736,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/PreciousGems.gif"
     },
     {
       "name": "Spill Thrill",
@@ -5226,7 +5747,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/SpillThrill.gif"
     },
     {
       "name": "Sleep Light",
@@ -5236,7 +5758,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/SleepLight.gif"
     },
     {
       "name": "Harpoon Doom",
@@ -5246,7 +5769,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/HarpoonDoom.gif"
     },
     {
       "name": "Kama Wrath",
@@ -5256,7 +5780,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "Preview"
     },
     {
       "name": "Guard Dog",
@@ -5266,7 +5791,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/GuardDog.gif"
     },
     {
       "name": "Neck Massage",
@@ -5276,7 +5802,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/NeckMassage.gif"
     },
     {
       "name": "Be Trayed",
@@ -5286,7 +5813,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/BeTrayed.gif"
     },
     {
       "name": "On The Ground!",
@@ -5296,7 +5824,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/OnTheGround.gif"
     },
     {
       "name": "Stun Locked",
@@ -5306,7 +5835,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/StunLocked.gif"
     },
     {
       "name": "Shocking Obliteration",
@@ -5316,7 +5846,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ShockingObliteration.gif"
     },
     {
       "name": "Combo Finish",
@@ -5326,7 +5857,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ComboFinish.gif"
     },
     {
       "name": "Dance With Death",
@@ -5336,7 +5868,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/DanceWithDeath.gif"
     },
     {
       "name": "Rammed",
@@ -5346,7 +5879,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Rammed.gif"
     },
     {
       "name": "Data Overload",
@@ -5356,7 +5890,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/DataOverload.gif"
     },
     {
       "name": "Wire Cut",
@@ -5366,7 +5901,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/WireCut.gif"
     },
     {
       "name": "Wrestle Moves",
@@ -5376,7 +5912,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/WrestleMoves.gif"
     },
     {
       "name": "Bonus Balling",
@@ -5386,7 +5923,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/BonusBalling.gif"
     },
     {
       "name": "Twist It",
@@ -5396,7 +5934,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/TwistIt.gif"
     },
     {
       "name": "Throw Down",
@@ -5406,7 +5945,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ThrowDown.gif"
     },
     {
       "name": "Axe Wrath",
@@ -5416,7 +5956,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/AxeWrath.gif"
     },
     {
       "name": "Dumbass",
@@ -5426,7 +5967,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Dumbass.gif"
     },
     {
       "name": "Kick 'em in the Nads!",
@@ -5436,7 +5978,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/KickEmInTheNads.gif"
     },
     {
       "name": "Skeletal Interference",
@@ -5446,7 +5989,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/SkeletalInterference.gif"
     },
     {
       "name": "Queen's Way",
@@ -5456,7 +6000,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/QueensWay.gif"
     },
     {
       "name": "Last Stan",
@@ -5466,7 +6011,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/LastStan.gif"
     },
     {
       "name": "Lucky Hit",
@@ -5476,7 +6022,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/LuckyHit.gif"
     },
     {
       "name": "Sleight of Hand",
@@ -5486,7 +6033,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/SleightOfHand.gif"
     },
     {
       "name": "Griffin Nabbed",
@@ -5496,7 +6044,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/GriffinNabbed.gif"
     },
     {
       "name": "High Stakes",
@@ -5506,7 +6055,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/HighStakes.gif"
     },
     {
       "name": "Quick Tumble",
@@ -5516,7 +6066,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/QuickTumble.gif"
     },
     {
       "name": "Melee Masher",
@@ -5526,7 +6077,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/MeleeMasher.gif"
     },
     {
       "name": "Excruciate",
@@ -5536,7 +6088,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Excruciate.gif"
     },
     {
       "name": "Skippin' Time",
@@ -5546,7 +6099,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/SkippinTime.gif"
     },
     {
       "name": "Got a Live One",
@@ -5556,7 +6110,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/GotALiveOne.gif"
     },
     {
       "name": "Take Your Cut",
@@ -5566,7 +6121,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/TakeYourCut.gif"
     },
     {
       "name": "Kawaii Knockout",
@@ -5576,7 +6132,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/KawaiiKnockout.gif"
     },
     {
       "name": "Petri Melt",
@@ -5586,7 +6143,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/PetriMelt.gif"
     },
     {
       "name": "Broken Down",
@@ -5596,7 +6154,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/BrokenDown.gif"
     },
     {
       "name": "Elbow Room",
@@ -5606,7 +6165,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ElbowRoom.gif"
     },
     {
       "name": "Deadly Ride",
@@ -5616,7 +6176,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/DeadlyRide.gif"
     },
     {
       "name": "Dud-ly",
@@ -5626,7 +6187,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Dudly.gif"
     },
     {
       "name": "Decrown",
@@ -5636,7 +6198,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Decrown.gif"
     },
     {
       "name": "Unseen Slash",
@@ -5646,7 +6209,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/UnseenSlash.gif"
     },
     {
       "name": "Get Flung",
@@ -5656,7 +6220,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/GetFlung.gif"
     },
     {
       "name": "Fast Swipe",
@@ -5666,7 +6231,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/FastSwipe.gif"
     },
     {
       "name": "Cannon Toss",
@@ -5676,7 +6242,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/CannonToss.gif"
     },
     {
       "name": "Deep-Sixed",
@@ -5686,7 +6253,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/DeepSixed.gif"
     },
     {
       "name": "Idol Hands",
@@ -5696,7 +6264,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/IdolHands.gif"
     },
     {
       "name": "Scorpio",
@@ -5706,7 +6275,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Scorpio.gif"
     },
     {
       "name": "For You",
@@ -5716,7 +6286,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ForYou.gif"
     },
     {
       "name": "Back Down",
@@ -5726,7 +6297,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/BackDown.gif"
     },
     {
       "name": "Rising Crash",
@@ -5736,7 +6308,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/RisingCrash.gif"
     },
     {
       "name": "Plasma Casted",
@@ -5746,7 +6319,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/PlasmaCasted.gif"
     },
     {
       "name": "Absorption",
@@ -5756,7 +6330,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Absorption.gif"
     },
     {
       "name": "Head Break",
@@ -5766,7 +6341,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/HeadBreak.gif"
     },
     {
       "name": "Reel Them In",
@@ -5776,7 +6352,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ReelThemIn.gif"
     },
     {
       "name": "Package Delivery",
@@ -5786,7 +6363,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/PackageDelivery.gif"
     },
     {
       "name": "Axe Swipe",
@@ -5796,7 +6374,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/AxeSwipe.gif"
     },
     {
       "name": "Down to Size",
@@ -5806,7 +6385,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/DownToSize.gif"
     },
     {
       "name": "Mind Power",
@@ -5816,7 +6396,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/MindPower.gif"
     },
     {
       "name": "Final Shot",
@@ -5826,7 +6407,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/FinalShot.gif"
     },
     {
       "name": "Jason's Revenge",
@@ -5836,7 +6418,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/JasonsRevenge.gif"
     },
     {
       "name": "Appetite Suppressant",
@@ -5846,7 +6429,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/AppetiteSuppressant.gif"
     },
     {
       "name": "Bombardment",
@@ -5856,7 +6440,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Bombardment.gif"
     },
     {
       "name": "Arty Incineration",
@@ -5866,7 +6451,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ArtyIncineration.gif"
     },
     {
       "name": "Elegant Slay",
@@ -5876,7 +6462,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ElegantSlay.gif"
     },
     {
       "name": "Prey to None",
@@ -5886,7 +6473,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/PreyToNone.gif"
     },
     {
       "name": "Moods of Chucky",
@@ -5896,7 +6484,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/MoodsOfChucky.gif"
     },
     {
       "name": "Elaborate End",
@@ -5906,7 +6495,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/ElaborateEnd.gif"
     },
     {
       "name": "Smile for the Camera",
@@ -5916,7 +6506,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/SmileForTheCamera.gif"
     },
     {
       "name": "Lightning Bolt! Lightning Bolt!",
@@ -5926,7 +6517,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/LightningBoltLightningBolt.gif"
     },
     {
       "name": "Jump Kill",
@@ -5936,7 +6528,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/JumpKill.gif"
     },
     {
       "name": "Stabtacular",
@@ -5946,7 +6539,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO6/Stabtacular.gif"
     }
   ],
   "BO7": [
@@ -5958,7 +6552,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/RippedThrough.gif"
     },
     {
       "name": "Streamline",
@@ -5968,7 +6563,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/Streamline.gif"
     },
     {
       "name": "Pistol Kata",
@@ -5978,7 +6574,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/PistolKata.gif"
     },
     {
       "name": "It's A Clap!",
@@ -5988,7 +6585,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/ItsAClap.gif"
     },
     {
       "name": "Heavy Fire",
@@ -5998,7 +6596,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/HeavyFire.gif"
     },
     {
       "name": "Fast Work",
@@ -6008,7 +6607,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/FastWork.gif"
     },
     {
       "name": "Wanna See a Magic Trick?",
@@ -6018,7 +6618,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/WannaSeeAMagicTrick.gif"
     },
     {
       "name": "Electro-Pop",
@@ -6028,7 +6629,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/ElectroPop.gif"
     },
     {
       "name": "Busted Beaker",
@@ -6038,7 +6640,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/BustedBeaker.gif"
     },
     {
       "name": "Don't Inhale",
@@ -6048,7 +6651,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/DontInhale.gif"
     },
     {
       "name": "Flip & Snap",
@@ -6058,7 +6662,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/Flip&Snap.gif"
     },
     {
       "name": "Gravity Assist",
@@ -6068,7 +6673,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/GravityAssist.gif"
     },
     {
       "name": "Drone Dropped",
@@ -6078,7 +6684,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/DroneDropped.gif"
     },
     {
       "name": "Thruster Buster",
@@ -6088,7 +6695,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/ThrusterBuster.gif"
     },
     {
       "name": "Vicious Intent",
@@ -6098,7 +6706,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/ViciousIntent.gif"
     },
     {
       "name": "Heel Hell",
@@ -6108,7 +6717,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/HeelHell.gif"
     },
     {
       "name": "Blades In",
@@ -6118,7 +6728,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/BladesIn.gif"
     },
     {
       "name": "Got the Moves",
@@ -6128,7 +6739,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/GotTheMoves.gif"
     },
     {
       "name": "Power Down",
@@ -6138,7 +6750,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/PowerDown.gif"
     },
     {
       "name": "Get Festive!",
@@ -6148,7 +6761,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/GetFestive.gif"
     },
     {
       "name": "Particle Destruction",
@@ -6158,7 +6772,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/ParticleDestruction.gif"
     },
     {
       "name": "Setting Traps",
@@ -6168,7 +6783,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/SettingTraps.gif"
     },
     {
       "name": "Bear Hug",
@@ -6178,7 +6794,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/BearHug.gif"
     },
     {
       "name": "Muzzle Control",
@@ -6188,7 +6805,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/MuzzleControl.gif"
     },
     {
       "name": "Minigun Teardown",
@@ -6198,7 +6816,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/MinigunTeardown.gif"
     },
     {
       "name": "Gamma Zap",
@@ -6208,7 +6827,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/GammaZap.gif"
     },
     {
       "name": "That Was Handy",
@@ -6218,7 +6838,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/ThatWasHandy.gif"
     },
     {
       "name": "Chain Slain",
@@ -6228,7 +6849,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/ChainSlain.gif"
     },
     {
       "name": "Hydraulic Hop",
@@ -6238,7 +6860,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/HydraulicHop.gif"
     },
     {
       "name": "Always One More",
@@ -6248,7 +6871,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/AlwaysOneMore.gif"
     },
     {
       "name": "Stinging Feeling",
@@ -6258,7 +6882,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/StingingFeeling.gif"
     },
     {
       "name": "Spinblade",
@@ -6268,7 +6893,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/Spinblade.gif"
     },
     {
       "name": "Speedbag Slugger",
@@ -6278,7 +6904,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/SpeedbagSlugger.gif"
     },
     {
       "name": "Sic' Em",
@@ -6288,7 +6915,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/SicEm.gif"
     },
     {
       "name": "Guess Who",
@@ -6298,7 +6926,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/GuessWho.gif"
     },
     {
       "name": "Take Control",
@@ -6308,7 +6937,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/TakeControl.gif"
     },
     {
       "name": "Mind Breaker",
@@ -6318,7 +6948,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/MindBreaker.gif"
     },
     {
       "name": "Centrifugal",
@@ -6328,7 +6959,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/Centrifugal.gif"
     },
     {
       "name": "Cut and Fold",
@@ -6338,7 +6970,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/CutAndFold.gif"
     },
     {
       "name": "Death Directive",
@@ -6348,7 +6981,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/DeathDirective.gif"
     },
     {
       "name": "Elemental Rupture",
@@ -6358,7 +6992,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/ElementalRupture.gif"
     },
     {
       "name": "Severe Sever",
@@ -6368,7 +7003,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/SevereSever.gif"
     },
     {
       "name": "Internal Struggle",
@@ -6378,7 +7014,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/InternalStruggle.gif"
     },
     {
       "name": "Relentless Avalanche",
@@ -6388,7 +7025,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/RelentlessAvalanche.gif"
     },
     {
       "name": "Detonated",
@@ -6398,7 +7036,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/Detonated.gif"
     },
     {
       "name": "Horn Pierced",
@@ -6408,7 +7047,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/HornPierced.gif"
     },
     {
       "name": "Flame Catch",
@@ -6418,7 +7058,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/FlameCatch.gif"
     },
     {
       "name": "On A Roll",
@@ -6428,7 +7069,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/OnARoll.gif"
     },
     {
       "name": "Apologies, Citizen",
@@ -6438,7 +7080,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/ApologiesCitizen.gif"
     },
     {
       "name": "Tele-Nope",
@@ -6448,7 +7091,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/TeleNope.gif"
     },
     {
       "name": "Loot Grab",
@@ -6458,7 +7102,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/LootGrab.gif"
     },
     {
       "name": "Remorseless",
@@ -6468,7 +7113,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/Remorseless.gif"
     },
     {
       "name": "Nice Try",
@@ -6478,7 +7124,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/NiceTry.gif"
     },
     {
       "name": "Merc It Out",
@@ -6488,7 +7135,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/MercItOut.gif"
     },
     {
       "name": "Distraction Tactics",
@@ -6498,7 +7146,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/DistractionTactics.gif"
     },
     {
       "name": "Shell No",
@@ -6508,7 +7157,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/ShellNo.gif"
     },
     {
       "name": "Gentleman",
@@ -6518,7 +7168,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/Gentleman.gif"
     },
     {
       "name": "Island Fighter",
@@ -6528,7 +7179,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/IslandFighter.gif"
     },
     {
       "name": "Say 'Hello'",
@@ -6538,7 +7190,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/SayHello.gif"
     },
     {
       "name": "Blades and Bullets",
@@ -6548,7 +7201,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/BladesAndBullets.gif"
     },
     {
       "name": "Good Luck",
@@ -6558,7 +7212,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/GoodLuck.gif"
     },
     {
       "name": "Fileted",
@@ -6568,7 +7223,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/Fileted.gif"
     },
     {
       "name": "Helping Hands",
@@ -6578,7 +7234,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/HelpingHands.gif"
     },
     {
       "name": "Fast Hands",
@@ -6588,7 +7245,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/FastHands.gif"
     },
     {
       "name": "Slide N' Rip",
@@ -6598,7 +7256,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/SlideNRip.gif"
     },
     {
       "name": "Intrusive Thoughts",
@@ -6608,7 +7267,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/IntrusiveThoughts.gif"
     },
     {
       "name": "Ravaged",
@@ -6618,7 +7278,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/Ravaged.gif"
     },
     {
       "name": "Spinal Thrash",
@@ -6628,7 +7289,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/SpinalThrash.gif"
     },
     {
       "name": "Paint Remover",
@@ -6638,7 +7300,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/PaintRemover.gif"
     },
     {
       "name": "Good Monkey",
@@ -6648,7 +7311,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/GoodMonkey.gif"
     },
     {
       "name": "No Witness",
@@ -6658,7 +7322,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/NoWitness.gif"
     },
     {
       "name": "Brain Override",
@@ -6668,7 +7333,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/BrainOverride.gif"
     },
     {
       "name": "Zap Happens",
@@ -6678,7 +7344,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/ZapHappens.gif"
     },
     {
       "name": "Fish Food",
@@ -6688,7 +7355,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/FishFood.gif"
     },
     {
       "name": "Imperial Verdict",
@@ -6698,7 +7366,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/ImperialVerdict.gif"
     },
     {
       "name": "Dream Team",
@@ -6708,7 +7377,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/DreamTeam.gif"
     },
     {
       "name": "Data Spiked",
@@ -6718,7 +7388,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/DataSpiked.gif"
     },
     {
       "name": "Side Step Bustle",
@@ -6728,7 +7399,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/SideStepBustle.gif"
     },
     {
       "name": "Flow State",
@@ -6738,7 +7410,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/FlowState.gif"
     },
     {
       "name": "Triple Tap",
@@ -6748,7 +7421,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/TripleTap.gif"
     },
     {
       "name": "Hot, Then Cold",
@@ -6758,7 +7432,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/HotThenCold.gif"
     },
     {
       "name": "No Talk Back",
@@ -6768,7 +7443,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/NoTalkBack.gif"
     },
     {
       "name": "Back Sawed",
@@ -6778,7 +7454,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/BackSawed.gif"
     },
     {
       "name": "Banged Up",
@@ -6788,7 +7465,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/BangedUp.gif"
     },
     {
       "name": "Out of Hand",
@@ -6798,7 +7476,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/OutOfHand.gif"
     },
     {
       "name": "Flippin' Out",
@@ -6808,7 +7487,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/FlippinOut.gif"
     },
     {
       "name": "Log Off",
@@ -6818,7 +7498,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/LogOff.gif"
     },
     {
       "name": "Rewind Retry",
@@ -6828,7 +7509,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/RewindRetry.gif"
     },
     {
       "name": "Shove Off",
@@ -6838,7 +7520,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/ShoveOff.gif"
     },
     {
       "name": "Bend, Don't Break",
@@ -6848,7 +7531,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/BendDontBreak.gif"
     },
     {
       "name": "Break It Down",
@@ -6858,7 +7542,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/BreakItDown.gif"
     },
     {
       "name": "Decked",
@@ -6868,7 +7553,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/Decked.gif"
     },
     {
       "name": "Bear Knuckle",
@@ -6878,7 +7564,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/BearKnuckle.gif"
     },
     {
       "name": "Flesh Wound",
@@ -6888,7 +7575,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/FleshWound.gif"
     },
     {
       "name": "Spike Burst",
@@ -6898,7 +7586,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/SpikeBurst.gif"
     },
     {
       "name": "Chop Shop",
@@ -6908,67 +7597,74 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/ChopShop.gif"
     },
     {
       "name": "Calmly Ended",
-      "icon": "assets/BO7/CalmlyEnded.gif",
+      "icon": "assets/BO7/CalmlyEnded.png",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/CalmlyEnded.gif"
     },
     {
       "name": "Trash Day",
-      "icon": "assets/BO7/TrashDay.gif",
+      "icon": "assets/BO7/TrashDay.png",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/TrashDay.gif"
     },
     {
       "name": "Critical Mess",
-      "icon": "assets/BO7/CriticalMess.gif",
+      "icon": "assets/BO7/CriticalMess.png",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/CriticalMess.gif"
     },
     {
       "name": "Multi-Use Tool",
-      "icon": "assets/BO7/MultiUseTool.gif",
+      "icon": "assets/BO7/MultiUseTool.png",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/MultiUseTool.gif"
     },
     {
       "name": "Instinct and Training",
-      "icon": "assets/BO7/InstinctAndTraining.gif",
+      "icon": "assets/BO7/InstinctAndTraining.png",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/InstinctAndTraining.gif"
     },
     {
       "name": "Decommission",
-      "icon": "assets/BO7/Decommission.gif",
+      "icon": "assets/BO7/Decommission.png",
       "standing": "Standing",
       "prone": "Prone",
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/Decommission.gif"
     },
     {
       "name": "Dead Rain",
@@ -6978,7 +7674,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/DeadRain.gif"
     },
     {
       "name": "Flying Fang",
@@ -6988,7 +7685,8 @@
       "downed": "Downed",
       "anim_time": 0.0,
       "ttk": 0.0,
-      "price": 0
+      "price": 0,
+      "preview": "assets/previews/BO7/FlyingFang.gif"
     }
   ]
 }
