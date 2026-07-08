@@ -2013,7 +2013,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/SneakAttack.gif"
     },
     {
       "name": "Axe Nicely",
@@ -2024,7 +2024,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/AxeNicely.gif"
     },
     {
       "name": "Back Up Plan",
@@ -2035,7 +2035,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/BackUpPlan.gif"
     },
     {
       "name": "Body Slam",
@@ -2046,7 +2046,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/BodySlam.gif"
     },
     {
       "name": "Body Snatcher",
@@ -2057,7 +2057,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/BodySnatcher.gif"
     },
     {
       "name": "Boom Surprise",
@@ -2068,7 +2068,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/BoomSurprise.gif"
     },
     {
       "name": "Bow Breaker",
@@ -2079,7 +2079,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/BowBreaker.gif"
     },
     {
       "name": "Bow Strike",
@@ -2090,7 +2090,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/BowStrike.gif"
     },
     {
       "name": "Caught Staring",
@@ -2101,7 +2101,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/CaughtStaring.gif"
     },
     {
       "name": "Cheap Shot",
@@ -2112,7 +2112,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/CheapShot.gif"
     },
     {
       "name": "Compromised Recovery",
@@ -2123,7 +2123,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/CompromisedRecovery.gif"
     },
     {
       "name": "Deep Cuts",
@@ -2134,7 +2134,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/DeepCuts.gif"
     },
     {
       "name": "Defective Joints",
@@ -2145,7 +2145,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/DefectiveJoints.gif"
     },
     {
       "name": "Double Tap",
@@ -2156,7 +2156,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/DoubleTap.gif"
     },
     {
       "name": "Devastating Blow",
@@ -2167,7 +2167,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/DevastatingBlow.gif"
     },
     {
       "name": "Disarmament",
@@ -2178,7 +2178,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Disarmament.gif"
     },
     {
       "name": "Disarmed",
@@ -2189,7 +2189,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Disarmed.gif"
     },
     {
       "name": "Disconnect",
@@ -2200,7 +2200,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Disconnect.gif"
     },
     {
       "name": "Down & Dirty",
@@ -2211,7 +2211,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Down&Dirty.gif"
     },
     {
       "name": "Drop Shot",
@@ -2222,7 +2222,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/DropShot.gif"
     },
     {
       "name": "Fall of Achilles",
@@ -2233,7 +2233,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/FallofAchilles.gif"
     },
     {
       "name": "Full Barrage",
@@ -2244,7 +2244,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/FullBarrage.gif"
     },
     {
       "name": "Guillotine Roll",
@@ -2255,7 +2255,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/GuillotineRoll.gif"
     },
     {
       "name": "Hack Job",
@@ -2266,7 +2266,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/HackJob.gif"
     },
     {
       "name": "Had Enough",
@@ -2277,7 +2277,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/HadEnough.gif"
     },
     {
       "name": "Half Guard",
@@ -2288,7 +2288,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/HalfGuard.gif"
     },
     {
       "name": "Heart Ache",
@@ -2299,7 +2299,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/HeartAche.gif"
     },
     {
       "name": "Helping Hand",
@@ -2310,7 +2310,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/HelpingHand.gif"
     },
     {
       "name": "Hook & Sinker",
@@ -2321,7 +2321,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Hook&Sinker.gif"
     },
     {
       "name": "Hot Shot Slide",
@@ -2332,7 +2332,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/HotShotSlide.gif"
     },
     {
       "name": "Internal Damage",
@@ -2343,7 +2343,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/InternalDamage.gif"
     },
     {
       "name": "Killer Moves",
@@ -2354,7 +2354,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/KillerMoves.gif"
     },
     {
       "name": "Lost & Found",
@@ -2365,7 +2365,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Lost&Found.gif"
     },
     {
       "name": "Low Praise",
@@ -2376,7 +2376,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/LowPraise.gif"
     },
     {
       "name": "No Mercy",
@@ -2387,7 +2387,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/NoMercy.gif"
     },
     {
       "name": "Nailed It",
@@ -2398,7 +2398,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/NailedIt.gif"
     },
     {
       "name": "Optical Illusion",
@@ -2409,7 +2409,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/OpticalIllusion.gif"
     },
     {
       "name": "Pointed End",
@@ -2420,7 +2420,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/PointedEnd.gif"
     },
     {
       "name": "Pound for Pound",
@@ -2431,7 +2431,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/PoundforPound.gif"
     },
     {
       "name": "Rear Mount",
@@ -2442,7 +2442,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/RearMount.gif"
     },
     {
       "name": "Rock-a-bye-bye",
@@ -2453,7 +2453,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/RockaByeBye.gif"
     },
     {
       "name": "Roll Up",
@@ -2464,7 +2464,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/RollUp.gif"
     },
     {
       "name": "Scorpion Slam",
@@ -2475,7 +2475,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/ScorpionSlam.gif"
     },
     {
       "name": "Shot Down",
@@ -2486,7 +2486,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/ShotDown.gif"
     },
     {
       "name": "Shot Up",
@@ -2497,7 +2497,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/ShotUp.gif"
     },
     {
       "name": "Sidearm Dispatch",
@@ -2508,7 +2508,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/SidearmDispatch.gif"
     },
     {
       "name": "Stick Up",
@@ -2519,7 +2519,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/StickUp.gif"
     },
     {
       "name": "Stomping Ground",
@@ -2530,7 +2530,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/StompingGround.gif"
     },
     {
       "name": "Struggle Bust",
@@ -2541,7 +2541,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/StruggleBust.gif"
     },
     {
       "name": "Swift Kick",
@@ -2552,7 +2552,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/SwiftKick.gif"
     },
     {
       "name": "Throat Chop",
@@ -2563,7 +2563,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/ThroatChop.gif"
     },
     {
       "name": "Throat Cut",
@@ -2574,7 +2574,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/ThroatCut.gif"
     },
     {
       "name": "Tight Squeeze",
@@ -2585,7 +2585,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/TightSqueeze.gif"
     },
     {
       "name": "Ultimate Takedown",
@@ -2596,7 +2596,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/UltimateTakedown.gif"
     },
     {
       "name": "Unlikely Volunteer",
@@ -2607,7 +2607,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/UnlikelyVolunteer.gif"
     },
     {
       "name": "Victim Inflicted",
@@ -2618,7 +2618,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/VictimInflicted.gif"
     },
     {
       "name": "Wacked",
@@ -2629,7 +2629,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Wacked.gif"
     },
     {
       "name": "Above the Neck",
@@ -2640,7 +2640,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/AboveTheNeck.gif"
     },
     {
       "name": "Absolute Blast",
@@ -2651,7 +2651,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/AbsoluteBlast.gif"
     },
     {
       "name": "Between the Legs",
@@ -2662,7 +2662,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/BetweenTheLegs.gif"
     },
     {
       "name": "Big Stick",
@@ -2673,7 +2673,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/BigStick.gif"
     },
     {
       "name": "Bird of Prey",
@@ -2684,7 +2684,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/BirdOfPrey.gif"
     },
     {
       "name": "Cap & Tap",
@@ -2695,7 +2695,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Cap&Tap.gif"
     },
     {
       "name": "Club Thumper",
@@ -2706,7 +2706,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/ClubThumper.gif"
     },
     {
       "name": "Dangerous Approach",
@@ -2717,7 +2717,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/DangerousApproach.gif"
     },
     {
       "name": "Dog of War",
@@ -2728,7 +2728,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/DogOfWar.gif"
     },
     {
       "name": "Frontier Finisher",
@@ -2739,7 +2739,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/FrontierFinisher.gif"
     },
     {
       "name": "Hammer Uppercut",
@@ -2750,7 +2750,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/HammerUppercut.gif"
     },
     {
       "name": "Jump Shot",
@@ -2761,7 +2761,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/JumpShot.gif"
     },
     {
       "name": "Maim & Tame",
@@ -2772,7 +2772,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Maim&Tame.gif"
     },
     {
       "name": "Nail Driver",
@@ -2783,7 +2783,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/NailDriver.gif"
     },
     {
       "name": "Overpower",
@@ -2794,7 +2794,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Overpower.gif"
     },
     {
       "name": "Pain In The Neck",
@@ -2805,7 +2805,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/PainInTheNeck.gif"
     },
     {
       "name": "Plague Hound",
@@ -2816,7 +2816,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/PlagueHound.gif"
     },
     {
       "name": "Rearranged Thoughts",
@@ -2827,7 +2827,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/RearrangedThoughts.gif"
     },
     {
       "name": "Shortcut",
@@ -2838,7 +2838,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Shortcut.gif"
     },
     {
       "name": "Splitting Hairs",
@@ -2849,7 +2849,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/SplittingHairs.gif"
     },
     {
       "name": "Tactical Roll",
@@ -2860,7 +2860,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/TacticalRoll.gif"
     },
     {
       "name": "Tight Rope",
@@ -2871,7 +2871,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/TightRope.gif"
     },
     {
       "name": "Wrap Around",
@@ -2882,7 +2882,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/WrapAround.gif"
     },
     {
       "name": "Assassination",
@@ -2893,7 +2893,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Assassination.gif"
     },
     {
       "name": "Axe Murder",
@@ -2904,7 +2904,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/AxeMurder.gif"
     },
     {
       "name": "Ballistic Blast",
@@ -2915,7 +2915,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/BallisticBlast.gif"
     },
     {
       "name": "Big Bang",
@@ -2926,7 +2926,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/BigBang.gif"
     },
     {
       "name": "Brutalize",
@@ -2937,7 +2937,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Brutalize.gif"
     },
     {
       "name": "Casual Surprise",
@@ -2948,7 +2948,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/CasualSurprise.gif"
     },
     {
       "name": "Caved In",
@@ -2959,7 +2959,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/CavedIn.gif"
     },
     {
       "name": "Chin-Up",
@@ -2970,7 +2970,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/ChinUp.gif"
     },
     {
       "name": "Cold Beatdown",
@@ -2981,7 +2981,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/ColdBeatdown.gif"
     },
     {
       "name": "Combat Kill",
@@ -2992,7 +2992,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/CombatKill.gif"
     },
     {
       "name": "Cracked Open",
@@ -3003,7 +3003,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/CrackedOpen.gif"
     },
     {
       "name": "Crash Course",
@@ -3014,7 +3014,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/CrashCourse.gif"
     },
     {
       "name": "Crawling Zombie",
@@ -3025,7 +3025,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/CrawlingZombie.gif"
     },
     {
       "name": "Crispy",
@@ -3036,7 +3036,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Crispy.gif"
     },
     {
       "name": "Dispatch Agent",
@@ -3047,7 +3047,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/DispatchAgent.gif"
     },
     {
       "name": "Drop Dead",
@@ -3058,7 +3058,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/DropDead.gif"
     },
     {
       "name": "Executioner",
@@ -3069,7 +3069,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Executioner.gif"
     },
     {
       "name": "Ferocious Hare",
@@ -3080,7 +3080,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/FerociousHare.gif"
     },
     {
       "name": "Force of Will",
@@ -3091,7 +3091,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/ForceOfWill.gif"
     },
     {
       "name": "Garrote",
@@ -3102,7 +3102,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Garrote.gif"
     },
     {
       "name": "Gravedigger",
@@ -3113,7 +3113,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Gravedigger.gif"
     },
     {
       "name": "Hammer Head",
@@ -3124,7 +3124,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/HammerHead.gif"
     },
     {
       "name": "Head Harvester",
@@ -3135,7 +3135,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/HeadHarvester.gif"
     },
     {
       "name": "Heartfelt Goodbye",
@@ -3146,7 +3146,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/HeartfeltGoodbye.gif"
     },
     {
       "name": "Hidden Gun",
@@ -3157,7 +3157,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/HiddenGun.gif"
     },
     {
       "name": "Hook & Hinder",
@@ -3168,7 +3168,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Hook&Hinder.gif"
     },
     {
       "name": "Incendiary",
@@ -3179,7 +3179,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Incendiary.gif"
     },
     {
       "name": "Knee Capped",
@@ -3190,7 +3190,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/KneeCapped.gif"
     },
     {
       "name": "Komodo Dragon",
@@ -3201,7 +3201,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/KomodoDragon.gif"
     },
     {
       "name": "Leap Shot",
@@ -3212,7 +3212,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/LeapShot.gif"
     },
     {
       "name": "Loose Ends",
@@ -3223,7 +3223,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/LooseEnds.gif"
     },
     {
       "name": "Mind Games",
@@ -3234,7 +3234,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/MindGames.gif"
     },
     {
       "name": "Nailed Down",
@@ -3245,7 +3245,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/NailedDown.gif"
     },
     {
       "name": "Outmatched",
@@ -3256,7 +3256,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Outmatched.gif"
     },
     {
       "name": "Penalty Kick",
@@ -3267,7 +3267,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/PenaltyKick.gif"
     },
     {
       "name": "Repairs With Klaus",
@@ -3278,7 +3278,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/RepairsWithKlaus.gif"
     },
     {
       "name": "Road Rash",
@@ -3289,7 +3289,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/RoadRash.gif"
     },
     {
       "name": "Settle Down",
@@ -3300,7 +3300,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/SettleDown.gif"
     },
     {
       "name": "Sky is Falling",
@@ -3311,7 +3311,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/SkyIsFalling.gif"
     },
     {
       "name": "Slash & Stab",
@@ -3322,7 +3322,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Slash&Stab.gif"
     },
     {
       "name": "Slithering Jab",
@@ -3333,7 +3333,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/SlitheringJab.gif"
     },
     {
       "name": "Snow Leopard",
@@ -3344,7 +3344,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/SnowLeopard.gif"
     },
     {
       "name": "Soul Torn",
@@ -3355,7 +3355,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/SoulTorn.gif"
     },
     {
       "name": "Spare a Light",
@@ -3366,7 +3366,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/SpareaLight.gif"
     },
     {
       "name": "Spin Move",
@@ -3377,7 +3377,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/SpinMove.gif"
     },
     {
       "name": "Spring Attack",
@@ -3388,7 +3388,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/SpringAttack.gif"
     },
     {
       "name": "Stay Put",
@@ -3399,7 +3399,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/StayPut.gif"
     },
     {
       "name": "Suplex",
@@ -3410,7 +3410,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Suplex.gif"
     },
     {
       "name": "Swinging Heat",
@@ -3421,7 +3421,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/SwingingHeat.gif"
     },
     {
       "name": "Switcheroo",
@@ -3432,7 +3432,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Switcheroo.gif"
     },
     {
       "name": "Tapped Out",
@@ -3443,7 +3443,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/TappedOut.gif"
     },
     {
       "name": "Timber",
@@ -3454,7 +3454,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Timber.gif"
     },
     {
       "name": "Tortured",
@@ -3465,7 +3465,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Tortured.gif"
     },
     {
       "name": "Twisted Reverse",
@@ -3476,7 +3476,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/TwistedReverse.gif"
     },
     {
       "name": "Undercarriage",
@@ -3487,7 +3487,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/Undercarriage.gif"
     },
     {
       "name": "Vertical Slice",
@@ -3498,7 +3498,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/VerticalSlice.gif"
     },
     {
       "name": "Violent End",
@@ -3509,7 +3509,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/ViolentEnd.gif"
     },
     {
       "name": "Zombie Decay",
@@ -3520,7 +3520,7 @@
       "anim_time": 0.0,
       "ttk": 0.0,
       "price": 0,
-      "preview": "Preview"
+      "preview": "assets/previews/CW/ZombieDecay.gif"
     }
   ],
   "VG": [
