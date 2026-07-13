@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let data = {};
   let currentLayout = 'list';
 
-  fetch('data.json')
+  fetch('https://gist.githubusercontent.com/Adrianoowo/5b62766be1512643010d701851ac4788/raw/data.json')
     .then(res => res.json())
     .then(json => {
       data = json[game] || [];
@@ -71,12 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
           this.classList.add('expanded');
           const move = data[idx];
           const isVideo = url => typeof url === 'string' && url.startsWith('http');
+          const isGif = url => typeof url === 'string' && url.endsWith('.gif');
           const bundle = move.bundle || '';
           videos.innerHTML = `
             <div style="display:flex;gap:2rem;justify-content:center;align-items:flex-start;flex-wrap:wrap;">
               <div style='flex-basis:100%;text-align:center;margin-bottom:0.7em;'>
                 ${bundle ? `<span style='background:#222;padding:0.3em 0.9em;border-radius:6px;font-size:1em;color:#f7c873;box-shadow:0 1px 4px #0002;'><b>Bundle:</b> ${bundle}</span>` : ''}
               </div>
+              ${isGif(move.preview) ? `<div><div style='text-align:center;font-weight:bold;margin-bottom:0.5rem;'>Preview</div><img src="${move.preview}" alt="${move.name} Preview" style="max-width:320px; border-radius:8px;"></div>` : ''}
               <div><div style='text-align:center;font-weight:bold;margin-bottom:0.5rem;'>Standing</div>${isVideo(move.standing) ? `<iframe src="${move.standing.replace('view?usp=drive_link','preview')}" width="320" height="240" allow="autoplay"></iframe>` : '<span style="color:#aaa;">No video</span>'}</div>
               <div><div style='text-align:center;font-weight:bold;margin-bottom:0.5rem;'>Prone</div>${isVideo(move.prone) ? `<iframe src="${move.prone.replace('view?usp=drive_link','preview')}" width="320" height="240" allow="autoplay"></iframe>` : '<span style="color:#aaa;">No video</span>'}</div>
               <div><div style='text-align:center;font-weight:bold;margin-bottom:0.5rem;'>Downed</div>${isVideo(move.downed) ? `<iframe src="${move.downed.replace('view?usp=drive_link','preview')}" width="320" height="240" allow="autoplay"></iframe>` : '<span style="color:#aaa;">No video</span>'}</div>
@@ -121,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const price = typeof move.price === 'number' ? move.price : 0;
         const bundle = move.bundle || '';
         const isVideo = url => typeof url === 'string' && url.startsWith('http');
+        const isGif = url => typeof url === 'string' && url.endsWith('.gif');
 
         // Remove any existing popup
         document.querySelectorAll('.move-popup, .move-popup-overlay').forEach(el => el.remove());
@@ -152,7 +155,8 @@ document.addEventListener('DOMContentLoaded', () => {
             ${bundle ? `<span class="popup-bundle"><b>Bundle:</b> ${bundle}</span>` : ''}
           </div>
           <div class="popup-videos">
-              <div><div style='font-weight:bold;margin-bottom:0.3em;'>Standing</div>${isVideo(move.standing) ? `<iframe src="${move.standing.replace('view?usp=drive_link','preview')}" allow="autoplay" allowfullscreen></iframe>` : '<span>No video</span>'}</div>
+            ${isGif(move.preview) ? `<div><div style='font-weight:bold;margin-bottom:0.3em;'>Preview</div><img src="${move.preview}" alt="${move.name} Preview" style="max-width:100%; border-radius:8px;"></div>` : ''}
+            <div><div style='font-weight:bold;margin-bottom:0.3em;'>Standing</div>${isVideo(move.standing) ? `<iframe src="${move.standing.replace('view?usp=drive_link','preview')}" allow="autoplay" allowfullscreen></iframe>` : '<span>No video</span>'}</div>
             <div><div style='font-weight:bold;margin-bottom:0.3em;'>Prone</div>${isVideo(move.prone) ? `<iframe src="${move.prone.replace('view?usp=drive_link','preview')}" allow="autoplay"></iframe>` : '<span>No video</span>'}</div>
             <div><div style='font-weight:bold;margin-bottom:0.3em;'>Downed</div>${isVideo(move.downed) ? `<iframe src="${move.downed.replace('view?usp=drive_link','preview')}" allow="autoplay"></iframe>` : '<span>No video</span>'}</div>
           </div>
