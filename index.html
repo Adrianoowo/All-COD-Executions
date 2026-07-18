@@ -1,32 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>All COD Executions</title>
-  <link rel="stylesheet" href="sheet.css">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/x-icon" href="images/site/siteicon.jpg">
+  <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-  <header>
-    <h1>All COD Executions</h1>
-    <p>Browse finishing moves from every Call of Duty game</p>
-  </header>
-  <main>
-    <section>
-      <h2 style="text-align:center;">Choose a Game</h2>
-      <div class="game-select">
-        <div class="game-card mw" onclick="goToGame('MW')"><img src="assets/MW.png" alt="Modern Warfare"></div>
-        <div class="game-card cw" onclick="goToGame('CW')"><img src="assets/CW.png" alt="Cold War"></div>
-        <div class="game-card vg" onclick="goToGame('VG')"><img src="assets/VG.png" alt="Vanguard"></div>
-        <div class="game-card mwii" onclick="goToGame('MWII')"><img src="assets/MWII.png" alt="Modern Warfare II"></div>
-        <div class="game-card mwiii" onclick="goToGame('MWIII')"><img src="assets/MWIII.png" alt="Modern Warfare III"></div>
-        <div class="game-card bo6" onclick="goToGame('BO6')"><img src="assets/BO6.png" alt="Black Ops 6"></div>
-        <div class="game-card bo7" onclick="goToGame('BO7')"><img src="assets/BO7.png" alt="Black Ops 7"></div>
+  <div id="bg-container"></div>
+  <div id="bg-glow"></div>
+
+  <div class="app-shell">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <img src="images/site/siteicon.jpg" alt="Logo" />
       </div>
-    </section>
-  </main>
-  <div class="footer">&copy; 2025 All COD Executions. Not affiliated with Activision or Call of Duty. <a href="https://github.com/Adrianoowo/All-COD-Executions" style="color: grey;">View source code</a></div>
+
+      <nav class="nav-icons">
+        <div class="nav-item active" data-target="mw" title="Modern Warfare">
+          <img src="images/mw2019/mwicon.png" alt="MW" />
+          <span class="nav-label">MW2019</span>
+        </div>
+        <div class="nav-item" data-target="cw" title="Cold War">
+          <img src="images/bocw/cwicon.png" alt="Cold War" />
+          <span class="nav-label">BOCW</span>
+        </div>
+        <div class="nav-item" data-target="vg" title="Vanguard">
+          <img src="images/vg/vgicon.png" alt="Vanguard" />
+          <span class="nav-label">VG</span>
+        </div>
+        <div class="nav-item" data-target="mwii" title="Modern Warfare II">
+          <img src="images/mwii/mwii-icon.png" alt="MWII" />
+          <span class="nav-label">MWII</span>
+        </div>
+        <div class="nav-item" data-target="mwiii" title="Modern Warfare III">
+          <img src="images/mwiii/mwiii-icon.jpg" alt="MWIII" />
+          <span class="nav-label">MWIII</span>
+        </div>
+        <div class="nav-item" data-target="bo6" title="Black Ops 6">
+          <img src="images/bo6/bo6icon.png" alt="BO6" />
+          <span class="nav-label">BO6</span>
+        </div>
+        <div class="nav-item" data-target="bo7" title="Black Ops 7">
+          <img src="assets/BO7.png" alt="BO7" />
+          <span class="nav-label">BO7</span>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- CONTENT WRAPPER -->
+    <div class="content-wrapper">
+      <header class="main-header">
+        <h1 class="font-mw">COD EXECUTIONS COLLECTION</h1>
+        <p>
+          <span class="font-htr header-credits text-white">Archival collection of finishing moves and execution animations from Call of Duty games obtained over the years. Redesigned in COD Builds style.</span>
+        </p>
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search executions by name or bundle..." autocomplete="off">
+        </div>
+      </header>
+
+      <main>
+        <!-- MODERN WARFARE -->
+        <section class="game-section active" id="mw">
+          <div class="game-header">
+            <img src="images/mw2019/mwicon.png" alt="MW" />
+            <div>
+              <h2>
+                <span class="font-htr text-white">Call of Duty:</span>
+                <span class="font-htr text-mw-sku">Modern Warfare</span>
+              </h2>
+              <p>Archived finishing moves and executions from Call of Duty: Modern Warfare (2019).</p>
+            </div>
+          </div>
+          <div class="build-grid"></div>
+        </section>
+
+        <!-- COLD WAR -->
+        <section class="game-section" id="cw">
+          <div class="game-header">
+            <img src="images/bocw/cwicon.png" alt="Cold War" />
+            <div>
+              <h2>
+                <span class="font-htr text-white">Call of Duty: Black Ops</span>
+                <span class="font-htr text-cw-sku">Cold War</span>
+              </h2>
+              <p>Archived finishing moves and executions from Call of Duty: Black Ops Cold War.</p>
+            </div>
+          </div>
+          <div class="build-grid"></div>
+        </section>
+
+        <!-- VANGUARD -->
+        <section class="game-section" id="vg">
+          <div class="game-header">
+            <img src="images/vg/vgicon.png" alt="Vanguard" />
+            <div>
+              <h2>
+                <span class="font-htr text-white">Call of Duty:</span>
+                <span class="font-htr text-vg-sku">Vanguard</span>
+              </h2>
+              <p>Archived finishing moves and executions from Call of Duty: Vanguard.</p>
+            </div>
+          </div>
+          <div class="build-grid"></div>
+        </section>
+
+        <!-- MWII -->
+        <section class="game-section" id="mwii">
+          <div class="game-header">
+            <img src="images/mwii/mwii-icon.png" alt="MWII" />
+            <div>
+              <h2>
+                <span class="font-htr text-white">Call of Duty: Modern Warfare</span>
+                <span class="font-htr text-mwii-sku">II</span>
+              </h2>
+              <p>Archived finishing moves and executions from Call of Duty: Modern Warfare II (2022).</p>
+            </div>
+          </div>
+          <div class="build-grid"></div>
+        </section>
+
+        <!-- MWIII -->
+        <section class="game-section" id="mwiii">
+          <div class="game-header">
+            <img src="images/mwiii/mwiii-icon.jpg" alt="MWIII" />
+            <div>
+              <h2>
+                <span class="font-htr text-white">Call of Duty: Modern Warfare</span>
+                <span class="font-htr text-mwiii-sku">III</span>
+              </h2>
+              <p>Archived finishing moves and executions from Call of Duty: Modern Warfare III (2023).</p>
+            </div>
+          </div>
+          <div class="build-grid"></div>
+        </section>
+
+        <!-- BO6 -->
+        <section class="game-section" id="bo6">
+          <div class="game-header">
+            <img src="images/bo6/bo6icon.png" alt="BO6" />
+            <div>
+              <h2>
+                <span class="font-htr text-white">Call of Duty: Black Ops</span>
+                <span class="font-htr text-bo6-sku">6</span>
+              </h2>
+              <p>Archived finishing moves and executions from Call of Duty: Black Ops 6.</p>
+            </div>
+          </div>
+          <div class="build-grid"></div>
+        </section>
+
+        <!-- BO7 -->
+        <section class="game-section" id="bo7">
+          <div class="game-header">
+            <img src="assets/BO7.png" alt="BO7" />
+            <div>
+              <h2>
+                <span class="font-htr text-white">Call of Duty: Black Ops</span>
+                <span class="font-htr text-bo7-sku">7</span>
+              </h2>
+              <p>Archived finishing moves and executions from Call of Duty: Black Ops 7.</p>
+            </div>
+          </div>
+          <div class="build-grid"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
   <script src="index.js"></script>
 </body>
+
 </html>
