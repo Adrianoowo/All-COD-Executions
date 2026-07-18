@@ -21,6 +21,7 @@ from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+from PIL import Image, ImageSequence
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -162,6 +163,30 @@ def build_new_entry(
     return entry
 
 
+def sanitize_gif(file_path: Path) -> bool:
+    """Sanitize GIF to make it Discord-compatible by stripping optimizations, locking fps, etc."""
+    try:
+        with Image.open(file_path) as im:
+            # Rip out the frames to flatten weird optimizations
+            frames = [frame.copy() for frame in ImageSequence.Iterator(im)]
+            if not frames:
+                return False
+            # Save directly back over the original file
+            frames[0].save(
+                file_path,
+                save_all=True,
+                append_images=frames[1:],
+                loop=0,          # Infinite loop
+                duration=33,     # ~30fps locked
+                disposal=2       # Clear transparency artifacts
+            )
+        print(f"      [GIF SANITIZE] Fixed: {file_path}")
+        return True
+    except Exception as e:
+        print(f"      [GIF SANITIZE] Failed to process {file_path}: {e}")
+        return False
+
+
 def download_image(url: str, dest_path: Path) -> bool:
     """Download image from url and save to dest_path."""
     try:
@@ -169,6 +194,11 @@ def download_image(url: str, dest_path: Path) -> bool:
         resp = SESSION.get(url, timeout=30)
         resp.raise_for_status()
         dest_path.write_bytes(resp.content)
+        
+        # If it's a GIF, sanitize it!
+        if dest_path.suffix.lower() == ".gif":
+            sanitize_gif(dest_path)
+            
         return True
     except Exception as exc:
         print(f"      [DOWNLOAD ERROR] Failed to download {url} to {dest_path}: {exc}")

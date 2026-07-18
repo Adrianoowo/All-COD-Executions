@@ -11063,6 +11063,17 @@
         "flying fang",
         "flyingfang"
       ]
+    },
+    {
+      "name": "Juggled Doom",
+      "icon": "assets/BO7/JuggledDoom.png",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0,
+      "preview": "assets/previews/BO7/JuggledDoom.gif"
     }
   ]
 }

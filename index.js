@@ -69,15 +69,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 4. Fetch executions data and render
-    fetch('data.json')
-      .then(res => res.json())
+    const gistUrl = 'https://gist.githubusercontent.com/Adrianoowo/5b62766be1512643010d701851ac4788/raw/data.json';
+    
+    // Fetch from Gist with a timestamp to prevent caching, falling back to local data.json
+    fetch(`${gistUrl}?t=${Date.now()}`)
+      .then(res => {
+        if (!res.ok) throw new Error(`Gist fetch failed with status: ${res.status}`);
+        return res.json();
+      })
       .then(json => {
+        console.log('Successfully loaded executions data from Gist.');
         executionsData = json;
         renderAllBuilds();
         animateCards();
       })
       .catch(err => {
-        console.error('Failed to load executions data:', err);
+        console.warn('Failed to load executions from Gist, falling back to local data.json:', err);
+        fetch('data.json')
+          .then(res => res.json())
+          .then(json => {
+            executionsData = json;
+            renderAllBuilds();
+            animateCards();
+          })
+          .catch(localErr => {
+            console.error('Failed to load local executions data:', localErr);
+          });
       });
 
     // 5. Search Input logic
