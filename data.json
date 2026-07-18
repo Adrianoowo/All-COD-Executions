@@ -7687,6 +7687,17 @@
       "ttk": 0.0,
       "price": 0,
       "preview": "assets/previews/BO7/FlyingFang.gif"
+    },
+    {
+      "name": "Juggled Doom",
+      "icon": "Icon",
+      "standing": "Standing",
+      "prone": "Prone",
+      "downed": "Downed",
+      "anim_time": 0.0,
+      "ttk": 0.0,
+      "price": 0,
+      "preview": "assets/previews/BO7/JuggledDoom.gif"
     }
   ]
 }
