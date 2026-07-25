@@ -1,0 +1,5 @@
+# Ignore Python cache directories anywhere in the project
+__pycache__/
+
+# Ignore .agents directories anywhere in the project
+.agents/

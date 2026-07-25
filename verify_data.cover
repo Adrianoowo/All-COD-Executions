@@ -1,0 +1,150 @@
+    1: """
+       verify_data.py
+       --------------
+       Standalone verification script to check data integrity of data.json.
+       Validates:
+       1. data.json is valid JSON.
+       2. Every game key (MW, CW, VG, MWII, MWIII, BO6, BO7) exists.
+       3. Every execution entry contains:
+          - "name": non-empty string
+          - "icon": non-empty string
+          - "standing": non-empty string
+          - "prone": non-empty string
+          - "downed": non-empty string
+          - "bundle": non-empty string
+          - "price": integer/float >= 0
+          - "aliases": list
+       4. Outputs comprehensive summary table and status result.
+       """
+       
+    1: import json
+    1: import sys
+    1: from pathlib import Path
+       
+       # Fix Windows console unicode printing
+    1: if hasattr(sys.stdout, "reconfigure"):
+    1:     try:
+    1:         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+           except Exception:
+               pass
+       
+    1: DATA_JSON_PATH = Path(__file__).parent / "data.json"
+    1: EXPECTED_GAMES = ["MW", "CW", "VG", "MWII", "MWIII", "BO6", "BO7"]
+       
+    1: def verify():
+    1:     print("==================== DATA INTEGRITY VERIFICATION ====================")
+           
+           # 1. JSON Validity Check
+    1:     try:
+    2:         with open(DATA_JSON_PATH, "r", encoding="utf-8") as f:
+    1:             data = json.load(f)
+    1:         print("[OK] Valid JSON structure loaded successfully.")
+           except Exception as e:
+               print(f"[FAIL] Invalid JSON format in data.json: {e}")
+               sys.exit(1)
+       
+    1:     total_entries = 0
+    1:     compliant_entries = 0
+    1:     violations = []
+    1:     game_summaries = {}
+       
+    8:     for game in EXPECTED_GAMES:
+    7:         if game not in data:
+                   violations.append(f"Missing game key '{game}' in data.json")
+                   continue
+                   
+    7:         items = data[game]
+    7:         g_total = len(items)
+    7:         g_compliant = 0
+               
+  706:         for idx, entry in enumerate(items):
+  699:             total_entries += 1
+  699:             item_name = entry.get("name", f"Index {idx}")
+                   
+                   # Field validations
+  699:             name = entry.get("name")
+  699:             icon = entry.get("icon")
+  699:             standing = entry.get("standing")
+  699:             prone = entry.get("prone")
+  699:             downed = entry.get("downed")
+  699:             bundle = entry.get("bundle")
+  699:             price = entry.get("price")
+  699:             aliases = entry.get("aliases")
+       
+  699:             has_valid_name = isinstance(name, str) and len(name.strip()) > 0
+  699:             has_valid_icon = isinstance(icon, str) and len(icon.strip()) > 0
+  699:             has_valid_standing = isinstance(standing, str) and len(standing.strip()) > 0
+  699:             has_valid_prone = isinstance(prone, str) and len(prone.strip()) > 0
+  699:             has_valid_downed = isinstance(downed, str) and len(downed.strip()) > 0
+  699:             has_valid_bundle = isinstance(bundle, str) and len(bundle.strip()) > 0
+  699:             has_valid_price = isinstance(price, (int, float)) and not isinstance(price, bool) and price >= 0
+  699:             has_valid_aliases = isinstance(aliases, list)
+                   
+  699:             is_compliant = (
+ 4893:                 has_valid_name and
+  699:                 has_valid_icon and
+  699:                 has_valid_standing and
+  699:                 has_valid_prone and
+  699:                 has_valid_downed and
+  699:                 has_valid_bundle and
+  699:                 has_valid_price and
+  699:                 has_valid_aliases
+                   )
+       
+  699:             if is_compliant:
+  699:                 g_compliant += 1
+  699:                 compliant_entries += 1
+                   else:
+                       issues = []
+                       if not has_valid_name:
+                           issues.append(f"invalid name ({name!r})")
+                       if not has_valid_icon:
+                           issues.append(f"invalid icon ({icon!r})")
+                       if not has_valid_standing:
+                           issues.append(f"invalid standing ({standing!r})")
+                       if not has_valid_prone:
+                           issues.append(f"invalid prone ({prone!r})")
+                       if not has_valid_downed:
+                           issues.append(f"invalid downed ({downed!r})")
+                       if not has_valid_bundle:
+                           issues.append(f"invalid bundle ({bundle!r})")
+                       if not has_valid_price:
+                           issues.append(f"invalid price ({price!r})")
+                       if not has_valid_aliases:
+                           issues.append(f"invalid aliases ({aliases!r})")
+                       violations.append(f"[{game}] '{item_name}': " + ", ".join(issues))
+                       
+    7:         game_summaries[game] = {
+    7:             "total": g_total,
+    7:             "compliant": g_compliant,
+    7:             "percent": (g_compliant / g_total * 100) if g_total > 0 else 0.0
+               }
+       
+    1:     print("\n---------------- Game-by-Game Breakdown ----------------")
+    1:     print(f"{'Game':<10} | {'Compliant':<10} | {'Total':<10} | {'Status':<10}")
+    1:     print("-" * 50)
+    8:     for g, s in game_summaries.items():
+    7:         status = "PASS" if s["compliant"] == s["total"] and s["total"] > 0 else "FAIL"
+    7:         print(f"{g:<10} | {s['compliant']:<10} | {s['total']:<10} | {status:<10}")
+    1:     print("-" * 50)
+           
+    1:     pct = (compliant_entries / total_entries * 100) if total_entries > 0 else 0.0
+    1:     print(f"\nTotal Executions Evaluated: {total_entries}")
+    1:     print(f"Compliant Executions:       {compliant_entries} / {total_entries} ({pct:.2f}%)")
+       
+    1:     if violations:
+               print(f"\n[FAIL] Found {len(violations)} compliance violations:")
+               for v in violations[:20]:
+                   print(f"  - {v}")
+               if len(violations) > 20:
+                   print(f"  ... and {len(violations)-20} more.")
+               sys.exit(1)
+           else:
+    1:         print("\n=====================================================================")
+    1:         print(f"[OK] SUCCESS: 100% of execution entries are fully compliant ({compliant_entries}/{total_entries}).")
+    1:         print("=====================================================================")
+    1:         sys.exit(0)
+       
+    1: if __name__ == "__main__":
+    1:     verify()
+       
