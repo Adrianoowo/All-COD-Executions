@@ -85,7 +85,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  const TURSO_CACHE_TTL = 15 * 60 * 1000; // 15 minutes cache for DB reads
+
   async function loadInventoryFromTurso(userId) {
+    if (!userId) return;
+
+    const cacheKey = `turso_inv_${userId}`;
+    const timeKey = `turso_inv_time_${userId}`;
+
+    const cachedInv = localStorage.getItem(cacheKey);
+    const cachedTime = parseInt(localStorage.getItem(timeKey) || '0', 10);
+
+    // 1. Load from local cache if valid (0 read queries to Turso DB)
+    if (cachedInv && cachedTime && (Date.now() - cachedTime < TURSO_CACHE_TTL)) {
+      try {
+        const items = JSON.parse(cachedInv);
+        ownedItems.clear();
+        items.forEach(k => ownedItems.add(k));
+        updateInventoryStats();
+        renderAllBuilds();
+        filterBuilds();
+        return;
+      } catch (e) {}
+    }
+
+    // 2. Fetch from Turso DB only when cache is missing/expired
     const result = await tursoExecute(
       'SELECT item_key FROM user_inventories WHERE user_id = ?;',
       [userId]
@@ -98,6 +122,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
+
+    const invArray = Array.from(ownedItems);
+    localStorage.setItem(cacheKey, JSON.stringify(invArray));
+    localStorage.setItem(timeKey, Date.now().toString());
+
     updateInventoryStats();
     renderAllBuilds();
     filterBuilds();
@@ -105,6 +134,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function syncOwnedItemToTurso(userId, itemKey, isAdd) {
     if (!userId) return;
+
+    // Immediately sync local cache so no DB read query is needed
+    const cacheKey = `turso_inv_${userId}`;
+    const timeKey = `turso_inv_time_${userId}`;
+    const invArray = Array.from(ownedItems);
+    localStorage.setItem(cacheKey, JSON.stringify(invArray));
+    localStorage.setItem(timeKey, Date.now().toString());
+
     if (isAdd) {
       await tursoExecute(
         'INSERT OR REPLACE INTO user_inventories (user_id, item_key) VALUES (?, ?);',
@@ -119,10 +156,20 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   async function saveUserProfileToTurso(userId, username, avatar) {
-    await tursoExecute(
+    const profileKey = `turso_prof_${userId}`;
+    const profileStr = `${username}|${avatar}`;
+
+    if (localStorage.getItem(profileKey) === profileStr) {
+      return; // Skip duplicate DB write if profile unchanged
+    }
+
+    const res = await tursoExecute(
       'INSERT OR REPLACE INTO users (user_id, username, avatar) VALUES (?, ?, ?);',
       [userId, username, avatar]
     );
+    if (res !== null) {
+      localStorage.setItem(profileKey, profileStr);
+    }
   }
 
   // ==========================================
