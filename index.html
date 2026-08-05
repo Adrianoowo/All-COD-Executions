@@ -55,12 +55,48 @@
     <!-- CONTENT WRAPPER -->
     <div class="content-wrapper">
       <header class="main-header">
-        <h1 class="font-mw">COD EXECUTIONS COLLECTION</h1>
-        <p>
-          <span class="font-htr header-credits text-white">Archival collection of finishing moves and execution animations from Call of Duty games obtained over the years. Redesigned in COD Builds style.</span>
-        </p>
-        <div class="search-container">
-          <input type="text" id="search-input" placeholder="Search executions by name or bundle..." autocomplete="off">
+        <div class="header-top-row">
+          <div class="header-title-container">
+            <h1 class="font-mw">COD EXECUTIONS COLLECTION</h1>
+            <p>
+              <span class="font-htr header-credits text-white">Archival collection of finishing moves and execution animations from Call of Duty games obtained over the years. Redesigned in COD Builds style.</span>
+            </p>
+          </div>
+          
+          <!-- DISCORD AUTH SECTION -->
+          <div class="auth-section" id="auth-section">
+            <button class="btn-discord-login" id="btn-discord-login">
+              <svg class="discord-icon" viewBox="0 0 127.14 96.36">
+                <path fill="currentColor" d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a74.58,74.58,0,0,0,64.3,0c.87.69,1.76,1.37,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,121.75,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,45.92,53.88,53,48.82,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5.06-12.74,11.44-12.74S96.23,45.92,96.12,53,91.08,65.69,84.69,65.69Z"/>
+              </svg>
+              <span>Login with Discord</span>
+            </button>
+            <div class="user-profile-bar hidden" id="user-profile-bar">
+              <img class="user-avatar" id="user-avatar" src="images/site/siteicon.jpg" alt="Avatar" />
+              <div class="user-info">
+                <span class="user-name" id="user-name">User</span>
+                <span class="user-stats" id="user-stats">0 Owned</span>
+              </div>
+              <button class="btn-logout" id="btn-logout" title="Logout">&times;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls-container">
+          <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search executions by name or bundle..." autocomplete="off">
+          </div>
+
+          <div class="inventory-filters">
+            <div class="filter-group">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="owned">Owned</button>
+              <button class="filter-btn" data-filter="unowned">Unowned</button>
+            </div>
+            <div class="inventory-stats-pill" id="inventory-stats-pill">
+              Owned: <span id="stats-count">0/0</span> (<span id="stats-pct">0%</span>)
+            </div>
+          </div>
         </div>
       </header>
 
@@ -170,6 +206,40 @@
           <div class="build-grid"></div>
         </section>
       </main>
+    </div>
+  </div>
+
+  <!-- DISCORD LOGIN MODAL -->
+  <div class="login-modal-overlay hidden" id="login-modal-overlay">
+    <div class="login-modal">
+      <button class="modal-close" id="modal-close-btn" title="Close">&times;</button>
+      <div class="modal-header">
+        <svg class="discord-icon lg" viewBox="0 0 127.14 96.36">
+          <path fill="currentColor" d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a74.58,74.58,0,0,0,64.3,0c.87.69,1.76,1.37,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,121.75,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,45.92,53.88,53,48.82,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5.06-12.74,11.44-12.74S96.23,45.92,96.12,53,91.08,65.69,84.69,65.69Z"/>
+        </svg>
+        <h2>Connect Discord Account</h2>
+        <p>Sync your execution inventory across devices with Turso DB.</p>
+      </div>
+      
+      <div class="login-options">
+        <button class="btn-oauth-login" id="btn-oauth-login">
+          <svg class="discord-icon" viewBox="0 0 127.14 96.36">
+            <path fill="currentColor" d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a74.58,74.58,0,0,0,64.3,0c.87.69,1.76,1.37,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,121.75,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,45.92,53.88,53,48.82,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5.06-12.74,11.44-12.74S96.23,45.92,96.12,53,91.08,65.69,84.69,65.69Z"/>
+          </svg>
+          Login via Discord OAuth2
+        </button>
+
+        <div class="login-divider"><span>OR</span></div>
+
+        <div class="id-login-form">
+          <label for="discord-user-id-input">Enter Discord User ID or Username:</label>
+          <div class="input-with-btn">
+            <input type="text" id="discord-user-id-input" placeholder="e.g. 1522200189006516304" />
+            <button id="btn-id-login">Connect</button>
+          </div>
+          <small>Uses Executioners HQ Bot to fetch profile & load inventory.</small>
+        </div>
+      </div>
     </div>
   </div>
 
