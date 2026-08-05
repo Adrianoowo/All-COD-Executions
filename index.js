@@ -672,18 +672,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return sorted.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
       case 'name-desc':
         return sorted.sort((a, b) => (b.name || '').localeCompare(a.name || ''));
-      case 'ttk-asc':
-        return sorted.sort((a, b) => {
-          const ttkA = typeof a.ttk === 'number' && a.ttk > 0 ? a.ttk : 999999;
-          const ttkB = typeof b.ttk === 'number' && b.ttk > 0 ? b.ttk : 999999;
-          return ttkA - ttkB;
-        });
-      case 'anim-asc':
-        return sorted.sort((a, b) => {
-          const animA = typeof a.anim_time === 'number' && a.anim_time > 0 ? a.anim_time : 999999;
-          const animB = typeof b.anim_time === 'number' && b.anim_time > 0 ? b.anim_time : 999999;
-          return animA - animB;
-        });
       case 'price-desc':
         return sorted.sort((a, b) => {
           const priceA = typeof a.price === 'number' ? a.price : 0;
