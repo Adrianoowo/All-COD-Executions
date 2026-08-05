@@ -1,23 +1,25 @@
     1: """
        verify_data.py
        --------------
-       Standalone verification script to check data integrity of data.json.
+       Standalone verification script to validate data integrity of data.json.
        Validates:
-       1. data.json is valid JSON.
-       2. Every game key (MW, CW, VG, MWII, MWIII, BO6, BO7) exists.
-       3. Every execution entry contains:
+       1. JSON syntax validity.
+       2. 100% field compliance across all 7 games (MW, CW, VG, MWII, MWIII, BO6, BO7):
           - "name": non-empty string
           - "icon": non-empty string
           - "standing": non-empty string
           - "prone": non-empty string
           - "downed": non-empty string
-          - "bundle": non-empty string
-          - "price": integer/float >= 0
-          - "aliases": list
-       4. Outputs comprehensive summary table and status result.
+          - "bundle": non-empty string (sanitized, no wiki residue or raw notes)
+          - "price": valid numeric COD Point price in standard tier set
+          - "aliases": list of strings
+       3. Price tier distribution matching webstore data, explicitly confirming presence of
+          verified entries across tiers: 3000 CP, 2800 CP, 2400 CP, 1800 CP, 1600 CP,
+          1400 CP, 1200 CP, 1100 CP, 800 CP, 600 CP, and 0 CP.
        """
        
     1: import json
+    1: import re
     1: import sys
     1: from pathlib import Path
        
@@ -30,10 +32,14 @@
        
     1: DATA_JSON_PATH = Path(__file__).parent / "data.json"
     1: EXPECTED_GAMES = ["MW", "CW", "VG", "MWII", "MWIII", "BO6", "BO7"]
+    1: REQUIRED_FIELDS = ["name", "icon", "standing", "prone", "downed", "bundle", "price", "aliases"]
+    1: VALID_PRICE_TIERS = {0, 600, 800, 1000, 1100, 1200, 1400, 1600, 1800, 2000, 2400, 2800, 3000}
+    1: REQUIRED_VERIFIED_TIERS = {3000, 2800, 2400, 1800, 1600, 1400, 1200, 1100, 800, 600, 0}
+       
        
     1: def verify():
-    1:     print("==================== DATA INTEGRITY VERIFICATION ====================")
-           
+    1:     print("==================== DATA INTEGRITY & PRICE TIER VERIFICATION ====================")
+       
            # 1. JSON Validity Check
     1:     try:
     2:         with open(DATA_JSON_PATH, "r", encoding="utf-8") as f:
@@ -47,21 +53,25 @@
     1:     compliant_entries = 0
     1:     violations = []
     1:     game_summaries = {}
+   14:     price_tier_counts = {tier: 0 for tier in sorted(VALID_PRICE_TIERS)}
        
     8:     for game in EXPECTED_GAMES:
     7:         if game not in data:
                    violations.append(f"Missing game key '{game}' in data.json")
                    continue
-                   
+       
     7:         items = data[game]
     7:         g_total = len(items)
     7:         g_compliant = 0
-               
+       
   706:         for idx, entry in enumerate(items):
   699:             total_entries += 1
   699:             item_name = entry.get("name", f"Index {idx}")
-                   
-                   # Field validations
+       
+                   # 1. Check all 8 required schema fields are present
+ 6291:             missing_fields = [f for f in REQUIRED_FIELDS if f not in entry]
+  699:             has_all_fields = len(missing_fields) == 0
+       
   699:             name = entry.get("name")
   699:             icon = entry.get("icon")
   699:             standing = entry.get("standing")
@@ -71,17 +81,34 @@
   699:             price = entry.get("price")
   699:             aliases = entry.get("aliases")
        
-  699:             has_valid_name = isinstance(name, str) and len(name.strip()) > 0
+  699:             has_valid_name = isinstance(name, str) and len(name.strip()) > 0 and "\ufffd" not in name
   699:             has_valid_icon = isinstance(icon, str) and len(icon.strip()) > 0
   699:             has_valid_standing = isinstance(standing, str) and len(standing.strip()) > 0
   699:             has_valid_prone = isinstance(prone, str) and len(prone.strip()) > 0
   699:             has_valid_downed = isinstance(downed, str) and len(downed.strip()) > 0
-  699:             has_valid_bundle = isinstance(bundle, str) and len(bundle.strip()) > 0
-  699:             has_valid_price = isinstance(price, (int, float)) and not isinstance(price, bool) and price >= 0
-  699:             has_valid_aliases = isinstance(aliases, list)
-                   
+  699:             has_valid_bundle = (
+ 3495:                 isinstance(bundle, str) and
+  699:                 len(bundle.strip()) > 0 and
+  699:                 "\ufffd" not in bundle and
+  699:                 "dismembered" not in bundle.lower() and
+  699:                 not bundle.startswith("[[") and
+  699:                 re.search(r"(-[a-zA-Z0-9]){3,}", bundle) is None
+                   )
+  699:             has_valid_price = (
+ 2097:                 isinstance(price, int) and
+  699:                 not isinstance(price, bool) and
+  699:                 price >= 0 and
+  699:                 price in VALID_PRICE_TIERS
+                   )
+  699:             has_valid_aliases = (
+ 1398:                 isinstance(aliases, list) and
+  699:                 len(aliases) > 0 and
+ 7182:                 all(isinstance(x, str) and len(x.strip()) > 0 for x in aliases)
+                   )
+       
   699:             is_compliant = (
- 4893:                 has_valid_name and
+ 5592:                 has_all_fields and
+  699:                 has_valid_name and
   699:                 has_valid_icon and
   699:                 has_valid_standing and
   699:                 has_valid_prone and
@@ -94,8 +121,11 @@
   699:             if is_compliant:
   699:                 g_compliant += 1
   699:                 compliant_entries += 1
+  699:                 price_tier_counts[price] += 1
                    else:
                        issues = []
+                       if not has_all_fields:
+                           issues.append(f"missing schema fields ({missing_fields!r})")
                        if not has_valid_name:
                            issues.append(f"invalid name ({name!r})")
                        if not has_valid_icon:
@@ -113,24 +143,44 @@
                        if not has_valid_aliases:
                            issues.append(f"invalid aliases ({aliases!r})")
                        violations.append(f"[{game}] '{item_name}': " + ", ".join(issues))
-                       
+       
     7:         game_summaries[game] = {
     7:             "total": g_total,
     7:             "compliant": g_compliant,
     7:             "percent": (g_compliant / g_total * 100) if g_total > 0 else 0.0
                }
        
-    1:     print("\n---------------- Game-by-Game Breakdown ----------------")
+    1:     print("\n---------------- Game-by-Game Compliance Breakdown ----------------")
     1:     print(f"{'Game':<10} | {'Compliant':<10} | {'Total':<10} | {'Status':<10}")
     1:     print("-" * 50)
     8:     for g, s in game_summaries.items():
     7:         status = "PASS" if s["compliant"] == s["total"] and s["total"] > 0 else "FAIL"
     7:         print(f"{g:<10} | {s['compliant']:<10} | {s['total']:<10} | {status:<10}")
     1:     print("-" * 50)
-           
+       
+    1:     print("\n---------------- Price Tier Distribution (COD Points) ----------------")
+    1:     print(f"{'Price Tier':<12} | {'Count':<10} | {'Status':<15}")
+    1:     print("-" * 45)
+    1:     missing_required_tiers = []
+   14:     for tier in sorted(VALID_PRICE_TIERS):
+   13:         cnt = price_tier_counts[tier]
+   13:         if tier in REQUIRED_VERIFIED_TIERS:
+   11:             if cnt > 0:
+   11:                 t_status = "VERIFIED (PASS)"
+                   else:
+                       t_status = "MISSING (FAIL)"
+                       missing_required_tiers.append(f"{tier} CP")
+               else:
+    2:             t_status = "PRESENT" if cnt > 0 else "EMPTY"
+   13:         print(f"{tier:>4d} CP       | {cnt:<10d} | {t_status:<15}")
+    1:     print("-" * 45)
+       
     1:     pct = (compliant_entries / total_entries * 100) if total_entries > 0 else 0.0
     1:     print(f"\nTotal Executions Evaluated: {total_entries}")
     1:     print(f"Compliant Executions:       {compliant_entries} / {total_entries} ({pct:.2f}%)")
+       
+    1:     if missing_required_tiers:
+               violations.append("Missing required webstore price tiers: " + ", ".join(missing_required_tiers))
        
     1:     if violations:
                print(f"\n[FAIL] Found {len(violations)} compliance violations:")
@@ -142,9 +192,10 @@
            else:
     1:         print("\n=====================================================================")
     1:         print(f"[OK] SUCCESS: 100% of execution entries are fully compliant ({compliant_entries}/{total_entries}).")
+    1:         print("     All required webstore price tiers are verified present.")
     1:         print("=====================================================================")
     1:         sys.exit(0)
        
+       
     1: if __name__ == "__main__":
     1:     verify()
-       
