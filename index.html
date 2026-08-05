@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>All COD Executions</title>
-  <link rel="icon" type="image/x-icon" href="images/site/siteicon.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -17,7 +17,7 @@
     <!-- SIDEBAR -->
     <aside class="sidebar">
       <div class="sidebar-logo">
-        <img src="images/site/siteicon.jpg" alt="Logo" />
+        <img src="assets/favicon.svg" alt="Logo" />
       </div>
 
       <nav class="nav-icons">
@@ -72,7 +72,7 @@
               <span>Login with Discord</span>
             </button>
             <div class="user-profile-bar hidden" id="user-profile-bar">
-              <img class="user-avatar" id="user-avatar" src="images/site/siteicon.jpg" alt="Avatar" />
+              <img class="user-avatar" id="user-avatar" src="assets/favicon.svg" alt="Avatar" />
               <div class="user-info">
                 <span class="user-name" id="user-name">User</span>
                 <span class="user-stats" id="user-stats">0 Owned</span>
@@ -85,6 +85,34 @@
         <div class="controls-container">
           <div class="search-container">
             <input type="text" id="search-input" placeholder="Search executions by name or bundle..." autocomplete="off">
+          </div>
+
+          <div class="control-tools">
+            <div class="sort-container">
+              <select id="sort-select" class="sort-select" aria-label="Sort executions">
+                <option value="default">Sort: Default</option>
+                <option value="name-asc">Sort: Name (A - Z)</option>
+                <option value="name-desc">Sort: Name (Z - A)</option>
+                <option value="ttk-asc">Sort: TTK (Fastest)</option>
+                <option value="anim-asc">Sort: Anim (Fastest)</option>
+                <option value="price-desc">Sort: Price (Highest)</option>
+              </select>
+            </div>
+
+            <div class="view-mode-group" id="view-mode-group">
+              <button class="view-btn active" data-view="grid" title="Standard Square Grid View">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                <span>Grid</span>
+              </button>
+              <button class="view-btn" data-view="compact" title="Compact Square Tiles">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="4" height="4"/><rect x="10" y="3" width="4" height="4"/><rect x="17" y="3" width="4" height="4"/><rect x="3" y="10" width="4" height="4"/><rect x="10" y="10" width="4" height="4"/><rect x="17" y="10" width="4" height="4"/><rect x="3" y="17" width="4" height="4"/><rect x="10" y="17" width="4" height="4"/><rect x="17" y="17" width="4" height="4"/></svg>
+                <span>Tiles</span>
+              </button>
+              <button class="view-btn" data-view="list" title="List View">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                <span>List</span>
+              </button>
+            </div>
           </div>
 
           <div class="inventory-filters">

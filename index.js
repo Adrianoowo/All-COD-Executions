@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentActiveTab = 'mw'; // default
   let ownedItems = new Set(); // Stores item_key strings e.g. "MW:Point Blank"
   let currentInventoryFilter = 'all'; // 'all', 'owned', 'unowned'
+  let currentViewMode = localStorage.getItem('userViewMode') || 'grid'; // 'grid', 'compact', 'list'
+  let currentSortOrder = localStorage.getItem('userSortOrder') || 'default'; // 'default', 'name-asc', etc.
   let currentUser = null; // { id, username, avatar }
 
   // Credentials
@@ -20,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = Array.from(document.querySelectorAll('.game-section'));
   const bgContainer = document.getElementById('bg-container');
   const searchInput = document.getElementById('search-input');
+  const sortSelect = document.getElementById('sort-select');
+  const viewBtns = Array.from(document.querySelectorAll('#view-mode-group .view-btn'));
 
   // Auth DOM Elements
   const btnDiscordLogin = document.getElementById('btn-discord-login');
@@ -140,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (user && user.id) {
               const avatarUrl = user.avatar
                 ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`
-                : 'images/site/siteicon.jpg';
+                : 'assets/favicon.svg';
               loginUser({
                 id: String(user.id),
                 username: user.global_name || user.username || 'Discord User',
@@ -218,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentUser) {
       btnDiscordLogin.classList.add('hidden');
       userProfileBar.classList.remove('hidden');
-      userAvatar.src = currentUser.avatar || 'images/site/siteicon.jpg';
+      userAvatar.src = currentUser.avatar || 'assets/favicon.svg';
       userName.textContent = currentUser.username;
     } else {
       btnDiscordLogin.classList.remove('hidden');
@@ -262,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const user = await res.json();
         const avatarUrl = user.avatar
           ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`
-          : 'images/site/siteicon.jpg';
+          : 'assets/favicon.svg';
         loginUser({
           id: String(user.id),
           username: user.global_name || user.username || 'Discord User',
@@ -275,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loginUser({
           id: inputVal,
           username: `User ${inputVal.substring(0, 8)}`,
-          avatar: 'images/site/siteicon.jpg'
+          avatar: 'assets/favicon.svg'
         });
         loginModalOverlay.classList.add('hidden');
         discordUserIdInput.value = '';
@@ -285,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
       loginUser({
         id: inputVal,
         username: `User ${inputVal.substring(0, 8)}`,
-        avatar: 'images/site/siteicon.jpg'
+        avatar: 'assets/favicon.svg'
       });
       loginModalOverlay.classList.add('hidden');
       discordUserIdInput.value = '';
@@ -368,6 +372,139 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
+  // GOOGLE SHEETS CSV DATA LOADER
+  // ==========================================
+  const GOOGLE_SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT9EOMdiacUjhgNkMA8tQze2PqKXThqPX4MxCUZNnS-3GNuGapsATPrYJKLWggNaJjcaLz89JL23ovP/pub?gid=1458453375&single=true&output=csv';
+
+  function parseCSV(text) {
+    const lines = text.split(/\r?\n/).filter(l => l.trim() !== '');
+    if (lines.length === 0) return [];
+
+    function parseLine(line) {
+      const result = [];
+      let start = 0;
+      let inQuotes = false;
+      for (let i = 0; i < line.length; i++) {
+        if (line[i] === '"') {
+          inQuotes = !inQuotes;
+        } else if (line[i] === ',' && !inQuotes) {
+          let field = line.substring(start, i).trim();
+          if (field.startsWith('"') && field.endsWith('"')) {
+            field = field.slice(1, -1).replace(/""/g, '"');
+          }
+          result.push(field);
+          start = i + 1;
+        }
+      }
+      let field = line.substring(start).trim();
+      if (field.startsWith('"') && field.endsWith('"')) {
+        field = field.slice(1, -1).replace(/""/g, '"');
+      }
+      result.push(field);
+      return result;
+    }
+
+    const headers = parseLine(lines[0]).map(h => h.trim().toLowerCase());
+    const rows = [];
+    for (let i = 1; i < lines.length; i++) {
+      const parsed = parseLine(lines[i]);
+      if (parsed.length === 0) continue;
+      const obj = {};
+      headers.forEach((h, idx) => {
+        obj[h] = parsed[idx] ? parsed[idx].trim() : '';
+      });
+      rows.push(obj);
+    }
+    return rows;
+  }
+
+  const CACHE_TTL_MS = 15 * 60 * 1000; // 15 minutes cache to prevent rate limiting
+
+  async function loadAllExecutionData() {
+    let csvText = '';
+    const cachedText = localStorage.getItem('sheet_csv_cache');
+    const cachedTime = parseInt(localStorage.getItem('sheet_csv_time') || '0', 10);
+
+    // 1. Use valid local cache if within 15 minutes (0 requests to Google API)
+    if (cachedText && cachedTime && (Date.now() - cachedTime < CACHE_TTL_MS)) {
+      csvText = cachedText;
+    } else {
+      // 2. Fetch live data from Google Sheets CSV URL
+      try {
+        const res = await fetch(GOOGLE_SHEET_CSV_URL);
+        if (res.ok) {
+          csvText = await res.text();
+          if (csvText && csvText.includes('game,name')) {
+            localStorage.setItem('sheet_csv_cache', csvText);
+            localStorage.setItem('sheet_csv_time', Date.now().toString());
+          }
+        }
+      } catch (err) {
+        console.warn('Live Google Sheets fetch failed, checking cached CSV:', err);
+      }
+    }
+
+    // 3. Fallback to cached CSV text if network fetch failed
+    if (!csvText && cachedText) {
+      csvText = cachedText;
+    }
+
+    if (csvText && csvText.includes('game,name')) {
+      try {
+        const rows = parseCSV(csvText);
+        const compiled = {};
+
+        rows.forEach(row => {
+          const game = (row.game || '').trim().toUpperCase();
+          const rawName = (row.name || '').trim();
+          if (!game || !rawName) return;
+
+          // clean_name = re.sub(r'[^a-zA-Z0-9]', '', raw_name)
+          const cleanName = rawName.replace(/[^a-zA-Z0-9]/g, '');
+
+          const parsedPrice = parseInt(row.price, 10);
+          const price = !isNaN(parsedPrice) ? parsedPrice : 0;
+
+          const aliases = row.aliases
+            ? row.aliases.split(',').map(a => a.trim()).filter(Boolean)
+            : [];
+
+          const animTimeVal = parseFloat(row.anim_time);
+          const ttkVal = parseFloat(row.ttk);
+
+          const item = {
+            name: rawName,
+            clean_name: cleanName,
+            game: game,
+            price: price,
+            bundle: (row.bundle || '').trim(),
+            bundle_url: (row.bundle_url || '').trim(),
+            aliases: aliases,
+            icon: row.icon || `assets/${game}/${cleanName}.png`,
+            preview: row.preview || `assets/previews/${game}/${cleanName}.gif`,
+            standing: row.standing || '',
+            prone: row.prone || '',
+            downed: row.downed || '',
+            anim_time: !isNaN(animTimeVal) ? animTimeVal : 0,
+            ttk: !isNaN(ttkVal) ? ttkVal : 0
+          };
+
+          if (!compiled[game]) compiled[game] = [];
+          compiled[game].push(item);
+        });
+
+        executionsData = compiled;
+      } catch (parseErr) {
+        console.error('Google Sheet CSV parse error:', parseErr);
+      }
+    }
+
+    renderAllBuilds();
+    updateInventoryStats();
+    animateCards();
+  }
+
+  // ==========================================
   // MAIN APP INITIALIZATION & RENDER
   // ==========================================
   function init() {
@@ -417,48 +554,41 @@ document.addEventListener('DOMContentLoaded', () => {
     // 4. Initialize Auth session & inventory
     initAuth();
 
-    // 5. Fetch executions data and render
-    const gistUrl = 'https://gist.githubusercontent.com/Adrianoowo/5b62766be1512643010d701851ac4788/raw/data.json';
-    
-    fetch(`${gistUrl}?t=${Date.now()}`)
-      .then(res => {
-        if (!res.ok) throw new Error(`Gist fetch failed: ${res.status}`);
-        return res.json();
-      })
-      .then(json => {
-        executionsData = json;
-        renderAllBuilds();
-        updateInventoryStats();
-        animateCards();
-      })
-      .catch(err => {
-        console.warn('Failed to load executions from Gist, falling back to local data.json:', err);
-        fetch('data.json')
-          .then(res => res.json())
-          .then(json => {
-            executionsData = json;
-            renderAllBuilds();
-            updateInventoryStats();
-            animateCards();
-          })
-          .catch(localErr => {
-            console.error('Failed to load local executions data:', localErr);
-          });
-      });
+    // 5. Fetch executions data from Google Sheets CSV URL (with local fallback)
+    loadAllExecutionData();
 
     // 6. Search Input listener
     searchInput.addEventListener('input', () => {
       filterBuilds();
     });
 
-    // 7. Security listeners
-    document.onselectstart = function () { return false; };
-    document.oncontextmenu = function () { return false; };
-    window.addEventListener('keydown', function (e) {
-      if (e.ctrlKey && (e.key === 'a' || e.key === 'A')) {
-        e.preventDefault();
-      }
-    });
+    // 7. Sort Select listener
+    if (sortSelect) {
+      sortSelect.value = currentSortOrder;
+      sortSelect.addEventListener('change', (e) => {
+        currentSortOrder = e.target.value;
+        localStorage.setItem('userSortOrder', currentSortOrder);
+        renderAllBuilds();
+        animateCards();
+      });
+    }
+
+    // 8. View Mode buttons listener
+    if (viewBtns.length > 0) {
+      viewBtns.forEach(btn => {
+        if (btn.dataset.view === currentViewMode) btn.classList.add('active');
+        else btn.classList.remove('active');
+
+        btn.addEventListener('click', () => {
+          viewBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentViewMode = btn.dataset.view;
+          localStorage.setItem('userViewMode', currentViewMode);
+          applyViewModeToGrids();
+          animateCards();
+        });
+      });
+    }
   }
 
   function createBgDiv(url) {
@@ -466,6 +596,45 @@ document.addEventListener('DOMContentLoaded', () => {
     div.className = 'bg-slide';
     div.style.backgroundImage = `url('${url}')`;
     return div;
+  }
+
+  function applyViewModeToGrids() {
+    const grids = document.querySelectorAll('.build-grid');
+    grids.forEach(grid => {
+      grid.classList.remove('view-compact', 'view-list');
+      if (currentViewMode === 'compact') grid.classList.add('view-compact');
+      else if (currentViewMode === 'list') grid.classList.add('view-list');
+    });
+  }
+
+  function sortBuildList(list) {
+    const sorted = [...list];
+    switch (currentSortOrder) {
+      case 'name-asc':
+        return sorted.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+      case 'name-desc':
+        return sorted.sort((a, b) => (b.name || '').localeCompare(a.name || ''));
+      case 'ttk-asc':
+        return sorted.sort((a, b) => {
+          const ttkA = typeof a.ttk === 'number' && a.ttk > 0 ? a.ttk : 999999;
+          const ttkB = typeof b.ttk === 'number' && b.ttk > 0 ? b.ttk : 999999;
+          return ttkA - ttkB;
+        });
+      case 'anim-asc':
+        return sorted.sort((a, b) => {
+          const animA = typeof a.anim_time === 'number' && a.anim_time > 0 ? a.anim_time : 999999;
+          const animB = typeof b.anim_time === 'number' && b.anim_time > 0 ? b.anim_time : 999999;
+          return animA - animB;
+        });
+      case 'price-desc':
+        return sorted.sort((a, b) => {
+          const priceA = typeof a.price === 'number' ? a.price : 0;
+          const priceB = typeof b.price === 'number' ? b.price : 0;
+          return priceB - priceA;
+        });
+      default:
+        return sorted;
+    }
   }
 
   // Game Tab Transitions
@@ -559,17 +728,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderBuilds(gameKey) {
     const jsonKey = gameKey.toUpperCase();
-    const builds = executionsData[jsonKey] || [];
+    const rawBuilds = executionsData[jsonKey] || [];
+    const builds = sortBuildList(rawBuilds);
 
     const container = document.querySelector(`#${gameKey} .build-grid`);
     if (!container) return;
+
+    applyViewModeToGrids();
 
     if (builds.length === 0) {
       container.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--muted);font-family:'HTR',sans-serif;">No executions found for this game.</div>`;
       return;
     }
 
-    container.innerHTML = builds.map((build, idx) => {
+    const isVideo = url => typeof url === 'string' && url.startsWith('http');
+
+    container.innerHTML = builds.map((build) => {
       const iconSrc = build.icon ? build.icon : 'assets/missing_preview.jpg';
 
       const FPS = 60;
@@ -595,41 +769,59 @@ document.addEventListener('DOMContentLoaded', () => {
       const ownedClass = isOwned ? 'is-owned' : '';
       const checkIcon = isOwned ? '✓' : '+';
 
+      const hasGif = typeof build.preview === 'string' && build.preview.toLowerCase().endsWith('.gif');
+      const badgeList = [];
+      if (isVideo(build.standing)) badgeList.push('<span class="video-badge" title="Standing View Available">🚶 St</span>');
+      if (isVideo(build.prone)) badgeList.push('<span class="video-badge" title="Prone View Available">🙇 Pr</span>');
+      if (isVideo(build.downed)) badgeList.push('<span class="video-badge" title="Downed View Available">🩹 Dn</span>');
+      if (hasGif) badgeList.push('<span class="video-badge badge-gif" title="Animated Preview Available">🎬 GIF</span>');
+      
+      const videoBadgesHtml = badgeList.length > 0
+        ? `<div class="video-badges">${badgeList.join('')}</div>`
+        : '';
+
+      const aliasesStr = Array.isArray(build.aliases) ? build.aliases.join(' ').toLowerCase() : '';
+
+      const priceStr = build.price ? `${build.price} CP` : 'FREE';
+      const bundleStr = build.bundle || '';
+
       return `
-        <div class="build ${ownedClass}" data-name="${build.name.toLowerCase()}" data-bundle="${(build.bundle || '').toLowerCase()}" data-item-key="${itemKey}" data-idx="${idx}">
+        <div class="build ${ownedClass}" data-name="${build.name.toLowerCase()}" data-bundle="${bundleStr.toLowerCase()}" data-aliases="${aliasesStr}" data-item-key="${itemKey}">
           <button class="owned-badge" title="${isOwned ? 'Mark as Unowned' : 'Mark as Owned'}" data-item-key="${itemKey}">
             ${checkIcon}
           </button>
           <div class="build-img-wrapper">
+            ${videoBadgesHtml}
             <img src="${iconSrc}" alt="${build.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/missing_preview.jpg';" />
+            <div class="tile-hover-overlay">
+              <span class="btn-quick-play">Preview</span>
+            </div>
           </div>
           <div class="build-body">
             <h3>${build.name}</h3>
-            <span>${tagsHtml}</span>
+            <div class="card-meta-row">
+              <span class="price-pill">${priceStr}</span>
+              ${bundleStr ? `<span class="bundle-name-tag" title="${bundleStr}">${bundleStr}</span>` : ''}
+            </div>
           </div>
         </div>
       `;
     }).join('');
 
     // Attach listeners
-    Array.from(container.querySelectorAll('.build')).forEach(card => {
+    Array.from(container.querySelectorAll('.build')).forEach((card, idx) => {
+      const build = builds[idx];
       // Toggle owned badge
       const badge = card.querySelector('.owned-badge');
       if (badge) {
         badge.addEventListener('click', (e) => {
           e.stopPropagation();
-          const idx = card.getAttribute('data-idx');
-          const jsonKey = gameKey.toUpperCase();
-          const build = executionsData[jsonKey][idx];
           toggleOwned(gameKey, build.name);
         });
       }
 
       // Card click opens modal
       card.addEventListener('click', () => {
-        const idx = card.getAttribute('data-idx');
-        const jsonKey = gameKey.toUpperCase();
-        const build = executionsData[jsonKey][idx];
         showVideoModal(gameKey, build.name, build);
       });
     });
@@ -644,12 +836,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const cards = activeSection.querySelectorAll('.build');
     cards.forEach(card => {
-      const name = card.getAttribute('data-name');
-      const bundle = card.getAttribute('data-bundle');
+      const name = card.getAttribute('data-name') || '';
+      const bundle = card.getAttribute('data-bundle') || '';
+      const aliases = card.getAttribute('data-aliases') || '';
       const itemKey = card.getAttribute('data-item-key');
       const isOwned = ownedItems.has(itemKey);
 
-      const matchesQuery = name.includes(query) || bundle.includes(query);
+      const matchesQuery = name.includes(query) || bundle.includes(query) || aliases.includes(query);
       let matchesFilter = true;
       if (currentInventoryFilter === 'owned') matchesFilter = isOwned;
       else if (currentInventoryFilter === 'unowned') matchesFilter = !isOwned;
