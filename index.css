@@ -193,12 +193,12 @@ body {
 }
 
 .sidebar-logo img {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 44px;
+  height: 44px;
+  border-radius: 0;
+  object-fit: contain;
+  border: none;
+  box-shadow: none;
 }
 
 .nav-icons {
@@ -750,10 +750,9 @@ main {
   pointer-events: none;
 }
 
-/* Strict 1:1 Square Cards */
+/* Cards & Strict 1:1 Square Icons */
 .build {
   position: relative;
-  aspect-ratio: 1 / 1; /* Whole card is strictly a 1:1 square! */
   width: 100%;
   border-radius: 12px;
   overflow: hidden;
@@ -781,27 +780,34 @@ main {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(var(--accent-rgb), 0.35);
 }
 
+.game-header {
+  display: none !important;
+}
+
 .build-img-wrapper {
   position: relative;
-  flex: 1; /* Fills top portion of square card */
   width: 100%;
+  aspect-ratio: 1 / 1; /* Strict 1:1 Square Icon Container */
   overflow: hidden;
   background: #090a12;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 4px;
+  box-sizing: border-box;
 }
 
 .build-img-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  object-fit: contain; /* Full uncropped artwork inside the 1:1 square! */
   display: block;
   transition: transform 0.4s cubic-bezier(0.2, 0, 0.2, 1);
 }
 
 .build:hover .build-img-wrapper img {
-  transform: scale(1.08);
+  transform: scale(1.06);
 }
 
 .build-body {
@@ -852,9 +858,8 @@ main {
   text-overflow: ellipsis;
   max-width: 110px;
 }
-  margin-bottom: 12px;
-  align-items: center;
-}
+
+
 
 .build-tag {
   background: rgba(var(--accent-rgb), 0.05);

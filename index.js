@@ -476,18 +476,28 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cachedText && cachedTime && (Date.now() - cachedTime < CACHE_TTL_MS)) {
       csvText = cachedText;
     } else {
-      // 2. Fetch live data from Google Sheets CSV URL
+      // 2. Fetch live data with CORS proxy fallback
       try {
         const res = await fetch(GOOGLE_SHEET_CSV_URL);
         if (res.ok) {
           csvText = await res.text();
-          if (csvText && csvText.includes('game,name')) {
-            localStorage.setItem('sheet_csv_cache', csvText);
-            localStorage.setItem('sheet_csv_time', Date.now().toString());
-          }
         }
       } catch (err) {
-        console.warn('Live Google Sheets fetch failed, checking cached CSV:', err);
+        console.warn('Direct Google Sheets fetch failed/blocked, trying CORS proxy:', err);
+        try {
+          const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(GOOGLE_SHEET_CSV_URL)}`;
+          const proxyRes = await fetch(proxyUrl);
+          if (proxyRes.ok) {
+            csvText = await proxyRes.text();
+          }
+        } catch (proxyErr) {
+          console.warn('CORS proxy fetch failed:', proxyErr);
+        }
+      }
+
+      if (csvText && csvText.includes('game,name')) {
+        localStorage.setItem('sheet_csv_cache', csvText);
+        localStorage.setItem('sheet_csv_time', Date.now().toString());
       }
     }
 
@@ -542,8 +552,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         executionsData = compiled;
       } catch (parseErr) {
-        console.error('Google Sheet CSV parse error:', parseErr);
+        console.error('Google Sheet CSV parse error, using embedded fallback:', parseErr);
+        if (typeof FALLBACK_EXECUTIONS_DATA !== 'undefined') {
+          executionsData = FALLBACK_EXECUTIONS_DATA;
+        }
       }
+    } else if (typeof FALLBACK_EXECUTIONS_DATA !== 'undefined') {
+      executionsData = FALLBACK_EXECUTIONS_DATA;
     }
 
     renderAllBuilds();
@@ -555,25 +570,21 @@ document.addEventListener('DOMContentLoaded', () => {
   // MAIN APP INITIALIZATION & RENDER
   // ==========================================
   function init() {
-    // 1. Load active tab from localStorage
+    // 1. Load active tab from localStorage with robust fallback
     const savedTab = localStorage.getItem('activeTab');
-    if (savedTab) {
-      const tabToActivate = tabs.find(t => t.dataset.target === savedTab);
-      if (tabToActivate) {
-        tabs.forEach(t => t.classList.remove('active'));
-        sections.forEach(s => s.classList.remove('active'));
+    const defaultTab = 'mw';
+    const targetTabId = savedTab && document.getElementById(savedTab) ? savedTab : defaultTab;
 
-        tabToActivate.classList.add('active');
-        const targetSection = document.getElementById(savedTab);
-        if (targetSection) targetSection.classList.add('active');
-        currentActiveTab = savedTab;
-      }
-    } else {
-      const activeTab = document.querySelector('.nav-item.active');
-      if (activeTab) {
-        currentActiveTab = activeTab.dataset.target;
-      }
-    }
+    tabs.forEach(t => t.classList.remove('active'));
+    sections.forEach(s => s.classList.remove('active'));
+
+    const tabToActivate = tabs.find(t => t.dataset.target === targetTabId) || tabs[0];
+    if (tabToActivate) tabToActivate.classList.add('active');
+
+    const targetSection = document.getElementById(targetTabId) || sections[0];
+    if (targetSection) targetSection.classList.add('active');
+
+    currentActiveTab = targetTabId;
 
     // 2. Set up initial background image
     document.body.dataset.theme = currentActiveTab;
@@ -601,7 +612,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 4. Initialize Auth session & inventory
     initAuth();
 
-    // 5. Fetch executions data from Google Sheets CSV URL (with local fallback)
+    // 5. Fetch executions data from Google Sheets CSV URL (with proxy & embedded fallbacks)
     loadAllExecutionData();
 
     // 6. Search Input listener
@@ -687,7 +698,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Game Tab Transitions
   tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => {
-      if (tab.classList.contains('active')) return;
+      const targetId = tab.dataset.target;
+      const targetSection = document.getElementById(targetId);
+      
+      if (tab.classList.contains('active') && targetSection && targetSection.classList.contains('active')) {
+        return;
+      }
 
       const currentTab = document.querySelector('.nav-item.active');
       const currentIndex = tabs.indexOf(currentTab);
@@ -697,16 +713,15 @@ document.addEventListener('DOMContentLoaded', () => {
       tabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
 
-      const targetId = tab.dataset.target;
       document.body.dataset.theme = targetId;
       currentActiveTab = targetId;
-
       localStorage.setItem('activeTab', targetId);
 
       sections.forEach(s => s.classList.remove('active'));
-      const targetSection = document.getElementById(targetId);
-      targetSection.classList.add('active');
-      targetSection.scrollTop = 0;
+      if (targetSection) {
+        targetSection.classList.add('active');
+        targetSection.scrollTop = 0;
+      }
 
       searchInput.value = '';
       
@@ -816,20 +831,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const ownedClass = isOwned ? 'is-owned' : '';
       const checkIcon = isOwned ? '✓' : '+';
 
-      const hasGif = typeof build.preview === 'string' && build.preview.toLowerCase().endsWith('.gif');
-      const badgeList = [];
-      if (isVideo(build.standing)) badgeList.push('<span class="video-badge" title="Standing View Available">🚶 St</span>');
-      if (isVideo(build.prone)) badgeList.push('<span class="video-badge" title="Prone View Available">🙇 Pr</span>');
-      if (isVideo(build.downed)) badgeList.push('<span class="video-badge" title="Downed View Available">🩹 Dn</span>');
-      if (hasGif) badgeList.push('<span class="video-badge badge-gif" title="Animated Preview Available">🎬 GIF</span>');
-      
-      const videoBadgesHtml = badgeList.length > 0
-        ? `<div class="video-badges">${badgeList.join('')}</div>`
-        : '';
-
       const aliasesStr = Array.isArray(build.aliases) ? build.aliases.join(' ').toLowerCase() : '';
 
-      const priceStr = build.price ? `${build.price} CP` : 'FREE';
+      const cardPriceDisplay = build.price ? `${build.price} CP` : 'FREE';
       const bundleStr = build.bundle || '';
 
       return `
@@ -838,16 +842,12 @@ document.addEventListener('DOMContentLoaded', () => {
             ${checkIcon}
           </button>
           <div class="build-img-wrapper">
-            ${videoBadgesHtml}
             <img src="${iconSrc}" alt="${build.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/missing_preview.jpg';" />
-            <div class="tile-hover-overlay">
-              <span class="btn-quick-play">Preview</span>
-            </div>
           </div>
           <div class="build-body">
             <h3>${build.name}</h3>
             <div class="card-meta-row">
-              <span class="price-pill">${priceStr}</span>
+              <span class="price-pill">${cardPriceDisplay}</span>
               ${bundleStr ? `<span class="bundle-name-tag" title="${bundleStr}">${bundleStr}</span>` : ''}
             </div>
           </div>
