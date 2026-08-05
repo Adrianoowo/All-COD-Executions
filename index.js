@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mwii: { full: 'images/backgrounds/mwii.jpg', tiny: 'images/backgrounds/mwii_lh.jpg' },
     mwiii: { full: 'images/backgrounds/mwiii.jpg', tiny: 'images/backgrounds/mwiii_lh.jpg' },
     bo6: { full: 'images/backgrounds/bo6.jpg', tiny: 'images/backgrounds/bo6_lh.jpg' },
-    bo7: { full: 'images/backgrounds/other.jpg', tiny: 'images/backgrounds/other_lh.jpg' }
+    bo7: { full: 'images/backgrounds/bo7.jpg', tiny: 'images/backgrounds/bo7_lh.jpg' }
   };
 
   const preloadedImages = [];
