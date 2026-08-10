@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnOauthLogin = document.getElementById('btn-oauth-login');
   const btnIdLogin = document.getElementById('btn-id-login');
   const discordUserIdInput = document.getElementById('discord-user-id-input');
+  const idInputError = document.getElementById('id-input-error');
 
   // Filter Buttons & Stats
   const filterBtns = Array.from(document.querySelectorAll('.filter-btn'));
@@ -277,17 +278,40 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function showIdError(msg) {
+    if (idInputError) {
+      idInputError.textContent = msg;
+      idInputError.classList.remove('hidden');
+    }
+    if (discordUserIdInput) {
+      discordUserIdInput.classList.add('error');
+    }
+  }
+
+  function clearIdError() {
+    if (idInputError) {
+      idInputError.textContent = '';
+      idInputError.classList.add('hidden');
+    }
+    if (discordUserIdInput) {
+      discordUserIdInput.classList.remove('error');
+    }
+  }
+
   // Discord Login Modal handlers
   btnDiscordLogin.addEventListener('click', () => {
+    clearIdError();
     loginModalOverlay.classList.remove('hidden');
   });
 
   modalCloseBtn.addEventListener('click', () => {
+    clearIdError();
     loginModalOverlay.classList.add('hidden');
   });
 
   loginModalOverlay.addEventListener('click', (e) => {
     if (e.target === loginModalOverlay) {
+      clearIdError();
       loginModalOverlay.classList.add('hidden');
     }
   });
@@ -299,8 +323,26 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   async function handleIdLogin() {
+    clearIdError();
     const inputVal = discordUserIdInput.value.trim();
-    if (!inputVal) return;
+
+    if (!inputVal) {
+      showIdError('Please enter a Discord User ID.');
+      discordUserIdInput.focus();
+      return;
+    }
+
+    if (!/^\d+$/.test(inputVal)) {
+      showIdError('Usernames are not allowed. Please enter your numerical Discord User ID (e.g. 1522200189006516304).');
+      discordUserIdInput.focus();
+      return;
+    }
+
+    if (!/^\d{17,20}$/.test(inputVal)) {
+      showIdError('Invalid Discord User ID format. Discord User IDs must be between 17 and 20 digits long.');
+      discordUserIdInput.focus();
+      return;
+    }
 
     btnIdLogin.disabled = true;
     btnIdLogin.textContent = '...';
@@ -350,6 +392,7 @@ document.addEventListener('DOMContentLoaded', () => {
   discordUserIdInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') handleIdLogin();
   });
+  discordUserIdInput.addEventListener('input', clearIdError);
 
   btnLogout.addEventListener('click', logoutUser);
 

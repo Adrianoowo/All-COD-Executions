@@ -188,11 +188,15 @@
         <div class="login-divider"><span>OR</span></div>
 
         <div class="id-login-form">
-          <label for="discord-user-id-input">Enter Discord User ID or Username:</label>
+          <div class="form-label-row">
+            <label for="discord-user-id-input">Enter Discord User ID:</label>
+            <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID" target="_blank" rel="noopener noreferrer" class="help-link">Need help?</a>
+          </div>
           <div class="input-with-btn">
-            <input type="text" id="discord-user-id-input" placeholder="e.g. 1522200189006516304" />
+            <input type="text" id="discord-user-id-input" placeholder="e.g. 1522200189006516304" autocomplete="off" />
             <button id="btn-id-login">Connect</button>
           </div>
+          <div id="id-input-error" class="id-input-error hidden"></div>
           <small>Uses Executioners HQ Bot to fetch profile & load inventory.</small>
         </div>
       </div>

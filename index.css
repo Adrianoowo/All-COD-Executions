@@ -2177,11 +2177,31 @@ body.popup-active {
   padding: 0 10px;
 }
 
+.form-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
 .id-login-form label {
   display: block;
   font-size: 13px;
   color: var(--text-secondary);
-  margin-bottom: 8px;
+  margin-bottom: 0;
+}
+
+.help-link {
+  font-size: 12px;
+  color: #5865F2;
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.help-link:hover {
+  text-decoration: underline;
+  color: #7983f5;
 }
 
 .input-with-btn {
@@ -2220,6 +2240,26 @@ body.popup-active {
 .input-with-btn button:hover {
   background: #5865F2;
   border-color: #5865F2;
+}
+
+.input-with-btn input.error {
+  border-color: #ff4d4d !important;
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.3) !important;
+}
+
+.id-input-error {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 8px;
+  line-height: 1.4;
+  background: rgba(255, 77, 77, 0.1);
+  border: 1px solid rgba(255, 77, 77, 0.25);
+  border-radius: var(--radius);
+  padding: 8px 12px;
+}
+
+.id-input-error.hidden {
+  display: none;
 }
 
 .id-login-form small {
