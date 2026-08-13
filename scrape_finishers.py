@@ -55,6 +55,9 @@ PAGES = [
     ("BO7",
      "Finishing_Move/Call_of_Duty:_Black_Ops_7",
      0, 1, 2, True),
+    ("MW4",
+     "Finishing_Move/Call_of_Duty:_Modern_Warfare_4",
+     0, 1, 2, True),
 ]
 
 # Simple API-friendly session (NO browser-specific Sec-Fetch headers)

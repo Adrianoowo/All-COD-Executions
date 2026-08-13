@@ -14992,5 +14992,6 @@ const FALLBACK_EXECUTIONS_DATA = {
       "anim_time": 0,
       "ttk": 0
     }
-  ]
+  ],
+  "MW4": []
 };

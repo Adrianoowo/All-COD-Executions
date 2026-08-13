@@ -54,7 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
     mwii: { full: 'images/backgrounds/mwii.jpg', tiny: 'images/backgrounds/mwii_lh.jpg' },
     mwiii: { full: 'images/backgrounds/mwiii.jpg', tiny: 'images/backgrounds/mwiii_lh.jpg' },
     bo6: { full: 'images/backgrounds/bo6.jpg', tiny: 'images/backgrounds/bo6_lh.jpg' },
-    bo7: { full: 'images/backgrounds/bo7.jpg', tiny: 'images/backgrounds/bo7_lh.jpg' }
+    bo7: { full: 'images/backgrounds/bo7.jpg', tiny: 'images/backgrounds/bo7_lh.jpg' },
+    mw4: { full: 'images/backgrounds/mw4.jpg', tiny: 'images/backgrounds/mw4_lh.jpg' }
   };
 
   const preloadedImages = [];
@@ -222,13 +223,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function loadGuestInventory() {
     ownedItems.clear();
-    const guestData = localStorage.getItem('guest_inventory');
-    if (guestData) {
-      try {
-        const arr = JSON.parse(guestData);
-        arr.forEach(k => ownedItems.add(k));
-      } catch (e) {}
-    }
     updateAuthUI();
     updateInventoryStats();
   }
@@ -267,13 +261,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateAuthUI() {
+    const viewOnlyBadge = document.getElementById('view-only-badge');
     if (currentUser) {
       btnDiscordLogin.classList.add('hidden');
+      if (viewOnlyBadge) viewOnlyBadge.classList.add('hidden');
       userProfileBar.classList.remove('hidden');
       userAvatar.src = currentUser.avatar || 'assets/favicon.svg';
       userName.textContent = currentUser.username;
     } else {
       btnDiscordLogin.classList.remove('hidden');
+      if (viewOnlyBadge) viewOnlyBadge.classList.remove('hidden');
       userProfileBar.classList.add('hidden');
     }
   }
@@ -298,19 +295,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function openLoginModalWithNotice(msg) {
+    const noticeBanner = document.getElementById('login-notice-banner');
+    const noticeText = document.getElementById('login-notice-text');
+    if (noticeBanner && noticeText) {
+      noticeText.textContent = msg || 'Authentication Required: Please connect your Discord account or enter your User ID to mark executions as owned.';
+      noticeBanner.classList.remove('hidden');
+    }
+    clearIdError();
+    loginModalOverlay.classList.remove('hidden');
+  }
+
+  function hideLoginNotice() {
+    const noticeBanner = document.getElementById('login-notice-banner');
+    if (noticeBanner) noticeBanner.classList.add('hidden');
+  }
+
   // Discord Login Modal handlers
   btnDiscordLogin.addEventListener('click', () => {
+    hideLoginNotice();
     clearIdError();
     loginModalOverlay.classList.remove('hidden');
   });
 
   modalCloseBtn.addEventListener('click', () => {
+    hideLoginNotice();
     clearIdError();
     loginModalOverlay.classList.add('hidden');
   });
 
   loginModalOverlay.addEventListener('click', (e) => {
     if (e.target === loginModalOverlay) {
+      hideLoginNotice();
       clearIdError();
       loginModalOverlay.classList.add('hidden');
     }
@@ -400,6 +416,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // INVENTORY MANAGEMENT LOGIC
   // ==========================================
   function toggleOwned(gameKey, buildName) {
+    if (!currentUser) {
+      openLoginModalWithNotice('Authentication Required: Connect your Discord account or enter your User ID to mark executions as owned.');
+      return;
+    }
+
     const itemKey = `${gameKey.toUpperCase()}:${buildName}`;
     const isNowOwned = !ownedItems.has(itemKey);
 
@@ -409,11 +430,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ownedItems.delete(itemKey);
     }
 
-    if (currentUser) {
-      syncOwnedItemToTurso(currentUser.id, itemKey, isNowOwned);
-    } else {
-      localStorage.setItem('guest_inventory', JSON.stringify(Array.from(ownedItems)));
-    }
+    syncOwnedItemToTurso(currentUser.id, itemKey, isNowOwned);
 
     updateInventoryStats();
     updateCardOwnedState(itemKey, isNowOwned);
@@ -442,6 +459,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (Array.isArray(list)) total += list.length;
     });
 
+    if (!currentUser) {
+      if (statsCount) statsCount.textContent = `--/${total}`;
+      if (statsPct) statsPct.textContent = `View-Only`;
+      if (userStats) userStats.textContent = `0 Owned`;
+      return;
+    }
+
     const ownedCount = ownedItems.size;
     const pct = total > 0 ? ((ownedCount / total) * 100).toFixed(1) : '0';
 
@@ -453,6 +477,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Filter Group Listener
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
+      if (!currentUser && (btn.dataset.filter === 'owned' || btn.dataset.filter === 'unowned')) {
+        openLoginModalWithNotice('Authentication Required: Please connect your Discord account or enter your User ID to view owned/unowned inventory.');
+        return;
+      }
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       currentInventoryFilter = btn.dataset.filter;
@@ -629,6 +657,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     currentActiveTab = targetTabId;
 
+    const contentWrapper = document.querySelector('.content-wrapper');
+    if (contentWrapper) contentWrapper.scrollTop = 0;
+    window.scrollTo(0, 0);
+
     // 2. Set up initial background image
     document.body.dataset.theme = currentActiveTab;
     const bgData = bgMap[currentActiveTab];
@@ -731,8 +763,11 @@ document.addEventListener('DOMContentLoaded', () => {
     tab.addEventListener('click', () => {
       const targetId = tab.dataset.target;
       const targetSection = document.getElementById(targetId);
+      const contentWrapper = document.querySelector('.content-wrapper');
       
       if (tab.classList.contains('active') && targetSection && targetSection.classList.contains('active')) {
+        if (contentWrapper) contentWrapper.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         return;
       }
 
@@ -753,6 +788,11 @@ document.addEventListener('DOMContentLoaded', () => {
         targetSection.classList.add('active');
         targetSection.scrollTop = 0;
       }
+
+      if (contentWrapper) contentWrapper.scrollTop = 0;
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
 
       searchInput.value = '';
       
@@ -830,7 +870,22 @@ document.addEventListener('DOMContentLoaded', () => {
     applyViewModeToGrids();
 
     if (builds.length === 0) {
-      container.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--muted);font-family:'HTR',sans-serif;">No executions found for this game.</div>`;
+      if (gameKey === 'mw4') {
+        container.innerHTML = `
+          <div class="coming-soon-container">
+            <div class="coming-soon-card">
+              <div class="coming-soon-icon-wrapper">
+                <img src="images/mw4/mw4icon.png" alt="MW4" />
+              </div>
+              <h2 class="coming-soon-title">MODERN WARFARE 4</h2>
+              <div class="coming-soon-pill">COMING SOON...</div>
+              <p class="coming-soon-text">Executions for Modern Warfare 4 will automatically appear here as soon as they are added to the database.</p>
+            </div>
+          </div>
+        `;
+      } else {
+        container.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--muted);font-family:'HTR',sans-serif;">No executions found for this game.</div>`;
+      }
       return;
     }
 
@@ -858,9 +913,15 @@ document.addEventListener('DOMContentLoaded', () => {
         .join('');
 
       const itemKey = `${jsonKey}:${build.name}`;
-      const isOwned = ownedItems.has(itemKey);
+      const isOwned = currentUser ? ownedItems.has(itemKey) : false;
       const ownedClass = isOwned ? 'is-owned' : '';
-      const checkIcon = isOwned ? '✓' : '+';
+      
+      let checkIcon = isOwned ? '✓' : '+';
+      let badgeTitle = isOwned ? 'Mark as Unowned' : 'Mark as Owned';
+      if (!currentUser) {
+        checkIcon = `<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`;
+        badgeTitle = 'Login required to mark as owned';
+      }
 
       const aliasesStr = Array.isArray(build.aliases) ? build.aliases.join(' ').toLowerCase() : '';
 
@@ -868,8 +929,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const bundleStr = build.bundle || '';
 
       return `
-        <div class="build ${ownedClass}" data-name="${build.name.toLowerCase()}" data-bundle="${bundleStr.toLowerCase()}" data-aliases="${aliasesStr}" data-item-key="${itemKey}">
-          <button class="owned-badge" title="${isOwned ? 'Mark as Unowned' : 'Mark as Owned'}" data-item-key="${itemKey}">
+        <div class="build ${ownedClass} ${!currentUser ? 'view-only-card' : ''}" data-name="${build.name.toLowerCase()}" data-bundle="${bundleStr.toLowerCase()}" data-aliases="${aliasesStr}" data-item-key="${itemKey}">
+          <button class="owned-badge ${!currentUser ? 'is-view-only' : ''}" title="${badgeTitle}" data-item-key="${itemKey}">
             ${checkIcon}
           </button>
           <div class="build-img-wrapper">
@@ -1016,9 +1077,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
       <div class="popup-owned-toggle">
         <label>Inventory Status:</label>
-        <button class="btn-toggle-owned ${isOwned ? 'active' : ''}" id="modal-owned-btn">
-          ${isOwned ? '✓ Owned' : '+ Add to Inventory'}
-        </button>
+        ${currentUser 
+          ? `<button class="btn-toggle-owned ${isOwned ? 'active' : ''}" id="modal-owned-btn">
+               ${isOwned ? '✓ Owned' : '+ Add to Inventory'}
+             </button>`
+          : `<button class="btn-toggle-owned view-only-modal-btn" id="modal-owned-btn" title="Login to track inventory">
+               <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+               <span>Login to Track</span>
+             </button>`
+        }
       </div>
 
       <div class="popup-info">
