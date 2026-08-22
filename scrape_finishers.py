@@ -28,6 +28,7 @@ from PIL import Image, ImageSequence
 # ---------------------------------------------------------------------------
 
 DATA_JSON_PATH = Path(__file__).parent / "data.json"
+FALLBACK_JS_PATH = Path(__file__).parent / "data-fallback.js"
 
 FANDOM_API_BASE = "https://callofduty.fandom.com/api.php"
 
@@ -99,10 +100,12 @@ def stem_from_image_key(key: str) -> str | None:
         return None
     key = key.strip()
     # URL-decode common encodings (e.g. %26 → &)
-    key = key.replace("%26", "&").replace("%27", "'").replace("%20", " ")
+    key = key.replace("%26", "").replace("%27", "'").replace("%20", "")
     for pattern in [
         r"^(.+?)_FinishingMove_Icon_",
         r"^(.+?)_Finishing_Move_Icon_",
+        r"^(.+?)_FinishingMove_Preview_",
+        r"^(.+?)_Finishing_Move_Preview_",
         r"^(.+?)_FinisherIcon_",
         r"^(.+?)_Finisher_",
         r"^(.+?)_FinishingMove_",
@@ -110,10 +113,8 @@ def stem_from_image_key(key: str) -> str | None:
     ]:
         m = re.match(pattern, key, re.IGNORECASE)
         if m:
-            return m.group(1)
-    # For VG gifs like "RackIt_FinishingMove_Polina_CODV.gif":
-    # strip extension
-    return re.sub(r"\.[a-z]+$", "", key, flags=re.IGNORECASE)
+            return re.sub(r"[^A-Za-z0-9]", "", m.group(1))
+    return re.sub(r"[^A-Za-z0-9]", "", re.sub(r"\.[a-z]+$", "", key, flags=re.IGNORECASE))
 
 
 def ext_from_image_key(key: str, url: str | None) -> str:
@@ -150,14 +151,19 @@ def build_new_entry(
 ) -> dict:
     entry = {
         "name": name,
-        "icon": make_icon_path(game_key, stem, ext) if has_icon_col else "Icon",
-        "standing": "Standing",
-        "prone": "Prone",
-        "downed": "Downed",
-        "anim_time": 0.0,
-        "ttk": 0.0,
+        "clean_name": stem,
+        "game": game_key,
         "price": 0,
-        "preview": make_preview_path(game_key, stem, preview_ext) if preview_url else "Preview"
+        "bundle": "Base Operator Move",
+        "bundle_url": "",
+        "aliases": [name.lower(), stem.lower()],
+        "icon": make_icon_path(game_key, stem, ext) if has_icon_col else "Icon",
+        "preview": make_preview_path(game_key, stem, preview_ext) if preview_url else "Preview",
+        "standing": "",
+        "prone": "",
+        "downed": "",
+        "anim_time": 0,
+        "ttk": 0
     }
     if url and has_icon_col:
         entry["_image_url"] = url
@@ -170,6 +176,9 @@ def sanitize_gif(file_path: Path) -> bool:
     """Sanitize GIF to make it Discord-compatible by stripping optimizations, locking fps, etc."""
     try:
         with Image.open(file_path) as im:
+            duration = im.info.get('duration', 33)
+            if not duration or duration < 10:
+                duration = 33
             # Rip out the frames to flatten weird optimizations
             frames = [frame.copy() for frame in ImageSequence.Iterator(im)]
             if not frames:
@@ -180,7 +189,7 @@ def sanitize_gif(file_path: Path) -> bool:
                 save_all=True,
                 append_images=frames[1:],
                 loop=0,          # Infinite loop
-                duration=33,     # ~30fps locked
+                duration=duration,
                 disposal=2       # Clear transparency artifacts
             )
         print(f"      [GIF SANITIZE] Fixed: {file_path}")
@@ -381,9 +390,18 @@ def parse_finishing_moves(
 
 
 def main():
-    print(f"Loading {DATA_JSON_PATH} …")
-    with open(DATA_JSON_PATH, "r", encoding="utf-8") as fh:
-        data = json.load(fh)
+    if DATA_JSON_PATH.exists():
+        print(f"Loading {DATA_JSON_PATH} …")
+        with open(DATA_JSON_PATH, "r", encoding="utf-8") as fh:
+            data = json.load(fh)
+    elif FALLBACK_JS_PATH.exists():
+        print(f"Loading {FALLBACK_JS_PATH} …")
+        with open(FALLBACK_JS_PATH, "r", encoding="utf-8") as fh:
+            raw = fh.read()
+        json_str = raw.replace("const FALLBACK_EXECUTIONS_DATA = ", "").rstrip("; \n\r")
+        data = json.loads(json_str)
+    else:
+        data = {}
 
     summary: dict[str, int] = {}
 
@@ -442,7 +460,7 @@ def main():
 
             if url:
                 parsed_icon = entry["icon"]
-                dest_path = DATA_JSON_PATH.parent / parsed_icon
+                dest_path = FALLBACK_JS_PATH.parent / parsed_icon
 
                 current_icon = target_entry.get("icon")
                 if current_icon != parsed_icon:
@@ -456,7 +474,7 @@ def main():
 
             if preview_url:
                 parsed_preview = entry["preview"]
-                dest_preview_path = DATA_JSON_PATH.parent / parsed_preview
+                dest_preview_path = FALLBACK_JS_PATH.parent / parsed_preview
 
                 current_preview = target_entry.get("preview", "Preview")
                 if current_preview != parsed_preview:
@@ -475,9 +493,15 @@ def main():
 
         time.sleep(REQUEST_DELAY)
 
-    print(f"\nWriting updated {DATA_JSON_PATH} …")
-    with open(DATA_JSON_PATH, "w", encoding="utf-8") as fh:
-        json.dump(data, fh, indent=2, ensure_ascii=False)
+    if FALLBACK_JS_PATH.exists() or not DATA_JSON_PATH.exists():
+        print(f"\nWriting updated {FALLBACK_JS_PATH} …")
+        with open(FALLBACK_JS_PATH, "w", encoding="utf-8") as fh:
+            fh.write("const FALLBACK_EXECUTIONS_DATA = " + json.dumps(data, indent=2, ensure_ascii=False) + ";\n")
+
+    if DATA_JSON_PATH.exists():
+        print(f"\nWriting updated {DATA_JSON_PATH} …")
+        with open(DATA_JSON_PATH, "w", encoding="utf-8") as fh:
+            json.dump(data, fh, indent=2, ensure_ascii=False)
 
     print("\n" + "=" * 60)
     print("SUMMARY — new entries added")

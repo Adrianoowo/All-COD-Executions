@@ -821,7 +821,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "RapidIncision",
       "game": "MWII",
       "price": 2400,
-      "bundle": "Tracer Pack: P\u00e1draig's Pandemonium Bundle",
+      "bundle": "Tracer Pack: Pádraig's Pandemonium Bundle",
       "bundle_url": "",
       "aliases": [
         "incision",
@@ -7187,7 +7187,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "CutTheCrap",
       "game": "VG",
       "price": 2400,
-      "bundle": "Wade - Tracer Pack: Umbrella Academy \u2014 Cha-Cha Bundle",
+      "bundle": "Wade - Tracer Pack: Umbrella Academy — Cha-Cha Bundle",
       "bundle_url": "",
       "aliases": [
         "cut the crap",
@@ -7515,7 +7515,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "ShockingRevelation",
       "game": "VG",
       "price": 2400,
-      "bundle": "Lewis - Tracer Pack: Umbrella Academy \u2014 Hazel Bundle",
+      "bundle": "Lewis - Tracer Pack: Umbrella Academy — Hazel Bundle",
       "bundle_url": "",
       "aliases": [
         "shocking revelation",
@@ -7553,7 +7553,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "SteelCut",
       "game": "VG",
       "price": 2400,
-      "bundle": "Tracer Pack: Attack on Titan \u2014 Levi Edition Bundle",
+      "bundle": "Tracer Pack: Attack on Titan — Levi Edition Bundle",
       "bundle_url": "",
       "aliases": [
         "steel cut",
@@ -8171,7 +8171,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "KongsKnuckleSlamwich",
       "game": "MWIII",
       "price": 2400,
-      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire \u2014 Kong Bundle",
+      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire — Kong Bundle",
       "bundle_url": "",
       "aliases": [
         "kong",
@@ -8258,7 +8258,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "FrostbiteFinish",
       "game": "MWIII",
       "price": 2400,
-      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire \u2014 Shimo Bundle",
+      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire — Shimo Bundle",
       "bundle_url": "",
       "aliases": [
         "frostbite",
@@ -8317,7 +8317,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "FeelTheHeatRay",
       "game": "MWIII",
       "price": 2400,
-      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire \u2014 Godzilla Bundle",
+      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire — Godzilla Bundle",
       "bundle_url": "",
       "aliases": [
         "feel the heat ray",
@@ -8764,7 +8764,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "WhipslashedUnleashed",
       "game": "MWIII",
       "price": 2400,
-      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire \u2014 Skar King Bundle",
+      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire — Skar King Bundle",
       "bundle_url": "",
       "aliases": [
         "whipslash",
@@ -12805,8 +12805,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "wanna see a magic trick?",
         "wannaseeamagictrick"
       ],
-      "icon": "assets/BO7/WannaSeeaMagicTrick.png",
-      "preview": "assets/previews/BO7/WannaSeeaMagicTrick.gif",
+      "icon": "assets/BO7/WannaSeeAMagicTrick.png",
+      "preview": "assets/previews/BO7/WannaSeeAMagicTrick.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -13024,8 +13024,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "got the moves",
         "gotthemoves"
       ],
-      "icon": "assets/BO7/GottheMoves.png",
-      "preview": "assets/previews/BO7/GottheMoves.gif",
+      "icon": "assets/BO7/GotTheMoves.png",
+      "preview": "assets/previews/BO7/GotTheMoves.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -13437,8 +13437,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "cut n fold",
         "cutandfold"
       ],
-      "icon": "assets/BO7/CutandFold.png",
-      "preview": "assets/previews/BO7/CutandFold.gif",
+      "icon": "assets/BO7/CutAndFold.png",
+      "preview": "assets/previews/BO7/CutAndFold.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -14986,6 +14986,101 @@ const FALLBACK_EXECUTIONS_DATA = {
       ],
       "icon": "assets/BO7/ArmsLength.png",
       "preview": "assets/previews/BO7/ArmsLength.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Juggled Doom",
+      "clean_name": "JuggledDoom",
+      "game": "BO7",
+      "price": 0,
+      "bundle": "Tracer Pack: Disruption Prime Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "juggled doom",
+        "juggleddoom"
+      ],
+      "icon": "assets/BO7/JuggledDoom.png",
+      "preview": "assets/previews/BO7/JuggledDoom.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Close Encounter",
+      "clean_name": "CloseEncounter",
+      "game": "BO7",
+      "price": 0,
+      "bundle": "Tracer Pack: Operation Stingray Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "close encounter",
+        "closeencounter"
+      ],
+      "icon": "assets/BO7/CloseEncounter.png",
+      "preview": "assets/previews/BO7/CloseEncounter.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "No Warning",
+      "clean_name": "NoWarning",
+      "game": "BO7",
+      "price": 0,
+      "bundle": "Tracer Pack: Counter Fire Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "no warning",
+        "nowarning"
+      ],
+      "icon": "assets/BO7/NoWarning.png",
+      "preview": "assets/previews/BO7/NoWarning.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Energy Shock",
+      "clean_name": "EnergyShock",
+      "game": "BO7",
+      "price": 0,
+      "bundle": "Tracer Pack: Infinite Void Reactive Zombies Universe Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "energy shock",
+        "energyshock"
+      ],
+      "icon": "Icon",
+      "preview": "assets/previews/BO7/EnergyShock.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Hatchet Work",
+      "clean_name": "HatchetWork",
+      "game": "BO7",
+      "price": 0,
+      "bundle": "Obtain XP during the Last Call event (Premium Track Exclusive)",
+      "bundle_url": "",
+      "aliases": [
+        "hatchet work",
+        "hatchetwork"
+      ],
+      "icon": "Icon",
+      "preview": "Preview",
       "standing": "",
       "prone": "",
       "downed": "",
