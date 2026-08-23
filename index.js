@@ -535,19 +535,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     return rows;
   }
-  function toCamelCase(text) {
-    if (!text) return '';
-    return text
-      .split(/[\s\-–—_/\\]+/)
-      .filter(Boolean)
-      .map(part => {
-        const cleaned = part.replace(/[^A-Za-z0-9']/g, '');
-        if (!cleaned) return '';
-        return cleaned.charAt(0).toUpperCase() + cleaned.slice(1);
-      })
-      .join('');
-  }
-
   const CACHE_TTL_MS = 15 * 60 * 1000; // 15 minutes cache to prevent rate limiting
 
   async function loadAllExecutionData() {
@@ -594,12 +581,29 @@ document.addEventListener('DOMContentLoaded', () => {
         const rows = parseCSV(csvText);
         const compiled = {};
 
+        // Build lookup map by lowercase stripped name: game:normName -> fallback item
+        const normalizeName = s => (s || '').replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+        const fallbackMap = new Map();
+        if (typeof FALLBACK_EXECUTIONS_DATA !== 'undefined') {
+          for (const [gKey, items] of Object.entries(FALLBACK_EXECUTIONS_DATA)) {
+            if (Array.isArray(items)) {
+              for (const it of items) {
+                if (it && it.name) {
+                  fallbackMap.set(`${gKey.toUpperCase()}:${normalizeName(it.name)}`, it);
+                }
+              }
+            }
+          }
+        }
+
         rows.forEach(row => {
           const game = (row.game || '').trim().toUpperCase();
           const rawName = (row.name || '').trim();
           if (!game || !rawName) return;
 
-          const cleanName = toCamelCase(rawName);
+          const cleanName = rawName.replace(/[^a-zA-Z0-9]/g, '');
+          const normKey = `${game}:${normalizeName(rawName)}`;
+          const fallbackItem = fallbackMap.get(normKey);
 
           const parsedPrice = parseInt(row.price, 10);
           const price = !isNaN(parsedPrice) ? parsedPrice : 0;
@@ -614,16 +618,32 @@ document.addEventListener('DOMContentLoaded', () => {
           const iconVal = (row.icon || '').trim();
           const previewVal = (row.preview || '').trim();
 
+          let resolvedIcon = (iconVal && iconVal !== 'Icon') ? iconVal : '';
+          if (!resolvedIcon && fallbackItem && fallbackItem.icon && fallbackItem.icon !== 'Icon') {
+            resolvedIcon = fallbackItem.icon;
+          }
+          if (!resolvedIcon) {
+            resolvedIcon = `assets/${game}/${cleanName}.png`;
+          }
+
+          let resolvedPreview = (previewVal && previewVal !== 'Preview') ? previewVal : '';
+          if (!resolvedPreview && fallbackItem && fallbackItem.preview && fallbackItem.preview !== 'Preview') {
+            resolvedPreview = fallbackItem.preview;
+          }
+          if (!resolvedPreview) {
+            resolvedPreview = `assets/previews/${game}/${cleanName}.gif`;
+          }
+
           const item = {
             name: rawName,
-            clean_name: cleanName,
+            clean_name: fallbackItem && fallbackItem.clean_name ? fallbackItem.clean_name : cleanName,
             game: game,
             price: price,
             bundle: (row.bundle || '').trim(),
             bundle_url: (row.bundle_url || '').trim(),
             aliases: aliases,
-            icon: (iconVal && iconVal !== 'Icon') ? iconVal : `assets/${game}/${cleanName}.png`,
-            preview: (previewVal && previewVal !== 'Preview') ? previewVal : `assets/previews/${game}/${cleanName}.gif`,
+            icon: resolvedIcon,
+            preview: resolvedPreview,
             standing: row.standing || '',
             prone: row.prone || '',
             downed: row.downed || '',

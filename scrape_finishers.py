@@ -81,19 +81,6 @@ REQUEST_DELAY = 2.0  # seconds between requests
 # ---------------------------------------------------------------------------
 
 
-def to_camel_case(text: str) -> str:
-    """Convert display name to CamelCase icon stem, stripping non-alphanumeric."""
-    parts = re.split(r"[\s\-–—_/\\]+", text)
-    camel = ""
-    for part in parts:
-        if not part:
-            continue
-        cleaned = re.sub(r"[^A-Za-z0-9']", "", part)
-        if cleaned:
-            camel += cleaned[0].upper() + cleaned[1:]
-    return camel
-
-
 def stem_from_image_key(key: str) -> str | None:
     """Extract stem from image data-image-key attribute."""
     if not key:
@@ -455,7 +442,7 @@ def parse_finishing_moves(
                             break
 
             if not stem:
-                stem = to_camel_case(name)
+                stem = re.sub(r"[^a-zA-Z0-9]", "", name)
 
             if not stem:
                 continue
