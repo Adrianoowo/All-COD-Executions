@@ -535,6 +535,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     return rows;
   }
+
+  function formatPrice(price, style = 'full') {
+    if (price === null || price === undefined || price === '') {
+      if (style === 'card') return '<span class="price-text-card">N/A</span><span class="price-text-list">UNKNOWN</span>';
+      if (style === 'compact') return 'N/A';
+      if (style === 'upper' || style === 'list') return 'UNKNOWN';
+      return 'Unknown';
+    }
+    const num = typeof price === 'number' ? price : parseFloat(String(price).replace(/,/g, '').replace(/CP/i, '').trim());
+    if (isNaN(num) || num < 0) {
+      if (style === 'card') return '<span class="price-text-card">N/A</span><span class="price-text-list">UNKNOWN</span>';
+      if (style === 'compact') return 'N/A';
+      if (style === 'upper' || style === 'list') return 'UNKNOWN';
+      return 'Unknown';
+    }
+    if (num === 0) {
+      return (style === 'card' || style === 'upper' || style === 'list') ? 'FREE' : 'Free';
+    }
+    return `${Math.round(num)} CP`;
+  }
+
   const CACHE_TTL_MS = 15 * 60 * 1000; // 15 minutes cache to prevent rate limiting
 
   async function loadAllExecutionData() {
@@ -605,8 +626,14 @@ document.addEventListener('DOMContentLoaded', () => {
           const normKey = `${game}:${normalizeName(rawName)}`;
           const fallbackItem = fallbackMap.get(normKey);
 
-          const parsedPrice = parseInt(row.price, 10);
-          const price = !isNaN(parsedPrice) ? parsedPrice : 0;
+          const rawPrice = (row.price !== undefined && row.price !== null) ? String(row.price).trim() : '';
+          let price = null;
+          if (rawPrice !== '') {
+            const parsedPrice = parseInt(rawPrice.replace(/,/g, '').replace(/CP/i, '').trim(), 10);
+            if (!isNaN(parsedPrice)) {
+              price = parsedPrice;
+            }
+          }
 
           const aliases = row.aliases
             ? row.aliases.split(',').map(a => a.trim()).filter(Boolean)
@@ -783,8 +810,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return sorted.sort((a, b) => (b.name || '').localeCompare(a.name || ''));
       case 'price-desc':
         return sorted.sort((a, b) => {
-          const priceA = typeof a.price === 'number' ? a.price : 0;
-          const priceB = typeof b.price === 'number' ? b.price : 0;
+          const priceA = (typeof a.price === 'number' && !isNaN(a.price)) ? a.price : -1;
+          const priceB = (typeof b.price === 'number' && !isNaN(b.price)) ? b.price : -1;
           return priceB - priceA;
         });
       default:
@@ -934,7 +961,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       const animTimeStr = animFrames > 0 ? (animFrames / FPS).toFixed(2) + 's' : '-';
       const ttkStr = ttkFrames > 0 ? (ttkFrames / FPS).toFixed(2) + 's' : '-';
-      const priceStr = build.price ? `${build.price} CP` : '';
+      const priceStr = formatPrice(build.price, 'upper');
 
       const tags = [];
       if (animTimeStr !== '-') tags.push(`Anim: ${animTimeStr}`);
@@ -959,7 +986,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const aliasesStr = Array.isArray(build.aliases) ? build.aliases.join(' ').toLowerCase() : '';
 
-      const cardPriceDisplay = build.price ? `${build.price} CP` : 'FREE';
+      const cardPriceDisplay = formatPrice(build.price, 'card');
       const bundleStr = build.bundle || '';
 
       return `
@@ -1047,7 +1074,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const animTime = animFrames > 0 ? (animFrames / FPS).toFixed(2) + 's' : '-';
     const ttk = ttkFrames > 0 ? (ttkFrames / FPS).toFixed(2) + 's' : '-';
-    const priceStr = build.price ? `${build.price} CP` : 'Free';
+    const priceStr = formatPrice(build.price, 'full');
     const bundleMarkup = build.bundle 
       ? `<span class="popup-bundle"><b>Bundle:</b> ${build.bundle}</span>` 
       : '';

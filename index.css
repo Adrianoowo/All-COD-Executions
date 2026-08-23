@@ -907,6 +907,22 @@ main {
   white-space: nowrap;
 }
 
+.price-pill .price-text-list {
+  display: none;
+}
+
+.price-pill .price-text-card {
+  display: inline;
+}
+
+.build-grid.view-list .price-pill .price-text-card {
+  display: none;
+}
+
+.build-grid.view-list .price-pill .price-text-list {
+  display: inline;
+}
+
 .bundle-name-tag {
   color: var(--muted);
   font-size: 0.68rem;
