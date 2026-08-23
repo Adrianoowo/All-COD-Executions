@@ -1561,7 +1561,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Play for Sport",
-      "clean_name": "PlayforSport",
+      "clean_name": "PlayForSport",
       "game": "MWII",
       "price": 0,
       "bundle": "Base Operator Move",
@@ -1577,8 +1577,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "play for sport",
         "playforsport"
       ],
-      "icon": "assets/MWII/PlayforSport.png",
-      "preview": "assets/previews/MWII/PlayforSport.gif",
+      "icon": "assets/MWII/PlayForSport.png",
+      "preview": "assets/previews/MWII/PlayForSport.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -1676,7 +1676,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Fate and Consequence",
-      "clean_name": "FateandConsequence",
+      "clean_name": "FateAndConsequence",
       "game": "MWII",
       "price": 0,
       "bundle": "Base Operator Move",
@@ -1690,8 +1690,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "fateconsequence",
         "fatenconsequence"
       ],
-      "icon": "assets/MWII/FateandConsequence.png",
-      "preview": "assets/previews/MWII/FateandConsequence.gif",
+      "icon": "assets/MWII/FateAndConsequence.png",
+      "preview": "assets/previews/MWII/FateAndConsequence.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -1719,7 +1719,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Daughter of Hatred",
-      "clean_name": "DaughterofHatred",
+      "clean_name": "DaughterOfHatred",
       "game": "MWII",
       "price": 0,
       "bundle": "Base Operator Move",
@@ -1735,8 +1735,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "lilithdaughterofhatred",
         "lilithexecution"
       ],
-      "icon": "assets/MWII/DaughterofHatred.png",
-      "preview": "assets/previews/MWII/DaughterofHatred.gif",
+      "icon": "assets/MWII/DaughterOfHatred.png",
+      "preview": "assets/previews/MWII/DaughterOfHatred.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -1772,7 +1772,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Trick and Treat",
-      "clean_name": "TrickandTreat",
+      "clean_name": "TrickAndTreat",
       "game": "MWII",
       "price": 2400,
       "bundle": "Tracer Pack: Pumpkin Patch Pro Pack",
@@ -1788,8 +1788,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "trickortreat",
         "tricktreat"
       ],
-      "icon": "assets/MWII/TrickandTreat.png",
-      "preview": "assets/previews/MWII/TrickandTreat.gif",
+      "icon": "assets/MWII/TrickAndTreat.png",
+      "preview": "assets/previews/MWII/TrickAndTreat.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -2656,7 +2656,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Face the Adze",
-      "clean_name": "FacetheAdze",
+      "clean_name": "FaceTheAdze",
       "game": "MW",
       "price": 2400,
       "bundle": "Minotaur - WMD Bundle",
@@ -2665,8 +2665,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "face the adze",
         "facetheadze"
       ],
-      "icon": "assets/MW/FacetheAdze.png",
-      "preview": "assets/previews/MW/FacetheAdze.gif",
+      "icon": "assets/MW/FaceTheAdze.png",
+      "preview": "assets/previews/MW/FaceTheAdze.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -2942,7 +2942,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Mace to the Face",
-      "clean_name": "MacetotheFace",
+      "clean_name": "MaceToTheFace",
       "game": "MW",
       "price": 2400,
       "bundle": "Mace - Mace Operator Bundle",
@@ -2953,8 +2953,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "mace to the face",
         "macetotheface"
       ],
-      "icon": "assets/MW/MacetotheFace.png",
-      "preview": "assets/previews/MW/MacetotheFace.gif",
+      "icon": "assets/MW/MaceToTheFace.png",
+      "preview": "assets/previews/MW/MaceToTheFace.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -4198,7 +4198,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Fall of Achilles",
-      "clean_name": "FallofAchilles",
+      "clean_name": "FallOfAchilles",
       "game": "CW",
       "price": 2400,
       "bundle": "Nightshade Bundle",
@@ -4211,7 +4211,7 @@ const FALLBACK_EXECUTIONS_DATA = {
         "wraith finisher"
       ],
       "icon": "assets/CW/FallofAchilles.png",
-      "preview": "assets/previews/CW/FallofAchilles.gif",
+      "preview": "assets/previews/CW/FallOfAchilles.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -4553,7 +4553,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Pound for Pound",
-      "clean_name": "PoundforPound",
+      "clean_name": "PoundForPound",
       "game": "CW",
       "price": 2400,
       "bundle": "Full Stop Bundle",
@@ -4563,7 +4563,7 @@ const FALLBACK_EXECUTIONS_DATA = {
         "poundforpound"
       ],
       "icon": "assets/CW/PoundforPound.png",
-      "preview": "assets/previews/CW/PoundforPound.gif",
+      "preview": "assets/previews/CW/PoundForPound.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -4591,7 +4591,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Rock-a-bye-bye",
-      "clean_name": "Rockabyebye",
+      "clean_name": "RockAByeBye",
       "game": "CW",
       "price": 2400,
       "bundle": "Rescue Mission Bundle",
@@ -4602,7 +4602,7 @@ const FALLBACK_EXECUTIONS_DATA = {
         "rockabyebye"
       ],
       "icon": "assets/CW/Rockabyebye.png",
-      "preview": "assets/previews/CW/Rockabyebye.gif",
+      "preview": "assets/previews/CW/RockAByeBye.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -4928,7 +4928,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Above the Neck",
-      "clean_name": "AbovetheNeck",
+      "clean_name": "AboveTheNeck",
       "game": "CW",
       "price": 2400,
       "bundle": "Quickscope Sniper Bundle",
@@ -4940,8 +4940,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "adler execution",
         "adler finisher"
       ],
-      "icon": "assets/CW/AbovetheNeck.png",
-      "preview": "assets/previews/CW/AbovetheNeck.gif",
+      "icon": "assets/CW/AboveTheNeck.png",
+      "preview": "assets/previews/CW/AboveTheNeck.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -4969,7 +4969,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Between the Legs",
-      "clean_name": "BetweentheLegs",
+      "clean_name": "BetweenTheLegs",
       "game": "CW",
       "price": 2400,
       "bundle": "Rivas Operator Bundle",
@@ -4982,7 +4982,7 @@ const FALLBACK_EXECUTIONS_DATA = {
         "rivas finisher"
       ],
       "icon": "assets/CW/BetweentheLegs.png",
-      "preview": "assets/previews/CW/BetweentheLegs.gif",
+      "preview": "assets/previews/CW/BetweenTheLegs.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -5013,7 +5013,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Bird of Prey",
-      "clean_name": "BirdofPrey",
+      "clean_name": "BirdOfPrey",
       "game": "CW",
       "price": 2400,
       "bundle": "Knight Operator Bundle",
@@ -5028,7 +5028,7 @@ const FALLBACK_EXECUTIONS_DATA = {
         "birdofprey"
       ],
       "icon": "assets/CW/BirdofPrey.png",
-      "preview": "assets/previews/CW/BirdofPrey.gif",
+      "preview": "assets/previews/CW/BirdOfPrey.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -5100,7 +5100,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Dog of War",
-      "clean_name": "DogofWar",
+      "clean_name": "DogOfWar",
       "game": "CW",
       "price": 2400,
       "bundle": "Wolf Operator Bundle",
@@ -5110,7 +5110,7 @@ const FALLBACK_EXECUTIONS_DATA = {
         "dogofwar"
       ],
       "icon": "assets/CW/DogofWar.png",
-      "preview": "assets/previews/CW/DogofWar.gif",
+      "preview": "assets/previews/CW/DogOfWar.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -5246,7 +5246,7 @@ const FALLBACK_EXECUTIONS_DATA = {
         "pain in the neck",
         "painintheneck"
       ],
-      "icon": "assets/CW/PainInTheNeck.png",
+      "icon": "assets/CW/PainintheNeck.png",
       "preview": "assets/previews/CW/PainInTheNeck.gif",
       "standing": "",
       "prone": "",
@@ -5764,7 +5764,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Force of Will",
-      "clean_name": "ForceofWill",
+      "clean_name": "ForceOfWill",
       "game": "CW",
       "price": 2400,
       "bundle": "Thunder Storm Bundle",
@@ -5774,7 +5774,7 @@ const FALLBACK_EXECUTIONS_DATA = {
         "forceofwill"
       ],
       "icon": "assets/CW/ForceofWill.png",
-      "preview": "assets/previews/CW/ForceofWill.gif",
+      "preview": "assets/previews/CW/ForceOfWill.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -6166,7 +6166,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Sky is Falling",
-      "clean_name": "SkyisFalling",
+      "clean_name": "SkyIsFalling",
       "game": "CW",
       "price": 2400,
       "bundle": "Tracer Pack: Donnie Darko Bundle",
@@ -6176,7 +6176,7 @@ const FALLBACK_EXECUTIONS_DATA = {
         "skyisfalling"
       ],
       "icon": "assets/CW/SkyisFalling.png",
-      "preview": "assets/previews/CW/SkyisFalling.gif",
+      "preview": "assets/previews/CW/SkyIsFalling.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -6273,7 +6273,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Spare a Light",
-      "clean_name": "SpareaLight",
+      "clean_name": "SpareALight",
       "game": "CW",
       "price": 2400,
       "bundle": "Tracer Pack: Gilded Agent Bundle",
@@ -6283,7 +6283,7 @@ const FALLBACK_EXECUTIONS_DATA = {
         "sparealight"
       ],
       "icon": "assets/CW/SpareaLight.png",
-      "preview": "assets/previews/CW/SpareaLight.gif",
+      "preview": "assets/previews/CW/SpareALight.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -8567,7 +8567,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Judge, Jury and Finisher",
-      "clean_name": "JudgeJuryandFinisher",
+      "clean_name": "JudgeJuryAndFinisher",
       "game": "MWIII",
       "price": 3500,
       "bundle": "Season Five Battle Pass",
@@ -8581,8 +8581,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "judge",
         "jury and finisher"
       ],
-      "icon": "assets/MWIII/JudgeJuryandFinisher.png",
-      "preview": "assets/previews/MWIII/JudgeJuryandFinisher.gif",
+      "icon": "assets/MWIII/JudgeJuryAndFinisher.png",
+      "preview": "assets/previews/MWIII/JudgeJuryAndFinisher.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -8937,7 +8937,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Hook, Line, and Sinker",
-      "clean_name": "HookLineandSinker",
+      "clean_name": "HookLineAndSinker",
       "game": "BO6",
       "price": 0,
       "bundle": "Base Operator Move",
@@ -8955,8 +8955,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "hooklineandsinker",
         "sinker"
       ],
-      "icon": "assets/BO6/HookLineandSinker.png",
-      "preview": "assets/previews/BO6/HookLineandSinker.gif",
+      "icon": "assets/BO6/HookLineAndSinker.png",
+      "preview": "assets/previews/BO6/HookLineAndSinker.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -9077,7 +9077,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Ash and Bone",
-      "clean_name": "AshandBone",
+      "clean_name": "AshAndBone",
       "game": "BO6",
       "price": 2400,
       "bundle": "Tracer Pack: Draconic Forge Mastercraft Bundle",
@@ -9095,8 +9095,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "forge mastercraft",
         "forgemastercraft"
       ],
-      "icon": "assets/BO6/AshandBone.png",
-      "preview": "assets/previews/BO6/AshandBone.gif",
+      "icon": "assets/BO6/AshAndBone.png",
+      "preview": "assets/previews/BO6/AshAndBone.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -9105,7 +9105,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "The Art of Death",
-      "clean_name": "TheArtofDeath",
+      "clean_name": "TheArtOfDeath",
       "game": "BO6",
       "price": 2400,
       "bundle": "Tracer Pack: Emerald Knight Bundle",
@@ -9121,8 +9121,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "theartofdeath",
         "theartofdeathexecution"
       ],
-      "icon": "assets/BO6/TheArtofDeath.png",
-      "preview": "assets/previews/BO6/TheArtofDeath.gif",
+      "icon": "assets/BO6/TheArtOfDeath.png",
+      "preview": "assets/previews/BO6/TheArtOfDeath.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -9477,7 +9477,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Toke-a-Bloke",
-      "clean_name": "TokeaBloke",
+      "clean_name": "TokeABloke",
       "game": "BO6",
       "price": 2400,
       "bundle": "Tracer Pack: Dank Days Mastercraft Ultra Skin Bundle",
@@ -9493,8 +9493,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "dank days execution",
         "dank days finisher"
       ],
-      "icon": "assets/BO6/TokeaBloke.png",
-      "preview": "assets/previews/BO6/TokeaBloke.gif",
+      "icon": "assets/BO6/TokeABloke.png",
+      "preview": "assets/previews/BO6/TokeABloke.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -9903,7 +9903,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Parry and Strike",
-      "clean_name": "ParryandStrike",
+      "clean_name": "ParryAndStrike",
       "game": "BO6",
       "price": 2400,
       "bundle": "Bad Bounty Bundle",
@@ -9916,8 +9916,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "parryandstrike",
         "parrystrike"
       ],
-      "icon": "assets/BO6/ParryandStrike.png",
-      "preview": "assets/previews/BO6/ParryandStrike.gif",
+      "icon": "assets/BO6/ParryAndStrike.png",
+      "preview": "assets/previews/BO6/ParryAndStrike.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -10564,7 +10564,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Gimme a Light",
-      "clean_name": "GimmeaLight",
+      "clean_name": "GimmeALight",
       "game": "BO6",
       "price": 2400,
       "bundle": "Tracer Pack: Jay and Silent Bob Bundle",
@@ -10582,8 +10582,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "silent bob",
         "silent bob execution"
       ],
-      "icon": "assets/BO6/GimmeaLight.png",
-      "preview": "assets/previews/BO6/GimmeaLight.gif",
+      "icon": "assets/BO6/GimmeALight.png",
+      "preview": "assets/previews/BO6/GimmeALight.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -11434,7 +11434,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Kick 'em in the Nads!",
-      "clean_name": "KickemintheNads",
+      "clean_name": "KickEmInTheNads",
       "game": "BO6",
       "price": 2400,
       "bundle": "Tracer Pack: Beavis and Butt-Head Bundle",
@@ -11453,8 +11453,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "beavis and butt-head execution",
         "beavis and butt-head finisher"
       ],
-      "icon": "assets/BO6/KickemintheNads.png",
-      "preview": "assets/previews/BO6/KickemintheNads.gif",
+      "icon": "assets/BO6/KickEmInTheNads.png",
+      "preview": "assets/previews/BO6/KickEmInTheNads.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -11559,7 +11559,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Sleight of Hand",
-      "clean_name": "SleightofHand",
+      "clean_name": "SleightOfHand",
       "game": "BO6",
       "price": 2400,
       "bundle": "Tracer Pack: Nihilist Mastercraft Ultra Skin Bundle",
@@ -11572,8 +11572,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "hand",
         "sleight"
       ],
-      "icon": "assets/BO6/SleightofHand.png",
-      "preview": "assets/previews/BO6/SleightofHand.gif",
+      "icon": "assets/BO6/SleightOfHand.png",
+      "preview": "assets/previews/BO6/SleightOfHand.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -11729,7 +11729,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Got a Live One",
-      "clean_name": "GotaLiveOne",
+      "clean_name": "GotALiveOne",
       "game": "BO6",
       "price": 2400,
       "bundle": "Tracer Pack: I Know What You Did Last Summer Bundle",
@@ -11746,8 +11746,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "fisherman",
         "fisherman execution"
       ],
-      "icon": "assets/BO6/GotaLiveOne.png",
-      "preview": "assets/previews/BO6/GotaLiveOne.gif",
+      "icon": "assets/BO6/GotALiveOne.png",
+      "preview": "assets/previews/BO6/GotALiveOne.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -11888,7 +11888,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Dud-ly",
-      "clean_name": "Dudly",
+      "clean_name": "DudLy",
       "game": "BO6",
       "price": 1100,
       "bundle": "Event Reward",
@@ -12320,7 +12320,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Down to Size",
-      "clean_name": "DowntoSize",
+      "clean_name": "DownToSize",
       "game": "BO6",
       "price": 2400,
       "bundle": "Tracer Pack: Ghoulish Crop Mastercraft Ultra Skin Bundle",
@@ -12334,8 +12334,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "downtosizeexecution",
         "downtosizefinisher"
       ],
-      "icon": "assets/BO6/DowntoSize.png",
-      "preview": "assets/previews/BO6/DowntoSize.gif",
+      "icon": "assets/BO6/DownToSize.png",
+      "preview": "assets/previews/BO6/DownToSize.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -12503,7 +12503,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Prey to None",
-      "clean_name": "PreytoNone",
+      "clean_name": "PreyToNone",
       "game": "BO6",
       "price": 2400,
       "bundle": "Tracer Pack: Predator: Badlands Ultra Skin Bundle",
@@ -12517,8 +12517,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "prey",
         "none"
       ],
-      "icon": "assets/BO6/PreytoNone.png",
-      "preview": "assets/previews/BO6/PreytoNone.gif",
+      "icon": "assets/BO6/PreyToNone.png",
+      "preview": "assets/previews/BO6/PreyToNone.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -12527,7 +12527,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Moods of Chucky",
-      "clean_name": "MoodsofChucky",
+      "clean_name": "MoodsOfChucky",
       "game": "BO6",
       "price": 0,
       "bundle": "Event Reward",
@@ -12542,8 +12542,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "moods of chucky finisher",
         "moodsofchucky"
       ],
-      "icon": "assets/BO6/MoodsofChucky.png",
-      "preview": "assets/previews/BO6/MoodsofChucky.gif",
+      "icon": "assets/BO6/MoodsOfChucky.png",
+      "preview": "assets/previews/BO6/MoodsOfChucky.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -12579,7 +12579,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Smile for the Camera",
-      "clean_name": "SmilefortheCamera",
+      "clean_name": "SmileForTheCamera",
       "game": "BO6",
       "price": 2400,
       "bundle": "Tracer Pack: Bonesaw Mastercraft Bundle",
@@ -12594,8 +12594,8 @@ const FALLBACK_EXECUTIONS_DATA = {
         "camera",
         "smile"
       ],
-      "icon": "assets/BO6/SmilefortheCamera.png",
-      "preview": "assets/previews/BO6/SmilefortheCamera.gif",
+      "icon": "assets/BO6/SmileForTheCamera.png",
+      "preview": "assets/previews/BO6/SmileForTheCamera.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -12793,7 +12793,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Wanna See a Magic Trick?",
-      "clean_name": "WannaSeeaMagicTrick",
+      "clean_name": "WannaSeeAMagicTrick",
       "game": "BO7",
       "price": 1100,
       "bundle": "Season One Battle Pass",
@@ -13015,7 +13015,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Got the Moves",
-      "clean_name": "GottheMoves",
+      "clean_name": "GotTheMoves",
       "game": "BO7",
       "price": 2400,
       "bundle": "Tracer Pack: High Luxe Reactive Bundle",
@@ -13425,7 +13425,7 @@ const FALLBACK_EXECUTIONS_DATA = {
     },
     {
       "name": "Cut and Fold",
-      "clean_name": "CutandFold",
+      "clean_name": "CutAndFold",
       "game": "BO7",
       "price": 2400,
       "bundle": "Tracer Pack: Kirigami Killer Mastercraft Zombies Universe Bundle",

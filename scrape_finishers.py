@@ -199,9 +199,17 @@ def sanitize_gif(file_path: Path) -> bool:
         return False
 
 
-def download_image(url: str, dest_path: Path) -> bool:
-    """Download image from url and save to dest_path."""
+def download_image(url_or_filename: str, dest_path: Path) -> bool:
+    """Download image from url (or filename fetched via API) and save to dest_path."""
     try:
+        url = url_or_filename
+        if not (url.startswith("http://") or url.startswith("https://")):
+            resolved = fetch_image_url(url_or_filename)
+            if not resolved:
+                print(f"      [DOWNLOAD ERROR] Could not resolve image URL for {url_or_filename}")
+                return False
+            url = resolved
+
         dest_path.parent.mkdir(parents=True, exist_ok=True)
         resp = SESSION.get(url, timeout=30)
         resp.raise_for_status()
@@ -213,13 +221,91 @@ def download_image(url: str, dest_path: Path) -> bool:
             
         return True
     except Exception as exc:
-        print(f"      [DOWNLOAD ERROR] Failed to download {url} to {dest_path}: {exc}")
+        print(f"      [DOWNLOAD ERROR] Failed to download {url_or_filename} to {dest_path}: {exc}")
         return False
 
 
 # ---------------------------------------------------------------------------
 # Fetch via MediaWiki API
 # ---------------------------------------------------------------------------
+
+
+def fetch_image_url(filename: str) -> str | None:
+    """
+    Fetch direct image URL from MediaWiki API by filename.
+    Ensures image fetching works even if the filename has different capitalization.
+    """
+    if not filename or not isinstance(filename, str):
+        return None
+    filename = filename.strip()
+    clean_name = re.sub(r"^(?:File|Image):", "", filename, flags=re.IGNORECASE).strip()
+    if not clean_name:
+        return None
+
+    # 1. Direct query with File: prefix and redirects
+    params = {
+        "action": "query",
+        "titles": f"File:{clean_name}",
+        "prop": "imageinfo",
+        "iiprop": "url",
+        "redirects": "1",
+        "format": "json",
+    }
+    try:
+        resp = SESSION.get(FANDOM_API_BASE, params=params, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+        pages = data.get("query", {}).get("pages", {})
+        for pid, pdata in pages.items():
+            if pid != "-1" and "imageinfo" in pdata and pdata["imageinfo"]:
+                raw_url = pdata["imageinfo"][0].get("url")
+                if raw_url:
+                    return raw_url.split("/revision/latest")[0] + "/revision/latest" if "/revision/latest" in raw_url else raw_url
+    except Exception as exc:
+        print(f"  [API] Direct image query failed for {filename}: {exc}")
+
+    # 2. Case-insensitive search fallback in File namespace (ns=6)
+    stem = re.sub(r"\.[a-zA-Z0-9]+$", "", clean_name)
+    norm_target = re.sub(r"[^a-z0-9]", "", clean_name.lower())
+    norm_stem = re.sub(r"[^a-z0-9]", "", stem.lower())
+
+    params_search = {
+        "action": "query",
+        "generator": "search",
+        "gsrsearch": clean_name,
+        "gsrnamespace": "6",
+        "prop": "imageinfo",
+        "iiprop": "url",
+        "format": "json",
+    }
+    try:
+        resp = SESSION.get(FANDOM_API_BASE, params=params_search, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+        pages = data.get("query", {}).get("pages", {})
+
+        candidates = []
+        for pid, pdata in pages.items():
+            if pid != "-1" and "imageinfo" in pdata and pdata["imageinfo"]:
+                title = pdata.get("title", "")
+                clean_title = re.sub(r"^(?:File|Image):", "", title, flags=re.IGNORECASE)
+                norm_title = re.sub(r"[^a-z0-9]", "", clean_title.lower())
+                title_stem = re.sub(r"\.[a-zA-Z0-9]+$", "", clean_title)
+                norm_title_stem = re.sub(r"[^a-z0-9]", "", title_stem.lower())
+                raw_url = pdata["imageinfo"][0].get("url")
+                if raw_url:
+                    cleaned_url = raw_url.split("/revision/latest")[0] + "/revision/latest" if "/revision/latest" in raw_url else raw_url
+                    if norm_title == norm_target or norm_title_stem == norm_stem:
+                        return cleaned_url
+                    candidates.append((pdata.get("index", 999), norm_title, cleaned_url))
+
+        if candidates:
+            candidates.sort(key=lambda x: x[0])
+            return candidates[0][2]
+    except Exception as exc:
+        print(f"  [API] Case-insensitive image search failed for {filename}: {exc}")
+
+    return None
 
 
 def fetch_via_api(page_title: str) -> BeautifulSoup | None:
@@ -333,6 +419,8 @@ def parse_finishing_moves(
                                     img_url = raw_url.split("/revision/latest")[0] + "/revision/latest"
                                 else:
                                     img_url = raw_url
+                            else:
+                                img_url = fetch_image_url(data_key)
                             break
 
             # ----------------------------------------------------------------
@@ -362,6 +450,8 @@ def parse_finishing_moves(
                                     preview_url = raw_url.split("/revision/latest")[0] + "/revision/latest"
                                 else:
                                     preview_url = raw_url
+                            else:
+                                preview_url = fetch_image_url(data_key)
                             break
 
             if not stem:

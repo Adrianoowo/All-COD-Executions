@@ -535,6 +535,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     return rows;
   }
+  function toCamelCase(text) {
+    if (!text) return '';
+    return text
+      .split(/[\s\-–—_/\\]+/)
+      .filter(Boolean)
+      .map(part => {
+        const cleaned = part.replace(/[^A-Za-z0-9']/g, '');
+        if (!cleaned) return '';
+        return cleaned.charAt(0).toUpperCase() + cleaned.slice(1);
+      })
+      .join('');
+  }
 
   const CACHE_TTL_MS = 15 * 60 * 1000; // 15 minutes cache to prevent rate limiting
 
@@ -587,8 +599,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const rawName = (row.name || '').trim();
           if (!game || !rawName) return;
 
-          // clean_name = re.sub(r'[^a-zA-Z0-9]', '', raw_name)
-          const cleanName = rawName.replace(/[^a-zA-Z0-9]/g, '');
+          const cleanName = toCamelCase(rawName);
 
           const parsedPrice = parseInt(row.price, 10);
           const price = !isNaN(parsedPrice) ? parsedPrice : 0;
@@ -600,6 +611,9 @@ document.addEventListener('DOMContentLoaded', () => {
           const animTimeVal = parseFloat(row.anim_time);
           const ttkVal = parseFloat(row.ttk);
 
+          const iconVal = (row.icon || '').trim();
+          const previewVal = (row.preview || '').trim();
+
           const item = {
             name: rawName,
             clean_name: cleanName,
@@ -608,8 +622,8 @@ document.addEventListener('DOMContentLoaded', () => {
             bundle: (row.bundle || '').trim(),
             bundle_url: (row.bundle_url || '').trim(),
             aliases: aliases,
-            icon: row.icon || `assets/${game}/${cleanName}.png`,
-            preview: row.preview || `assets/previews/${game}/${cleanName}.gif`,
+            icon: (iconVal && iconVal !== 'Icon') ? iconVal : `assets/${game}/${cleanName}.png`,
+            preview: (previewVal && previewVal !== 'Preview') ? previewVal : `assets/previews/${game}/${cleanName}.gif`,
             standing: row.standing || '',
             prone: row.prone || '',
             downed: row.downed || '',
