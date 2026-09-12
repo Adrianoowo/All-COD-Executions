@@ -15060,7 +15060,7 @@ const FALLBACK_EXECUTIONS_DATA = {
         "energy shock",
         "energyshock"
       ],
-      "icon": "Icon",
+      "icon": "assets/BO7/EnergyShock.png",
       "preview": "assets/previews/BO7/EnergyShock.gif",
       "standing": "",
       "prone": "",
@@ -15078,6 +15078,193 @@ const FALLBACK_EXECUTIONS_DATA = {
       "aliases": [
         "hatchet work",
         "hatchetwork"
+      ],
+      "icon": "Icon",
+      "preview": "Preview",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Wrath of the Sea",
+      "clean_name": "WrathOfTheSea",
+      "game": "BO7",
+      "price": 2800,
+      "bundle": "Tracer Pack: Stranded Mastercraft Ultra Skin Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "wrath of the sea",
+        "wrathofthesea"
+      ],
+      "icon": "assets/BO7/WrathOfTheSea.png",
+      "preview": "assets/previews/BO7/WrathOfTheSea.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Right Angle",
+      "clean_name": "RightAngle",
+      "game": "BO7",
+      "price": 2000,
+      "bundle": "Tracer Pack: Infiltration Alpha Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "right angle",
+        "rightangle"
+      ],
+      "icon": "assets/BO7/RightAngle.png",
+      "preview": "assets/previews/BO7/RightAngle.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Elemental Siege",
+      "clean_name": "ElementalSiege",
+      "game": "BO7",
+      "price": 3500,
+      "bundle": "Season Six Battle Pass BlackCell Page",
+      "bundle_url": "",
+      "aliases": [
+        "elemental siege",
+        "elementalsiege"
+      ],
+      "icon": "Icon",
+      "preview": "Preview",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Shredding Swipe",
+      "clean_name": "ShreddingSwipe",
+      "game": "BO7",
+      "price": 1100,
+      "bundle": "Season Six Battle Pass Page 5",
+      "bundle_url": "",
+      "aliases": [
+        "shredding swipe",
+        "shreddingswipe"
+      ],
+      "icon": "Icon",
+      "preview": "Preview",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Cold Cleaver",
+      "clean_name": "ColdCleaver",
+      "game": "BO7",
+      "price": 1100,
+      "bundle": "Season Six Battle Pass Page 10",
+      "bundle_url": "",
+      "aliases": [
+        "cold cleaver",
+        "coldcleaver"
+      ],
+      "icon": "Icon",
+      "preview": "Preview",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Aichmophobia",
+      "clean_name": "Aichmophobia",
+      "game": "BO7",
+      "price": 1100,
+      "bundle": "Season Six Battle Pass Page 15",
+      "bundle_url": "",
+      "aliases": [
+        "aichmophobia"
+      ],
+      "icon": "Icon",
+      "preview": "Preview",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Evisceration",
+      "clean_name": "Evisceration",
+      "game": "BO7",
+      "price": 1100,
+      "bundle": "Obtain XP during the Doom event (Premium Track Exclusive)",
+      "bundle_url": "",
+      "aliases": [
+        "evisceration"
+      ],
+      "icon": "Icon",
+      "preview": "Preview",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Futile",
+      "clean_name": "Futile",
+      "game": "BO7",
+      "price": 2400,
+      "bundle": "Tracer Pack: DOOM Demonic Essence Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "futile"
+      ],
+      "icon": "Icon",
+      "preview": "Preview",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "The Sacrifice",
+      "clean_name": "TheSacrifice",
+      "game": "BO7",
+      "price": 2800,
+      "bundle": "Tracer Pack: Grimwoods Mastercraft Ultra Skin Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "the sacrifice",
+        "thesacrifice"
+      ],
+      "icon": "Icon",
+      "preview": "Preview",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Madness and Mayhem",
+      "clean_name": "MadnessAndMayhem",
+      "game": "BO7",
+      "price": 2800,
+      "bundle": "Tracer Pack: Disciple of Mayhem II Mastercraft Zombies Universe Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "madness and mayhem",
+        "madnessandmayhem"
       ],
       "icon": "Icon",
       "preview": "Preview",
