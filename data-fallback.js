@@ -15055,7 +15055,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "game": "BO7",
       "price": 0,
       "bundle": "Tracer Pack: Infinite Void Reactive Zombies Universe Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7402",
       "aliases": [
         "energy shock",
         "energyshock"
@@ -15093,7 +15093,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "game": "BO7",
       "price": 2800,
       "bundle": "Tracer Pack: Stranded Mastercraft Ultra Skin Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7401",
       "aliases": [
         "wrath of the sea",
         "wrathofthesea"
