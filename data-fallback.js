@@ -14942,7 +14942,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "name": "Lead Bite",
       "clean_name": "LeadBite",
       "game": "BO7",
-      "price": 0,
+      "price": 1800,
       "bundle": "Shadow Wolf Bundle",
       "bundle_url": "",
       "aliases": [
@@ -14996,12 +14996,14 @@ const FALLBACK_EXECUTIONS_DATA = {
       "name": "Juggled Doom",
       "clean_name": "JuggledDoom",
       "game": "BO7",
-      "price": 0,
+      "price": 2400,
       "bundle": "Tracer Pack: Disruption Prime Bundle",
       "bundle_url": "",
       "aliases": [
         "juggled doom",
-        "juggleddoom"
+        "juggleddoom",
+        "doom",
+        "juggled"
       ],
       "icon": "assets/BO7/JuggledDoom.png",
       "preview": "assets/previews/BO7/JuggledDoom.gif",
@@ -15015,12 +15017,17 @@ const FALLBACK_EXECUTIONS_DATA = {
       "name": "Close Encounter",
       "clean_name": "CloseEncounter",
       "game": "BO7",
-      "price": 0,
+      "price": 2000,
       "bundle": "Tracer Pack: Operation Stingray Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7299",
       "aliases": [
+        "close",
         "close encounter",
-        "closeencounter"
+        "closeencounter",
+        "stingray",
+        "operation stingray",
+        "stingray execution",
+        "stingray finisher"
       ],
       "icon": "assets/BO7/CloseEncounter.png",
       "preview": "assets/previews/BO7/CloseEncounter.gif",
@@ -15034,12 +15041,14 @@ const FALLBACK_EXECUTIONS_DATA = {
       "name": "No Warning",
       "clean_name": "NoWarning",
       "game": "BO7",
-      "price": 0,
+      "price": 2000,
       "bundle": "Tracer Pack: Counter Fire Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7303",
       "aliases": [
         "no warning",
-        "nowarning"
+        "nowarning",
+        "counter fire",
+        "counterfire"
       ],
       "icon": "assets/BO7/NoWarning.png",
       "preview": "assets/previews/BO7/NoWarning.gif",
@@ -15058,7 +15067,9 @@ const FALLBACK_EXECUTIONS_DATA = {
       "bundle_url": "https://www.callofduty.com/en/store/bundles/7402",
       "aliases": [
         "energy shock",
-        "energyshock"
+        "energyshock",
+        "shock",
+        "energy"
       ],
       "icon": "assets/BO7/EnergyShock.png",
       "preview": "assets/previews/BO7/EnergyShock.gif",
@@ -15072,15 +15083,17 @@ const FALLBACK_EXECUTIONS_DATA = {
       "name": "Hatchet Work",
       "clean_name": "HatchetWork",
       "game": "BO7",
-      "price": 0,
+      "price": 1100,
       "bundle": "Obtain XP during the Last Call event (Premium Track Exclusive)",
       "bundle_url": "",
       "aliases": [
         "hatchet work",
-        "hatchetwork"
+        "hatchetwork",
+        "hatchet",
+        "work"
       ],
-      "icon": "Icon",
-      "preview": "Preview",
+      "icon": "assets/BO7/HatchetWork.png",
+      "preview": "assets/previews/BO7/HatchetWork.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -15096,7 +15109,9 @@ const FALLBACK_EXECUTIONS_DATA = {
       "bundle_url": "https://www.callofduty.com/en/store/bundles/7401",
       "aliases": [
         "wrath of the sea",
-        "wrathofthesea"
+        "wrathofthesea",
+        "sea",
+        "wrath"
       ],
       "icon": "assets/BO7/WrathOfTheSea.png",
       "preview": "assets/previews/BO7/WrathOfTheSea.gif",
@@ -15115,7 +15130,8 @@ const FALLBACK_EXECUTIONS_DATA = {
       "bundle_url": "",
       "aliases": [
         "right angle",
-        "rightangle"
+        "rightangle",
+        "angle"
       ],
       "icon": "assets/BO7/RightAngle.png",
       "preview": "assets/previews/BO7/RightAngle.gif",
@@ -15134,10 +15150,11 @@ const FALLBACK_EXECUTIONS_DATA = {
       "bundle_url": "",
       "aliases": [
         "elemental siege",
-        "elementalsiege"
+        "elementalsiege",
+        "siege"
       ],
-      "icon": "Icon",
-      "preview": "Preview",
+      "icon": "assets/BO7/ElementalSiege.png",
+      "preview": "assets/previews/BO7/ElementalSiege.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -15153,10 +15170,11 @@ const FALLBACK_EXECUTIONS_DATA = {
       "bundle_url": "",
       "aliases": [
         "shredding swipe",
-        "shreddingswipe"
+        "shreddingswipe",
+        "swipe"
       ],
-      "icon": "Icon",
-      "preview": "Preview",
+      "icon": "assets/BO7/ShreddingSwipe.png",
+      "preview": "assets/previews/BO7/ShreddingSwipe.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -15172,10 +15190,11 @@ const FALLBACK_EXECUTIONS_DATA = {
       "bundle_url": "",
       "aliases": [
         "cold cleaver",
-        "coldcleaver"
+        "coldcleaver",
+        "cleaver"
       ],
-      "icon": "Icon",
-      "preview": "Preview",
+      "icon": "assets/BO7/ColdCleaver.png",
+      "preview": "assets/previews/BO7/ColdCleaver.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -15192,8 +15211,8 @@ const FALLBACK_EXECUTIONS_DATA = {
       "aliases": [
         "aichmophobia"
       ],
-      "icon": "Icon",
-      "preview": "Preview",
+      "icon": "assets/BO7/Aichmophobia.png",
+      "preview": "assets/previews/BO7/Aichmophobia.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -15210,8 +15229,8 @@ const FALLBACK_EXECUTIONS_DATA = {
       "aliases": [
         "evisceration"
       ],
-      "icon": "Icon",
-      "preview": "Preview",
+      "icon": "assets/BO7/Evisceration.png",
+      "preview": "assets/previews/BO7/Evisceration.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -15228,8 +15247,8 @@ const FALLBACK_EXECUTIONS_DATA = {
       "aliases": [
         "futile"
       ],
-      "icon": "Icon",
-      "preview": "Preview",
+      "icon": "assets/BO7/Futile.png",
+      "preview": "assets/previews/BO7/Futile.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -15245,10 +15264,11 @@ const FALLBACK_EXECUTIONS_DATA = {
       "bundle_url": "",
       "aliases": [
         "the sacrifice",
-        "thesacrifice"
+        "thesacrifice",
+        "sacrifice"
       ],
-      "icon": "Icon",
-      "preview": "Preview",
+      "icon": "assets/BO7/TheSacrifice.png",
+      "preview": "assets/previews/BO7/TheSacrifice.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -15263,11 +15283,134 @@ const FALLBACK_EXECUTIONS_DATA = {
       "bundle": "Tracer Pack: Disciple of Mayhem II Mastercraft Zombies Universe Bundle",
       "bundle_url": "",
       "aliases": [
+        "madness & mayhem",
         "madness and mayhem",
-        "madnessandmayhem"
+        "madness mayhem",
+        "madnessandmayhem",
+        "mayhem"
       ],
-      "icon": "Icon",
-      "preview": "Preview",
+      "icon": "assets/BO7/MadnessAndMayhem.png",
+      "preview": "assets/previews/BO7/MadnessAndMayhem.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Kidney Killer",
+      "clean_name": "KidneyKiller",
+      "game": "BO7",
+      "price": 3000,
+      "bundle": "Tracer Pack: Mourning Shade Mastercraft Ultra Skin Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "kidney killer",
+        "kidneykiller",
+        "killer"
+      ],
+      "icon": "assets/BO7/KidneyKiller.png",
+      "preview": "assets/previews/BO7/KidneyKiller.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "JK",
+      "clean_name": "JK",
+      "game": "BO7",
+      "price": 3000,
+      "bundle": "Tracer Pack: Last Laugh Mastercraft Zombies Universe Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "jk",
+        "j.k.",
+        "just kidding"
+      ],
+      "icon": "assets/BO7/JK.png",
+      "preview": "assets/previews/BO7/JK.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Spontaneous Combustion",
+      "clean_name": "SpontaneousCombustion",
+      "game": "BO7",
+      "price": 2800,
+      "bundle": "Tracer Pack: Apocalypse Rider Ultra Skin Mastercraft Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "spontaneous combustion",
+        "spontaneouscombustion",
+        "combustion"
+      ],
+      "icon": "assets/BO7/SpontaneousCombustion.png",
+      "preview": "assets/previews/BO7/SpontaneousCombustion.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Squashing Beef",
+      "clean_name": "SquashingBeef",
+      "game": "BO7",
+      "price": 3000,
+      "bundle": "Tracer Pack: Nightmare Patch Mastercraft Zombies Universe Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "squashing beef",
+        "squashingbeef",
+        "beef",
+        "squashing"
+      ],
+      "icon": "assets/BO7/SquashingBeef.png",
+      "preview": "assets/previews/BO7/SquashingBeef.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Eviscerated",
+      "clean_name": "Eviscerated",
+      "game": "BO7",
+      "price": 2400,
+      "bundle": "Tracer Pack: Batsh*t Bash Mastercraft Ultra Skin Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "eviscerated",
+        "eviscerate"
+      ],
+      "icon": "assets/BO7/Eviscerated.png",
+      "preview": "assets/previews/BO7/Eviscerated.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Gravity Check",
+      "clean_name": "GravityCheck",
+      "game": "BO7",
+      "price": 2800,
+      "bundle": "Tracer Pack: Mind Over Matter Reactive Ultra Skin Bundle",
+      "bundle_url": "",
+      "aliases": [
+        "gravity check",
+        "gravitycheck",
+        "gravity"
+      ],
+      "icon": "assets/BO7/GravityCheck.png",
+      "preview": "assets/previews/BO7/GravityCheck.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -15275,5 +15418,251 @@ const FALLBACK_EXECUTIONS_DATA = {
       "ttk": 0
     }
   ],
-  "MW4": []
+  "MW4": [
+    {
+      "name": "Footwork",
+      "clean_name": "Footwork",
+      "game": "MW4",
+      "price": 0,
+      "bundle": "Available by default",
+      "bundle_url": "",
+      "aliases": [
+        "footwork"
+      ],
+      "icon": "assets/MW4/Footwork.png",
+      "preview": "assets/previews/MW4/Footwork.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Knees and Knuckles",
+      "clean_name": "KneesAndKnuckles",
+      "game": "MW4",
+      "price": 0,
+      "bundle": "Available by default",
+      "bundle_url": "",
+      "aliases": [
+        "knees & knuckles",
+        "knees and knuckles",
+        "knees knuckles",
+        "knees n knuckles",
+        "kneesandknuckles",
+        "kneesnknuckles",
+        "knuckles",
+        "knees"
+      ],
+      "icon": "assets/MW4/KneesAndKnuckles.png",
+      "preview": "assets/previews/MW4/KneesAndKnuckles.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Doctor's Orders",
+      "clean_name": "DoctorsOrders",
+      "game": "MW4",
+      "price": 0,
+      "bundle": "Available by default",
+      "bundle_url": "",
+      "aliases": [
+        "doctor's orders",
+        "doctors orders",
+        "doctorsorders",
+        "doctor orders",
+        "doctororders",
+        "doctor's orders execution",
+        "doctors orders execution",
+        "doctorsordersexecution",
+        "doctor's orders finisher",
+        "doctors orders finisher",
+        "doctorsordersfinisher"
+      ],
+      "icon": "assets/MW4/DoctorsOrders.png",
+      "preview": "assets/previews/MW4/DoctorsOrders.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Hammer Down",
+      "clean_name": "HammerDown",
+      "game": "MW4",
+      "price": 0,
+      "bundle": "Available by default",
+      "bundle_url": "",
+      "aliases": [
+        "hammer down",
+        "hammerdown",
+        "hammer down execution",
+        "hammer down finisher",
+        "hammerdown execution",
+        "hammerdownfinisher"
+      ],
+      "icon": "assets/MW4/HammerDown.png",
+      "preview": "assets/previews/MW4/HammerDown.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Shock Stomper",
+      "clean_name": "ShockStomper",
+      "game": "MW4",
+      "price": 0,
+      "bundle": "Available by default",
+      "bundle_url": "",
+      "aliases": [
+        "shock stomper",
+        "shockstomper",
+        "shock",
+        "stomper",
+        "shock stomper execution",
+        "shock stomper finisher",
+        "shockstompexecution",
+        "shockstomperfinisher"
+      ],
+      "icon": "assets/MW4/ShockStomper.png",
+      "preview": "assets/previews/MW4/ShockStomper.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "12 Gauge Rage",
+      "clean_name": "12GaugeRage",
+      "game": "MW4",
+      "price": 0,
+      "bundle": "Available by default",
+      "bundle_url": "",
+      "aliases": [
+        "12 gauge rage",
+        "12gaugerage",
+        "gauge rage",
+        "gaugerage",
+        "rage",
+        "12 gauge",
+        "12gauge"
+      ],
+      "icon": "assets/MW4/12GaugeRage.png",
+      "preview": "assets/previews/MW4/12GaugeRage.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Blow by Blow",
+      "clean_name": "BlowByBlow",
+      "game": "MW4",
+      "price": 0,
+      "bundle": "Unlocked with Price",
+      "bundle_url": "",
+      "aliases": [
+        "blow by blow",
+        "blowbyblow",
+        "blow"
+      ],
+      "icon": "assets/MW4/BlowByBlow.png",
+      "preview": "assets/previews/MW4/BlowByBlow.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Cut and Dry",
+      "clean_name": "CutAndDry",
+      "game": "MW4",
+      "price": 0,
+      "bundle": "Unlocked with Valeria",
+      "bundle_url": "",
+      "aliases": [
+        "cut and dry",
+        "cutanddry",
+        "valeria",
+        "valeria execution",
+        "valeria finisher"
+      ],
+      "icon": "assets/MW4/CutAndDry.png",
+      "preview": "assets/previews/MW4/CutAndDry.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Good Point",
+      "clean_name": "GoodPoint",
+      "game": "MW4",
+      "price": 0,
+      "bundle": "Unlocked with Ghost",
+      "bundle_url": "",
+      "aliases": [
+        "good point",
+        "goodpoint"
+      ],
+      "icon": "assets/MW4/GoodPoint.png",
+      "preview": "assets/previews/MW4/GoodPoint.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Tanto Tactics",
+      "clean_name": "TantoTactics",
+      "game": "MW4",
+      "price": 0,
+      "bundle": "Unlocked with Blix",
+      "bundle_url": "",
+      "aliases": [
+        "tanto tactics",
+        "tantotactics",
+        "blix",
+        "blix execution",
+        "blix finisher"
+      ],
+      "icon": "assets/MW4/TantoTactics.png",
+      "preview": "assets/previews/MW4/TantoTactics.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "name": "Triple Tap",
+      "clean_name": "TripleTap",
+      "game": "MW4",
+      "price": 0,
+      "bundle": "Unlocked with COM FST, KSK Amphibious, South Korean SF, or SAS",
+      "bundle_url": "",
+      "aliases": [
+        "triple tap",
+        "tripletap"
+      ],
+      "icon": "assets/MW4/TripleTap.png",
+      "preview": "assets/previews/MW4/TripleTap.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    }
+  ]
 };

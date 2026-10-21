@@ -71,6 +71,7 @@ SESSION.headers.update({
     ),
     "Accept": "application/json, text/html, */*",
     "Accept-Language": "en-US,en;q=0.9",
+    "Referer": "https://callofduty.fandom.com/",
 })
 
 REQUEST_DELAY = 2.0  # seconds between requests
@@ -480,6 +481,28 @@ def main():
     else:
         data = {}
 
+    csv_path = Path(__file__).parent.parent / "ExecutionersBot" / "executions_google_sheets.csv"
+    sheet_meta = {}
+    if csv_path.exists():
+        import csv
+        with open(csv_path, "r", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                g = r.get("game", "").strip()
+                n = r.get("name", "").strip()
+                norm = re.sub(r'[^a-z0-9]', '', n.lower())
+                p_val = r.get("price", "0").strip()
+                try:
+                    price = int(float(p_val)) if p_val else 0
+                except ValueError:
+                    price = 0
+                aliases = [a.strip() for a in r.get("aliases", "").split(",") if a.strip()]
+                sheet_meta[(g, norm)] = {
+                    "price": price,
+                    "bundle": r.get("bundle", "").strip(),
+                    "bundle_url": r.get("bundle_url", "").strip(),
+                    "aliases": aliases
+                }
+
     summary: dict[str, int] = {}
 
     for game_key, page_title, name_idx, icon_idx, preview_idx, name_has_rarity in PAGES:
@@ -525,6 +548,13 @@ def main():
             is_new = norm_name not in existing_entries_map
 
             if is_new:
+                if (game_key, norm_name) in sheet_meta:
+                    meta = sheet_meta[(game_key, norm_name)]
+                    entry["price"] = meta["price"]
+                    entry["bundle"] = meta["bundle"]
+                    entry["bundle_url"] = meta["bundle_url"]
+                    if meta["aliases"]:
+                        entry["aliases"] = meta["aliases"]
                 data[game_key].append(entry)
                 existing_entries_map[norm_name] = entry
                 added += 1
@@ -534,6 +564,16 @@ def main():
                 target_entry = entry
             else:
                 target_entry = existing_entries_map[norm_name]
+                if (game_key, norm_name) in sheet_meta:
+                    meta = sheet_meta[(game_key, norm_name)]
+                    if meta["bundle"] and target_entry.get("bundle") in ("", "Base Operator Move"):
+                        target_entry["bundle"] = meta["bundle"]
+                    if meta["price"] and target_entry.get("price") == 0:
+                        target_entry["price"] = meta["price"]
+                    if meta["bundle_url"] and not target_entry.get("bundle_url"):
+                        target_entry["bundle_url"] = meta["bundle_url"]
+                    if meta["aliases"] and len(target_entry.get("aliases", [])) <= 2:
+                        target_entry["aliases"] = meta["aliases"]
 
             if url:
                 parsed_icon = entry["icon"]
