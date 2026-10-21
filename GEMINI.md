@@ -97,3 +97,7 @@ Manually adds a finishing move from Discord without opening Google Sheets. Sets 
 
 ### `/edit-execution`
 Modifies price, bundle, store link, or aliases for an existing finishing move and syncs the changes to Google Sheets.
+
+### `/sync-logs`
+Displays the last 20–40 lines of bot and sync logs directly in Discord for instant debugging without needing server SSH access. Logs are also permanently written to `data/bot.log`.
+
