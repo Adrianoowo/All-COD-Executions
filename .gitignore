@@ -3,3 +3,8 @@ __pycache__/
 
 # Ignore .agents directories anywhere in the project
 .agents/
+
+.env
+*.db
+data/
+

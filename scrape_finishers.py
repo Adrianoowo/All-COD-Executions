@@ -22,6 +22,14 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 from PIL import Image, ImageSequence
+import os
+import mimetypes
+try:
+    import boto3
+    from botocore.config import Config
+    HAVE_BOTO3 = True
+except ImportError:
+    HAVE_BOTO3 = False
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -29,6 +37,47 @@ from PIL import Image, ImageSequence
 
 DATA_JSON_PATH = Path(__file__).parent / "data.json"
 FALLBACK_JS_PATH = Path(__file__).parent / "data-fallback.js"
+
+# Load .env if present
+env_file = Path(__file__).parent / ".env"
+if env_file.exists():
+    with open(env_file, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                k, v = line.split("=", 1)
+                os.environ.setdefault(k.strip(), v.strip())
+
+R2_ACCOUNT_ID = os.environ.get("R2_ACCOUNT_ID")
+R2_ACCESS_KEY_ID = os.environ.get("R2_ACCESS_KEY_ID")
+R2_SECRET_ACCESS_KEY = os.environ.get("R2_SECRET_ACCESS_KEY")
+R2_BUCKET_NAME = os.environ.get("R2_BUCKET_NAME", "all-cod-executions")
+
+def upload_to_r2(dest_path: Path):
+    if not (HAVE_BOTO3 and R2_ACCESS_KEY_ID and R2_SECRET_ACCESS_KEY):
+        return
+    try:
+        rel_key = dest_path.resolve().relative_to(Path(__file__).parent.resolve()).as_posix()
+        s3 = boto3.client(
+            "s3",
+            endpoint_url=f"https://{R2_ACCOUNT_ID}.r2.cloudflarestorage.com",
+            aws_access_key_id=R2_ACCESS_KEY_ID,
+            aws_secret_access_key=R2_SECRET_ACCESS_KEY,
+            config=Config(signature_version="s3v4")
+        )
+        mime_type, _ = mimetypes.guess_type(str(dest_path))
+        s3.upload_file(
+            Filename=str(dest_path),
+            Bucket=R2_BUCKET_NAME,
+            Key=rel_key,
+            ExtraArgs={
+                "ContentType": mime_type or "application/octet-stream",
+                "CacheControl": "public, max-age=31536000, immutable"
+            }
+        )
+        print(f"      [R2 SYNC] Uploaded {rel_key} directly to Cloudflare R2")
+    except Exception as e:
+        print(f"      [R2 SYNC ERROR] {e}")
 
 FANDOM_API_BASE = "https://callofduty.fandom.com/api.php"
 
@@ -206,6 +255,8 @@ def download_image(url_or_filename: str, dest_path: Path) -> bool:
         # If it's a GIF, sanitize it!
         if dest_path.suffix.lower() == ".gif":
             sanitize_gif(dest_path)
+
+        upload_to_r2(dest_path)
             
         return True
     except Exception as exc:

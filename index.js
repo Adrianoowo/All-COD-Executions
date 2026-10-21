@@ -11,7 +11,37 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentSortOrder = localStorage.getItem('userSortOrder') || 'default'; // 'default', 'name-asc', etc.
   let currentUser = null; // { id, username, avatar }
 
-  // Credentials
+  // Credentials & CDN
+  const CDN_BASE_URL = 'https://pub-21d091e8cc674a2c9f1f8a59eac107b6.r2.dev';
+
+  function resolveAssetUrl(path) {
+    if (!path) return '';
+    if (path.startsWith('http://') || path.startsWith('https://')) return path;
+    if (path === 'Icon' || path === 'Preview') return '';
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    // Only executions assets/ go to Cloudflare CDN. Website images (images/...) stay local!
+    if (cleanPath.startsWith('assets/')) {
+      return `${CDN_BASE_URL}/${cleanPath}`;
+    }
+    return cleanPath;
+  }
+
+  function resolveDatasetUrls(data) {
+    if (!data) return {};
+    const res = {};
+    for (const [k, list] of Object.entries(data)) {
+      if (Array.isArray(list)) {
+        res[k] = list.map(item => ({
+          ...item,
+          icon: resolveAssetUrl(item.icon),
+          preview: resolveAssetUrl(item.preview)
+        }));
+      } else {
+        res[k] = list;
+      }
+    }
+    return res;
+  }
   const TURSO_URL = 'https://inventory-adrianowo.aws-eu-west-1.turso.io/v2/pipeline';
   const TURSO_TOKEN = 'eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJpYXQiOjE3ODU5NDk1MDEsImlkIjoiMDE5ZmQyZTEtNWIwMS03NDJjLWI1ZjUtMTQ0NmY3ZjRlODUyIiwia2lkIjoiVlVBcG40eHk2eTR2d0lVT1RSTng2MDd5SUFoWmcwNG1vTFFrN0x5b3BQOCIsInJpZCI6IjAzYzA0N2I5LWY5ZjUtNDBlNi04NDdmLWNhYTYzYjkzODI1YiJ9.UaXwCWM4NZQ0lPd8_QQ1tpZ_I_SMyiQ2M1ljWe8C5RO_e2iSeBIO5wmjVSH55RuoMmZuBnG84O6szEyRKLNNCw';
   const DISCORD_CLIENT_ID = '1522200189006516304';
@@ -193,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (user && user.id) {
               const avatarUrl = user.avatar
                 ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`
-                : 'assets/favicon.svg';
+                : resolveAssetUrl('assets/favicon.svg');
               loginUser({
                 id: String(user.id),
                 username: user.global_name || user.username || 'Discord User',
@@ -266,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btnDiscordLogin.classList.add('hidden');
       if (viewOnlyBadge) viewOnlyBadge.classList.add('hidden');
       userProfileBar.classList.remove('hidden');
-      userAvatar.src = currentUser.avatar || 'assets/favicon.svg';
+      userAvatar.src = currentUser.avatar || resolveAssetUrl('assets/favicon.svg');
       userName.textContent = currentUser.username;
     } else {
       btnDiscordLogin.classList.remove('hidden');
@@ -371,7 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const user = await res.json();
         const avatarUrl = user.avatar
           ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`
-          : 'assets/favicon.svg';
+          : resolveAssetUrl('assets/favicon.svg');
         loginUser({
           id: String(user.id),
           username: user.global_name || user.username || 'Discord User',
@@ -384,7 +414,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loginUser({
           id: inputVal,
           username: `User ${inputVal.substring(0, 8)}`,
-          avatar: 'assets/favicon.svg'
+          avatar: resolveAssetUrl('assets/favicon.svg')
         });
         loginModalOverlay.classList.add('hidden');
         discordUserIdInput.value = '';
@@ -394,7 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
       loginUser({
         id: inputVal,
         username: `User ${inputVal.substring(0, 8)}`,
-        avatar: 'assets/favicon.svg'
+        avatar: resolveAssetUrl('assets/favicon.svg')
       });
       loginModalOverlay.classList.add('hidden');
       discordUserIdInput.value = '';
@@ -686,11 +716,11 @@ document.addEventListener('DOMContentLoaded', () => {
       } catch (parseErr) {
         console.error('Google Sheet CSV parse error, using embedded fallback:', parseErr);
         if (typeof FALLBACK_EXECUTIONS_DATA !== 'undefined') {
-          executionsData = FALLBACK_EXECUTIONS_DATA;
+          executionsData = resolveDatasetUrls(FALLBACK_EXECUTIONS_DATA);
         }
       }
     } else if (typeof FALLBACK_EXECUTIONS_DATA !== 'undefined') {
-      executionsData = FALLBACK_EXECUTIONS_DATA;
+      executionsData = resolveDatasetUrls(FALLBACK_EXECUTIONS_DATA);
     }
 
     renderAllBuilds();
@@ -953,7 +983,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isVideo = url => typeof url === 'string' && url.startsWith('http');
 
     container.innerHTML = builds.map((build) => {
-      const iconSrc = build.icon ? build.icon : 'assets/missing_preview.jpg';
+      const iconSrc = build.icon ? build.icon : resolveAssetUrl('assets/missing_preview.jpg');
 
       const FPS = 60;
       const animFrames = typeof build.anim_time === 'number' ? build.anim_time : 0;
@@ -995,7 +1025,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ${checkIcon}
           </button>
           <div class="build-img-wrapper">
-            <img src="${iconSrc}" alt="${build.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/missing_preview.jpg';" />
+            <img src="${iconSrc}" alt="${build.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='' + resolveAssetUrl('assets/missing_preview.jpg') + '';" />
           </div>
           <div class="build-body">
             <h3>${build.name}</h3>
@@ -1088,7 +1118,7 @@ document.addEventListener('DOMContentLoaded', () => {
            <img class="popup-gif-preview" src="${build.preview}" alt="${name} Preview">
          </div>`
       : `<div class="popup-img-wrapper">
-           <img class="popup-img" src="${build.icon || 'assets/missing_preview.jpg'}" alt="${name}" onerror="this.onerror=null;this.src='assets/missing_preview.jpg';">
+           <img class="popup-img" src="${build.icon || resolveAssetUrl('assets/missing_preview.jpg')}" alt="${name}" onerror="this.onerror=null;this.src='' + resolveAssetUrl('assets/missing_preview.jpg') + '';">
          </div>`;
 
     const isVideo = url => typeof url === 'string' && url.startsWith('http');
