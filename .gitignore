@@ -8,3 +8,5 @@ __pycache__/
 *.db
 data/
 
+# Ignore execution media assets (hosted on Cloudflare R2 CDN)
+assets/*/

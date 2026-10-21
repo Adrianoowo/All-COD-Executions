@@ -19,8 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (path.startsWith('http://') || path.startsWith('https://')) return path;
     if (path === 'Icon' || path === 'Preview') return '';
     const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-    // Only executions assets/ go to Cloudflare CDN. Website images (images/...) stay local!
-    if (cleanPath.startsWith('assets/')) {
+    // Only execution move assets (assets/<game>/... and assets/previews/...) go to Cloudflare CDN.
+    // Root website UI assets (assets/favicon.svg, assets/missing_preview.jpg, images/...) stay local!
+    if (/^assets\/(previews|[A-Za-z0-9]+)\/.+/.test(cleanPath)) {
       return `${CDN_BASE_URL}/${cleanPath}`;
     }
     return cleanPath;
