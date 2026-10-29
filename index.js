@@ -15,14 +15,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const CDN_BASE_URL = 'https://pub-21d091e8cc674a2c9f1f8a59eac107b6.r2.dev';
 
   function resolveAssetUrl(path) {
-    if (!path) return '';
-    if (path.startsWith('http://') || path.startsWith('https://')) return path;
-    if (path === 'Icon' || path === 'Preview') return '';
-    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    if (!path || typeof path !== 'string') return '';
+    const trimmed = path.trim();
+    if (!trimmed || trimmed === 'Icon' || trimmed === 'Preview') return '';
+    if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) return trimmed;
+    const cleanPath = trimmed.startsWith('/') ? trimmed.slice(1) : trimmed;
+
     // Only execution move assets (assets/<game>/... and assets/previews/...) go to Cloudflare CDN.
     // Root website UI assets (assets/favicon.svg, assets/missing_preview.jpg, images/...) stay local!
-    if (/^assets\/(previews|[A-Za-z0-9]+)\/.+/.test(cleanPath)) {
+    if (/^assets\/(previews|[A-Za-z0-9]+)\/.+/i.test(cleanPath)) {
       return `${CDN_BASE_URL}/${cleanPath}`;
+    }
+    if (/^previews\/[A-Za-z0-9]+\/.+/i.test(cleanPath)) {
+      return `${CDN_BASE_URL}/assets/${cleanPath}`;
+    }
+    if (/^[A-Za-z0-9]+\/[^/]+\.(png|gif|webp|jpg|jpeg)$/i.test(cleanPath) && !cleanPath.toLowerCase().startsWith('images/')) {
+      return `${CDN_BASE_URL}/assets/${cleanPath}`;
     }
     return cleanPath;
   }
@@ -700,8 +708,8 @@ document.addEventListener('DOMContentLoaded', () => {
             bundle: (row.bundle || '').trim(),
             bundle_url: (row.bundle_url || '').trim(),
             aliases: aliases,
-            icon: resolvedIcon,
-            preview: resolvedPreview,
+            icon: resolveAssetUrl(resolvedIcon),
+            preview: resolveAssetUrl(resolvedPreview),
             standing: row.standing || '',
             prone: row.prone || '',
             downed: row.downed || '',
@@ -713,7 +721,7 @@ document.addEventListener('DOMContentLoaded', () => {
           compiled[game].push(item);
         });
 
-        executionsData = compiled;
+        executionsData = resolveDatasetUrls(compiled);
       } catch (parseErr) {
         console.error('Google Sheet CSV parse error, using embedded fallback:', parseErr);
         if (typeof FALLBACK_EXECUTIONS_DATA !== 'undefined') {
@@ -984,7 +992,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isVideo = url => typeof url === 'string' && url.startsWith('http');
 
     container.innerHTML = builds.map((build) => {
-      const iconSrc = build.icon ? build.icon : resolveAssetUrl('assets/missing_preview.jpg');
+      const iconSrc = resolveAssetUrl(build.icon) || resolveAssetUrl('assets/missing_preview.jpg');
 
       const FPS = 60;
       const animFrames = typeof build.anim_time === 'number' ? build.anim_time : 0;
@@ -1113,13 +1121,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const itemKey = `${gameKey.toUpperCase()}:${name}`;
     const isOwned = ownedItems.has(itemKey);
 
-    const hasGif = typeof build.preview === 'string' && build.preview.toLowerCase().endsWith('.gif');
+    const iconSrc = resolveAssetUrl(build.icon) || resolveAssetUrl('assets/missing_preview.jpg');
+    const previewSrc = resolveAssetUrl(build.preview);
+    const hasGif = typeof previewSrc === 'string' && previewSrc.toLowerCase().includes('.gif');
     const previewMediaMarkup = hasGif 
       ? `<div class="popup-gif-preview-container">
-           <img class="popup-gif-preview" src="${build.preview}" alt="${name} Preview">
+           <img class="popup-gif-preview" src="${previewSrc}" alt="${name} Preview" onerror="this.onerror=null;this.src='' + iconSrc + '';">
          </div>`
       : `<div class="popup-img-wrapper">
-           <img class="popup-img" src="${build.icon || resolveAssetUrl('assets/missing_preview.jpg')}" alt="${name}" onerror="this.onerror=null;this.src='' + resolveAssetUrl('assets/missing_preview.jpg') + '';">
+           <img class="popup-img" src="${iconSrc}" alt="${name}" onerror="this.onerror=null;this.src='' + resolveAssetUrl('assets/missing_preview.jpg') + '';">
          </div>`;
 
     const isVideo = url => typeof url === 'string' && url.startsWith('http');
