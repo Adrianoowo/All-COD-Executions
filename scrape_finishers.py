@@ -53,20 +53,29 @@ R2_ACCESS_KEY_ID = os.environ.get("R2_ACCESS_KEY_ID")
 R2_SECRET_ACCESS_KEY = os.environ.get("R2_SECRET_ACCESS_KEY")
 R2_BUCKET_NAME = os.environ.get("R2_BUCKET_NAME", "all-cod-executions")
 
-def upload_to_r2(dest_path: Path):
+CDN_BASE_URL = os.environ.get("CDN_BASE_URL", "https://pub-21d091e8cc674a2c9f1f8a59eac107b6.r2.dev").rstrip("/")
+
+
+def get_r2_client():
     if not (HAVE_BOTO3 and R2_ACCESS_KEY_ID and R2_SECRET_ACCESS_KEY):
+        return None
+    return boto3.client(
+        "s3",
+        endpoint_url=f"https://{R2_ACCOUNT_ID}.r2.cloudflarestorage.com",
+        aws_access_key_id=R2_ACCESS_KEY_ID,
+        aws_secret_access_key=R2_SECRET_ACCESS_KEY,
+        config=Config(signature_version="s3v4")
+    )
+
+
+def upload_to_r2(dest_path: Path):
+    client = get_r2_client()
+    if not client:
         return
     try:
         rel_key = dest_path.resolve().relative_to(Path(__file__).parent.resolve()).as_posix()
-        s3 = boto3.client(
-            "s3",
-            endpoint_url=f"https://{R2_ACCOUNT_ID}.r2.cloudflarestorage.com",
-            aws_access_key_id=R2_ACCESS_KEY_ID,
-            aws_secret_access_key=R2_SECRET_ACCESS_KEY,
-            config=Config(signature_version="s3v4")
-        )
         mime_type, _ = mimetypes.guess_type(str(dest_path))
-        s3.upload_file(
+        client.upload_file(
             Filename=str(dest_path),
             Bucket=R2_BUCKET_NAME,
             Key=rel_key,
@@ -78,6 +87,47 @@ def upload_to_r2(dest_path: Path):
         print(f"      [R2 SYNC] Uploaded {rel_key} directly to Cloudflare R2")
     except Exception as e:
         print(f"      [R2 SYNC ERROR] {e}")
+
+
+def get_existing_r2_keys(game_key: str) -> set[str] | None:
+    client = get_r2_client()
+    if not client:
+        return None
+    keys = set()
+    prefixes = [f"assets/{game_key}/", f"assets/previews/{game_key}/"]
+    try:
+        paginator = client.get_paginator("list_objects_v2")
+        for prefix in prefixes:
+            for page in paginator.paginate(Bucket=R2_BUCKET_NAME, Prefix=prefix):
+                for obj in page.get("Contents", []):
+                    k = obj.get("Key")
+                    if k:
+                        keys.add(k.lstrip("/"))
+        return keys
+    except Exception as e:
+        print(f"      [R2 LIST WARNING] Could not list R2 objects for {game_key}: {e}")
+        return None
+
+
+def check_asset_exists_in_r2(r2_key: str, existing_keys: set[str] | None = None) -> bool:
+    if not r2_key or r2_key in ("Icon", "Preview"):
+        return False
+    clean_key = r2_key.lstrip("/")
+    if existing_keys is not None:
+        return clean_key in existing_keys
+    client = get_r2_client()
+    if client:
+        try:
+            client.head_object(Bucket=R2_BUCKET_NAME, Key=clean_key)
+            return True
+        except Exception:
+            return False
+    try:
+        url = f"{CDN_BASE_URL}/{clean_key}"
+        resp = SESSION.head(url, timeout=5, allow_redirects=True)
+        return resp.status_code == 200
+    except Exception:
+        return False
 
 FANDOM_API_BASE = "https://callofduty.fandom.com/api.php"
 
@@ -577,6 +627,8 @@ def main():
             time.sleep(REQUEST_DELAY)
             continue
 
+        r2_keys = get_existing_r2_keys(game_key)
+
         parsed = parse_finishing_moves(
             soup, game_key, name_idx, icon_idx, preview_idx, name_has_rarity
         )
@@ -586,6 +638,7 @@ def main():
         existing_entries_map = {normalize_name(entry["name"]): entry for entry in data[game_key]}
 
         added = 0
+        backfilled = 0
         seen_in_this_run: set[str] = set()
         for entry in parsed:
             name = entry["name"]
@@ -626,6 +679,8 @@ def main():
                     if meta["aliases"] and len(target_entry.get("aliases", [])) <= 2:
                         target_entry["aliases"] = meta["aliases"]
 
+            item_backfilled = False
+
             if url:
                 parsed_icon = entry["icon"]
                 dest_path = FALLBACK_JS_PATH.parent / parsed_icon
@@ -635,8 +690,12 @@ def main():
                     print(f"    Updating icon path for {name!r}: {current_icon} -> {parsed_icon}")
                     target_entry["icon"] = parsed_icon
 
-                if not dest_path.exists():
-                    print(f"    Downloading {parsed_icon} ...")
+                icon_exists = dest_path.exists() or check_asset_exists_in_r2(parsed_icon, r2_keys)
+                if not icon_exists:
+                    if not is_new and not item_backfilled:
+                        backfilled += 1
+                        item_backfilled = True
+                    print(f"    Downloading missing icon {parsed_icon} ...")
                     if download_image(url, dest_path):
                         time.sleep(0.5)
 
@@ -649,15 +708,18 @@ def main():
                     print(f"    Updating preview path for {name!r}: {current_preview} -> {parsed_preview}")
                     target_entry["preview"] = parsed_preview
 
-                if not dest_preview_path.exists():
-                    print(f"    Downloading preview {parsed_preview} ...")
-                    # Ensure directory exists
+                preview_exists = dest_preview_path.exists() or check_asset_exists_in_r2(parsed_preview, r2_keys)
+                if not preview_exists:
+                    if not is_new and not item_backfilled:
+                        backfilled += 1
+                        item_backfilled = True
+                    print(f"    Downloading missing preview {parsed_preview} ...")
                     dest_preview_path.parent.mkdir(parents=True, exist_ok=True)
                     if download_image(preview_url, dest_preview_path):
                         time.sleep(0.5)
 
-        summary[game_key] = added
-        print(f"  Added {added} new entries for {game_key}")
+        summary[game_key] = {"added": added, "backfilled": backfilled}
+        print(f"  Result for {game_key}: {added} new, {backfilled} backfilled")
 
         time.sleep(REQUEST_DELAY)
 
@@ -672,11 +734,11 @@ def main():
             json.dump(data, fh, indent=2, ensure_ascii=False)
 
     print("\n" + "=" * 60)
-    print("SUMMARY — new entries added")
+    print("SUMMARY — new entries & backfilled assets")
     print("=" * 60)
-    for game_key, count in summary.items():
+    for game_key, counts in summary.items():
         total = len(data[game_key])
-        print(f"  {game_key:6s}: +{count} new  (total now: {total})")
+        print(f"  {game_key:6s}: +{counts['added']} new, {counts['backfilled']} backfilled (total now: {total})")
 
     print("\nDone.")
 
