@@ -461,25 +461,43 @@ def main():
         print(f"    Local fallback was updated. Configure webhook in .env to update Google Sheets remotely.{Colors.ENDC}")
         return
 
-    # 1. Update backfilled items via webhook
+    # 1. Update backfilled items via webhook (in a single atomic batch_update request)
     update_success = 0
-    for item in backfilled_items:
-        payload = {
-            "action": "update",
-            "game": item["game"],
-            "name": item["name"],
-            "price": item["new_price"],
-            "bundle": item["new_bundle"],
-            "bundle_url": item["new_url"]
-        }
-        ok, msg = db.send_webhook_request(payload)
-        if ok:
-            update_success += 1
-        else:
-            print(f"{Colors.FAIL}Failed to update {item['name']} on Google Sheets: {msg}{Colors.ENDC}")
-
     if backfilled_items:
-        print(f"{Colors.OKGREEN}[✓] Synced {update_success}/{len(backfilled_items)} updates to Google Sheets.{Colors.ENDC}")
+        batch_payload = {
+            "action": "batch_update",
+            "updates": [
+                {
+                    "game": item["game"],
+                    "name": item["name"],
+                    "price": item["new_price"],
+                    "bundle": item["new_bundle"],
+                    "bundle_url": item["new_url"]
+                }
+                for item in backfilled_items
+            ]
+        }
+        ok, msg = db.send_webhook_request(batch_payload)
+        if ok:
+            update_success = len(backfilled_items)
+            print(f"{Colors.OKGREEN}[✓] Batch-updated {update_success} items on Google Sheets in one request.{Colors.ENDC}")
+        else:
+            print(f"{Colors.WARNING}[!] Batch update failed ({msg}), falling back to single updates...{Colors.ENDC}")
+            for item in backfilled_items:
+                payload = {
+                    "action": "update",
+                    "game": item["game"],
+                    "name": item["name"],
+                    "price": item["new_price"],
+                    "bundle": item["new_bundle"],
+                    "bundle_url": item["new_url"]
+                }
+                ok_single, msg_single = db.send_webhook_request(payload)
+                if ok_single:
+                    update_success += 1
+                else:
+                    print(f"{Colors.FAIL}Failed to update {item['name']} on Google Sheets: {msg_single}{Colors.ENDC}")
+            print(f"{Colors.OKGREEN}[✓] Synced {update_success}/{len(backfilled_items)} updates to Google Sheets.{Colors.ENDC}")
 
     # 2. Add new discoveries via webhook batch_add
     if new_discoveries:
