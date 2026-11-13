@@ -101,3 +101,20 @@ Modifies price, bundle, store link, or aliases for an existing finishing move an
 ### `/sync-logs`
 Displays the last 20–40 lines of bot and sync logs directly in Discord for instant debugging without needing server SSH access. Logs are also permanently written to `data/bot.log`.
 
+---
+
+## 5. Live Store Sync & Database Enrichment (`sync_store_to_sheets.py`)
+
+Using the **itemshop.gg** Call of Duty store API, `sync_store_to_sheets.py` enriches the database with verified prices (COD Points), bundle names, and official store URLs, while discovering newly released executions:
+* **Dry-Run (Safe Inspection)**:
+  ```bash
+  python3 sync_store_to_sheets.py --dry-run
+  ```
+* **Live Sync (Dual Target)**:
+  ```bash
+  python3 sync_store_to_sheets.py --live
+  ```
+  Updates `data-fallback.js` locally and sends updates and new discoveries to Google Sheets via the Apps Script Webhook (`GOOGLE_APPS_SCRIPT_URL` & `GOOGLE_APPS_SCRIPT_SECRET`).
+* **Safe Fill vs. Overwrite**: Safe Fill (default) only fills in missing/empty fields; pass `--overwrite` to force update values where store differs.
+* **Media Handling**: Media assets (icons and GIFs) remain strictly handled by the wiki scraper (`scrape_finishers.py`). This script sets up canonical R2 path references (`assets/{GAME}/{CleanName}.png`).
+

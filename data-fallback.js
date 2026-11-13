@@ -821,7 +821,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "RapidIncision",
       "game": "MWII",
       "price": 2400,
-      "bundle": "Tracer Pack: Pádraig's Pandemonium Bundle",
+      "bundle": "Tracer Pack: P\u00e1draig's Pandemonium Bundle",
       "bundle_url": "",
       "aliases": [
         "incision",
@@ -7187,7 +7187,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "CutTheCrap",
       "game": "VG",
       "price": 2400,
-      "bundle": "Wade - Tracer Pack: Umbrella Academy — Cha-Cha Bundle",
+      "bundle": "Wade - Tracer Pack: Umbrella Academy \u2014 Cha-Cha Bundle",
       "bundle_url": "",
       "aliases": [
         "cut the crap",
@@ -7515,7 +7515,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "ShockingRevelation",
       "game": "VG",
       "price": 2400,
-      "bundle": "Lewis - Tracer Pack: Umbrella Academy — Hazel Bundle",
+      "bundle": "Lewis - Tracer Pack: Umbrella Academy \u2014 Hazel Bundle",
       "bundle_url": "",
       "aliases": [
         "shocking revelation",
@@ -7553,7 +7553,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "SteelCut",
       "game": "VG",
       "price": 2400,
-      "bundle": "Tracer Pack: Attack on Titan — Levi Edition Bundle",
+      "bundle": "Tracer Pack: Attack on Titan \u2014 Levi Edition Bundle",
       "bundle_url": "",
       "aliases": [
         "steel cut",
@@ -8171,7 +8171,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "KongsKnuckleSlamwich",
       "game": "MWIII",
       "price": 2400,
-      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire — Kong Bundle",
+      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire \u2014 Kong Bundle",
       "bundle_url": "",
       "aliases": [
         "kong",
@@ -8258,7 +8258,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "FrostbiteFinish",
       "game": "MWIII",
       "price": 2400,
-      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire — Shimo Bundle",
+      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire \u2014 Shimo Bundle",
       "bundle_url": "",
       "aliases": [
         "frostbite",
@@ -8317,7 +8317,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "FeelTheHeatRay",
       "game": "MWIII",
       "price": 2400,
-      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire — Godzilla Bundle",
+      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire \u2014 Godzilla Bundle",
       "bundle_url": "",
       "aliases": [
         "feel the heat ray",
@@ -8764,7 +8764,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "clean_name": "WhipslashedUnleashed",
       "game": "MWIII",
       "price": 2400,
-      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire — Skar King Bundle",
+      "bundle": "Tracer Pack: Godzilla x Kong: The New Empire \u2014 Skar King Bundle",
       "bundle_url": "",
       "aliases": [
         "whipslash",
@@ -14944,7 +14944,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "game": "BO7",
       "price": 1800,
       "bundle": "Shadow Wolf Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7311",
       "aliases": [
         "lead bite",
         "leadbite",
@@ -14998,7 +14998,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "game": "BO7",
       "price": 2400,
       "bundle": "Tracer Pack: Disruption Prime Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7185",
       "aliases": [
         "juggled doom",
         "juggleddoom",
@@ -15062,7 +15062,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "name": "Energy Shock",
       "clean_name": "EnergyShock",
       "game": "BO7",
-      "price": 0,
+      "price": 2800,
       "bundle": "Tracer Pack: Infinite Void Reactive Zombies Universe Bundle",
       "bundle_url": "https://www.callofduty.com/en/store/bundles/7402",
       "aliases": [
@@ -15127,7 +15127,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "game": "BO7",
       "price": 2000,
       "bundle": "Tracer Pack: Infiltration Alpha Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7406",
       "aliases": [
         "right angle",
         "rightangle",
@@ -15243,7 +15243,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "game": "BO7",
       "price": 2400,
       "bundle": "Tracer Pack: DOOM Demonic Essence Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7495",
       "aliases": [
         "futile"
       ],
@@ -15261,7 +15261,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "game": "BO7",
       "price": 2800,
       "bundle": "Tracer Pack: Grimwoods Mastercraft Ultra Skin Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7498",
       "aliases": [
         "the sacrifice",
         "thesacrifice",
@@ -15281,7 +15281,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "game": "BO7",
       "price": 2800,
       "bundle": "Tracer Pack: Disciple of Mayhem II Mastercraft Zombies Universe Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7501",
       "aliases": [
         "madness & mayhem",
         "madness and mayhem",
@@ -15303,7 +15303,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "game": "BO7",
       "price": 3000,
       "bundle": "Tracer Pack: Mourning Shade Mastercraft Ultra Skin Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7497",
       "aliases": [
         "kidney killer",
         "kidneykiller",
@@ -15323,7 +15323,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "game": "BO7",
       "price": 3000,
       "bundle": "Tracer Pack: Last Laugh Mastercraft Zombies Universe Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7496",
       "aliases": [
         "jk",
         "j.k.",
@@ -15343,7 +15343,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "game": "BO7",
       "price": 2800,
       "bundle": "Tracer Pack: Apocalypse Rider Ultra Skin Mastercraft Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7500",
       "aliases": [
         "spontaneous combustion",
         "spontaneouscombustion",
@@ -15363,7 +15363,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "game": "BO7",
       "price": 3000,
       "bundle": "Tracer Pack: Nightmare Patch Mastercraft Zombies Universe Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7499",
       "aliases": [
         "squashing beef",
         "squashingbeef",
@@ -15384,7 +15384,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "game": "BO7",
       "price": 2400,
       "bundle": "Tracer Pack: Batsh*t Bash Mastercraft Ultra Skin Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7502",
       "aliases": [
         "eviscerated",
         "eviscerate"
@@ -15403,7 +15403,7 @@ const FALLBACK_EXECUTIONS_DATA = {
       "game": "BO7",
       "price": 2800,
       "bundle": "Tracer Pack: Mind Over Matter Reactive Ultra Skin Bundle",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7503",
       "aliases": [
         "gravity check",
         "gravitycheck",
@@ -15411,6 +15411,25 @@ const FALLBACK_EXECUTIONS_DATA = {
       ],
       "icon": "assets/BO7/GravityCheck.png",
       "preview": "assets/previews/BO7/GravityCheck.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "game": "BO7",
+      "name": "Island Brawler",
+      "clean_name": "IslandBrawler",
+      "price": 1200,
+      "bundle": "Gotta Getaway",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/6480",
+      "aliases": [
+        "island brawler",
+        "islandbrawler"
+      ],
+      "icon": "assets/BO7/IslandBrawler.png",
+      "preview": "assets/previews/BO7/IslandBrawler.gif",
       "standing": "",
       "prone": "",
       "downed": "",
@@ -15649,15 +15668,72 @@ const FALLBACK_EXECUTIONS_DATA = {
       "name": "Triple Tap",
       "clean_name": "TripleTap",
       "game": "MW4",
-      "price": 0,
+      "price": 1800,
       "bundle": "Unlocked with COM FST, KSK Amphibious, South Korean SF, or SAS",
-      "bundle_url": "",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/6963",
       "aliases": [
         "triple tap",
         "tripletap"
       ],
       "icon": "assets/MW4/TripleTap.png",
       "preview": "assets/previews/MW4/TripleTap.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "game": "MW4",
+      "name": "You're Done",
+      "clean_name": "YoureDone",
+      "price": 3000,
+      "bundle": "Bone Chiller II",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7766",
+      "aliases": [
+        "you're done",
+        "youredone"
+      ],
+      "icon": "assets/MW4/YoureDone.png",
+      "preview": "assets/previews/MW4/YoureDone.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "game": "MW4",
+      "name": "Taken by Fate",
+      "clean_name": "TakenbyFate",
+      "price": 3000,
+      "bundle": "The Valkyrie",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7777",
+      "aliases": [
+        "taken by fate",
+        "takenbyfate"
+      ],
+      "icon": "assets/MW4/TakenbyFate.png",
+      "preview": "assets/previews/MW4/TakenbyFate.gif",
+      "standing": "",
+      "prone": "",
+      "downed": "",
+      "anim_time": 0,
+      "ttk": 0
+    },
+    {
+      "game": "MW4",
+      "name": "Hop Off",
+      "clean_name": "HopOff",
+      "price": 3000,
+      "bundle": "Glitched State",
+      "bundle_url": "https://www.callofduty.com/en/store/bundles/7795",
+      "aliases": [
+        "hop off",
+        "hopoff"
+      ],
+      "icon": "assets/MW4/HopOff.png",
+      "preview": "assets/previews/MW4/HopOff.gif",
       "standing": "",
       "prone": "",
       "downed": "",
