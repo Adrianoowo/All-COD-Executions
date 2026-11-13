@@ -10,6 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentViewMode = localStorage.getItem('userViewMode') || 'grid'; // 'grid', 'compact', 'list'
   let currentSortOrder = localStorage.getItem('userSortOrder') || 'default'; // 'default', 'name-asc', etc.
   let currentUser = null; // { id, username, avatar }
+  
+  // Live Item Shop State (itemshop.gg API)
+  let itemShopClient = null;
+  let liveShopData = null;
+  let liveFinishersByName = new Map();
+  let liveFinishersByBundle = new Map();
+  let liveFinishersList = [];
+  let liveShopAttribution = {
+    text: 'Data from itemshop.gg',
+    url: 'https://itemshop.gg/call-of-duty',
+    termsUrl: 'https://itemshop.gg/terms#api'
+  };
 
   // Credentials & CDN
   const CDN_BASE_URL = 'https://pub-21d091e8cc674a2c9f1f8a59eac107b6.r2.dev';
@@ -84,6 +96,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const filterBtns = Array.from(document.querySelectorAll('.filter-btn'));
   const statsCount = document.getElementById('stats-count');
   const statsPct = document.getElementById('stats-pct');
+
+  // Shop DOM Elements (itemshop.gg)
+  const btnLiveShop = document.getElementById('btn-live-shop');
+  const liveShopBtnBadge = document.getElementById('live-shop-btn-badge');
+  const shopFilterBtn = document.getElementById('filter-in-shop');
+  const shopFilterCount = document.getElementById('shop-filter-count');
+  const shopModalOverlay = document.getElementById('shop-modal-overlay');
+  const shopModalCloseBtn = document.getElementById('shop-modal-close-btn');
+  const shopModalDate = document.getElementById('shop-modal-date');
+  const shopModalAttrHeader = document.getElementById('shop-modal-attribution-header');
+  const shopModalAttrFooter = document.getElementById('shop-modal-attribution-footer');
+  const shopModalUpdatedTime = document.getElementById('shop-modal-updated-time');
+  const shopTabBtns = Array.from(document.querySelectorAll('.shop-tab-btn'));
+  const shopTabContents = Array.from(document.querySelectorAll('.shop-tab-content'));
+  const shopFinishersGrid = document.getElementById('shop-finishers-grid');
+  const shopSectionsContainer = document.getElementById('shop-sections-container');
+  const shopOverviewContainer = document.getElementById('shop-overview-container');
+  const shopTabFinishersCount = document.getElementById('shop-tab-finishers-count');
+  const shopTabItemsCount = document.getElementById('shop-tab-items-count');
 
   // Background maps
   const bgMap = {
@@ -822,6 +853,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     }
+
+    // 9. Initialize Live COD Item Shop (itemshop.gg)
+    initItemShop();
   }
 
   function createBgDiv(url) {
@@ -898,6 +932,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       renderBuilds(targetId);
       animateCards();
+      updateShopFilterCount();
 
       const bgData = bgMap[targetId];
       if (bgData) {
@@ -1028,11 +1063,22 @@ document.addEventListener('DOMContentLoaded', () => {
       const cardPriceDisplay = formatPrice(build.price, 'card');
       const bundleStr = build.bundle || '';
 
+      const shopEntry = (itemShopClient && liveFinishersByName)
+        ? itemShopClient.findFinisherInShop(build, liveFinishersByName, liveFinishersByBundle)
+        : null;
+      const inShopClass = shopEntry ? 'is-in-shop' : '';
+      const inShopBadge = shopEntry ? `
+        <div class="in-shop-badge" title="Available in Call of Duty Store today! ${shopEntry.bundleName} (${ItemShopClient.formatPrice(shopEntry.price)})">
+          <span class="in-shop-badge-pulse"></span> IN SHOP
+        </div>
+      ` : '';
+
       return `
-        <div class="build ${ownedClass} ${!currentUser ? 'view-only-card' : ''}" data-name="${build.name.toLowerCase()}" data-bundle="${bundleStr.toLowerCase()}" data-aliases="${aliasesStr}" data-item-key="${itemKey}">
+        <div class="build ${ownedClass} ${inShopClass} ${!currentUser ? 'view-only-card' : ''}" data-name="${build.name.toLowerCase()}" data-bundle="${bundleStr.toLowerCase()}" data-aliases="${aliasesStr}" data-item-key="${itemKey}" data-in-shop="${shopEntry ? 'true' : 'false'}">
           <button class="owned-badge ${!currentUser ? 'is-view-only' : ''}" title="${badgeTitle}" data-item-key="${itemKey}">
             ${checkIcon}
           </button>
+          ${inShopBadge}
           <div class="build-img-wrapper">
             <img src="${iconSrc}" alt="${build.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='' + resolveAssetUrl('assets/missing_preview.jpg') + '';" />
           </div>
@@ -1066,6 +1112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     filterBuilds();
+    updateShopFilterCount();
   }
 
   function filterBuilds() {
@@ -1074,24 +1121,56 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!activeSection) return;
 
     const cards = activeSection.querySelectorAll('.build');
+    let visibleCount = 0;
+
     cards.forEach(card => {
       const name = card.getAttribute('data-name') || '';
       const bundle = card.getAttribute('data-bundle') || '';
       const aliases = card.getAttribute('data-aliases') || '';
       const itemKey = card.getAttribute('data-item-key');
       const isOwned = ownedItems.has(itemKey);
+      const isInShop = card.getAttribute('data-in-shop') === 'true';
 
       const matchesQuery = name.includes(query) || bundle.includes(query) || aliases.includes(query);
       let matchesFilter = true;
       if (currentInventoryFilter === 'owned') matchesFilter = isOwned;
       else if (currentInventoryFilter === 'unowned') matchesFilter = !isOwned;
+      else if (currentInventoryFilter === 'in-shop') matchesFilter = isInShop;
 
       if (matchesQuery && matchesFilter) {
         card.style.display = '';
+        visibleCount++;
       } else {
         card.style.display = 'none';
       }
     });
+
+    // Empty notice handling
+    let emptyNotice = activeSection.querySelector('.filter-empty-notice');
+    if (visibleCount === 0 && cards.length > 0) {
+      if (!emptyNotice) {
+        emptyNotice = document.createElement('div');
+        emptyNotice.className = 'filter-empty-notice';
+        emptyNotice.style.cssText = 'grid-column: 1/-1; text-align: center; padding: 40px 20px; color: var(--muted); font-size: 14px;';
+        const grid = activeSection.querySelector('.build-grid');
+        if (grid) grid.appendChild(emptyNotice);
+      }
+      if (currentInventoryFilter === 'in-shop') {
+        emptyNotice.innerHTML = `No executions for <b>${currentActiveTab.toUpperCase()}</b> are in today's store rotation.<br><a href="#" class="empty-shop-link" style="color: #34d399; font-weight: 700; text-decoration: underline; margin-top: 10px; display: inline-block;">View all ${liveFinishersList.length} finishing moves in Live COD Shop ↗</a>`;
+        const link = emptyNotice.querySelector('.empty-shop-link');
+        if (link) {
+          link.onclick = (e) => {
+            e.preventDefault();
+            openLiveShopModal();
+          };
+        }
+      } else {
+        emptyNotice.textContent = 'No executions match your current filter and search.';
+      }
+      emptyNotice.style.display = 'block';
+    } else if (emptyNotice) {
+      emptyNotice.style.display = 'none';
+    }
   }
 
   function showVideoModal(gameKey, name, build) {
@@ -1165,6 +1244,32 @@ document.addEventListener('DOMContentLoaded', () => {
       `);
     }
 
+    const shopEntry = (itemShopClient && liveFinishersByName)
+      ? itemShopClient.findFinisherInShop(build, liveFinishersByName, liveFinishersByBundle)
+      : null;
+
+    const shopBannerMarkup = shopEntry ? `
+      <div class="popup-live-store-card">
+        <div class="store-card-header">
+          <div class="store-card-tag"><span class="store-live-dot"></span> AVAILABLE IN STORE TODAY</div>
+          <div class="store-card-price">${ItemShopClient.formatPrice(shopEntry.price)}</div>
+        </div>
+        <div class="store-card-body">
+          ${shopEntry.bundleCardImage ? `<img src="${shopEntry.bundleCardImage}" class="store-card-thumb" alt="${shopEntry.bundleName}" onerror="this.style.display='none';" />` : ''}
+          <div class="store-card-info">
+            <div class="store-bundle-title">Bundle: <b>${shopEntry.bundleName}</b></div>
+            <div class="store-section-label">Store Section: ${shopEntry.sectionTitle}</div>
+            ${shopEntry.sourceUrl ? `<a href="${shopEntry.sourceUrl}" target="_blank" rel="noopener noreferrer" class="store-official-link">View in Activision Store ↗</a>` : ''}
+          </div>
+        </div>
+        <div class="store-card-footer">
+          <a href="${liveShopAttribution.url}" target="_blank" rel="noopener noreferrer" class="itemshop-attr-link">
+            ${liveShopAttribution.text} ↗
+          </a>
+        </div>
+      </div>
+    ` : '';
+
     const popupVideosContainer = videosHtml.length > 0
       ? `<div class="popup-videos">${videosHtml.join('')}</div>`
       : '';
@@ -1200,6 +1305,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ${bundleMarkup}
       </div>
 
+      ${shopBannerMarkup}
+
       ${popupVideosContainer}
     `;
 
@@ -1220,6 +1327,404 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.body.appendChild(popup);
+  }
+
+  // ==========================================
+  // LIVE COD ITEM SHOP (itemshop.gg API Integration)
+  // ==========================================
+  function updateShopFilterCount() {
+    const activeSection = document.querySelector('.game-section.active');
+    if (!activeSection) return;
+    const cards = activeSection.querySelectorAll('.build');
+    let inShopCount = 0;
+    cards.forEach(c => {
+      if (c.getAttribute('data-in-shop') === 'true') inShopCount++;
+    });
+
+    if (shopFilterCount) {
+      shopFilterCount.textContent = inShopCount;
+    }
+    if (liveShopBtnBadge) {
+      liveShopBtnBadge.textContent = liveFinishersList.length;
+    }
+  }
+
+  async function initItemShop() {
+    try {
+      itemShopClient = new (window.ItemShopClient || ItemShopClient)({
+        game: 'call-of-duty'
+      });
+
+      // 1. Fetch live COD shop
+      const shopResponse = await itemShopClient.getShop();
+      liveShopData = shopResponse.data || shopResponse;
+      liveShopAttribution = ItemShopClient.getAttribution(shopResponse.meta);
+
+      // 2. Parse all Finishing Moves
+      const parsed = itemShopClient.parseFinishingMoves(liveShopData);
+      liveFinishersList = parsed.finishers;
+      liveFinishersByName = parsed.byName;
+      liveFinishersByBundle = parsed.byBundle;
+
+      // 3. Update header indicators
+      if (liveShopBtnBadge) {
+        liveShopBtnBadge.textContent = liveFinishersList.length;
+      }
+
+      // 4. Update attribution links
+      if (shopModalAttrHeader) {
+        shopModalAttrHeader.href = liveShopAttribution.url;
+        shopModalAttrHeader.textContent = `${liveShopAttribution.text} ↗`;
+      }
+      if (shopModalAttrFooter) {
+        shopModalAttrFooter.href = liveShopAttribution.url;
+        shopModalAttrFooter.textContent = liveShopAttribution.text;
+      }
+
+      // 5. Update cards with live shop badges & counts
+      renderAllBuilds();
+      updateShopFilterCount();
+
+      // 6. Setup Modal Listeners
+      setupShopModalEvents();
+
+      // 7. Polling for shop rotations (every 2.5 minutes)
+      setInterval(async () => {
+        try {
+          const rots = await itemShopClient.getRotations();
+          const codRotation = rots && rots.data && rots.data['call-of-duty'];
+          if (codRotation && liveShopData) {
+            const currentFingerprint = localStorage.getItem('last_cod_fingerprint');
+            if (currentFingerprint && currentFingerprint !== codRotation.fingerprint) {
+              localStorage.setItem('last_cod_fingerprint', codRotation.fingerprint);
+              const freshShop = await itemShopClient.getShop('call-of-duty', { forceRefresh: true });
+              liveShopData = freshShop.data || freshShop;
+              const freshParsed = itemShopClient.parseFinishingMoves(liveShopData);
+              liveFinishersList = freshParsed.finishers;
+              liveFinishersByName = freshParsed.byName;
+              liveFinishersByBundle = freshParsed.byBundle;
+              renderAllBuilds();
+              updateShopFilterCount();
+            } else if (!currentFingerprint) {
+              localStorage.setItem('last_cod_fingerprint', codRotation.fingerprint);
+            }
+          }
+        } catch (_) {}
+      }, 150000);
+
+    } catch (err) {
+      console.warn('[itemshop.gg] Failed to load live store:', err);
+    }
+  }
+
+  function setupShopModalEvents() {
+    if (btnLiveShop) {
+      btnLiveShop.addEventListener('click', openLiveShopModal);
+    }
+
+    if (shopModalCloseBtn) {
+      shopModalCloseBtn.addEventListener('click', closeLiveShopModal);
+    }
+
+    if (shopModalOverlay) {
+      shopModalOverlay.addEventListener('click', (e) => {
+        if (e.target === shopModalOverlay) {
+          closeLiveShopModal();
+        }
+      });
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && shopModalOverlay && !shopModalOverlay.classList.contains('hidden')) {
+        closeLiveShopModal();
+      }
+    });
+
+    // Tab buttons
+    shopTabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetTab = btn.dataset.tab;
+        switchShopTab(targetTab);
+      });
+    });
+  }
+
+  function openLiveShopModal() {
+    if (!shopModalOverlay) return;
+    shopModalOverlay.classList.remove('hidden');
+    document.body.classList.add('popup-active');
+
+    // Populate header info
+    if (liveShopData) {
+      if (shopModalDate) {
+        const formattedDate = liveShopData.shopDate || 'Today';
+        shopModalDate.textContent = `Shop Date: ${formattedDate} (UTC) • ${liveShopData.itemCount} items`;
+      }
+      if (shopModalUpdatedTime && liveShopData.updatedAt) {
+        const d = new Date(liveShopData.updatedAt);
+        shopModalUpdatedTime.textContent = `Updated: ${d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
+      }
+      if (shopTabFinishersCount) {
+        shopTabFinishersCount.textContent = liveFinishersList.length;
+      }
+      if (shopTabItemsCount) {
+        shopTabItemsCount.textContent = liveShopData.itemCount;
+      }
+
+      // Render default tab
+      renderShopFinishersTab();
+      renderShopSectionsTab();
+      renderShopOverviewTab();
+    }
+  }
+
+  function closeLiveShopModal() {
+    if (!shopModalOverlay) return;
+    shopModalOverlay.classList.add('hidden');
+    document.body.classList.remove('popup-active');
+  }
+
+  function switchShopTab(tabKey) {
+    shopTabBtns.forEach(b => {
+      if (b.dataset.tab === tabKey) b.classList.add('active');
+      else b.classList.remove('active');
+    });
+
+    shopTabContents.forEach(c => {
+      if (c.id === `shop-tab-${tabKey}`) c.classList.add('active');
+      else c.classList.remove('active');
+    });
+  }
+
+  function renderShopFinishersTab() {
+    if (!shopFinishersGrid) return;
+
+    if (!liveFinishersList || liveFinishersList.length === 0) {
+      shopFinishersGrid.innerHTML = `
+        <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--muted);">
+          No finishing moves detected in today's active store rotation.
+        </div>
+      `;
+      return;
+    }
+
+    shopFinishersGrid.innerHTML = liveFinishersList.map((entry, idx) => {
+      const priceStr = ItemShopClient.formatPrice(entry.price);
+      const cardImg = entry.bundleCardImage || 'images/mw4/mw4icon.png';
+      const finisherImg = entry.finisherImage || entry.bundleCardImage || 'assets/favicon.svg';
+      const rarityColor = (entry.rarity && entry.rarity.color) ? entry.rarity.color : '#ffcf00';
+      const rarityName = (entry.rarity && entry.rarity.name) ? entry.rarity.name : 'Bundle';
+
+      return `
+        <div class="shop-bundle-card">
+          <div class="shop-bundle-img-wrapper">
+            <img class="shop-bundle-img" src="${cardImg}" alt="${entry.bundleName}" loading="lazy" onerror="this.onerror=null;this.src='images/mw4/mw4icon.png';" />
+            <div class="shop-bundle-price-badge">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><line x1="12" y1="6" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="18"/></svg>
+              ${priceStr}
+            </div>
+            <div class="shop-bundle-badge-tag">${entry.sectionTitle}</div>
+          </div>
+          <div class="shop-bundle-body">
+            <h4 class="shop-bundle-title" title="${entry.bundleName}">${entry.bundleName}</h4>
+            <div class="shop-finisher-highlight-box">
+              <img class="shop-finisher-icon" src="${finisherImg}" alt="${entry.finisherName}" onerror="this.onerror=null;this.src='assets/favicon.svg';" />
+              <div class="shop-finisher-info">
+                <div class="shop-finisher-name">${entry.finisherName}</div>
+                <div class="shop-finisher-type-rarity">
+                  <span class="shop-rarity-pill" style="color: ${rarityColor};">${rarityName}</span>
+                  <span style="color: var(--muted);">• Finishing Move</span>
+                </div>
+              </div>
+            </div>
+            <div class="shop-bundle-card-actions">
+              <button class="btn-shop-preview" data-idx="${idx}">Preview Move</button>
+              <button class="btn-shop-jump" data-idx="${idx}" title="Jump to card in collection">Find in Grid</button>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    // Attach button listeners
+    shopFinishersGrid.querySelectorAll('.btn-shop-preview').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = parseInt(btn.dataset.idx, 10);
+        const entry = liveFinishersList[idx];
+        if (!entry) return;
+
+        // Find execution in executionsData
+        let foundExecution = null;
+        let foundGame = 'bo7';
+
+        const normFinisher = ItemShopClient.normalizeKey(entry.finisherName);
+        for (const [gKey, list] of Object.entries(executionsData)) {
+          if (Array.isArray(list)) {
+            for (const item of list) {
+              if (ItemShopClient.normalizeKey(item.name) === normFinisher ||
+                  ItemShopClient.normalizeKey(item.clean_name) === normFinisher) {
+                foundExecution = item;
+                foundGame = gKey.toLowerCase();
+                break;
+              }
+            }
+          }
+          if (foundExecution) break;
+        }
+
+        if (foundExecution) {
+          closeLiveShopModal();
+          showVideoModal(foundGame, foundExecution.name, foundExecution);
+        } else {
+          // Synthetic preview modal for newly released finisher
+          closeLiveShopModal();
+          showVideoModal('bo7', entry.finisherName, {
+            name: entry.finisherName,
+            clean_name: entry.finisherName,
+            bundle: entry.bundleName,
+            price: entry.price.amount,
+            icon: entry.finisherImage || entry.bundleCardImage,
+            preview: '',
+            standing: '',
+            prone: '',
+            downed: '',
+            anim_time: 0,
+            ttk: 0
+          });
+        }
+      });
+    });
+
+    shopFinishersGrid.querySelectorAll('.btn-shop-jump').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = parseInt(btn.dataset.idx, 10);
+        const entry = liveFinishersList[idx];
+        if (!entry) return;
+
+        let targetGame = 'bo7';
+        let targetName = entry.finisherName;
+        const normFinisher = ItemShopClient.normalizeKey(entry.finisherName);
+
+        for (const [gKey, list] of Object.entries(executionsData)) {
+          if (Array.isArray(list)) {
+            for (const item of list) {
+              if (ItemShopClient.normalizeKey(item.name) === normFinisher ||
+                  ItemShopClient.normalizeKey(item.clean_name) === normFinisher) {
+                targetGame = gKey.toLowerCase();
+                targetName = item.name;
+                break;
+              }
+            }
+          }
+        }
+
+        closeLiveShopModal();
+
+        // Switch to game tab
+        const tabToActivate = tabs.find(t => t.dataset.target === targetGame);
+        if (tabToActivate) {
+          tabToActivate.click();
+        }
+
+        // Scroll to card and highlight
+        setTimeout(() => {
+          const itemKey = `${targetGame.toUpperCase()}:${targetName}`;
+          const card = document.querySelector(`.build[data-item-key="${CSS.escape(itemKey)}"]`);
+          if (card) {
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            card.style.outline = '2px solid #10b981';
+            card.style.boxShadow = '0 0 30px rgba(16, 185, 129, 0.8)';
+            setTimeout(() => {
+              card.style.outline = '';
+              card.style.boxShadow = '';
+            }, 3000);
+          }
+        }, 400);
+      });
+    });
+  }
+
+  function renderShopSectionsTab() {
+    if (!shopSectionsContainer) return;
+    if (!liveShopData || !liveShopData.sections || liveShopData.sections.length === 0) {
+      shopSectionsContainer.innerHTML = '<div style="text-align:center;padding:40px;color:var(--muted);">No sections available.</div>';
+      return;
+    }
+
+    shopSectionsContainer.innerHTML = liveShopData.sections.map(sec => {
+      const itemsMarkup = (sec.items || []).map(item => {
+        const priceStr = ItemShopClient.formatPrice(item.price);
+        const cardImg = (item.images && item.images.card) || 'images/mw4/mw4icon.png';
+        const hasFinisher = (item.contents || []).some(c => /finishing move|execution|finisher/i.test(c.type || '') || /finishing move|execution/i.test(c.name || ''));
+
+        return `
+          <div class="shop-bundle-card ${hasFinisher ? 'is-in-shop' : ''}">
+            <div class="shop-bundle-img-wrapper">
+              <img class="shop-bundle-img" src="${cardImg}" alt="${item.name}" loading="lazy" onerror="this.onerror=null;this.src='images/mw4/mw4icon.png';" />
+              <div class="shop-bundle-price-badge">${priceStr}</div>
+              ${hasFinisher ? '<div class="shop-bundle-badge-tag" style="background:#10b981;color:#064e3b;">Has Finisher</div>' : ''}
+            </div>
+            <div class="shop-bundle-body">
+              <h4 class="shop-bundle-title" title="${item.name}">${item.name}</h4>
+              <div style="font-size:12px;color:var(--text-secondary);">${item.type || 'Bundle'}</div>
+              <div style="font-size:11.5px;color:var(--muted);margin-top:4px;">
+                ${(item.contents || []).length} items included
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      return `
+        <div class="shop-section-block">
+          <div class="shop-section-heading">
+            <span>${sec.title}</span>
+            <span class="shop-section-badge">${(sec.items || []).length} items</span>
+          </div>
+          <div class="shop-finishers-grid">
+            ${itemsMarkup}
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function renderShopOverviewTab() {
+    if (!shopOverviewContainer) return;
+    const images = (liveShopData && liveShopData.images) || [];
+    if (images.length === 0) {
+      shopOverviewContainer.innerHTML = `
+        <div style="text-align:center;padding:40px;color:var(--muted);">
+          No composite store image is currently available for this shop rotation.
+        </div>
+      `;
+      return;
+    }
+
+    const imgUrl = images[0];
+    shopOverviewContainer.innerHTML = `
+      <div class="shop-overview-img-wrapper">
+        <img class="shop-overview-img" src="${imgUrl}" alt="Call of Duty Daily Item Shop Image" onerror="this.onerror=null;this.parentElement.innerHTML='<div style=\\'padding:40px;color:var(--muted);text-align:center;\\'>Store image is currently rendering. Check back in a few minutes.<br><button id=\\'btn-retry-shop-img\\' style=\\'margin-top:12px;padding:6px 14px;background:#10b981;border:none;border-radius:6px;color:#000;font-weight:700;cursor:pointer;\\'>Retry</button></div>';document.getElementById('btn-retry-shop-img')?.addEventListener('click',()=>renderShopOverviewTab());" />
+      </div>
+      <div class="shop-overview-caption">
+        Complete Call of Duty Store composite sheet. Click image to zoom. Provided by <a href="${liveShopAttribution.url}" target="_blank" rel="noopener noreferrer" style="color:#34d399;text-decoration:underline;">itemshop.gg</a>.
+      </div>
+    `;
+
+    const img = shopOverviewContainer.querySelector('.shop-overview-img');
+    if (img) {
+      let isZoomed = false;
+      img.addEventListener('click', () => {
+        isZoomed = !isZoomed;
+        if (isZoomed) {
+          img.style.maxHeight = 'none';
+          img.style.cursor = 'zoom-out';
+        } else {
+          img.style.maxHeight = '70vh';
+          img.style.cursor = 'zoom-in';
+        }
+      });
+    }
   }
 
   init();

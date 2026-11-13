@@ -147,6 +147,18 @@
                 <span>List</span>
               </button>
             </div>
+
+            <!-- LIVE COD STORE BUTTON -->
+            <button class="btn-live-shop" id="btn-live-shop" title="Open Call of Duty Live Item Shop">
+              <span class="live-dot-pulse"></span>
+              <svg class="shop-cart-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 0 1-8 0"/>
+              </svg>
+              <span>Live COD Shop</span>
+              <span class="live-shop-badge" id="live-shop-btn-badge">...</span>
+            </button>
           </div>
 
           <div class="inventory-filters">
@@ -154,6 +166,9 @@
               <button class="filter-btn active" data-filter="all">All</button>
               <button class="filter-btn" data-filter="owned">Owned</button>
               <button class="filter-btn" data-filter="unowned">Unowned</button>
+              <button class="filter-btn shop-filter-btn" data-filter="in-shop" id="filter-in-shop" title="Show executions currently on sale in Call of Duty store today">
+                <span class="shop-dot"></span> In Shop Today <span class="shop-filter-pill" id="shop-filter-count">...</span>
+              </button>
             </div>
             <div class="inventory-stats-pill" id="inventory-stats-pill">
               Owned: <span id="stats-count">0/0</span> (<span id="stats-pct">0%</span>)
@@ -257,7 +272,96 @@
     </div>
   </div>
 
+  <!-- LIVE COD ITEM SHOP MODAL / DRAWER -->
+  <div class="shop-modal-overlay hidden" id="shop-modal-overlay">
+    <div class="shop-modal">
+      <div class="shop-modal-header">
+        <div class="shop-modal-header-left">
+          <div class="shop-modal-badge">
+            <span class="live-dot-pulse"></span>
+            <span>LIVE STORE</span>
+          </div>
+          <h2 class="shop-modal-title">CALL OF DUTY ITEM SHOP</h2>
+          <span class="shop-modal-date" id="shop-modal-date">Shop Date: Loading...</span>
+        </div>
+        <div class="shop-modal-header-right">
+          <a href="https://itemshop.gg/call-of-duty" target="_blank" rel="noopener noreferrer" class="shop-modal-attribution" id="shop-modal-attribution-header" title="Data from itemshop.gg">
+            Data from itemshop.gg ↗
+          </a>
+          <button class="modal-close" id="shop-modal-close-btn" title="Close">&times;</button>
+        </div>
+      </div>
+
+      <div class="shop-modal-tabs">
+        <button class="shop-tab-btn active" data-tab="finishers">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          <span>Finishing Moves on Sale</span>
+          <span class="shop-tab-count" id="shop-tab-finishers-count">0</span>
+        </button>
+        <button class="shop-tab-btn" data-tab="sections">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          <span>All Store Sections</span>
+          <span class="shop-tab-count" id="shop-tab-items-count">0</span>
+        </button>
+        <button class="shop-tab-btn" data-tab="overview">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+            <polyline points="21 15 16 10 5 21"></polyline>
+          </svg>
+          <span>Store Overview Image</span>
+        </button>
+      </div>
+
+      <div class="shop-modal-body">
+        <!-- TAB 1: FINISHERS -->
+        <div class="shop-tab-content active" id="shop-tab-finishers">
+          <div class="shop-finishers-grid" id="shop-finishers-grid">
+            <div class="shop-loading-spinner">Loading finishing moves in store...</div>
+          </div>
+        </div>
+
+        <!-- TAB 2: ALL SECTIONS -->
+        <div class="shop-tab-content" id="shop-tab-sections">
+          <div class="shop-sections-container" id="shop-sections-container">
+            <div class="shop-loading-spinner">Loading store sections...</div>
+          </div>
+        </div>
+
+        <!-- TAB 3: OVERVIEW IMAGE -->
+        <div class="shop-tab-content" id="shop-tab-overview">
+          <div class="shop-overview-container" id="shop-overview-container">
+            <div class="shop-loading-spinner">Loading store overview image...</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-modal-footer">
+        <div class="shop-modal-footer-attribution">
+          <a href="https://itemshop.gg/call-of-duty" target="_blank" rel="noopener noreferrer" id="shop-modal-attribution-footer" class="attribution-link">
+            Data from itemshop.gg
+          </a>
+          <span class="footer-dot">•</span>
+          <a href="https://itemshop.gg/terms#api" target="_blank" rel="noopener noreferrer" class="footer-terms-link">API Terms</a>
+          <span class="footer-dot">•</span>
+          <span id="shop-modal-updated-time">Updated: Recently</span>
+        </div>
+        <div class="shop-modal-footer-info">
+          <span>Refreshes automatically when store rotates</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="data-fallback.js"></script>
+  <script src="itemshop.js"></script>
   <script src="index.js"></script>
 </body>
 
