@@ -154,6 +154,25 @@
     }
 
     /**
+     * Infer the game key (e.g. MW4, BO7, BO6, MWIII, MWII, MW, CW, VG) from store section title.
+     * @param {string} sectionTitle
+     * @returns {string|null}
+     */
+    static inferGameFromSection(sectionTitle) {
+      if (!sectionTitle) return null;
+      const s = String(sectionTitle).toLowerCase();
+      if (s.includes('modern warfare 4') || s.includes('mw4')) return 'MW4';
+      if (s.includes('black ops 7') || s.includes('bo7')) return 'BO7';
+      if (s.includes('black ops 6') || s.includes('bo6')) return 'BO6';
+      if (s.includes('modern warfare iii') || s.includes('mwiii') || s.includes('mw3')) return 'MWIII';
+      if (s.includes('modern warfare ii') || s.includes('mwii') || s.includes('mw2')) return 'MWII';
+      if (s.includes('vanguard') || s.includes('vg')) return 'VG';
+      if (s.includes('cold war') || s.includes('bocw') || s.includes('cw')) return 'CW';
+      if (s.includes('modern warfare') || s.includes('mw2019')) return 'MW';
+      return null;
+    }
+
+    /**
      * Format a price from ItemShopPrice into user-friendly text
      * @param {ItemShopPrice} price
      * @returns {string}
@@ -187,8 +206,11 @@
         headers['If-None-Match'] = etag;
       }
 
-      // Safe header for browser & node client identification
-      headers['X-Client'] = this.userAgent;
+      // Only set User-Agent in server/Node.js environments.
+      // In browsers, custom headers like X-Client trigger CORS preflight failures on itemshop.gg.
+      if (typeof window === 'undefined') {
+        headers['User-Agent'] = this.userAgent;
+      }
 
       return headers;
     }
@@ -269,12 +291,24 @@
       try {
         response = await fetch(url, { method: 'GET', headers });
       } catch (networkErr) {
-        // If network error happens and we have stale cached data, return it
-        if (cached && cached.data) {
-          console.warn(`[itemshop.gg] Network fetch failed, falling back to cached data:`, networkErr);
+        // If network error happens (e.g. adblocker), attempt CORS proxy in browser
+        if (typeof window !== 'undefined') {
+          try {
+            console.warn(`[itemshop.gg] Direct fetch failed, attempting proxy fallback...`);
+            const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+            response = await fetch(proxyUrl);
+          } catch (proxyErr) {
+            if (cached && cached.data) {
+              console.warn(`[itemshop.gg] Proxy fetch also failed, using cached store data:`, proxyErr);
+              return cached.data;
+            }
+            throw networkErr;
+          }
+        } else if (cached && cached.data) {
           return cached.data;
+        } else {
+          throw networkErr;
         }
-        throw networkErr;
       }
 
       // Track rate limit headers
@@ -429,7 +463,7 @@
 
       /** @type {FinisherShopEntry[]} */
       const finishers = [];
-      /** @type {Map<string, FinisherShopEntry>} */
+      /** @type {Map<string, FinisherShopEntry[]>} */
       const byName = new Map();
       /** @type {Map<string, FinisherShopEntry[]>} */
       const byBundle = new Map();
@@ -463,7 +497,9 @@
               availability: item.availability
             };
             finishers.push(entry);
-            byName.set(ItemShopClient.normalizeKey(item.name), entry);
+            const k = ItemShopClient.normalizeKey(item.name);
+            if (!byName.has(k)) byName.set(k, []);
+            byName.get(k).push(entry);
 
             const bKey = ItemShopClient.normalizeKey(entry.bundleName);
             if (!byBundle.has(bKey)) byBundle.set(bKey, []);
@@ -492,7 +528,8 @@
               };
               finishers.push(entry);
               const fNorm = ItemShopClient.normalizeKey(content.name);
-              byName.set(fNorm, entry);
+              if (!byName.has(fNorm)) byName.set(fNorm, []);
+              byName.get(fNorm).push(entry);
 
               if (bundleNorm) {
                 if (!byBundle.has(bundleNorm)) byBundle.set(bundleNorm, []);
@@ -509,24 +546,50 @@
     /**
      * Check if a specific execution is in the parsed shop data
      * @param {Object} execution - Database execution item
-     * @param {Map<string, FinisherShopEntry>} byNameMap
+     * @param {Map<string, FinisherShopEntry|FinisherShopEntry[]>} byNameMap
      * @param {Map<string, FinisherShopEntry[]>} [byBundleMap]
      * @returns {FinisherShopEntry|null}
      */
     findFinisherInShop(execution, byNameMap, byBundleMap) {
       if (!execution || !byNameMap) return null;
 
+      const execGame = (execution.game || '').toUpperCase();
+      const isBaseMove = /base operator|unlocked with|base game|default move/i.test(execution.bundle || '');
+      const execBundleNorm = ItemShopClient.normalizeKey(execution.bundle || '');
+
+      function isCandidateCompatible(c) {
+        if (!c) return false;
+        const secGame = ItemShopClient.inferGameFromSection(c.sectionTitle);
+        if (execGame && secGame && execGame !== secGame) return false;
+        if (isBaseMove && c.price && c.price.amount > 0) return false;
+        return true;
+      }
+
+      function pickBest(candidates) {
+        if (!candidates) return null;
+        const list = Array.isArray(candidates) ? candidates : [candidates];
+        const compatible = list.filter(isCandidateCompatible);
+        if (compatible.length === 0) return null;
+        if (execBundleNorm) {
+          const bundleMatch = compatible.find(c => ItemShopClient.normalizeKey(c.bundleName) === execBundleNorm);
+          if (bundleMatch) return bundleMatch;
+        }
+        return compatible[0];
+      }
+
       // 1. Match by clean execution name
       const nameKey = ItemShopClient.normalizeKey(execution.name);
       if (nameKey && byNameMap.has(nameKey)) {
-        return byNameMap.get(nameKey);
+        const match = pickBest(byNameMap.get(nameKey));
+        if (match) return match;
       }
 
       // 2. Match by clean_name property
       if (execution.clean_name) {
         const cleanKey = ItemShopClient.normalizeKey(execution.clean_name);
         if (cleanKey && byNameMap.has(cleanKey)) {
-          return byNameMap.get(cleanKey);
+          const match = pickBest(byNameMap.get(cleanKey));
+          if (match) return match;
         }
       }
 
@@ -535,25 +598,22 @@
         for (const alias of execution.aliases) {
           const aliasKey = ItemShopClient.normalizeKey(alias);
           if (aliasKey && byNameMap.has(aliasKey)) {
-            return byNameMap.get(aliasKey);
+            const match = pickBest(byNameMap.get(aliasKey));
+            if (match) return match;
           }
         }
       }
 
       // 4. Match by bundle name if bundle matches
-      if (byBundleMap && execution.bundle) {
-        const bundleKey = ItemShopClient.normalizeKey(execution.bundle);
-        if (bundleKey && byBundleMap.has(bundleKey)) {
-          const entries = byBundleMap.get(bundleKey);
-          if (entries && entries.length > 0) {
-            // Find best match in the bundle
-            for (const entry of entries) {
-              if (ItemShopClient.normalizeKey(entry.finisherName) === nameKey) {
-                return entry;
-              }
+      if (byBundleMap && execBundleNorm && byBundleMap.has(execBundleNorm)) {
+        const bEntries = byBundleMap.get(execBundleNorm).filter(isCandidateCompatible);
+        if (bEntries.length > 0) {
+          for (const entry of bEntries) {
+            if (ItemShopClient.normalizeKey(entry.finisherName) === nameKey) {
+              return entry;
             }
-            return entries[0];
           }
+          return bEntries[0];
         }
       }
 

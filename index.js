@@ -1555,10 +1555,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Find execution in executionsData
         let foundExecution = null;
-        let foundGame = 'bo7';
+        const inferredGame = ItemShopClient.inferGameFromSection ? ItemShopClient.inferGameFromSection(entry.sectionTitle) : null;
+        let foundGame = inferredGame ? inferredGame.toLowerCase() : 'bo7';
 
         const normFinisher = ItemShopClient.normalizeKey(entry.finisherName);
-        for (const [gKey, list] of Object.entries(executionsData)) {
+        const searchEntries = inferredGame && executionsData[inferredGame.toUpperCase()]
+          ? [[inferredGame.toUpperCase(), executionsData[inferredGame.toUpperCase()]], ...Object.entries(executionsData).filter(([k]) => k !== inferredGame.toUpperCase())]
+          : Object.entries(executionsData);
+
+        for (const [gKey, list] of searchEntries) {
           if (Array.isArray(list)) {
             for (const item of list) {
               if (ItemShopClient.normalizeKey(item.name) === normFinisher ||
@@ -1578,7 +1583,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           // Synthetic preview modal for newly released finisher
           closeLiveShopModal();
-          showVideoModal('bo7', entry.finisherName, {
+          showVideoModal(foundGame, entry.finisherName, {
             name: entry.finisherName,
             clean_name: entry.finisherName,
             bundle: entry.bundleName,
@@ -1601,11 +1606,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const entry = liveFinishersList[idx];
         if (!entry) return;
 
-        let targetGame = 'bo7';
+        const inferredGame = ItemShopClient.inferGameFromSection ? ItemShopClient.inferGameFromSection(entry.sectionTitle) : null;
+        let targetGame = inferredGame ? inferredGame.toLowerCase() : 'bo7';
         let targetName = entry.finisherName;
         const normFinisher = ItemShopClient.normalizeKey(entry.finisherName);
 
-        for (const [gKey, list] of Object.entries(executionsData)) {
+        const searchEntries = inferredGame && executionsData[inferredGame.toUpperCase()]
+          ? [[inferredGame.toUpperCase(), executionsData[inferredGame.toUpperCase()]], ...Object.entries(executionsData).filter(([k]) => k !== inferredGame.toUpperCase())]
+          : Object.entries(executionsData);
+
+        for (const [gKey, list] of searchEntries) {
           if (Array.isArray(list)) {
             for (const item of list) {
               if (ItemShopClient.normalizeKey(item.name) === normFinisher ||
